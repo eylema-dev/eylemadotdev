@@ -1,6 +1,6 @@
 # Eylema website contributor contract
 
-Read [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md), the [architecture](https://github.com/eylema-dev/eylema/blob/main/architecture-v0.3.en.md), [quality gates](docs/en/quality-gates.md) and the accepted task record before editing.
+Read [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md), the [architecture](https://github.com/eylema-dev/eylema-docs-en/blob/main/docs/architecture.md), [quality gates](docs/en/quality-gates.md) and the accepted task record before editing.
 
 This public repository contains the public-facing static promotional website, not the Eylema Rust runtime. Browser HTML/CSS and a small first-party JavaScript enhancement are explicit website dependencies. No third-party production package is needed. English is canonical, Turkish is a complete companion, and the default route is English.
 
