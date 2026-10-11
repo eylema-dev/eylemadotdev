@@ -9,8 +9,8 @@ ORIGIN = "https://eylema.dev"
 PROJECT = "https://github.com/eylema-dev/eylema"
 UPDATED = "2026-10-11"
 SOURCES = {
-    "en": {"architecture": "architecture-v0.3.en.md", "api": "api/en/reference-v0.1.md", "teams": "ai-team-protocols-v0.1.en.md", "learning": "learning-data-training-protocol-v0.1.en.md", "project": "README.md"},
-    "tr": {"architecture": "framework-mimari-taslagi-v0.3.md", "api": "api/tr/reference-v0.1.md", "teams": "ai-takim-protokolleri-v0.1.md", "learning": "ogrenme-verisi-ve-egitim-protokolu-v0.1.md", "project": "README.tr.md"},
+    "en": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.md"},
+    "tr": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.tr.md"},
 }
 
 
@@ -24,7 +24,8 @@ def arrow(external=False):
 
 
 def source(lang, name):
-    return f"{PROJECT}/blob/main/{SOURCES[lang][name]}"
+    repository = PROJECT if name == "project" else f"https://github.com/eylema-dev/eylema-docs-{lang}"
+    return f"{repository}/blob/main/{SOURCES[lang][name]}"
 
 
 def schema(data):
