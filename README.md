@@ -31,4 +31,4 @@ Run the exact verification commands in [AGENTS.md](AGENTS.md). Generated documen
 
 ## Publication boundary
 
-The source repository is public, as explicitly requested by the maintainer. Published HTML, CSS, JavaScript and images will be publicly retrievable. Hosting, DNS, Search Console/Bing verification and live indexing are not provisioned by this code. See the launch checklist before publishing. No deployment or application performance claim follows from local checks.
+The source repository is public, as explicitly requested by the maintainer. Published HTML, CSS, JavaScript and images will be publicly retrievable. The authorized production target is Azure Static Web Apps Free in `umayos subscription`, West Europe, `rg-eylema-dev / swa-eylema-dev`. The production workflow validates and uploads only `public/`, then checks live file hashes, MIME types, routing and the commit in `/release.json`. See the [release contract](records/deployment.md) and the launch checklist. Search Console/Bing verification, indexing and field performance are separate evidence. Local checks alone do not establish deployment.

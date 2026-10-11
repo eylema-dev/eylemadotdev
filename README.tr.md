@@ -31,4 +31,4 @@ python3 -m venv .venv
 
 ## Yayınlama sınırı
 
-Kaynak deposu, proje sahibinin açık isteğiyle herkese açıktır. Yayınlanan HTML, CSS, JavaScript ve görseller herkes tarafından alınabilir. Barındırma, DNS, Search Console/Bing doğrulaması ve canlı indeksleme bu kodla kurulmaz. Yayınlamadan önce hazırlık listesini izleyin. Yerel kontroller dağıtım veya uygulama performansı iddiasını doğrulamaz.
+Kaynak deposu, proje sahibinin açık isteğiyle herkese açıktır. Yayınlanan HTML, CSS, JavaScript ve görseller herkes tarafından alınabilir. Yetkili üretim hedefi `umayos subscription`, West Europe, `rg-eylema-dev / swa-eylema-dev` altında Azure Static Web Apps Free katmanıdır. Üretim iş akışı yalnızca `public/` çıktısını doğrular ve yükler; canlı dosya özetlerini, MIME türlerini, yönlendirmeyi ve `/release.json` commit değerini kontrol eder. [Yayın sözleşmesini](records/deployment.tr.md) ve hazırlık listesini izleyin. Search Console/Bing doğrulaması, indeksleme ve saha performansı ayrı kanıtlardır. Yerel kontroller tek başına dağıtımı doğrulamaz.

@@ -6,7 +6,7 @@
 |---|---|
 | Published runtime | Browser HTML, CSS, 1.7 KB first-party JavaScript; no package downloads, remote fonts, analytics or inference engine |
 | Build and CI | Python 3.14 standard library; empty dependency lock is intentional; development only |
-| CI actions | checkout v7.0.1 at `3d3c42e5aac5ba805825da76410c181273ba90b1`; setup-python v7.0.0 at `5fda3b95a4ea91299a34e894583c3862153e4b97`; official tag SHAs checked on 11 October 2026 |
+| CI actions | checkout v7.0.1 at `3d3c42e5aac5ba805825da76410c181273ba90b1`; setup-python v7.0.0 at `5fda3b95a4ea91299a34e894583c3862153e4b97`; official tag SHAs checked on 11 October 2026; Azure/static-web-apps-deploy v1 at `4d27395796ac319302594769cfe812bd207490b1` verified from its official repository for the production workflow |
 | Local visual authoring | Codex, built-in Image Gen; four section concepts plus one standalone asset; no website API key |
 | Asset encoding | Bundled sharp 0.35.5, development only; 1024px and 640px WebP, quality 88; not required to serve/build HTML |
 | Browser verification | Codex in-app browser through CUA; supplemental bundled Playwright Chromium 151.0.7922.34 for JavaScript-disabled and reduced-motion overrides unavailable in IAB; development only |
