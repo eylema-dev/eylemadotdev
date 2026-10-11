@@ -13,7 +13,8 @@ The website is separate from the platform documentation repository. Its standard
 | Static budget | CSS/JS total under 35 KB raw; this is a size budget, not a Core Web Vitals measurement |
 | PR description | Required sections contain specific values; truth and authority require review |
 | Browser | Real navigation, languages, tabs/keyboard, disclosures, mobile layout, console and visual comparison are checked separately |
-| CI | Read-only GitHub runner, pinned actions, no secrets or deployment; actual PR head and checked-out SHA printed |
+| Release | Reject short/wrong commit, missing artifact, symlinks and changed live inventory; host config rejects SPA fallback, soft 404 and asset redirects; production workflow uses the scoped secret only after validation |
+| CI | Read-only PR workflow, pinned actions, no secrets or deployment in PR checks; actual PR head and checked-out SHA printed |
 
 Run the commands in [AGENTS.md](../../AGENTS.md) and `python tools/build.py --check` using the virtual environment. `--allow-template` only checks the blank PR form. A green CI run is not independent or maintainer review. Branch protection has not been configured by this repository.
 

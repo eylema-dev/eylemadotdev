@@ -3,14 +3,14 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "34b4cf3160626073a7c94107f73a7d26933d25a6d9109160e2725810055e9735",
-      "tr_sha256": "8b238616bde580fa2c82edcbeb8b59ad57b5a313cc26eb49fffc129e7dbb1d53"
+      "en_sha256": "d1d2ff7edb1ac7d3c1fb078d30fe5ed7e95e399ccf4d07606d6c71c440d09c4d",
+      "tr_sha256": "467a7184eb7feb247539a48b0d524d005c47e7fa70adfb7ae5d1d48b8353a68b"
     },
     {
       "en": "CONTRIBUTING.md",
       "tr": "CONTRIBUTING.tr.md",
-      "en_sha256": "bb640aca15874764393c319854b82296cb492079c7274d4aac913cbad2a3204a",
-      "tr_sha256": "e395947712e724cbe0e6de636861aa68cc4b92e643d7183a873f0dbff7a99957"
+      "en_sha256": "cd5264c8e0affbb82a6841b74c5fb67ff0950cd259a0aa33e8c5ba1b6fc7cafa",
+      "tr_sha256": "2f763d65e4b7b08e83b397c499d6950bac1f66ebb466f89c8b1f7fce6f2af523"
     },
     {
       "en": "content/en.json",
@@ -39,20 +39,26 @@
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "ab333de3de0710e010a6454e15a3a39a691532aea3a230ceca25839d2597332a",
-      "tr_sha256": "5c3d8766b7871e5fe30163a93ef51de6e4a431c911c8653165dba2093b6448b7"
+      "en_sha256": "6d0c38d1aa42e26614418df20a80c2aac2b209d257ecb1dc49f4850bbabe994e",
+      "tr_sha256": "b4205beb227f44df686b781696e94eee0bc32bdbbbc27c8bec85486a74ca8bb0"
     },
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "21ce69d708111eea01bc75948cf70e4f8bb09752baae9a5de2b7880fe8f889f0",
-      "tr_sha256": "0ac97a85ce86e105cfd2bff6d5dbd4333443cf04ac9b0127956652af29062a3a"
+      "en_sha256": "9cc66937bdfa8167309300aa714b2bace57fc1983db648006c5172a8db73da46",
+      "tr_sha256": "0c14f7f043b0b21743e4346542c36e649ee9dfd66e556ee7019c8cdd0c444e11"
     },
     {
       "en": "records/verification.md",
       "tr": "records/verification.tr.md",
       "en_sha256": "129f9a214a1b324d2186b698868d22a12607b857c7ed7ecfe9df7ad9a916a521",
       "tr_sha256": "0ea0746b8c8555ec128a8d757566c5d54f50abe8d78b047269ec60d8368ac280"
+    },
+    {
+      "en": "records/deployment.md",
+      "tr": "records/deployment.tr.md",
+      "en_sha256": "d066fab8c7b58578845dea48f338c87df9f63faab63cce16df2b6e791ad7dc29",
+      "tr_sha256": "137b35dff4e293a72bc0a25cf8d00ed2c6d4dbbd4196d5e32d8fb70cd23acfe7"
     }
   ]
 }

@@ -13,7 +13,8 @@ Web sitesi, platform belgeleri deposundan ayrıdır. Standart kütüphane doğru
 | Statik bütçe | CSS/JS toplamı sıkıştırılmamış 35 KB altında; bu boyut bütçesidir, Core Web Vitals ölçümü değildir |
 | PR açıklaması | Gerekli bölümler somut değer içerir; doğruluk ve yetki inceleme gerektirir |
 | Tarayıcı | Gerçek gezinme, diller, sekmeler/klavye, açılır yanıtlar, mobil düzen, konsol ve görsel karşılaştırma ayrı kontrol edilir |
-| CI | Salt okunur GitHub çalıştırıcısı, sabitlenmiş eylemler; gizli anahtar ve dağıtım yok; PR başı ve kontrol edilen SHA yazdırılır |
+| Yayın | Kısa/yanlış commit, eksik çıktı, sembolik bağlantı ve değişmiş canlı envanter reddedilir; sunucu kontrolü SPA fallback, sahte 404 ve varlık yönlendirmesini reddeder; üretim akışı kapsamlı anahtarı yalnızca doğrulama sonrası kullanır |
+| CI | Salt okunur PR akışı, sabitlenmiş eylemler; PR kontrollerinde gizli anahtar/dağıtım yok; PR başı ve kontrol edilen SHA yazdırılır |
 
 [AGENTS.md](../../AGENTS.md) komutlarını ve `python tools/build.py --check` komutunu sanal ortamda çalıştırın. `--allow-template` yalnızca boş PR formunu denetler. Yeşil CI bağımsız veya proje sahibi incelemesi değildir. Depo, dal korumasını yapılandırmaz.
 

@@ -142,7 +142,15 @@ def check_markdown(root, path, text):
         require(not parsed.scheme and target.is_relative_to(root.resolve()) and target.is_file(), f"Broken documentation link: {path.name}: {link}")
 
 
+def check_host_config(config):
+    require(config.get("trailingSlash") == "auto", "Host must preserve asset URLs and directory slashes")
+    require("navigationFallback" not in config, "SPA fallback would hide missing pages")
+    require(config.get("responseOverrides", {}).get("404") == {"rewrite": "/404.html", "statusCode": 404}, "Host must return a real custom 404")
+    require(config.get("globalHeaders", {}).get("Cache-Control") == "public, max-age=0, must-revalidate", "Unhashed assets must be revalidated")
+
+
 def check(root=ROOT):
+    check_host_config(json.loads((root / "public/staticwebapp.config.json").read_text()))
     content = {lang: json.loads((root / "content" / f"{lang}.json").read_text()) for lang in ("en", "tr")}
     check_content(content["en"], content["tr"])
     for name, generated in outputs(root).items():
