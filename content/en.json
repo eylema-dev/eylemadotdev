@@ -1,0 +1,61 @@
+{
+  "lang": "en",
+  "locale": "en_US",
+  "title": "Eylema — Agentic AI Web Platform, by Design",
+  "description": "Explore Eylema: an agentic AI web platform in design, connecting Rust, local intelligence and human oversight for continuous development and operations.",
+  "skip": "Skip to content",
+  "navigation": "Main navigation",
+  "language": "Choose language",
+  "nav_architecture": "Architecture",
+  "nav_roadmap": "Roadmap",
+  "headline": ["From intent", "to action.", "By design."],
+  "intro": "An agentic web platform for continuous development and operations. Built around explicit goals, local intelligence and human direction.",
+  "explore": "Explore the architecture",
+  "follow": "Follow on GitHub",
+  "status": "Currently in design. Architecture and API drafts are public.",
+  "principles": [
+    {"title": "Explicit by design", "text": "Goals, authority and budgets, defined before action."},
+    {"title": "Local at the core", "text": "A planned Rust foundation for browser and Linux."},
+    {"title": "Human in command", "text": "Observe, intervene and decide what comes next."}
+  ],
+  "architecture_label": "01 — Architecture",
+  "architecture_title": ["One contract.", "A continuous loop."],
+  "architecture_intro": "The goal: connect development, local operation and learning through shared, inspectable definitions.",
+  "steps_label": "Explore the proposed architecture",
+  "steps": [
+    {"id": "define", "name": "Define", "title": "Start with intent.", "text": "Describe the state, goals, allowed actions, authority and resource budget. Make acceptance explicit before work begins.", "link": "Read the architecture", "source": "architecture", "diagram": "Proposed application contract", "root": "Goal", "nodes": ["State", "Actions", "Authority", "Budget"]},
+    {"id": "develop", "name": "Develop", "title": "Turn a need into a change.", "text": "The proposed AI development team works from a scoped request to a plan, implementation and checked pull request. Independent review and maintainer acceptance remain separate gates.", "link": "Read the team protocol", "source": "teams", "diagram": "Proposed development flow", "root": "Scoped request", "nodes": ["Plan", "Implement", "Verify", "Review"]},
+    {"id": "operate", "name": "Operate", "title": "Act within clear boundaries.", "text": "Accepted local agents are intended to propose actions against observed state. The planned Rust executor checks authority, state and budgets before acting, then records the actual outcome.", "link": "Read the API contract", "source": "api", "diagram": "Proposed operation contract", "root": "Observed state", "nodes": ["Propose", "Validate", "Execute", "Observe"]},
+    {"id": "learn", "name": "Learn", "title": "Let evidence guide improvement.", "text": "Permitted experience and human corrections can become curated training data. A candidate must pass independent task and hardware evaluations before a release is accepted.", "link": "Read the learning protocol", "source": "learning", "diagram": "Proposed learning flow", "root": "Permitted experience", "nodes": ["Curate", "Train", "Evaluate", "Accept"]}
+  ],
+  "concept_note": "Concept illustration · not a running platform",
+  "human_title": "Human direction, throughout.",
+  "human_text": "Set the goal. Inspect the evidence. Intervene when needed.",
+  "faq_label": "02 — Questions & answers",
+  "faq_title": ["A clear idea.", "An honest start."],
+  "faq_intro": "The essential facts about Eylema, with the original design documents one click away.",
+  "questions": [
+    {"question": "What is Eylema?", "answer": "Eylema is a proposed agentic AI web platform for continuous development and operations. Its design connects explicit application contracts, AI development teams and local agents, with human-defined authority.", "source": "architecture", "link": "Architecture v0.3"},
+    {"question": "Can I use Eylema today?", "answer": "You can explore the public architecture, API and team protocol drafts. There is no released Eylema framework, production API, supported model runtime or published performance benchmark yet. This website introduces the design; it is not a platform demo.", "source": "project", "link": "Current project status"},
+    {"question": "Who stays in control?", "answer": "The design keeps people in command of goals, authority, budgets and delegation. Humans can participate at required approval points, inspect outcomes and request intervention. Models cannot expand their own permissions. These oversight mechanisms still require implementation and testing.", "source": "api", "link": "API and human oversight"},
+    {"question": "Where will Eylema run?", "answer": "The proposed targets are Rust/Wasm in the browser with WebGPU, and native Rust execution on Linux. Browser, operating system, drivers and model artifacts remain explicit dependencies. Device compatibility and combined performance have not yet been validated.", "source": "architecture", "link": "Platform architecture"}
+  ],
+  "updated": "Project overview reviewed 11 October 2026.",
+  "language_note": "English is canonical. Turkish is a full companion.",
+  "roadmap_label": "03 — The road ahead",
+  "roadmap_title": ["Built in the open.", "Proven step by step."],
+  "roadmap_intro": "Eylema is in the architecture and API design stage. The runtime, model support and performance results are still ahead.",
+  "milestones": [
+    {"title": "Define the foundation", "text": "Architecture, API contracts and development protocols.", "status": "Design drafts"},
+    {"title": "Prove the first application", "text": "Rust execution, persistent state and a small browser 3D scene.", "status": "Planned"},
+    {"title": "Close the learning loop", "text": "Local models, permitted experience and evaluated improvements.", "status": "Planned"}
+  ],
+  "join_title": "Help shape what comes next.",
+  "join_text": "Explore the design. Challenge an assumption. Propose a focused change.",
+  "join_link": "Explore on GitHub",
+  "footer": "An open design. A deliberate path forward.",
+  "api_link": "API reference",
+  "not_found_title": "This page is not here.",
+  "not_found_text": "The address may have changed. Start again with the Eylema design.",
+  "home_link": "Back to Eylema"
+}

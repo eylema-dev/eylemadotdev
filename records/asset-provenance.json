@@ -1,0 +1,40 @@
+{
+  "assets": [
+    {
+      "path": "public/assets/apple-touch-icon.png",
+      "sha256": "1dca59b923a50e4bf585c7bd8d801b01fe66d4fc88372d4a4afcd08cfff67c2d",
+      "bytes": 1705,
+      "source": "Maintainer Eylema brand pack, 2026-10-11"
+    },
+    {
+      "path": "public/assets/eylema-loop-1024.webp",
+      "sha256": "d974e49963e3e9e27f70732a8b1b4ece21aefd8cdf186cf1023e8b538a753422",
+      "bytes": 47100,
+      "source": "Built-in Image Gen; sharp WebP encoding"
+    },
+    {
+      "path": "public/assets/eylema-loop-640.webp",
+      "sha256": "e01c21b2080e1e7f84146cd18af80bc281fa350f12fd4da9ce328d4ac0ad536b",
+      "bytes": 20088,
+      "source": "Built-in Image Gen; sharp WebP encoding"
+    },
+    {
+      "path": "public/assets/eylema.svg",
+      "sha256": "483180ff59cb4cab7b223bbabb4924e8908e021d11a49334a4299a904a8200ac",
+      "bytes": 587,
+      "source": "Maintainer Eylema brand pack, 2026-10-11"
+    },
+    {
+      "path": "public/assets/favicon.svg",
+      "sha256": "239ebfc0a82d6cb170efb79ce310f919f4337d8fff45dfb2028fc7f187daea2e",
+      "bytes": 273,
+      "source": "Maintainer Eylema brand pack, 2026-10-11"
+    },
+    {
+      "path": "public/assets/social.png",
+      "sha256": "d2229059277b85d061a4abd85fcff5d91d502154dffc67cb9a0fe28de4f42a0d",
+      "bytes": 42935,
+      "source": "Maintainer Eylema brand pack, 2026-10-11"
+    }
+  ]
+}

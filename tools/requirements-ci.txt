@@ -1,0 +1,2 @@
+# Python 3.14 standard library only. No direct or transitive CI packages.
+# The --require-hashes install command intentionally has nothing to install.

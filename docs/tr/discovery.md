@@ -1,0 +1,23 @@
+# Uluslararası arama ve üretken keşif
+
+[English](../en/discovery.md). 11 Ekim 2026'da incelendi.
+
+Varsayılan, coğrafi kısıtı olmayan İngilizce `/`, Türkçe `/tr/` adresindedir. Her sayfa kendi canonical adresini, iki dili ve İngilizce `x-default` değerini belirtir. Tarayıcı diline veya ülkeye göre otomatik yönlendirme yoktur. Tam metin, kaynaklar ve yanıtlar ilk HTML cevabındadır. `robots.txt` taramaya izin verir ve iki sayfalık sitemap'e işaret eder. Open Graph ve sosyal kartlar gerçek marka görselini kullanır.
+
+JSON-LD; Eylema'yı Organization/proje, WebSite ve kaynak atıflı WebPage olarak tanımlar. Kuruluş, yayınlanmış SoftwareApplication, fiyat, puan, performans veya müşteri iddiası içermez. Gizli içerik, anahtar kelime doldurma veya uydurma destek yoktur. Görünür tasarım aşaması açıklamaları meta verisiyle uyumludur.
+
+Google'ın güncel rehberi, temel SEO ilkelerini üretken aramaya uygular. Özel AI işaretlemesinin ve `llms.txt` dosyasının Google Search için gerekli olmadığını ve Google sıralamasını iyileştirmediğini açıkça belirtir. Bu nedenle özgün proje bilgisine, kaynaklara, açık dile, taranabilirliğe ve kullanılabilir sayfalara öncelik verilir. Özel AI dosyası veya FAQ zengin sonucu vaadi gerekmez. [Google üretken AI rehberi](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide), [yerelleştirilmiş sayfalar](https://developers.google.com/search/docs/specialty/international/localized-versions), [kuruluş verisi](https://developers.google.com/search/docs/appearance/structured-data/organization).
+
+## Yayına kabul
+
+1. Barındırma yetkisiyle **yalnızca `public/`** yayınlanır. GitHub kaynağı proje sahibinin isteğiyle herkese açıktır; web sunucusuna yalnızca site çıktısı konur. `eylema.dev` HTTPS'i kurulur; diğer sunucu adları ve HTTP, seçilen canonical HTTPS adresine yönlendirilir.
+2. `/` ve `/tr/` HTTP 200, varlıklar doğru MIME, eksik yollar gerçek HTTP 404 ve `404.html` ile sunulur. Genel SPA fallback kullanılmaz. Tekrarlanan `/index.html` biçimleri sunucuda dizin adreslerine yönlendirilir.
+3. HTML, CSS/JS, sitemap ve robots için yeniden doğrulama kullanılır. Varlık adları içerik özeti taşımadığı için immutable önbelleğe alınmaz. Sıkıştırma, TLS, güvenlik başlıkları ve CDN sunucu ayarlarıdır; yerelde doğrulanmış değildir.
+4. Yayınlanan tam revizyon, iki dil, canonical/hreflang, JSON-LD, robots/sitemap, hata yolu ve duyarlı tarayıcı davranışı yerel çıktıyla karşılaştırılır. Lighthouse/PageSpeed ve daha sonra saha Core Web Vitals ölçülür; yerel boyut bütçesi saha sonucu değildir.
+5. Hesap/alan adı yetkisiyle Google Search Console ve Bing Webmaster Tools doğrulanır, sitemap gönderilir, iki URL incelenir ve Search Console'daki üretken aramaya dahil olma kontrolleri değerlendirilir. Doğrulama anahtarı uydurulmaz; gönderilen URL indekslenmiş sayılmaz.
+
+## Uluslararası tanınırlığı geliştirmek
+
+Kanıt taşıyan yararlı İngilizce güncellemeler ve Türkçe eşlikçileri yayınlanır: bir mimari karar açıklanır, ilk gerçek uygulama çalıştığında anlatılır, ölçülmüş performans tekrar üretilebilir biçimde sunulur, kabul edilmiş değişikliklerin sınırları belgelenir. Her kapsamlı yeni makalede kalıcı adres, yazar/proje atfı, gerçek güncelleme tarihi ve kanıt bağlantıları bulunur. Yüzeysel dil veya anahtar kelime sayfaları topluca üretilmez.
+
+İndeksleme sonrası temel ölçümler kaydedilir: markalı/markasız gösterim ve tıklama, ülke/dil, indekslenen sayfalar, atıf veren yayınlar, yönlendirme trafiği ve nitelikli GitHub katkıları. Mevcut Search Console arama/üretken raporlarının kapsamı ve tarihi belirtilir. Büyüme yalnızca etiketlerle değil, süren özgün çalışma ve dağıtımla sağlanır. Tanıtım mesajları, sosyal paylaşımlar, analitik ve zamanlanmış izleme ayrı yetkili işlerdir. Sıralama, atıf ve dünya çapında tanınırlık ölçülecek sonuçlardır; garanti değildir.
