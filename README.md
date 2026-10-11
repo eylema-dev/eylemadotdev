@@ -1,7 +1,34 @@
 # Eylema website
 
-Private source repository for the bilingual promotional website at the intended domain `eylema.dev`.
+Public source repository [eylema-dev/eylemadotdev](https://github.com/eylema-dev/eylemadotdev) for the bilingual promotional website at the intended domain `eylema.dev`.
 
 Public project design: [eylema-dev/eylema](https://github.com/eylema-dev/eylema). This repository is separate from the planned Rust platform. Repository creation does not establish a deployed website.
 
 [Türkçe](README.tr.md)
+
+## Website
+
+English is the default at `/`; Turkish is at `/tr/`. Both are complete HTML documents, with reciprocal hreflang and self-canonical URLs. The architecture tabs progressively enhance content that is already in the HTML. FAQ answers use native disclosure controls. No accounts, analytics, cookies, hosted fonts, model API or third-party runtime package.
+
+Serve locally:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python tools/build.py
+.venv/bin/python -m http.server 4187 --bind 127.0.0.1 --directory public
+```
+
+Open `http://127.0.0.1:4187/`. The static publishing directory is `public/`; Python is development/CI tooling only. Do not expose the repository root or development server as production hosting.
+
+## Sources and checks
+
+- [Contributor workflow](CONTRIBUTING.md), [quality gates](docs/en/quality-gates.md), [tooling and assets](docs/en/tooling.md).
+- [SEO, generative discovery and launch](docs/en/discovery.md).
+- [Task plan](records/plan.md), [design specification](records/design.md) and [verification](records/verification.md).
+- `content/*.json`: reviewed bilingual copy; `tools/build.py`: deterministic HTML, JSON-LD, robots, sitemap and 404 generation; `public/assets/`: original CSS/JS and brand imagery.
+
+Run the exact verification commands in [AGENTS.md](AGENTS.md). Generated documents are committed; CI rejects stale output. Translation hashes record a review checkpoint, not proof of semantic equivalence. The site does not implement or demonstrate Eylema's planned Rust, GPU or model runtime.
+
+## Publication boundary
+
+The source repository is public, as explicitly requested by the maintainer. Published HTML, CSS, JavaScript and images will be publicly retrievable. Hosting, DNS, Search Console/Bing verification and live indexing are not provisioned by this code. See the launch checklist before publishing. No deployment or application performance claim follows from local checks.

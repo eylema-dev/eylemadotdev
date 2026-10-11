@@ -1,0 +1,61 @@
+{
+  "lang": "tr",
+  "locale": "tr_TR",
+  "title": "Eylema — Ajan Tabanlı Yapay Zekâ Web Platformu",
+  "description": "Eylema'yı keşfedin: Rust, yerel zekâ ve insan denetimini sürekli geliştirme ve işletim için birleştirmeyi hedefleyen, tasarım aşamasındaki web platformu.",
+  "skip": "İçeriğe geç",
+  "navigation": "Ana gezinme",
+  "language": "Dil seçimi",
+  "nav_architecture": "Mimari",
+  "nav_roadmap": "Yol haritası",
+  "headline": ["Niyetten", "eyleme.", "Tasarımla."],
+  "intro": "Sürekli geliştirme ve işletim için ajan tabanlı bir web platformu. Açık hedefler, yerel zekâ ve insan yönlendirmesi etrafında tasarlanıyor.",
+  "explore": "Mimariyi keşfet",
+  "follow": "GitHub'da takip et",
+  "status": "Şu anda tasarım aşamasında. Mimari ve API taslakları herkese açık.",
+  "principles": [
+    {"title": "Açık bir tasarım", "text": "Eylemden önce tanımlanan hedefler, yetkiler ve bütçeler."},
+    {"title": "Temelinde yerel zekâ", "text": "Tarayıcı ve Linux için planlanan bir Rust temeli."},
+    {"title": "Yönetim insanda", "text": "Gözlemle, müdahale et ve sıradaki adıma karar ver."}
+  ],
+  "architecture_label": "01 — Mimari",
+  "architecture_title": ["Tek bir sözleşme.", "Sürekli bir döngü."],
+  "architecture_intro": "Hedef: geliştirme, yerel işletim ve öğrenmeyi ortak, incelenebilir tanımlar üzerinden birleştirmek.",
+  "steps_label": "Önerilen mimariyi keşfet",
+  "steps": [
+    {"id": "define", "name": "Tanımla", "title": "Niyetle başla.", "text": "Durumu, hedefleri, izin verilen eylemleri, yetkileri ve kaynak bütçesini tanımla. İş başlamadan kabul koşullarını netleştir.", "link": "Mimariyi oku", "source": "architecture", "diagram": "Önerilen uygulama sözleşmesi", "root": "Hedef", "nodes": ["Durum", "Eylemler", "Yetki", "Bütçe"]},
+    {"id": "develop", "name": "Geliştir", "title": "İhtiyacı değişikliğe dönüştür.", "text": "Önerilen yapay zekâ geliştirme takımı, kapsamı belirli bir istekten plan, uygulama ve kontrolleri yapılmış PR'a ilerler. Bağımsız inceleme ve proje sahibinin kabulü ayrı eşiklerdir.", "link": "Takım protokolünü oku", "source": "teams", "diagram": "Önerilen geliştirme akışı", "root": "Kapsamı belirli istek", "nodes": ["Planla", "Uygula", "Doğrula", "İncele"]},
+    {"id": "operate", "name": "İşlet", "title": "Açık sınırlar içinde hareket et.", "text": "Kabul edilmiş yerel ajanların, gözlenen duruma göre eylem önermesi hedeflenir. Planlanan Rust yürütücüsü eylemden önce yetki, durum ve bütçeyi kontrol eder; ardından gerçek sonucu kaydeder.", "link": "API sözleşmesini oku", "source": "api", "diagram": "Önerilen işletim sözleşmesi", "root": "Gözlenen durum", "nodes": ["Öner", "Kontrol et", "Yürüt", "Gözlemle"]},
+    {"id": "learn", "name": "Öğren", "title": "İyileşmeye kanıt yön versin.", "text": "İzinli deneyimler ve insan düzeltmeleri, incelenmiş eğitim verisine dönüşebilir. Bir adayın kabulü için bağımsız görev ve donanım değerlendirmelerinden geçmesi gerekir.", "link": "Öğrenme protokolünü oku", "source": "learning", "diagram": "Önerilen öğrenme akışı", "root": "İzinli deneyim", "nodes": ["Veriyi seç", "Eğit", "Değerlendir", "Kabul et"]}
+  ],
+  "concept_note": "Kavramsal gösterim · çalışan bir platform değildir",
+  "human_title": "Her aşamada insan yönlendirmesi.",
+  "human_text": "Hedefi belirle. Kanıtı incele. Gerektiğinde müdahale et.",
+  "faq_label": "02 — Sorular ve yanıtlar",
+  "faq_title": ["Net bir fikir.", "Dürüst bir başlangıç."],
+  "faq_intro": "Eylema hakkında temel bilgiler. Özgün tasarım belgeleri bir tık uzağınızda.",
+  "questions": [
+    {"question": "Eylema nedir?", "answer": "Eylema, sürekli geliştirme ve işletim için önerilen, ajan tabanlı bir yapay zekâ web platformudur. Tasarımı; açık uygulama sözleşmelerini, yapay zekâ geliştirme takımlarını ve yerel ajanları, insanın belirlediği yetkilerle birleştirir.", "source": "architecture", "link": "Mimari v0.3"},
+    {"question": "Eylema'yı bugün kullanabilir miyim?", "answer": "Herkese açık mimari, API ve takım protokolü taslaklarını inceleyebilirsiniz. Henüz yayınlanmış bir Eylema çatısı, üretim API'si, desteklenen model çalışma zamanı veya performans ölçümü yoktur. Bu site tasarımı tanıtır; bir platform demosu değildir.", "source": "project", "link": "Güncel proje durumu"},
+    {"question": "Kontrol kimde kalır?", "answer": "Tasarımda hedef, yetki, bütçe ve yetki devrinin yönetimi insandadır. İnsanlar gerekli onay noktalarına katılabilir, sonuçları inceleyebilir ve müdahale isteyebilir. Modeller kendi izinlerini genişletemez. Bu denetim mekanizmalarının uygulanması ve test edilmesi henüz gereklidir.", "source": "api", "link": "API ve insan denetimi"},
+    {"question": "Eylema nerede çalışacak?", "answer": "Önerilen hedefler, WebGPU ile tarayıcıda Rust/Wasm ve Linux üzerinde yerel Rust yürütmesidir. Tarayıcı, işletim sistemi, sürücüler ve model varlıkları açık bağımlılıklar olarak kalır. Cihaz uyumluluğu ve birleşik performans henüz doğrulanmamıştır.", "source": "architecture", "link": "Platform mimarisi"}
+  ],
+  "updated": "Proje tanıtımı 11 Ekim 2026 tarihinde incelendi.",
+  "language_note": "İngilizce kanoniktir. Türkçe tam eşlikçisidir.",
+  "roadmap_label": "03 — Önümüzdeki yol",
+  "roadmap_title": ["Açıkça geliştir.", "Adım adım doğrula."],
+  "roadmap_intro": "Eylema, mimari ve API tasarımı aşamasında. Çalışma zamanı, model desteği ve performans sonuçları ilerideki adımlar.",
+  "milestones": [
+    {"title": "Temeli tanımla", "text": "Mimari, API sözleşmeleri ve geliştirme protokolleri.", "status": "Tasarım taslakları"},
+    {"title": "İlk uygulamayı doğrula", "text": "Rust yürütmesi, kalıcı durum ve tarayıcıda küçük bir 3B sahne.", "status": "Planlanıyor"},
+    {"title": "Öğrenme döngüsünü tamamla", "text": "Yerel modeller, izinli deneyim ve değerlendirilmiş iyileştirmeler.", "status": "Planlanıyor"}
+  ],
+  "join_title": "Sıradaki adımı birlikte şekillendirelim.",
+  "join_text": "Tasarımı keşfet. Bir varsayımı sorgula. Odaklı bir değişiklik öner.",
+  "join_link": "GitHub'da keşfet",
+  "footer": "Açık bir tasarım. Bilinçli bir ilerleyiş.",
+  "api_link": "API referansı",
+  "not_found_title": "Bu sayfa burada değil.",
+  "not_found_text": "Adres değişmiş olabilir. Eylema tasarımını keşfetmeye ana sayfadan devam edin.",
+  "home_link": "Eylema'ya dön"
+}

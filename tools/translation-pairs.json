@@ -1,0 +1,58 @@
+{
+  "pairs": [
+    {
+      "en": "README.md",
+      "tr": "README.tr.md",
+      "en_sha256": "34b4cf3160626073a7c94107f73a7d26933d25a6d9109160e2725810055e9735",
+      "tr_sha256": "8b238616bde580fa2c82edcbeb8b59ad57b5a313cc26eb49fffc129e7dbb1d53"
+    },
+    {
+      "en": "CONTRIBUTING.md",
+      "tr": "CONTRIBUTING.tr.md",
+      "en_sha256": "bb640aca15874764393c319854b82296cb492079c7274d4aac913cbad2a3204a",
+      "tr_sha256": "e395947712e724cbe0e6de636861aa68cc4b92e643d7183a873f0dbff7a99957"
+    },
+    {
+      "en": "content/en.json",
+      "tr": "content/tr.json",
+      "en_sha256": "48c5dcd665c9d36a802be98ea4d21462ee6134f9b87f8f792663b4aa38733e48",
+      "tr_sha256": "7006dda5e3e185c910b5e162b21b0ee4c234bd91d22f1ee7cc5597e11950788a"
+    },
+    {
+      "en": "records/plan.md",
+      "tr": "records/plan.tr.md",
+      "en_sha256": "f45b2cbc0d4a6d476759ef8f8c4180361f8a0d84d841c4c037a1919fadedbc21",
+      "tr_sha256": "b7c7d8aa94e445b988917ebf141e0c578db4b587b08328493a3986377fb11159"
+    },
+    {
+      "en": "records/design.md",
+      "tr": "records/design.tr.md",
+      "en_sha256": "f435d9408f45773e8e00375f2e463566b628999b544e383724d05986316bd273",
+      "tr_sha256": "bf3d2b39f49c0f731eb61df768ce99fbfe9adf35155d02af2c867f2a727df419"
+    },
+    {
+      "en": "docs/en/discovery.md",
+      "tr": "docs/tr/discovery.md",
+      "en_sha256": "5f539bdf7aae8ea985c2840e57c3437d8d015b68840fbeaf111db2ebe4df8868",
+      "tr_sha256": "fcb2257abc76c4e306efa46963751fd40f0bc3a91df17aa1d8229e9294a5a550"
+    },
+    {
+      "en": "docs/en/quality-gates.md",
+      "tr": "docs/tr/quality-gates.md",
+      "en_sha256": "ab333de3de0710e010a6454e15a3a39a691532aea3a230ceca25839d2597332a",
+      "tr_sha256": "5c3d8766b7871e5fe30163a93ef51de6e4a431c911c8653165dba2093b6448b7"
+    },
+    {
+      "en": "docs/en/tooling.md",
+      "tr": "docs/tr/tooling.md",
+      "en_sha256": "21ce69d708111eea01bc75948cf70e4f8bb09752baae9a5de2b7880fe8f889f0",
+      "tr_sha256": "0ac97a85ce86e105cfd2bff6d5dbd4333443cf04ac9b0127956652af29062a3a"
+    },
+    {
+      "en": "records/verification.md",
+      "tr": "records/verification.tr.md",
+      "en_sha256": "129f9a214a1b324d2186b698868d22a12607b857c7ed7ecfe9df7ad9a916a521",
+      "tr_sha256": "0ea0746b8c8555ec128a8d757566c5d54f50abe8d78b047269ec60d8368ac280"
+    }
+  ]
+}
