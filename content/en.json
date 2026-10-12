@@ -21,6 +21,9 @@
   "architecture_label": "01 — Architecture",
   "architecture_title": ["One contract.", "A continuous loop."],
   "architecture_intro": "The goal: connect development, local operation and learning through shared, inspectable definitions.",
+  "technology_alt": "EylemA architecture vision: human oversight guides Define, Develop, Operate and Learn around a shared contract and Rust core. Browser and local Linux targets, optional models, and evaluated learning are shown.",
+  "technology_caption": "The proposed architecture in one view. Design-stage illustration; not a running product or performance result.",
+  "technology_open": "Open full-size image (new tab)",
   "steps_label": "Explore the proposed architecture",
   "steps": [
     {"id": "define", "name": "Define", "title": "Start with intent.", "text": "Describe the state, goals, allowed actions, authority and resource budget. Make acceptance explicit before work begins.", "link": "Read the architecture", "source": "architecture", "diagram": "Proposed application contract", "root": "Goal", "nodes": ["State", "Actions", "Authority", "Budget"]},
@@ -40,7 +43,7 @@
     {"question": "Who stays in control?", "answer": "The design keeps people in command of goals, authority, budgets and delegation. Humans can participate at required approval points, inspect outcomes and request intervention. Models cannot expand their own permissions. These oversight mechanisms still require implementation and testing.", "source": "api", "link": "API and human oversight"},
     {"question": "Where will Eylema run?", "answer": "The proposed targets are Rust/Wasm in the browser with WebGPU, and native Rust execution on Linux. Browser, operating system, drivers and model artifacts remain explicit dependencies. Device compatibility and combined performance have not yet been validated.", "source": "architecture", "link": "Platform architecture"}
   ],
-  "updated": "Project overview reviewed 11 October 2026.",
+  "updated": "Project overview reviewed 12 October 2026.",
   "language_note": "English is canonical. Turkish is a full companion.",
   "roadmap_label": "03 — The road ahead",
   "roadmap_title": ["Built in the open.", "Proven step by step."],

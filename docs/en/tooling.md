@@ -16,4 +16,6 @@
 
 The ribbon is original generated illustrative art. Its prompt and intended use are in the [design record](../../records/design.md). The selected standalone image was encoded as `eylema-loop-1024.webp` (47,100 bytes) and `eylema-loop-640.webp` (20,088 bytes). It is a visual metaphor, not an implemented GPU scene or product screenshot.
 
+The [technology visual update](../../records/technology-visual.md) adds the maintainer-approved English poster and its Turkish counterpart, both 1672 × 941. Original PNGs are offered at full size; lossless WebP copies supply in-page previews. Built-in Image Gen matched the Turkish heading to the approved English EylemA mark and extracted a transparent wordmark from the same reference. Sharp 0.35.5 resized the wordmark to 960 × 320 while retaining alpha. The orange E icon is the initial E, followed by `ylemA`. The new header/footer image does not load an extra font or browser package. Original brand-pack assets remain available.
+
 The PR description checker and template were copied from the maintainer's pending Eylema contribution foundation; they remain first-party repository tooling. This site does not choose a distribution license for the platform or grant a trademark license.

@@ -16,4 +16,6 @@
 
 Şerit heykeli, özgün üretilmiş temsili görseldir. İstemi ve amacı [tasarım kaydındadır](../../records/design.tr.md). Seçilen ayrı görsel `eylema-loop-1024.webp` (47.100 bayt) ve `eylema-loop-640.webp` (20.088 bayt) olarak kodlandı. Görsel bir benzetmedir; uygulanmış GPU sahnesi veya ürün ekran görüntüsü değildir.
 
+[Teknoloji görseli güncellemesi](../../records/technology-visual.tr.md), proje sahibinin onayladığı İngilizce posteri ve Türkçe eşini ekler; ikisi de 1672 × 941 boyutundadır. Özgün PNG'ler tam boy sunulur; kayıpsız WebP kopyaları sayfa içi önizlemeleri sağlar. Yerleşik Image Gen, Türkçe başlığı onaylı İngilizce EylemA yazısıyla eşleştirmiş ve aynı referanstan şeffaf marka görselini çıkarmıştır. Sharp 0.35.5 marka görselini alfa kanalını koruyarak 960 × 320 boyutuna getirmiştir. İlk E, turuncu E simgesidir; ardından `ylemA` gelir. Yeni üst/alt başlık görseli ek font veya tarayıcı paketi yüklemez. Özgün marka paketi varlıkları erişilebilir kalır.
+
 PR açıklama denetleyicisi ve şablonu, proje sahibinin bekleyen Eylema katkı altyapısından kopyalandı; birinci taraf depo araçlarıdır. Bu site, platform için dağıtım lisansı seçmez veya marka lisansı vermez.

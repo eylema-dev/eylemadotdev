@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://eylema.dev"
 PROJECT = "https://github.com/eylema-dev/eylema"
-UPDATED = "2026-10-11"
+UPDATED = "2026-10-12"
 SOURCES = {
     "en": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.md"},
     "tr": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.tr.md"},
@@ -53,7 +53,7 @@ def render(data):
     url = ORIGIN + ("/tr/" if lang == "tr" else "/")
     e = lambda key: esc(data[key])
     heading = lambda key: "<br>".join(esc(line) for line in data[key])
-    logo = '<img src="/assets/eylema.svg" alt="Eylema" width="190" height="70">'
+    logo = '<img src="/assets/eylema-wordmark.webp" alt="EylemA" width="960" height="320" decoding="async">'
     languages = language_links(data)
     principles = "".join(f'<li><span class="index">{i:02d} /</span><h2>{esc(p["title"])}</h2><p>{esc(p["text"])}</p></li>' for i, p in enumerate(data["principles"], 1))
     tabs = "".join(f'<a id="step-{s["id"]}" href="#panel-{s["id"]}"><span>{i:02d}</span> {esc(s["name"])}</a>' for i, s in enumerate(data["steps"], 1))
@@ -106,7 +106,7 @@ def render(data):
 <body>
   <a class="skip-link" href="#main">{e('skip')}</a>
   <header class="site-header"><div class="shell header-inner">
-    <a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="Eylema">{logo}</a>
+    <a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="EylemA">{logo}</a>
     <nav class="main-nav" aria-label="{e('navigation')}"><a href="#architecture">{e('nav_architecture')}</a><a href="#roadmap">{e('nav_roadmap')}</a><a href="{PROJECT}">GitHub {arrow(True)}</a></nav>
     {languages}
   </div></header>
@@ -123,6 +123,12 @@ def render(data):
     <section class="architecture section shell" id="architecture" aria-labelledby="architecture-title">
       <p class="section-label">{e('architecture_label')}</p>
       <div class="section-heading"><h2 id="architecture-title">{heading('architecture_title')}</h2><p>{e('architecture_intro')}</p></div>
+      <figure class="technology-overview" id="technology">
+        <a class="technology-image" href="/assets/eylema-technology-{lang}.png" target="_blank" rel="noopener" aria-label="{e('technology_open')}">
+          <img src="/assets/eylema-technology-{lang}.webp" alt="{e('technology_alt')}" width="1672" height="941" loading="lazy" decoding="async">
+        </a>
+        <figcaption><p>{e('technology_caption')}</p><a class="text-link" href="/assets/eylema-technology-{lang}.png" target="_blank" rel="noopener">{e('technology_open')}{arrow(True)}</a></figcaption>
+      </figure>
       <nav class="steps" aria-label="{e('steps_label')}">{tabs}</nav>
       {''.join(panels)}
       <div class="section-note"><p>{e('human_title')}</p><p>{e('human_text')}</p></div>
@@ -137,7 +143,7 @@ def render(data):
     </section>
     <section class="invitation" aria-labelledby="join-title"><div class="shell invitation-inner"><div><h2 id="join-title">{e('join_title')}</h2><p>{e('join_text')}</p></div><a class="button button-light" href="{PROJECT}">{e('join_link')}{arrow(True)}</a></div></section>
   </main>
-  <footer class="site-footer shell"><a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="Eylema">{logo}</a><p>{e('footer')}</p><nav aria-label="{e('nav_architecture')}"><a href="{source(lang, 'architecture')}">{e('nav_architecture')}</a><a href="{source(lang, 'api')}">{e('api_link')}</a></nav>{languages}</footer>
+  <footer class="site-footer shell"><a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="EylemA">{logo}</a><p>{e('footer')}</p><nav aria-label="{e('nav_architecture')}"><a href="{source(lang, 'architecture')}">{e('nav_architecture')}</a><a href="{source(lang, 'api')}">{e('api_link')}</a></nav>{languages}</footer>
 </body>
 </html>
 '''

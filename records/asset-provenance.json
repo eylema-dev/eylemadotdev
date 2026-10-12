@@ -35,6 +35,36 @@
       "sha256": "d2229059277b85d061a4abd85fcff5d91d502154dffc67cb9a0fe28de4f42a0d",
       "bytes": 42935,
       "source": "Maintainer Eylema brand pack, 2026-10-11"
+    },
+    {
+      "path": "public/assets/eylema-technology-en.png",
+      "sha256": "5a10c89b6490e2a78d05e4a6ee5757b2802f4ddb2cfc8702f0e21b09311cb644",
+      "bytes": 1965439,
+      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+    },
+    {
+      "path": "public/assets/eylema-technology-en.webp",
+      "sha256": "a7079e5d743122967924eb503c3ee7da3e08b772f20b5b7783d26a592fc05291",
+      "bytes": 1352232,
+      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+    },
+    {
+      "path": "public/assets/eylema-technology-tr.png",
+      "sha256": "782eeac12767d29ce55a372d8619323b27a02b8eeb60214156fd22847f07c097",
+      "bytes": 1929088,
+      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+    },
+    {
+      "path": "public/assets/eylema-technology-tr.webp",
+      "sha256": "244de133a6d2594b288a8931da1144c53dffa0706164d9eecd3cdcbac62c3a31",
+      "bytes": 1321244,
+      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+    },
+    {
+      "path": "public/assets/eylema-wordmark.webp",
+      "sha256": "a40476141284047c73ecbbd8656df575a7deaaa9ecc424eb1da40e1aad889bce",
+      "bytes": 71804,
+      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
     }
   ]
 }

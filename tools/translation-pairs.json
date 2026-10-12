@@ -15,8 +15,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "48c5dcd665c9d36a802be98ea4d21462ee6134f9b87f8f792663b4aa38733e48",
-      "tr_sha256": "7006dda5e3e185c910b5e162b21b0ee4c234bd91d22f1ee7cc5597e11950788a"
+      "en_sha256": "b309ff3008191d4b01dec9c685b9dca2c4f0a784905da226e6d395e107444555",
+      "tr_sha256": "f08a4c2dc9220618665b405db9d30cd8ae10b5ad42a1ab189923e5d7f6bed653"
     },
     {
       "en": "records/plan.md",
@@ -45,8 +45,8 @@
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "9cc66937bdfa8167309300aa714b2bace57fc1983db648006c5172a8db73da46",
-      "tr_sha256": "0c14f7f043b0b21743e4346542c36e649ee9dfd66e556ee7019c8cdd0c444e11"
+      "en_sha256": "4835b6d932651cbc01aff895a3992eb525eb2997ab161e16e3a69e85335e96e0",
+      "tr_sha256": "491f21e64a3ba195e2b8f45a905181bfc1d1e5c869c86fd7d1245f6381ad3dd2"
     },
     {
       "en": "records/verification.md",
@@ -59,6 +59,12 @@
       "tr": "records/deployment.tr.md",
       "en_sha256": "d066fab8c7b58578845dea48f338c87df9f63faab63cce16df2b6e791ad7dc29",
       "tr_sha256": "137b35dff4e293a72bc0a25cf8d00ed2c6d4dbbd4196d5e32d8fb70cd23acfe7"
+    },
+    {
+      "en": "records/technology-visual.md",
+      "tr": "records/technology-visual.tr.md",
+      "en_sha256": "66c91c391035016d985f020264829b1e65fe5658f49c083163cc1c953b8c79cc",
+      "tr_sha256": "3c583d315ccd819a00d6390ca3d8e776dad45e691598eca4d0008d39287dc6e7"
     }
   ]
 }
