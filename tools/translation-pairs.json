@@ -57,14 +57,14 @@
     {
       "en": "records/deployment.md",
       "tr": "records/deployment.tr.md",
-      "en_sha256": "d066fab8c7b58578845dea48f338c87df9f63faab63cce16df2b6e791ad7dc29",
-      "tr_sha256": "137b35dff4e293a72bc0a25cf8d00ed2c6d4dbbd4196d5e32d8fb70cd23acfe7"
+      "en_sha256": "6f7b20ad55575884cfd37509c5d8aab5fc035355c2b7ef4eb5af52e226602bdd",
+      "tr_sha256": "3894b1b231d310adbbd2f019d30d1abcaf3a02f38236805b3f3bd7ed4fe3fa91"
     },
     {
       "en": "records/technology-visual.md",
       "tr": "records/technology-visual.tr.md",
-      "en_sha256": "66c91c391035016d985f020264829b1e65fe5658f49c083163cc1c953b8c79cc",
-      "tr_sha256": "3c583d315ccd819a00d6390ca3d8e776dad45e691598eca4d0008d39287dc6e7"
+      "en_sha256": "5c47dd6a46eba95231f43ef38a9388822e3f6685edbc0bf15d45480f70c1082a",
+      "tr_sha256": "97f0d10b488d1d1d34803616ea2946621cac849ac842ad412c5e786472350b6c"
     }
   ]
 }

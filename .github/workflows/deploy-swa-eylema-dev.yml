@@ -44,7 +44,16 @@ jobs:
           skip_app_build: true
           skip_api_build: true
           production_branch: main
-      - name: Verify live generated host
+      - name: Verify live canonical host
         env:
-          SITE_URL: ${{ steps.upload.outputs.static_web_app_url }}
-        run: python tools/check_live.py --url "$SITE_URL" --commit "$GITHUB_SHA"
+          SITE_URL: https://eylema.dev
+        run: |
+          for attempt in 1 2 3; do
+            if python tools/check_live.py --url "$SITE_URL" --commit "$GITHUB_SHA"; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              sleep 10
+            fi
+          done
+          exit 1
