@@ -21,6 +21,9 @@
   "architecture_label": "01 — Mimari",
   "architecture_title": ["Tek bir sözleşme.", "Sürekli bir döngü."],
   "architecture_intro": "Hedef: geliştirme, yerel işletim ve öğrenmeyi ortak, incelenebilir tanımlar üzerinden birleştirmek.",
+  "technology_alt": "EylemA mimari vizyonu: insan denetimi, ortak sözleşme ve Rust çekirdeği etrafındaki Tanımla, Geliştir, Çalıştır ve Öğren döngüsünü yönlendirir. Tarayıcı ve yerel Linux hedefleri, isteğe bağlı modeller ve değerlendirmeyle ilerleyen öğrenme gösterilir.",
+  "technology_caption": "Önerilen mimari tek bakışta. Tasarım aşamasını gösterir; çalışan ürün veya performans sonucu değildir.",
+  "technology_open": "Görseli tam boy aç (yeni sekme)",
   "steps_label": "Önerilen mimariyi keşfet",
   "steps": [
     {"id": "define", "name": "Tanımla", "title": "Niyetle başla.", "text": "Durumu, hedefleri, izin verilen eylemleri, yetkileri ve kaynak bütçesini tanımla. İş başlamadan kabul koşullarını netleştir.", "link": "Mimariyi oku", "source": "architecture", "diagram": "Önerilen uygulama sözleşmesi", "root": "Hedef", "nodes": ["Durum", "Eylemler", "Yetki", "Bütçe"]},
@@ -40,7 +43,7 @@
     {"question": "Kontrol kimde kalır?", "answer": "Tasarımda hedef, yetki, bütçe ve yetki devrinin yönetimi insandadır. İnsanlar gerekli onay noktalarına katılabilir, sonuçları inceleyebilir ve müdahale isteyebilir. Modeller kendi izinlerini genişletemez. Bu denetim mekanizmalarının uygulanması ve test edilmesi henüz gereklidir.", "source": "api", "link": "API ve insan denetimi"},
     {"question": "Eylema nerede çalışacak?", "answer": "Önerilen hedefler, WebGPU ile tarayıcıda Rust/Wasm ve Linux üzerinde yerel Rust yürütmesidir. Tarayıcı, işletim sistemi, sürücüler ve model varlıkları açık bağımlılıklar olarak kalır. Cihaz uyumluluğu ve birleşik performans henüz doğrulanmamıştır.", "source": "architecture", "link": "Platform mimarisi"}
   ],
-  "updated": "Proje tanıtımı 11 Ekim 2026 tarihinde incelendi.",
+  "updated": "Proje tanıtımı 12 Ekim 2026 tarihinde incelendi.",
   "language_note": "İngilizce kanoniktir. Türkçe tam eşlikçisidir.",
   "roadmap_label": "03 — Önümüzdeki yol",
   "roadmap_title": ["Açıkça geliştir.", "Adım adım doğrula."],
