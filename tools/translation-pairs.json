@@ -1,6 +1,12 @@
 {
   "pairs": [
     {
+      "en": "records/indexnow.md",
+      "tr": "records/indexnow.tr.md",
+      "en_sha256": "d7956c696eda25a8f023e51e686f264d9a7abcc51f5941562702339e5345c4dc",
+      "tr_sha256": "e186bfde2309f7891ccea0f539ee163669e1bf6634bba74aed457377ae5492b9"
+    },
+    {
       "en": "README.md",
       "tr": "README.tr.md",
       "en_sha256": "d1d2ff7edb1ac7d3c1fb078d30fe5ed7e95e399ccf4d07606d6c71c440d09c4d",
@@ -33,8 +39,8 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "5f539bdf7aae8ea985c2840e57c3437d8d015b68840fbeaf111db2ebe4df8868",
-      "tr_sha256": "fcb2257abc76c4e306efa46963751fd40f0bc3a91df17aa1d8229e9294a5a550"
+      "en_sha256": "4e5b127117bff0e7b3c59fe72c1c87f2856d444623d8a5f9706ac9f51505980d",
+      "tr_sha256": "9cdee7772e3d4421a42a253d80e5d47ae28ca8457f89f310e550afada346ed1c"
     },
     {
       "en": "docs/en/quality-gates.md",

@@ -16,6 +16,21 @@ Google'ın güncel rehberi, temel SEO ilkelerini üretken aramaya uygular. Özel
 4. Yayınlanan tam revizyon, iki dil, canonical/hreflang, JSON-LD, robots/sitemap, hata yolu ve duyarlı tarayıcı davranışı yerel çıktıyla karşılaştırılır. Lighthouse/PageSpeed ve daha sonra saha Core Web Vitals ölçülür; yerel boyut bütçesi saha sonucu değildir.
 5. Hesap/alan adı yetkisiyle Google Search Console ve Bing Webmaster Tools doğrulanır, sitemap gönderilir, iki URL incelenir ve Search Console'daki üretken aramaya dahil olma kontrolleri değerlendirilir. Doğrulama anahtarı uydurulmaz; gönderilen URL indekslenmiş sayılmaz.
 
+## IndexNow bildirimleri
+
+Üretici, `tools/build.py` içindeki `INDEXNOW_KEY` değerinden kökte UTF-8 sahiplik dosyası oluşturur. Anahtar herkese açık doğrulama verisidir; hesap kimlik bilgisi değildir. Üretilen çıktı kontrolleri eksik veya değişmiş içeriği reddeder; yayın manifesti ve canlı kontrol dosya özetini ve `text/plain` MIME türünü kapsar.
+
+Sayfalardan birindeki değişikliği yayınladıktan sonra sabit iki sayfalık gönderimi önizleyip bir kez gönderin:
+
+```sh
+.venv/bin/python tools/indexnow.py
+.venv/bin/python tools/indexnow.py --submit
+```
+
+Gönderim komutu önce canlı anahtar baytlarını ve iki canonical HTTP 200 adresini kontrol eder, ardından `https://api.indexnow.org/indexnow` adresine tek JSON POST gönderir. Doğrulama veya HTTP hatasında durur; otomatik tekrar denemez. HTTP 200 alındıyı, 202 ise alındı ile bekleyen anahtar doğrulamasını belirtir. Hiçbiri tarama, indeksleme veya sıralama kanıtı değildir. Anahtarı kullanırken dosyayı yayında tutun. [IndexNow protokolü](https://www.indexnow.org/documentation).
+
+Bildirim katılımcı arama motorlarına ulaşır; Search Console veya sitemap'in yerini almaz. Google ve Bing indeksleme durumu kendi webmaster araçlarında kontrol edilmelidir. İndekslemeyi zorlamak için periyodik değil, gerçek sayfa değişikliklerinde gönderin.
+
 ## Uluslararası tanınırlığı geliştirmek
 
 Kanıt taşıyan yararlı İngilizce güncellemeler ve Türkçe eşlikçileri yayınlanır: bir mimari karar açıklanır, ilk gerçek uygulama çalıştığında anlatılır, ölçülmüş performans tekrar üretilebilir biçimde sunulur, kabul edilmiş değişikliklerin sınırları belgelenir. Her kapsamlı yeni makalede kalıcı adres, yazar/proje atfı, gerçek güncelleme tarihi ve kanıt bağlantıları bulunur. Yüzeysel dil veya anahtar kelime sayfaları topluca üretilmez.
