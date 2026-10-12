@@ -25,4 +25,3 @@ Son WEB-003 kaynak ağacında yerel doğrulama geçti: macOS 27.0.1 arm64, Pytho
 Tarayıcı doğrulaması iki dilde de 1440 × 1000, 390 × 844 ve 320 × 844 boyutlarında geçti: sayfa kimliği, EylemA başlık görseli ve en-boy oranı, dile uygun poster, tam boy PNG sekmesi, dil geçişi, sekmeler ve klavye, SSS ve yatay taşma. JavaScript kapalıyken iki dilde de dört mimari panel görünür kaldı. İlgili konsol uyarısı, sayfa hatası veya başarısız varlık isteği gözlenmedi. Masaüstü, mobil ve görsel bölümü ekran görüntüleri incelendi; başlık seçilen turuncu-E/ylemA görünümüyle eşleşiyor. Ekran görüntüleri ve geçici QA betikleri yayın paketine eklenmez.
 
 Bağımsız inceleme: not_run; yalnızca öz inceleme. Çalışma zamanı/GPU/model/eğitim yürütmesi: bu statik site değişikliği için not_applicable. Yazım anında CI, birleştirme ve canlı yayın bekleniyor; gerçek son commit, iş akışı ve canlı sürüm kanıtı PR'da ve görev tesliminde kaydedilecektir.
-
