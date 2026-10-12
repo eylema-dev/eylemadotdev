@@ -1,11 +1,13 @@
 # İki dilli teknoloji görseli
 
-Görev WEB-003, revizyon 1, 12 Ekim 2026. [English](technology-visual.md).
+Görev WEB-003, revizyon 2, 12 Ekim 2026. [English](technology-visual.md).
 
 Yetki: proje sahibi, son İngilizce açıklayıcı görselin ve Türkçe eşinin eylema.dev üzerinde yayınlanmasını, ayrıca üst soldaki site başlığında görseldeki EylemA yazısının kullanılmasını açıkça istedi. Bu istek, kapsam içindeki PR'ı, mevcut üretim dalına birleştirmeyi ve mevcut iş akışıyla yayını kapsar.
 
 Temel: `878d785242fe75065e255c0fa44630aa4886ff8f`. Dal: `feat/bilingual-technology-visual`.
-İzinli yollar: `content/en.json`, `content/tr.json`, `tools/build.py`, üretilen `public/` sayfaları ve site haritası, `public/assets/` görselleri ve CSS, bu iki dilli görev kaydı, varlık kökeni/araç belgeleri ve çeviri parmak izleri. Çalışma zamanı, politika, iş akışı, DNS veya bulut kaynağı değişikliği yoktur.
+İzinli yollar: `content/en.json`, `content/tr.json`, `tools/build.py`, üretilen `public/` sayfaları ve site haritası, `public/assets/` görselleri ve CSS, bu iki dilli görev kaydı, varlık kökeni/araç belgeleri ve çeviri parmak izleri. Çalışma zamanı, politika, DNS veya bulut kaynağı değişikliği yoktur.
+
+Revizyon 2 ek düzeltmesi: görsel PR'ı #5, `346035b06ec3eccbd2accce1931ca3b25ffb99c5` olarak birleştirildi; eylema.dev üzerindeki 18 canlı dosya/hash/MIME kontrolü ve iki dilin tarayıcı kontrolleri geçti. İş akışının Azure adresi kontrolü, bu adres eylema.dev'e yönlendiği için başarısız oldu. Kapsamlı onarım bu birleşmeden `fix/canonical-release-verification` dalında başlar; ek izinli alanlar üretim akışının doğrulama hedefi/yeniden deneme bloğu, olumsuz testleri ve iki dilli yayın notlarıdır. Aynı açık yayın yetkisi geçerlidir. Hiçbir doğrulama koşulu kaldırılmaz veya gevşetilmez; üç sınırlı denemenin ardından geçmeyen kontrol başarısız kalır.
 
 Kabul:
 - Her dil sayfasında kendi açıklayıcı görseli, açıklayıcı alternatif metni ve tam boy görsel bağlantısı bulunur.

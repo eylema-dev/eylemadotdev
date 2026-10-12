@@ -1,11 +1,13 @@
 # Bilingual technology visual
 
-Task WEB-003, revision 1, 12 October 2026. [Türkçe](technology-visual.tr.md).
+Task WEB-003, revision 2, 12 October 2026. [Türkçe](technology-visual.tr.md).
 
 Authority: the maintainer explicitly requested publishing the latest English explanatory image and its Turkish counterpart on eylema.dev, and using the image's EylemA wordmark in the site's upper-left banner. This request authorizes the scoped PR, merge to the existing production branch, and publication through the existing workflow.
 
 Base: `878d785242fe75065e255c0fa44630aa4886ff8f`. Branch: `feat/bilingual-technology-visual`.
-Allowed paths: `content/en.json`, `content/tr.json`, `tools/build.py`, generated `public/` pages and sitemap, `public/assets/` image assets and CSS, this bilingual task record, asset provenance/tooling documentation, and translation fingerprints. No runtime, policy, workflow, DNS or cloud-resource changes.
+Allowed paths: `content/en.json`, `content/tr.json`, `tools/build.py`, generated `public/` pages and sitemap, `public/assets/` image assets and CSS, this bilingual task record, asset provenance/tooling documentation, and translation fingerprints. No runtime, policy, DNS or cloud-resource changes.
+
+Revision 2 follow-up: visual PR #5 was merged as `346035b06ec3eccbd2accce1931ca3b25ffb99c5`; eylema.dev passed all 18 live file/hash/MIME checks and both-language browser checks. The deployment workflow's generated-host check failed because that host redirects to eylema.dev. The scoped repair starts from that merge on `fix/canonical-release-verification` and additionally allows the production workflow's verification target/retry block, its negative tests and bilingual deployment notes. The same explicit publication authority applies. No validation criterion is removed or relaxed; a failed check remains a failure after three bounded attempts.
 
 Acceptance:
 - Both locale pages show the matching explanatory image with descriptive alternative text and a full-size image link.

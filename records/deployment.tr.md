@@ -1,5 +1,7 @@
 # Azure site yayını
 
+12 Ekim 2026 ek düzeltmesi: üretilen Azure alan adı, varlık yolları dahil canonical eylema.dev adresine HTTP 301 yönlendirmesi yapıyor. Üretim iş akışı; commit, dosya envanteri, hash, MIME, varlık yönlendirmesizliği ve gerçek 404 kontrollerini koruyarak doğrudan canonical adresi doğrular. Sürüm yayılımı için on saniye arayla en çok üç tam doğrulama denemesi yapılır; hiçbiri geçmezse akış yine başarısız olur. Bu düzeltme DNS, Azure kaynağı veya izin değişikliği içermez.
+
 [English](deployment.md). Görev `WEB-002 / 0.1.0`, 11 Ekim 2026.
 
 Yetki: proje sahibi PR #1'in birleştirilmesini ve `eylema.dev` sitesinin `umayos subscription`, `rg-eylema-dev`, `swa-eylema-dev`, Free katmanıyla yayınlanmasını açıkça istedi. Bu, genel portföy becerisindeki adlandırma/abonelik/özel alan adı kullanmama varsayımlarının yerini alır. Alan adı sağlayıcısı GoDaddy olarak belirtildi. Ücretli katman, DNS sağlayıcısı taşıma veya ilgisiz kaynak değişikliği yetkili değildir.

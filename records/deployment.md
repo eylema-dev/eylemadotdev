@@ -1,5 +1,7 @@
 # Azure website release
 
+12 October 2026 follow-up: the generated Azure hostname now responds with HTTP 301 to the canonical eylema.dev host, including asset paths. The production workflow verifies the canonical host directly, preserving the strict commit, file inventory, hash, MIME, no-asset-redirect and true-404 checks. It allows at most three complete verification attempts with ten-second gaps for release propagation, and still fails if none passes. No DNS, Azure resource or permission change is part of this correction.
+
 [Türkçe](deployment.tr.md). Task `WEB-002 / 0.1.0`, 11 October 2026.
 
 Authority: the maintainer explicitly requested merging PR #1 and publishing `eylema.dev` using `umayos subscription`, `rg-eylema-dev`, `swa-eylema-dev`, Free SKU. This overrides the generic portfolio skill's naming/subscription/no-custom-domain defaults. GoDaddy is the stated domain provider. No paid tier, DNS-provider migration or unrelated resource change is authorized.
