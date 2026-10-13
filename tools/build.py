@@ -9,6 +9,8 @@ ORIGIN = "https://eylema.dev"
 INDEXNOW_KEY = "1e76b9883a4f4a64a2ceffbbc439a640"
 PROJECT = "https://github.com/eylema-dev/eylema"
 UPDATED = "2026-10-12"
+# Actual page changes, independent of the reviewed design date and build time.
+PAGE_MODIFIED = {"en": "2026-10-13", "tr": "2026-10-13"}
 SOURCES = {
     "en": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.md"},
     "tr": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.tr.md"},
@@ -36,7 +38,7 @@ def schema(data):
         "@graph": [
             {"@type": "Organization", "@id": ORIGIN + "/#organization", "name": "Eylema", "url": ORIGIN + "/", "logo": ORIGIN + "/assets/apple-touch-icon.png", "sameAs": ["https://github.com/eylema-dev", PROJECT]},
             {"@type": "WebSite", "@id": ORIGIN + "/#website", "name": "Eylema", "url": ORIGIN + "/", "inLanguage": ["en", "tr"], "publisher": {"@id": ORIGIN + "/#organization"}},
-            {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": data["title"], "description": data["description"], "inLanguage": data["lang"], "dateModified": UPDATED, "isPartOf": {"@id": ORIGIN + "/#website"}, "about": {"@type": "Thing", "name": "Eylema", "description": data["questions"][0]["answer"]}, "citation": [source(data["lang"], key) for key in ("architecture", "api", "teams", "learning")]},
+            {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": data["title"], "description": data["description"], "inLanguage": data["lang"], "dateModified": PAGE_MODIFIED[data["lang"]], "isPartOf": {"@id": ORIGIN + "/#website"}, "about": {"@type": "Thing", "name": "Eylema", "description": data["questions"][0]["answer"]}, "citation": [source(data["lang"], key) for key in ("architecture", "api", "teams", "learning")]},
         ],
     }
 
@@ -157,8 +159,8 @@ def outputs(root=ROOT):
         result[path] = render(data)
     result["sitemap.xml"] = f'''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>{ORIGIN}/</loc><lastmod>{UPDATED}</lastmod></url>
-  <url><loc>{ORIGIN}/tr/</loc><lastmod>{UPDATED}</lastmod></url>
+  <url><loc>{ORIGIN}/</loc><lastmod>{PAGE_MODIFIED['en']}</lastmod></url>
+  <url><loc>{ORIGIN}/tr/</loc><lastmod>{PAGE_MODIFIED['tr']}</lastmod></url>
 </urlset>
 '''
     result["robots.txt"] = f"User-agent: *\nAllow: /\n\nSitemap: {ORIGIN}/sitemap.xml\n"

@@ -18,6 +18,8 @@ Google's current guidance applies established SEO fundamentals to generative sea
 
 ## IndexNow notifications
 
+`PAGE_MODIFIED` in `tools/build.py` records the actual modification date of each language page. It supplies sitemap `lastmod` and WebPage `dateModified`, independently of the visible design-review date. Update only the entry for a page that really changes; never use the current build/deployment time. After verifying the live release, send the change notification below once. [Bing freshness guidance](https://blogs.bing.com/webmaster/2025/7/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search/).
+
 The builder generates a root UTF-8 ownership file from `INDEXNOW_KEY` in `tools/build.py`. This key is public verification data, not an account credential. Generated-output checks reject missing or changed content; the release manifest and live checker include its hash and `text/plain` MIME type.
 
 After publishing a change to either page, preview the fixed two-page payload, then submit once:
