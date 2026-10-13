@@ -38,8 +38,8 @@
     "Sözleşmeyi koru."
   ],
   "architecture_intro": "Platform sözleşmeleri ve yaşam döngüsü Eylema’ya aittir. Algı, planlama, karar ve isteğe bağlı öngörü rolleri, Rust yetki sınırı ve gözlenen sonuçlar etrafında işbirliği yapar.",
-  "technology_alt": "12 Ekim 2026 tarihli önceki EylemA mimari görseli: insan denetimi, ortak Rust sözleşmesi, tarayıcı ve gelecekteki Linux yolları, isteğe bağlı modeller ve öğrenme. macOS öncelikli kapsamı ve yeni işbirlikçi döngü tasarımını önceleyen bir görseldir.",
-  "technology_caption": "Korunan bu görsel önceki uzun vadeli vizyonu gösterir. Güncel temel macOS hedeflidir; Linux gelecek kapsamındadır. Yeni mimari görseli ayrı bir çalışmada hazırlanacak.",
+  "technology_alt": "EylemA mimarisi v0.5: insanın yönettiği sabit sözleşmeler algı, planlama, karar, isteğe bağlı öngörü, XState iş akışı ve Rust yürütmesini bağlar. Gözlenen sonuçlar geri beslenir; izinli veri ayrı eğitim, değerlendirme ve güvenli model etkinleştirme döngüsünü izler.",
+  "technology_caption": "Mimari v0.5 önerisi. İşletim döngüsü gözlenen sonuçlar üretir; ayrı izinli veri döngüsü güvenli etkinleştirmeden önce harici Unsloth eğitimi ve bağımsız değerlendirme kullanır. Uygulanmış Rust görev temeli, entegre model/XState kabulünden ayrıdır.",
   "technology_open": "Görseli tam boy aç (yeni sekme)",
   "steps_label": "İşbirlikçi döngü tasarımını keşfet",
   "steps": [
@@ -216,5 +216,5 @@
       "link": "Güncel mimariyi oku"
     }
   ],
-  "technology_notice": "Önceki mimari vizyonu · görsel tarihi 12 Ekim 2026"
+  "technology_notice": "Mimari v0.5 · önerilen entegre platform"
 }

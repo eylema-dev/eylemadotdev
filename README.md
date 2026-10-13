@@ -27,7 +27,7 @@ Open `http://127.0.0.1:4187/`. The static publishing directory is `public/`; Pyt
 - [Task plan](records/plan.md), [design specification](records/design.md) and [verification](records/verification.md).
 - `content/*.json`: reviewed bilingual copy; `tools/build.py`: deterministic HTML, JSON-LD, robots, sitemap and 404 generation; `public/assets/`: original CSS/JS and brand imagery.
 
-Run the exact verification commands in [AGENTS.md](AGENTS.md). Generated documents are committed; CI rejects stale output. Translation hashes record a review checkpoint, not proof of semantic equivalence. Website checks do not establish core, GPU, model, training or full-product acceptance. The [current platform alignment](records/platform-alignment.md) cites a [pinned source snapshot](records/platform-source-snapshot.json); the existing 12 October architecture illustration is visibly historical and its replacement is deferred.
+Run the exact verification commands in [AGENTS.md](AGENTS.md). Generated documents are committed; CI rejects stale output. Translation hashes record a review checkpoint, not proof of semantic equivalence. Website checks do not establish core, GPU, model, training or full-product acceptance. The [current platform alignment](records/platform-alignment.md) cites a [pinned source snapshot](records/platform-source-snapshot.json); the [current v0.5 bilingual illustration](records/architecture-v05-visuals.md) separates the implemented task foundation from proposed integration. Its [built-in generation prompts](records/architecture-v05-prompts.json) and asset hashes are recorded.
 
 ## Publication boundary
 
