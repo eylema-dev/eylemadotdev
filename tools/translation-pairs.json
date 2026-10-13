@@ -45,8 +45,8 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "4e5b127117bff0e7b3c59fe72c1c87f2856d444623d8a5f9706ac9f51505980d",
-      "tr_sha256": "9cdee7772e3d4421a42a253d80e5d47ae28ca8457f89f310e550afada346ed1c"
+      "en_sha256": "796dafe9f19906c52686405ef25d5c4ccaa44fdf79735db00a34eb54c857a5c5",
+      "tr_sha256": "04f5fcf24538d82cfbc53a2e2063cdc4896ee824ca247a472653422c08764ac5"
     },
     {
       "en": "docs/en/quality-gates.md",
@@ -77,6 +77,12 @@
       "tr": "records/technology-visual.tr.md",
       "en_sha256": "5c47dd6a46eba95231f43ef38a9388822e3f6685edbc0bf15d45480f70c1082a",
       "tr_sha256": "97f0d10b488d1d1d34803616ea2946621cac849ac842ad412c5e786472350b6c"
+    },
+    {
+      "en": "records/bing-freshness.md",
+      "tr": "records/bing-freshness.tr.md",
+      "en_sha256": "d6526a9df3b98d12c928cd55f70c8e8a3bf090b3cfbfe50b7acaaa6aed3c201a",
+      "tr_sha256": "af8453d79fd0c4e22cab8d7e3b5cd1b02b80f256398d0784cb6e37c887ec95be"
     }
   ]
 }

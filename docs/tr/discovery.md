@@ -18,6 +18,8 @@ Google'ın güncel rehberi, temel SEO ilkelerini üretken aramaya uygular. Özel
 
 ## IndexNow bildirimleri
 
+`tools/build.py` içindeki `PAGE_MODIFIED`, her dildeki sayfanın gerçek değişiklik tarihini kaydeder. Görünür tasarım inceleme tarihinden bağımsız olarak sitemap `lastmod` ve WebPage `dateModified` alanlarını besler. Yalnızca gerçekten değişen sayfanın kaydını güncelleyin; mevcut derleme/dağıtım zamanını kullanmayın. Canlı revizyonu doğruladıktan sonra aşağıdaki değişiklik bildirimini bir kez gönderin. [Bing güncellik rehberi](https://blogs.bing.com/webmaster/2025/7/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search/).
+
 Üretici, `tools/build.py` içindeki `INDEXNOW_KEY` değerinden kökte UTF-8 sahiplik dosyası oluşturur. Anahtar herkese açık doğrulama verisidir; hesap kimlik bilgisi değildir. Üretilen çıktı kontrolleri eksik veya değişmiş içeriği reddeder; yayın manifesti ve canlı kontrol dosya özetini ve `text/plain` MIME türünü kapsar.
 
 Sayfalardan birindeki değişikliği yayınladıktan sonra sabit iki sayfalık gönderimi önizleyip bir kez gönderin:
