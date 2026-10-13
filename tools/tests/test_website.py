@@ -97,6 +97,26 @@ class WebsiteTests(unittest.TestCase):
         with self.assertRaisesRegex(CheckFailure, "Missing local"):
             self.check_modified(render(self.en))
 
+    def test_decorative_hero_cannot_be_exposed(self):
+        text = render(self.en).replace('<div class="hero-art" aria-hidden="true">', '<div class="hero-art">')
+        with self.assertRaisesRegex(CheckFailure, "hidden from assistive"):
+            self.check_modified(text)
+
+    def test_decorative_hero_cannot_have_blank_alternative(self):
+        self.en["hero_art_alt"] = ""
+        with self.assertRaisesRegex(CheckFailure, "localized crawler alternative"):
+            self.check_modified(render(self.en))
+
+    def test_hiding_does_not_leak_into_informative_images(self):
+        for data in (self.en, self.tr):
+            page = Page(render(data))
+            images = {attrs["src"]: (attrs, hidden) for attrs, hidden in page.images}
+            hero, hidden = images["/assets/eylema-loop-1024.webp"]
+            self.assertTrue(hidden)
+            self.assertEqual(hero["alt"], data["hero_art_alt"])
+            _, hidden = images[f'/assets/eylema-technology-{data["lang"]}.webp']
+            self.assertFalse(hidden)
+
     def test_all_answers_exist_without_javascript(self):
         page = Page(render(self.en))
         text = " ".join(page.data)

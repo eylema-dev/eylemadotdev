@@ -118,7 +118,7 @@ def render(data):
         <div class="hero-actions"><a class="button" href="#architecture">{e('explore')}{arrow()}</a><a class="text-link" href="{PROJECT}">{e('follow')}{arrow(True)}</a></div>
         <p class="project-status">{e('status')}</p>
       </div>
-      <div class="hero-art" aria-hidden="true"><img src="/assets/eylema-loop-1024.webp" srcset="/assets/eylema-loop-640.webp 640w, /assets/eylema-loop-1024.webp 1024w" sizes="(max-width: 720px) 100vw, 52vw" width="1024" height="1024" alt="" fetchpriority="high" decoding="async"></div>
+      <div class="hero-art" aria-hidden="true"><img src="/assets/eylema-loop-1024.webp" srcset="/assets/eylema-loop-640.webp 640w, /assets/eylema-loop-1024.webp 1024w" sizes="(max-width: 720px) 100vw, 52vw" width="1024" height="1024" alt="{e('hero_art_alt')}" fetchpriority="high" decoding="async"></div>
     </section>
     <div class="shell"><ul class="principles">{principles}</ul></div>
     <section class="architecture section shell" id="architecture" aria-labelledby="architecture-title">
