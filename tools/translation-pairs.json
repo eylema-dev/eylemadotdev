@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "d1d2ff7edb1ac7d3c1fb078d30fe5ed7e95e399ccf4d07606d6c71c440d09c4d",
-      "tr_sha256": "467a7184eb7feb247539a48b0d524d005c47e7fa70adfb7ae5d1d48b8353a68b"
+      "en_sha256": "ca0e62234bcd03fa847f344d597c11ddaaa8dfa822f1d9130b7f4377b2b59e32",
+      "tr_sha256": "73dbb9f095bb1e3c739dd4cb69c234dc2460ab82c2822cb33f2e29ded4941d13"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -27,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "592989011eb55602ad3a0ba377feb537a8e00c61adaf0b53dd5a148cdd09a3c1",
-      "tr_sha256": "b39fdfbff76c2fa6da7590e1ac4a3253012f158824cd866e586b386fc5cb52b6"
+      "en_sha256": "9e471bf321f286515bdfbde6c3cd06b402f8c86c20e3e0d4c3e6ed486b5cb512",
+      "tr_sha256": "81060555369a56e3b6b2b1779eeb948d7b0fa06295deb22333464fddd5591358"
     },
     {
       "en": "records/plan.md",
@@ -45,14 +45,14 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "796dafe9f19906c52686405ef25d5c4ccaa44fdf79735db00a34eb54c857a5c5",
-      "tr_sha256": "04f5fcf24538d82cfbc53a2e2063cdc4896ee824ca247a472653422c08764ac5"
+      "en_sha256": "64a0e26a21c52e70d9eeb82a196d0769966c54598f784c0bf8e9d514d900713b",
+      "tr_sha256": "5ac0892ce0e0d2cd760fc476858cdcb2a6942b3c71caadf02203f19c186e9f26"
     },
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "6d0c38d1aa42e26614418df20a80c2aac2b209d257ecb1dc49f4850bbabe994e",
-      "tr_sha256": "b4205beb227f44df686b781696e94eee0bc32bdbbbc27c8bec85486a74ca8bb0"
+      "en_sha256": "86ca7452fc462abedebf0d28130fa060b3f40f2dc672e9c548d337ba252f6830",
+      "tr_sha256": "aabd4181f6c6b7fcd750ef7e5049479ba69ccdc47993cadfb5107a0087fd393e"
     },
     {
       "en": "docs/en/tooling.md",
@@ -83,6 +83,12 @@
       "tr": "records/bing-freshness.tr.md",
       "en_sha256": "d6526a9df3b98d12c928cd55f70c8e8a3bf090b3cfbfe50b7acaaa6aed3c201a",
       "tr_sha256": "af8453d79fd0c4e22cab8d7e3b5cd1b02b80f256398d0784cb6e37c887ec95be"
+    },
+    {
+      "en": "records/platform-alignment.md",
+      "tr": "records/platform-alignment.tr.md",
+      "en_sha256": "f1c8de020c838eb49c72787dd4a0e39b5287b702c603e9f6e9692d703d1d40a9",
+      "tr_sha256": "7cc33575edf9089a5f22e227047c53094baf7fa6f763081df9366fc099402dad"
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 Hedef alan adı `eylema.dev` olan iki dilli tanıtım sitesinin herkese açık kaynak deposu: [eylema-dev/eylemadotdev](https://github.com/eylema-dev/eylemadotdev).
 
-Açık proje tasarımı: [eylema-dev/eylema](https://github.com/eylema-dev/eylema). Bu depo planlanan Rust platformundan ayrıdır. Deponun oluşturulması sitenin yayınlandığını göstermez.
+Açık platform projesi: [eylema-dev/eylema](https://github.com/eylema-dev/eylema). Bu depo uygulanmış yerel görev temelini ve önerilen işbirlikçi döngü platformunu tanıtır; Rust platformunu içermez veya çalıştırmaz.
 
 [English](README.md)
 
@@ -27,7 +27,7 @@ python3 -m venv .venv
 - [Görev planı](records/plan.tr.md), [tasarım tanımı](records/design.tr.md) ve [doğrulama](records/verification.tr.md).
 - `content/*.json`: incelenen iki dilli metin; `tools/build.py`: belirlenimci HTML, JSON-LD, robots, sitemap ve 404 üretimi; `public/assets/`: özgün CSS/JS ve marka görselleri.
 
-[AGENTS.md](AGENTS.md) içindeki doğrulama komutlarını aynen çalıştırın. Üretilen belgeler sürüm kontrolündedir; CI güncelliğini denetler. Çeviri özetleri inceleme kaydıdır, anlam eşdeğerliğinin kanıtı değildir. Site, Eylema'nın planlanan Rust, GPU veya model çalışma zamanını uygulamaz veya göstermez.
+[AGENTS.md](AGENTS.md) içindeki doğrulama komutlarını aynen çalıştırın. Üretilen belgeler sürüm kontrolündedir; CI güncelliğini denetler. Çeviri özetleri inceleme kaydıdır, anlam eşdeğerliğinin kanıtı değildir. Site kontrolleri çekirdek, GPU, model, eğitim veya tam ürün kabulünü kanıtlamaz. [Güncel platform hizalaması](records/platform-alignment.tr.md) [sabitlenmiş kaynak kaydına](records/platform-source-snapshot.json) dayanır; mevcut 12 Ekim mimari görseli açıkça tarihsel olarak etiketlenir, yenisinin üretimi ertelenmiştir.
 
 ## Yayınlama sınırı
 
