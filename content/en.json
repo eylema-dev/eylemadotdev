@@ -38,8 +38,8 @@
     "Keep the contract."
   ],
   "architecture_intro": "Eylema owns the platform contracts and lifecycle. Perception, planning, decision and optional prediction roles cooperate around Rust authority and observed results.",
-  "technology_alt": "Earlier EylemA architecture illustration from 12 October 2026: human oversight, a shared Rust contract, browser and prospective Linux paths, optional models and learning. It predates the macOS-first scope and the new cooperative-loop design.",
-  "technology_caption": "This retained illustration shows the earlier long-term vision. The current foundation targets macOS; Linux is future scope. The new architecture illustration will follow separately.",
+  "technology_alt": "EylemA architecture v0.5: human-governed stable contracts connect perception, planning, decision, optional prediction, XState workflow and Rust execution. Observed results feed back; permitted data follows a separate training, evaluation and safe model-activation loop.",
+  "technology_caption": "Architecture v0.5 proposal. The operating loop produces observed results; a separate permitted-data loop uses external Unsloth training and independent evaluation before safe activation. The implemented Rust task foundation is distinct from integrated model/XState acceptance.",
   "technology_open": "Open full-size image (new tab)",
   "steps_label": "Explore the cooperative loop design",
   "steps": [
@@ -216,5 +216,5 @@
       "link": "Read the current architecture"
     }
   ],
-  "technology_notice": "Earlier architecture vision · illustrated 12 October 2026"
+  "technology_notice": "Architecture v0.5 · proposed integrated platform"
 }

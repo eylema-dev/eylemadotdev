@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "ca0e62234bcd03fa847f344d597c11ddaaa8dfa822f1d9130b7f4377b2b59e32",
-      "tr_sha256": "73dbb9f095bb1e3c739dd4cb69c234dc2460ab82c2822cb33f2e29ded4941d13"
+      "en_sha256": "a37b64df2f5abd60eb10e74c0343b6c7aa0e4c63d8e09ce01e65d59f810dcac3",
+      "tr_sha256": "4a64a5283d6156ee747feccb888bae1f54401a7a2281f611228909bed43ecd72"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -27,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "9e471bf321f286515bdfbde6c3cd06b402f8c86c20e3e0d4c3e6ed486b5cb512",
-      "tr_sha256": "81060555369a56e3b6b2b1779eeb948d7b0fa06295deb22333464fddd5591358"
+      "en_sha256": "e8d4342247381de25cd386802291e46a5f256eb68ed965c32781e820763cd92c",
+      "tr_sha256": "e9ef996f2118bfd68b8f69f6bad62f2a438f174d77bf9eb28be1cfbb83282311"
     },
     {
       "en": "records/plan.md",
@@ -45,20 +45,20 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "64a0e26a21c52e70d9eeb82a196d0769966c54598f784c0bf8e9d514d900713b",
-      "tr_sha256": "5ac0892ce0e0d2cd760fc476858cdcb2a6942b3c71caadf02203f19c186e9f26"
+      "en_sha256": "c7871037ef2d489baa272df8c8308de853b2cbe1748515e63042bd2955586fdc",
+      "tr_sha256": "a62135d38a58058bdab3bd00899e57d753a74d2119f45ecb1a8b7d81a386c19c"
     },
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "86ca7452fc462abedebf0d28130fa060b3f40f2dc672e9c548d337ba252f6830",
-      "tr_sha256": "aabd4181f6c6b7fcd750ef7e5049479ba69ccdc47993cadfb5107a0087fd393e"
+      "en_sha256": "434136348e2b2fb609822c8d6a612f82040257ff3e602dd3b8617d0fe590ab35",
+      "tr_sha256": "1106dbcd011641247d35c042084a4367c40a8838c1e7dc531525bb5ee7f93bfe"
     },
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "4835b6d932651cbc01aff895a3992eb525eb2997ab161e16e3a69e85335e96e0",
-      "tr_sha256": "491f21e64a3ba195e2b8f45a905181bfc1d1e5c869c86fd7d1245f6381ad3dd2"
+      "en_sha256": "6d72f218259e49615b85942cac9d8e44373d35a524995d2a559e19361d3bfa61",
+      "tr_sha256": "e8b5d11adbcfb1962040149969851c636059a745d8cdffc5f560ee5ce20c9ada"
     },
     {
       "en": "records/verification.md",
@@ -89,6 +89,12 @@
       "tr": "records/platform-alignment.tr.md",
       "en_sha256": "f1c8de020c838eb49c72787dd4a0e39b5287b702c603e9f6e9692d703d1d40a9",
       "tr_sha256": "7cc33575edf9089a5f22e227047c53094baf7fa6f763081df9366fc099402dad"
+    },
+    {
+      "en": "records/architecture-v05-visuals.md",
+      "tr": "records/architecture-v05-visuals.tr.md",
+      "en_sha256": "61288cfa7c350935d58de0b8a16c27ef0bd47d7f6f2432824081adf0b3e328d7",
+      "tr_sha256": "70cbc359189b27de38603db9b428e0978a68ebbbbe34f15fc22291aaad323980"
     }
   ]
 }

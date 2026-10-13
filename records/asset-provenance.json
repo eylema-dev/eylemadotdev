@@ -38,27 +38,27 @@
     },
     {
       "path": "public/assets/eylema-technology-en.png",
-      "sha256": "5a10c89b6490e2a78d05e4a6ee5757b2802f4ddb2cfc8702f0e21b09311cb644",
-      "bytes": 1965439,
-      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+      "sha256": "20669e93aa9a706a44357902d95f3617d02709b72b895a5b311795cfe240cc87",
+      "bytes": 1813286,
+      "source": "Built-in Image Gen v0.5 architecture; English connectivity repair and Turkish localization; PNG plus lossless sharp 0.35.5 WebP, 2026-10-13"
     },
     {
       "path": "public/assets/eylema-technology-en.webp",
-      "sha256": "a7079e5d743122967924eb503c3ee7da3e08b772f20b5b7783d26a592fc05291",
-      "bytes": 1352232,
-      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+      "sha256": "12816a4a4dd258e65a9ae0c92017876eaf8e3f21c3e0066a15e1f6411077a418",
+      "bytes": 1230334,
+      "source": "Built-in Image Gen v0.5 architecture; English connectivity repair and Turkish localization; PNG plus lossless sharp 0.35.5 WebP, 2026-10-13"
     },
     {
       "path": "public/assets/eylema-technology-tr.png",
-      "sha256": "782eeac12767d29ce55a372d8619323b27a02b8eeb60214156fd22847f07c097",
-      "bytes": 1929088,
-      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+      "sha256": "978344df6d7dd756ce252c965e433c748ec5053377c071fbf2e06341a599192a",
+      "bytes": 1815813,
+      "source": "Built-in Image Gen v0.5 architecture; English connectivity repair and Turkish localization; PNG plus lossless sharp 0.35.5 WebP, 2026-10-13"
     },
     {
       "path": "public/assets/eylema-technology-tr.webp",
-      "sha256": "244de133a6d2594b288a8931da1144c53dffa0706164d9eecd3cdcbac62c3a31",
-      "bytes": 1321244,
-      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+      "sha256": "3bcf607443c3fe63c4a89d0b985be0aef3c6cabf878e729ba8cee5705ab096b1",
+      "bytes": 1245856,
+      "source": "Built-in Image Gen v0.5 architecture; English connectivity repair and Turkish localization; PNG plus lossless sharp 0.35.5 WebP, 2026-10-13"
     },
     {
       "path": "public/assets/eylema-wordmark.webp",
