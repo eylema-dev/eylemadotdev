@@ -26,11 +26,17 @@ class Page(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.tags, self.ids, self.references, self.data = [], [], [], []
         self.ld, self.in_ld = [], False
+        self.ancestors, self.images = [], []
         self.feed(text)
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
         self.tags.append((tag, attrs))
+        if tag == "img":
+            hidden = attrs.get("aria-hidden") == "true" or any(a.get("aria-hidden") == "true" for _, a in self.ancestors)
+            self.images.append((attrs, hidden))
+        if tag not in {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}:
+            self.ancestors.append((tag, attrs))
         if "id" in attrs:
             self.ids.append(attrs["id"])
         for key in ("href", "src"):
@@ -42,6 +48,10 @@ class Page(HTMLParser):
             self.in_ld = True
 
     def handle_endtag(self, tag):
+        for i in range(len(self.ancestors) - 1, -1, -1):
+            if self.ancestors[i][0] == tag:
+                del self.ancestors[i:]
+                break
         if tag == "script":
             self.in_ld = False
 
@@ -96,6 +106,9 @@ def check_page(public, relative, data):
         require(question["answer"] in plain, "FAQ answer missing from initial HTML")
     for step in data["steps"]:
         require(step["text"] in plain, "Architecture text missing from initial HTML")
+    hero_images = [(attrs, hidden) for attrs, hidden in page.images if attrs.get("src") == "/assets/eylema-loop-1024.webp"]
+    require(len(hero_images) == 1 and hero_images[0][1], "Decorative hero must remain hidden from assistive technology")
+    require(bool(data["hero_art_alt"].strip()) and hero_images[0][0].get("alt") == data["hero_art_alt"], "Decorative hero needs the localized crawler alternative")
     for tag, attrs in page.tags:
         require(not any(key.startswith("on") for key in attrs), "Inline event handler found")
         if tag == "img":

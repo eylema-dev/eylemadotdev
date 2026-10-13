@@ -1,6 +1,12 @@
 {
   "pairs": [
     {
+      "en": "records/image-alt.md",
+      "tr": "records/image-alt.tr.md",
+      "en_sha256": "1c7903d87f9746f0e34d0daa37f511d6890d31d02442b4b23d2e891242d15c84",
+      "tr_sha256": "140e7faa8a283b48908eb8cd407fe46527e16ac3507652d06d3bde7c01681705"
+    },
+    {
       "en": "records/indexnow.md",
       "tr": "records/indexnow.tr.md",
       "en_sha256": "d7956c696eda25a8f023e51e686f264d9a7abcc51f5941562702339e5345c4dc",
@@ -21,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "b309ff3008191d4b01dec9c685b9dca2c4f0a784905da226e6d395e107444555",
-      "tr_sha256": "f08a4c2dc9220618665b405db9d30cd8ae10b5ad42a1ab189923e5d7f6bed653"
+      "en_sha256": "592989011eb55602ad3a0ba377feb537a8e00c61adaf0b53dd5a148cdd09a3c1",
+      "tr_sha256": "b39fdfbff76c2fa6da7590e1ac4a3253012f158824cd866e586b386fc5cb52b6"
     },
     {
       "en": "records/plan.md",
