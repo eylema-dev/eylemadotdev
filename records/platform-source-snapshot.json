@@ -1,0 +1,38 @@
+{
+  "reviewedOn": "2026-10-13",
+  "architectureRevision": "0.5.0",
+  "repositories": {
+    "eylema": "0d9a67ec90ead329ecd2ce348be8ea8b4f0b0f52",
+    "eylema-docs-en": "c1fea4d743bd537f501978137029194d4c05de73",
+    "eylema-docs-tr": "45e3c97d2049f66d6faf3905318f117c711fc89a",
+    "devguide": "6552a1c443ccbe33db3e2cabb4ae37a5897009af"
+  },
+  "claims": [
+    {
+      "claim": "Product purpose: cooperative loops with stable role contracts and compatible model replacement",
+      "source": "https://github.com/eylema-dev/eylema-docs-en/blob/c1fea4d743bd537f501978137029194d4c05de73/docs/architecture.md",
+      "boundary": "Integrated role/model/XState/dataset capabilities are proposed, not accepted execution."
+    },
+    {
+      "claim": "Rust task core, recovery, loopback service, CLI and browser console are implemented",
+      "source": "https://github.com/eylema-dev/eylema/blob/0d9a67ec90ead329ecd2ce348be8ea8b4f0b0f52/README.md",
+      "boundary": "Published core evidence is cited; website tests do not rerun core or establish full-product/model/GPU acceptance."
+    },
+    {
+      "claim": "Console stop uses a non-human CLI session and is truthfully rejected with FORBIDDEN",
+      "source": "https://github.com/eylema-dev/eylema/blob/0d9a67ec90ead329ecd2ce348be8ea8b4f0b0f52/docs/en/local-browser.md",
+      "boundary": "Verified-person enrollment and stop acceptance remain separate gates."
+    },
+    {
+      "claim": "First target: one M4 Pro MacBook Pro, 24 GB, macOS; additional machines are inventory",
+      "source": "https://github.com/eylema-dev/eylema-docs-en/blob/c1fea4d743bd537f501978137029194d4c05de73/docs/project-structure.md",
+      "boundary": "No Linux, remote exposure or second-device acceptance claim."
+    },
+    {
+      "claim": "First-party core and docs use Apache-2.0",
+      "source": "https://github.com/eylema-dev/eylema/blob/0d9a67ec90ead329ecd2ce348be8ea8b4f0b0f52/LICENSE",
+      "boundary": "Website license, third-party assets, model weights and datasets are not relicensed."
+    }
+  ],
+  "architectureIllustration": "Existing 12 October image retained with visible historical notice. Replacement generation deferred by the maintainer."
+}

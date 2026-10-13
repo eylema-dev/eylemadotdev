@@ -125,6 +125,16 @@ class WebsiteTests(unittest.TestCase):
         for step in self.en["steps"]:
             self.assertIn(step["text"], text)
 
+    def test_missing_foundation_scope_fails(self):
+        text = render(self.en).replace(self.en["foundation_cards"][0]["text"], "")
+        with self.assertRaisesRegex(CheckFailure, "Foundation scope missing"):
+            self.check_modified(text)
+
+    def test_earlier_illustration_requires_visible_notice(self):
+        text = render(self.en).replace(self.en["technology_notice"], "")
+        with self.assertRaisesRegex(CheckFailure, "Earlier illustration"):
+            self.check_modified(text)
+
     def test_stale_translation_fails(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

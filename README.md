@@ -2,7 +2,7 @@
 
 Public source repository [eylema-dev/eylemadotdev](https://github.com/eylema-dev/eylemadotdev) for the bilingual promotional website at the intended domain `eylema.dev`.
 
-Public project design: [eylema-dev/eylema](https://github.com/eylema-dev/eylema). This repository is separate from the planned Rust platform. Repository creation does not establish a deployed website.
+Public platform project: [eylema-dev/eylema](https://github.com/eylema-dev/eylema). This repository introduces the implemented local task foundation and the proposed cooperative-loop platform; it does not contain or run the Rust platform.
 
 [Türkçe](README.tr.md)
 
@@ -27,7 +27,7 @@ Open `http://127.0.0.1:4187/`. The static publishing directory is `public/`; Pyt
 - [Task plan](records/plan.md), [design specification](records/design.md) and [verification](records/verification.md).
 - `content/*.json`: reviewed bilingual copy; `tools/build.py`: deterministic HTML, JSON-LD, robots, sitemap and 404 generation; `public/assets/`: original CSS/JS and brand imagery.
 
-Run the exact verification commands in [AGENTS.md](AGENTS.md). Generated documents are committed; CI rejects stale output. Translation hashes record a review checkpoint, not proof of semantic equivalence. The site does not implement or demonstrate Eylema's planned Rust, GPU or model runtime.
+Run the exact verification commands in [AGENTS.md](AGENTS.md). Generated documents are committed; CI rejects stale output. Translation hashes record a review checkpoint, not proof of semantic equivalence. Website checks do not establish core, GPU, model, training or full-product acceptance. The [current platform alignment](records/platform-alignment.md) cites a [pinned source snapshot](records/platform-source-snapshot.json); the existing 12 October architecture illustration is visibly historical and its replacement is deferred.
 
 ## Publication boundary
 

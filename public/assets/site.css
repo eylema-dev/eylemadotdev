@@ -62,7 +62,14 @@ h1 span { color: var(--orange); }
 .section-heading { display: grid; grid-template-columns: 1.5fr 1fr; gap: 65px; align-items: start; }
 .section h2 { font-size: clamp(42px, 5vw, 76px); font-weight: 650; line-height: 1.04; letter-spacing: -.05em; }
 .section-heading > p { padding-top: 6px; font-size: 23px; letter-spacing: -.018em; }
+.foundation-scope { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; margin-top: 48px; }
+.foundation-scope article { border-top: 1px solid var(--rule); padding-top: 24px; min-width: 0; }
+.scope-label, .technology-notice { color: var(--accent-text); font-size: 14px; line-height: 1.5; }
+.foundation-scope h3 { font-size: 30px; line-height: 1.15; letter-spacing: -.03em; margin-top: 16px; }
+.foundation-scope h3 + p { font-size: 19px; color: var(--muted); margin-top: 20px; }
+.foundation-scope .text-link { margin-top: 24px; font-size: 17px; }
 .technology-overview { margin-top: 48px; scroll-margin-top: 28px; }
+.technology-notice { margin-bottom: 14px; }
 .technology-image { display: block; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; cursor: zoom-in; }
 .technology-image:hover { border-color: var(--orange); }
 .technology-image img { width: 100%; height: auto; background: white; }
@@ -186,6 +193,9 @@ h1 span { color: var(--orange); }
   .section h2 { font-size: clamp(38px, 9.5vw, 60px); line-height: 1.08; }
   .section-heading, .faq-layout { grid-template-columns: 1fr; gap: 24px; }
   .section-heading > p, .faq-intro > p { font-size: 19px; padding: 0; }
+  .foundation-scope { grid-template-columns: 1fr; gap: 30px; margin-top: 30px; }
+  .foundation-scope h3 { font-size: 27px; }
+  .foundation-scope h3 + p { font-size: 18px; }
   .technology-overview { margin-top: 30px; }
   .technology-overview figcaption { align-items: flex-start; gap: 10px; }
   .technology-overview figcaption p { font-size: 13px; }

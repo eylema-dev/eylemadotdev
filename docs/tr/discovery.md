@@ -1,10 +1,10 @@
 # Uluslararası arama ve üretken keşif
 
-[English](../en/discovery.md). 11 Ekim 2026'da incelendi.
+[English](../en/discovery.md). 13 Ekim 2026'da incelendi.
 
 Varsayılan, coğrafi kısıtı olmayan İngilizce `/`, Türkçe `/tr/` adresindedir. Her sayfa kendi canonical adresini, iki dili ve İngilizce `x-default` değerini belirtir. Tarayıcı diline veya ülkeye göre otomatik yönlendirme yoktur. Tam metin, kaynaklar ve yanıtlar ilk HTML cevabındadır. `robots.txt` taramaya izin verir ve iki sayfalık sitemap'e işaret eder. Open Graph ve sosyal kartlar gerçek marka görselini kullanır.
 
-JSON-LD; Eylema'yı Organization/proje, WebSite ve kaynak atıflı WebPage olarak tanımlar. Kuruluş, yayınlanmış SoftwareApplication, fiyat, puan, performans veya müşteri iddiası içermez. Gizli içerik, anahtar kelime doldurma veya uydurma destek yoktur. Görünür tasarım aşaması açıklamaları meta verisiyle uyumludur.
+JSON-LD; Eylema'yı Organization/proje, WebSite ve kaynak atıflı WebPage olarak tanımlar. Kuruluş, yayınlanmış SoftwareApplication, fiyat, puan, performans veya müşteri iddiası içermez. Gizli içerik, anahtar kelime doldurma veya uydurma destek yoktur. Görünür metin ve metadata, uygulanmış yerel görev temelini önerilen işbirlikçi döngü/model/eğitim entegrasyonlarından ayırır. Önceki görselde görünür tarih/kapsam bildirimi vardır; yenisinin üretimi ertelenmiştir.
 
 Google'ın güncel rehberi, temel SEO ilkelerini üretken aramaya uygular. Özel AI işaretlemesinin ve `llms.txt` dosyasının Google Search için gerekli olmadığını ve Google sıralamasını iyileştirmediğini açıkça belirtir. Bu nedenle özgün proje bilgisine, kaynaklara, açık dile, taranabilirliğe ve kullanılabilir sayfalara öncelik verilir. Özel AI dosyası veya FAQ zengin sonucu vaadi gerekmez. [Google üretken AI rehberi](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide), [yerelleştirilmiş sayfalar](https://developers.google.com/search/docs/specialty/international/localized-versions), [kuruluş verisi](https://developers.google.com/search/docs/appearance/structured-data/organization).
 

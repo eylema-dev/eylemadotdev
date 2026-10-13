@@ -8,12 +8,12 @@ ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://eylema.dev"
 INDEXNOW_KEY = "1e76b9883a4f4a64a2ceffbbc439a640"
 PROJECT = "https://github.com/eylema-dev/eylema"
-UPDATED = "2026-10-12"
+UPDATED = "2026-10-13"
 # Actual page changes, independent of the reviewed design date and build time.
 PAGE_MODIFIED = {"en": "2026-10-13", "tr": "2026-10-13"}
 SOURCES = {
-    "en": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.md"},
-    "tr": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.tr.md"},
+    "en": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.md", "project_structure": "docs/project-structure.md", "core_browser": "docs/en/local-browser.md", "license": "LICENSE"},
+    "tr": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.tr.md", "project_structure": "docs/project-structure.md", "core_browser": "docs/tr/local-browser.md", "license": "LICENSE"},
 }
 
 
@@ -27,7 +27,7 @@ def arrow(external=False):
 
 
 def source(lang, name):
-    repository = PROJECT if name == "project" else f"https://github.com/eylema-dev/eylema-docs-{lang}"
+    repository = PROJECT if name in {"project", "core_browser", "license"} else f"https://github.com/eylema-dev/eylema-docs-{lang}"
     return f"{repository}/blob/main/{SOURCES[lang][name]}"
 
 
@@ -59,6 +59,7 @@ def render(data):
     logo = '<img src="/assets/eylema-wordmark.webp" alt="EylemA" width="960" height="320" decoding="async">'
     languages = language_links(data)
     principles = "".join(f'<li><span class="index">{i:02d} /</span><h2>{esc(p["title"])}</h2><p>{esc(p["text"])}</p></li>' for i, p in enumerate(data["principles"], 1))
+    foundation = "".join(f'<article><p class="scope-label">{esc(card["label"])}</p><h3>{esc(card["title"])}</h3><p>{esc(card["text"])}</p><a class="text-link" href="{source(lang, card["source"])}">{esc(card["link"])}{arrow(True)}</a></article>' for card in data["foundation_cards"])
     tabs = "".join(f'<a id="step-{s["id"]}" href="#panel-{s["id"]}"><span>{i:02d}</span> {esc(s["name"])}</a>' for i, s in enumerate(data["steps"], 1))
     panels = []
     for step in data["steps"]:
@@ -126,7 +127,9 @@ def render(data):
     <section class="architecture section shell" id="architecture" aria-labelledby="architecture-title">
       <p class="section-label">{e('architecture_label')}</p>
       <div class="section-heading"><h2 id="architecture-title">{heading('architecture_title')}</h2><p>{e('architecture_intro')}</p></div>
+      <div class="foundation-scope" aria-label="{e('foundation_label')}">{foundation}</div>
       <figure class="technology-overview" id="technology">
+        <p class="technology-notice">{e('technology_notice')}</p>
         <a class="technology-image" href="/assets/eylema-technology-{lang}.png" target="_blank" rel="noopener" aria-label="{e('technology_open')}">
           <img src="/assets/eylema-technology-{lang}.webp" alt="{e('technology_alt')}" width="1672" height="941" loading="lazy" decoding="async">
         </a>

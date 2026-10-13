@@ -106,6 +106,9 @@ def check_page(public, relative, data):
         require(question["answer"] in plain, "FAQ answer missing from initial HTML")
     for step in data["steps"]:
         require(step["text"] in plain, "Architecture text missing from initial HTML")
+    for card in data["foundation_cards"]:
+        require(all(card[key] in plain for key in ("label", "title", "text")), "Foundation scope missing from initial HTML")
+    require(data["technology_notice"] in plain and data["technology_caption"] in plain, "Earlier illustration needs visible scope notice")
     hero_images = [(attrs, hidden) for attrs, hidden in page.images if attrs.get("src") == "/assets/eylema-loop-1024.webp"]
     require(len(hero_images) == 1 and hero_images[0][1], "Decorative hero must remain hidden from assistive technology")
     require(bool(data["hero_art_alt"].strip()) and hero_images[0][0].get("alt") == data["hero_art_alt"], "Decorative hero needs the localized crawler alternative")
