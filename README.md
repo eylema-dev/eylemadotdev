@@ -8,6 +8,8 @@ Public platform project: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eylem
 
 [Türkçe](README.tr.md)
 
+Search policy: the maintainer requested removal from Google and Bing. The site now requires noindex on pages and resource responses, retains crawler access and disables IndexNow submission. Deployment, temporary removal requests and final index status are distinct; see [search visibility](docs/en/discovery.md).
+
 ## Website
 
 English is the default at `/`; Turkish is at `/tr/`. Both are complete HTML documents, with reciprocal hreflang and self-canonical URLs. The architecture tabs progressively enhance content that is already in the HTML. FAQ answers use native disclosure controls. No accounts, analytics, cookies, hosted fonts, model API or third-party runtime package.

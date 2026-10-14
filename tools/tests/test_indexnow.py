@@ -1,78 +1,43 @@
-"""Submission must stop before POST for invalid ownership or canonical routes."""
+"""The search-removal policy must prevent every submission network request."""
 import json
+import subprocess
 import sys
 import unittest
-from email.message import Message
 from pathlib import Path
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import indexnow
-
-
-def fetched(url, body=b"", content_type="text/html", status=200):
-    headers = Message()
-    headers["Content-Type"] = content_type
-    return status, headers, body, url
+from build import ROOT
 
 
 class IndexNowTests(unittest.TestCase):
-    def live(self):
-        data = indexnow.payload()
-        return [fetched(data["keyLocation"], data["key"].encode(), "text/plain"),
-                *(fetched(url) for url in data["urlList"])]
-
-    @patch("indexnow.urlopen")
-    @patch("indexnow.fetch")
-    def test_wrong_key_or_html_error_cannot_submit(self, fetch, post):
-        location = indexnow.payload()["keyLocation"]
-        for body, kind in [(b"different", "text/plain"), (b"not found", "text/html")]:
-            fetch.return_value = fetched(location, body, kind)
-            with self.assertRaisesRegex(ValueError, "Live IndexNow key"):
-                indexnow.submit()
-        post.assert_not_called()
-
-    @patch("indexnow.urlopen")
-    @patch("indexnow.fetch")
-    def test_missing_or_redirected_locale_cannot_submit(self, fetch, post):
-        for result in [fetched(indexnow.URLS[1], status=404), fetched(indexnow.URLS[0])]:
-            fetch.side_effect = self.live()[:2] + [result]
-            with self.assertRaisesRegex(ValueError, "Canonical page"):
-                indexnow.submit()
-        post.assert_not_called()
-
-    @patch("indexnow.urlopen")
-    @patch("indexnow.fetch")
-    def test_receipt_distinguishes_validation_and_indexing(self, fetch, post):
-        for status in (200, 202):
-            fetch.side_effect = self.live()
-            response = MagicMock()
-            response.__enter__.return_value = response
-            response.status = status
-            response.read.return_value = b""
-            post.return_value = response
-            receipt = indexnow.submit()
-            self.assertEqual(receipt["httpStatus"], status)
-            self.assertIn("not established", receipt["indexing"])
-            if status == 202:
-                self.assertIn("pending", receipt["result"])
-            request = post.call_args.args[0]
-            self.assertEqual(request.full_url, indexnow.ENDPOINT)
-            self.assertEqual(request.method, "POST")
-            self.assertEqual(json.loads(request.data)["urlList"], indexnow.URLS)
-
-    @patch("indexnow.urlopen")
-    @patch("indexnow.fetch")
-    def test_rejection_is_not_success_or_retried(self, fetch, post):
-        fetch.side_effect = self.live()
-        response = MagicMock()
-        response.__enter__.return_value = response
-        response.status = 429
-        response.read.return_value = b"rate limited"
-        post.return_value = response
-        with self.assertRaisesRegex(ValueError, "HTTP 429"):
+    @patch("urllib.request.urlopen")
+    @patch("socket.create_connection")
+    def test_submission_refuses_before_network(self, connect, request):
+        with self.assertRaisesRegex(ValueError, "disabled.*search-removal"):
             indexnow.submit()
-        post.assert_called_once()
+        request.assert_not_called()
+        connect.assert_not_called()
+
+    def test_cli_submission_is_nonzero_and_explicit(self):
+        result = subprocess.run([sys.executable, str(ROOT / "tools/indexnow.py"), "--submit"],
+                                capture_output=True, text=True, timeout=5)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("disabled", result.stderr)
+        self.assertEqual(result.stdout, "")
+
+    def test_preview_is_explicitly_non_submitting(self):
+        result = subprocess.run([sys.executable, str(ROOT / "tools/indexnow.py")],
+                                capture_output=True, text=True, timeout=5, check=True)
+        preview = json.loads(result.stdout)
+        self.assertEqual(preview["mode"], "preview_only")
+        self.assertIs(preview["submissionEnabled"], False)
+        self.assertEqual(preview["payload"], indexnow.payload())
+
+    def test_existing_public_ownership_bytes_are_retained(self):
+        data = indexnow.payload()
+        self.assertEqual((ROOT / "public" / f'{data["key"]}.txt').read_bytes(), data["key"].encode())
 
 
 if __name__ == "__main__":

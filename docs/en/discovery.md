@@ -1,40 +1,22 @@
-# International search and generative discovery
+# Search visibility and removal
 
-[Türkçe](../tr/discovery.md). Reviewed 13 October 2026.
+[Türkçe](../tr/discovery.md). Reviewed 14 October 2026.
 
-English is the default, geographically unrestricted language at `/`; Turkish is at `/tr/`. Each page is self-canonical and lists both languages plus English `x-default`. There is no automatic browser-language or country redirect. Full copy, sources and FAQ answers are in the first HTML response. `robots.txt` permits crawling and points to the two-page sitemap. Open Graph and social cards share a real brand asset.
+The maintainer requested removal of the existing `eylema.dev` site from Google and Bing results. The website remains a public site; search exclusion is not access control. No domain migration, DNS change, account/property deletion or verification-token removal is part of this change.
 
-JSON-LD describes Eyleme as an Organization/project, WebSite and WebPage with source citations. It makes no incorporation, shipped SoftwareApplication, price, rating, performance or customer claim. No hidden content, keyword stuffing or fabricated endorsements. Visible copy and metadata distinguish the implemented local task foundation from proposed cooperative-loop/model/training integrations. The current bilingual v0.7 illustration depicts the harness, optional roles, project RAG/memory and native-training plan, with an explicit integration-design notice and meaningful alternatives. Component evidence and bounded native human acceptance are attributed separately; no inference, complete-product or performance claim follows.
+Both English `/` and Turkish `/tr/` pages declare `noindex,follow`. Azure's global `X-Robots-Tag: noindex,follow` header covers HTML, images and other resources. The custom 404 remains noindex. Existing canonical/hreflang, social metadata, bilingual content and normal navigation remain available.
 
-Google's current guidance applies established SEO fundamentals to generative search. It explicitly says special AI markup and `llms.txt` are not required for Google Search and do not improve Google rankings. We therefore prioritize original project facts, source links, clear language, crawlability and usable pages. No special AI file or FAQ rich-result promise is needed. [Google generative AI guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide), [localized pages](https://developers.google.com/search/docs/specialty/international/localized-versions), [organization data](https://developers.google.com/search/docs/appearance/structured-data/organization).
+`robots.txt` explicitly allows crawling so search engines can fetch the removal directives. It does not advertise a sitemap. The existing `/sitemap.xml` remains valid XML with an empty URL set, avoiding further URL promotion. Blocking crawlers would prevent them from observing noindex. [Google noindex guidance](https://developers.google.com/search/docs/crawling-indexing/block-indexing), [Azure response headers](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration).
 
-## Launch acceptance
+## Submission and ownership
 
-1. After hosting authorization, deploy **only `public/`**. The GitHub source is public by maintainer request; only the website output belongs on the web host. Configure HTTPS for `eylema.dev`; redirect alternate hosts and HTTP to the chosen canonical HTTPS origin.
-2. Serve `/` and `/tr/` with HTTP 200, assets with correct MIME types, missing routes with real HTTP 404 and `404.html`. Avoid a blanket single-page-app fallback. Redirect duplicate `/index.html` forms to their directory URLs at the host.
-3. Use revalidation for HTML, CSS/JS, sitemap and robots. Asset names are not content-hashed, so do not cache them as immutable. Compression, TLS, security headers and CDN behavior are host configuration, unverified locally.
-4. Check the exact deployed revision, both languages, canonical/hreflang, JSON-LD, robots/sitemap, error route and responsive browser behavior against the local artifact. Measure Lighthouse/PageSpeed and later field Core Web Vitals; local size budgets are not field results.
-5. With account/domain authority, verify Google Search Console and Bing Webmaster Tools, submit the sitemap, inspect both URLs and review generative-search inclusion controls available in Search Console. Do not invent verification tokens or report a URL indexed just because it was submitted.
+IndexNow submission is disabled before any network request. `tools/indexnow.py` prints only an explicitly non-submitting preview; `--submit` exits nonzero with the search-removal policy reason. Public ownership-key bytes and previous submission receipts are preserved as historical evidence. Do not submit URLs or sitemaps to promote indexing while this policy applies.
 
-## IndexNow notifications
+## Acceptance and tracking
 
-`PAGE_MODIFIED` in `tools/build.py` records the actual modification date of each language page. It supplies sitemap `lastmod` and WebPage `dateModified`, independently of the visible design-review date. Update only the entry for a page that really changes; never use the current build/deployment time. After verifying the live release, send the change notification below once. [Bing freshness guidance](https://blogs.bing.com/webmaster/2025/7/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search/).
+1. Verify generated noindex meta, global headers, crawl-permitted robots, empty sitemap and refusal to submit. Negative tests reject indexable/duplicate/bot-specific directives, header overrides, crawl blocks and renewed URL promotion.
+2. Deploy only `public/` using the existing authorized Azure resource. Verify normal HTTPS, exact release commit, full resource hashes/MIME, global noindex headers, routing and true 404. Local `http.server` does not implement Azure headers; a source check is not header-deployment evidence.
+3. Preserve Google Search Console and Bing Webmaster properties and inspection access. The separate authorized owner-panel removal requests are temporary actions whose actual scope/status must be read back. [Google removal tool](https://support.google.com/webmasters/answer/9689846?hl=en), [Bing URL blocking](https://www.bing.com/webmasters/help/?topicid=264e560a).
+4. Record three distinct states: deployed persistent noindex, temporary removal-request status and observed search-engine indexing status. Neither an uploaded artifact nor an accepted removal request proves final removal. Search engines process these changes asynchronously.
 
-The builder generates a root UTF-8 ownership file from `INDEXNOW_KEY` in `tools/build.py`. This key is public verification data, not an account credential. Generated-output checks reject missing or changed content; the release manifest and live checker include its hash and `text/plain` MIME type.
-
-After publishing a change to either page, preview the fixed two-page payload, then submit once:
-
-```sh
-.venv/bin/python tools/indexnow.py
-.venv/bin/python tools/indexnow.py --submit
-```
-
-The submission command first checks the live key bytes and both canonical HTTP 200 routes, then sends one JSON POST to `https://api.indexnow.org/indexnow`. It stops on validation or HTTP errors and does not retry automatically. HTTP 200 confirms receipt; 202 means receipt with key validation pending. Neither establishes crawling, indexing or rankings. Keep the key file published while using it. [IndexNow protocol](https://www.indexnow.org/documentation).
-
-This notification reaches participating search engines; it does not replace Search Console or the sitemap. Google and Bing indexing status must still be checked in their own webmaster tools. Submit for actual page changes, not periodically to force indexing.
-
-## Building international recognition
-
-Publish useful, evidence-bearing English updates with Turkish companions: explain one architecture decision, walk through the first actual application when it runs, publish reproducible benchmarks when measured, and document accepted changes with their limits. Give each substantial future article a durable URL, author/project attribution, real update date and links to evidence. Do not mass-generate thin language or keyword pages.
-
-Track a baseline after indexing: branded and non-branded impressions/clicks, geography/language, indexed pages, referring publications, referral traffic and qualified GitHub contributions. Use the available Search Console search/generative reports; record report scope and date. Growth requires continued original work and distribution, not only tags. Outreach, social posting, analytics installation and recurring monitoring are separate authorized work. Rankings, citations and worldwide recognition are outcomes to measure, not guarantees.
+Canonical DNS currently returns NXDOMAIN in the 14 October 2026 verification. Azure upload can succeed while normal canonical verification fails. Domain decisions are deferred; keep the failure visible and leave DNS and existing redirects untouched. Crawlers cannot observe the directives until the host resolves. See the [current removal record](../../records/search-removal.md). A future direct maintainer decision is required to restore indexing or resume submissions.
