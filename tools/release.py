@@ -27,8 +27,8 @@ def manifest(public, commit):
     return {
         "commit": commit,
         "builtAt": datetime.now(timezone.utc).isoformat(),
-        "repository": "https://github.com/eylema-dev/eylemadotdev",
-        "scope": "Eylema promotional website only; not a platform runtime release",
+        "repository": "https://github.com/eyleme-dev/eylemadotdev",
+        "scope": "Eyleme promotional website only; not a platform runtime release",
         "files": file_hashes(public),
     }
 

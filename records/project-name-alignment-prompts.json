@@ -1,0 +1,23 @@
+{
+  "task": "WEB-014",
+  "date": "2026-10-14",
+  "tool": "built-in Image Gen",
+  "calls": [
+    {
+      "asset": "public/assets/eylema-wordmark.webp",
+      "transparent_background": true,
+      "prompt": "Use case: text-localization. Edit target: the attached transparent EylemA brand wordmark. This is a narrowly scoped approved product rename. Change ONLY the final dark uppercase A into a dark lowercase e matching the existing lowercase e shape, baseline, weight, size and dark ink color, so the complete mark reads Eyleme (E-y-l-e-m-e). Keep the orange stylized E icon, every other letter, spacing, layout, palette and transparent background unchanged. No redesign, extra icon, shadows, outlines or new wording. Preserve the wide 3:1 composition and alpha transparency. Return the updated wordmark as an image."
+    },
+    {
+      "asset": "public/assets/eylema-technology-en.png",
+      "transparent_background": false,
+      "prompt": "Use case: text-localization. Edit target: this existing English Eylema architecture v0.7 infographic. Perform ONLY an approved product rename in the large top-left wordmark: replace its final dark uppercase A with a dark lowercase e, so the complete wordmark reads Eyleme, E-y-l-e-m-e. Keep its orange stylized initial E and dark thick typography. Preserve every other pixel/content as closely as possible: all English wording, diagrams, every arrow direction and connection, 3D icons, white background, gray cards, orange/ink palette, spacing and 1672 by 941 composition. In particular do not edit the bottom-right actual domain eylema.dev; it stays exactly eylema.dev. Do not change status warnings, planned training, model roles, human permission controls or anything else. No extra marks or new content. This is a one-letter brand rename, not redesign."
+    },
+    {
+      "asset": "public/assets/eylema-technology-tr.png",
+      "transparent_background": false,
+      "prompt": "Use case: text-localization. Edit target: this existing Turkish Eylema architecture v0.7 infographic. Perform ONLY an approved product rename in the large top-left wordmark: replace its final dark uppercase A with a dark lowercase e, so the complete wordmark reads Eyleme, E-y-l-e-m-e. Keep its orange stylized initial E and dark thick typography. Preserve every other pixel/content as closely as possible: all Turkish wording and diacritics, diagrams, every arrow direction and connection, 3D icons, white background, gray cards, orange/ink palette, spacing and 1672 by 941 composition. In particular do not edit the bottom-right actual domain eylema.dev; it stays exactly eylema.dev. Do not change status warnings, planned training, model roles, human permission controls or anything else. No extra marks or new content. This is a one-letter brand rename, not redesign."
+    }
+  ],
+  "encoding": "Bundled sharp 0.35.5: lossless WebP; transparent wordmark fitted to 960 x 320, poster source dimensions 1672 x 941 retained. No website runtime dependency added."
+}

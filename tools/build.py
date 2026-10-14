@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://eylema.dev"
 INDEXNOW_KEY = "1e76b9883a4f4a64a2ceffbbc439a640"
-PROJECT = "https://github.com/eylema-dev/eylema"
+PROJECT = "https://github.com/eyleme-dev/eyleme"
 UPDATED = "2026-10-14"
 # Actual page changes, independent of the reviewed design date and build time.
 PAGE_MODIFIED = {"en": "2026-10-14", "tr": "2026-10-14"}
@@ -27,7 +27,7 @@ def arrow(external=False):
 
 
 def source(lang, name):
-    repository = PROJECT if name in {"project", "license"} or name.startswith("core_") else f"https://github.com/eylema-dev/eylema-docs-{lang}"
+    repository = PROJECT if name in {"project", "license"} or name.startswith("core_") else f"https://github.com/eyleme-dev/eylema-docs-{lang}"
     return f"{repository}/blob/main/{SOURCES[lang][name]}"
 
 
@@ -36,9 +36,9 @@ def schema(data):
     return {
         "@context": "https://schema.org",
         "@graph": [
-            {"@type": "Organization", "@id": ORIGIN + "/#organization", "name": "Eylema", "url": ORIGIN + "/", "logo": ORIGIN + "/assets/apple-touch-icon.png", "sameAs": ["https://github.com/eylema-dev", PROJECT]},
-            {"@type": "WebSite", "@id": ORIGIN + "/#website", "name": "Eylema", "url": ORIGIN + "/", "inLanguage": ["en", "tr"], "publisher": {"@id": ORIGIN + "/#organization"}},
-            {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": data["title"], "description": data["description"], "inLanguage": data["lang"], "dateModified": PAGE_MODIFIED[data["lang"]], "isPartOf": {"@id": ORIGIN + "/#website"}, "about": {"@type": "Thing", "name": "Eylema", "description": data["questions"][0]["answer"]}, "citation": [source(data["lang"], key) for key in ("architecture", "api", "teams", "learning")]},
+            {"@type": "Organization", "@id": ORIGIN + "/#organization", "name": "Eyleme", "url": ORIGIN + "/", "logo": ORIGIN + "/assets/apple-touch-icon.png", "sameAs": ["https://github.com/eyleme-dev", PROJECT]},
+            {"@type": "WebSite", "@id": ORIGIN + "/#website", "name": "Eyleme", "url": ORIGIN + "/", "inLanguage": ["en", "tr"], "publisher": {"@id": ORIGIN + "/#organization"}},
+            {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": data["title"], "description": data["description"], "inLanguage": data["lang"], "dateModified": PAGE_MODIFIED[data["lang"]], "isPartOf": {"@id": ORIGIN + "/#website"}, "about": {"@type": "Thing", "name": "Eyleme", "description": data["questions"][0]["answer"]}, "citation": [source(data["lang"], key) for key in ("architecture", "api", "teams", "learning")]},
         ],
     }
 
@@ -56,7 +56,7 @@ def render(data):
     url = ORIGIN + ("/tr/" if lang == "tr" else "/")
     e = lambda key: esc(data[key])
     heading = lambda key: "<br>".join(esc(line) for line in data[key])
-    logo = '<img src="/assets/eylema-wordmark.webp" alt="EylemA" width="960" height="320" decoding="async">'
+    logo = '<img src="/assets/eylema-wordmark.webp" alt="Eyleme" width="960" height="320" decoding="async">'
     languages = language_links(data)
     principles = "".join(f'<li><span class="index">{i:02d} /</span><h2>{esc(p["title"])}</h2><p>{esc(p["text"])}</p></li>' for i, p in enumerate(data["principles"], 1))
     foundation = "".join(f'<article><p class="scope-label">{esc(card["label"])}</p><h3>{esc(card["title"])}</h3><p>{esc(card["text"])}</p><a class="text-link" href="{source(lang, card["source"])}">{esc(card["link"])}{arrow(True)}</a></article>' for card in data["foundation_cards"])
@@ -87,7 +87,7 @@ def render(data):
   <link rel="alternate" hreflang="tr" href="{ORIGIN}/tr/">
   <link rel="alternate" hreflang="x-default" href="{ORIGIN}/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Eylema">
+  <meta property="og:site_name" content="Eyleme">
   <meta property="og:title" content="{e('title')}">
   <meta property="og:description" content="{e('description')}">
   <meta property="og:url" content="{url}">
@@ -96,7 +96,7 @@ def render(data):
   <meta property="og:image" content="{ORIGIN}/assets/social.png">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="640">
-  <meta property="og:image:alt" content="Eylema — Continuous development. Continuous operations.">
+  <meta property="og:image:alt" content="Eyleme — Continuous development. Continuous operations.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{e('title')}">
   <meta name="twitter:description" content="{e('description')}">
@@ -110,7 +110,7 @@ def render(data):
 <body>
   <a class="skip-link" href="#main">{e('skip')}</a>
   <header class="site-header"><div class="shell header-inner">
-    <a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="EylemA">{logo}</a>
+    <a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="Eyleme">{logo}</a>
     <nav class="main-nav" aria-label="{e('navigation')}"><a href="#architecture">{e('nav_architecture')}</a><a href="#roadmap">{e('nav_roadmap')}</a><a href="{PROJECT}">GitHub {arrow(True)}</a></nav>
     {languages}
   </div></header>
@@ -149,7 +149,7 @@ def render(data):
     </section>
     <section class="invitation" aria-labelledby="join-title"><div class="shell invitation-inner"><div><h2 id="join-title">{e('join_title')}</h2><p>{e('join_text')}</p></div><a class="button button-light" href="{PROJECT}">{e('join_link')}{arrow(True)}</a></div></section>
   </main>
-  <footer class="site-footer shell"><a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="EylemA">{logo}</a><p>{e('footer')}</p><nav aria-label="{e('nav_architecture')}"><a href="{source(lang, 'architecture')}">{e('nav_architecture')}</a><a href="{source(lang, 'api')}">{e('api_link')}</a></nav>{languages}</footer>
+  <footer class="site-footer shell"><a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="Eyleme">{logo}</a><p>{e('footer')}</p><nav aria-label="{e('nav_architecture')}"><a href="{source(lang, 'architecture')}">{e('nav_architecture')}</a><a href="{source(lang, 'api')}">{e('api_link')}</a></nav>{languages}</footer>
 </body>
 </html>
 '''
@@ -169,7 +169,7 @@ def outputs(root=ROOT):
     result["robots.txt"] = f"User-agent: *\nAllow: /\n\nSitemap: {ORIGIN}/sitemap.xml\n"
     result[f"{INDEXNOW_KEY}.txt"] = INDEXNOW_KEY
     result["404.html"] = '''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Eylema</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/site.css"><link rel="icon" href="/assets/favicon.svg"></head><body><main class="not-found shell"><img src="/assets/eylema.svg" alt="Eylema" width="190" height="70"><p class="section-label">404</p><h1>This page is not here.</h1><p>The address may have changed.</p><a class="button" href="/">Back to Eylema</a><p lang="tr">Bu sayfa bulunamadı. <a class="text-link" href="/tr/">Türkçe ana sayfaya dön</a></p></main></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Eyleme</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/site.css"><link rel="icon" href="/assets/favicon.svg"></head><body><main class="not-found shell"><img src="/assets/eylema.svg" alt="Eyleme" width="190" height="70"><p class="section-label">404</p><h1>This page is not here.</h1><p>The address may have changed.</p><a class="button" href="/">Back to Eyleme</a><p lang="tr">Bu sayfa bulunamadı. <a class="text-link" href="/tr/">Türkçe ana sayfaya dön</a></p></main></body></html>
 '''
     return result
 

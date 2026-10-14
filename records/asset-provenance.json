@@ -20,9 +20,9 @@
     },
     {
       "path": "public/assets/eylema.svg",
-      "sha256": "483180ff59cb4cab7b223bbabb4924e8908e021d11a49334a4299a904a8200ac",
+      "sha256": "0d6afbcdf6f35b22b613e2e0639e0742491f46fb3297193e0a2cb2de57ee1207",
       "bytes": 587,
-      "source": "Maintainer Eylema brand pack, 2026-10-11"
+      "source": "Eyleme product rename, 2026-10-14: canonical SVG source regeneration"
     },
     {
       "path": "public/assets/favicon.svg",
@@ -32,39 +32,39 @@
     },
     {
       "path": "public/assets/social.png",
-      "sha256": "d2229059277b85d061a4abd85fcff5d91d502154dffc67cb9a0fe28de4f42a0d",
-      "bytes": 42935,
-      "source": "Maintainer Eylema brand pack, 2026-10-11"
+      "sha256": "24619125c213851f742cdb29180b038985ff78e0f6c9a500bcf0ffc2386f09b1",
+      "bytes": 42562,
+      "source": "Eyleme product rename, 2026-10-14: canonical SVG source regeneration"
     },
     {
       "path": "public/assets/eylema-technology-en.png",
-      "sha256": "d9469a08747ab047321b3919544bf256aab9bd8ca67c34d89e8b86295be5402d",
-      "bytes": 1857684,
-      "source": "Built-in Image Gen v0.7 architecture; English redesign, two bounded arrow repairs and exact Turkish localization; PNG plus lossless sharp 0.35.5 WebP, 2026-10-14"
+      "sha256": "e007c85d0c0e216f800cde278c49cd568e8bcb444586cd6e423b46a47aee60a8",
+      "bytes": 1857523,
+      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
     },
     {
       "path": "public/assets/eylema-technology-en.webp",
-      "sha256": "1b37b5a727c5a96a2833e4db337de620e068badae59d5700e925884d843803dc",
-      "bytes": 1285736,
-      "source": "Built-in Image Gen v0.7 architecture; English redesign, two bounded arrow repairs and exact Turkish localization; PNG plus lossless sharp 0.35.5 WebP, 2026-10-14"
+      "sha256": "1ce5029db09a5f2413edc700d23c67e41398c733d9b6c47745d1ec039ac91c73",
+      "bytes": 1297034,
+      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
     },
     {
       "path": "public/assets/eylema-technology-tr.png",
-      "sha256": "dbd1e4d3eaea53951e4de83205dc3de96b87cb20ef3c342516e5cf98e8998034",
-      "bytes": 1825504,
-      "source": "Built-in Image Gen v0.7 architecture; English redesign, two bounded arrow repairs and exact Turkish localization; PNG plus lossless sharp 0.35.5 WebP, 2026-10-14"
+      "sha256": "9703439d5dfe62db1affe05f6b71b58b63f574c540ad3574f0f3f6e77d85767e",
+      "bytes": 1829274,
+      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
     },
     {
       "path": "public/assets/eylema-technology-tr.webp",
-      "sha256": "3a8fa965f5e6685ec038525de6aecb6eeb209f16a7a7680a9c734d7c3588f6cd",
-      "bytes": 1283068,
-      "source": "Built-in Image Gen v0.7 architecture; English redesign, two bounded arrow repairs and exact Turkish localization; PNG plus lossless sharp 0.35.5 WebP, 2026-10-14"
+      "sha256": "d3b3240008da90f6381c91c5e1bdf52c7227bc3128c481a3eb127e38d560c793",
+      "bytes": 1293202,
+      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
     },
     {
       "path": "public/assets/eylema-wordmark.webp",
-      "sha256": "a40476141284047c73ecbbd8656df575a7deaaa9ecc424eb1da40e1aad889bce",
-      "bytes": 71804,
-      "source": "Maintainer-approved technology explainer; built-in Image Gen; lossless sharp WebP encoding, 2026-10-12"
+      "sha256": "e6ba4e50b7752f8bc414ee019b68aaaad9d917f3cf5a545f747315fe3ffa2384",
+      "bytes": 72378,
+      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
     }
   ]
 }

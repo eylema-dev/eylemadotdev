@@ -2,7 +2,7 @@
 
 [English](CONTRIBUTING.md). [AGENTS.md](AGENTS.md) ve [kalite kontrollerini](docs/tr/quality-gates.md) izleyin.
 
-Bu, proje sahibinin yetkilendirdiği ayrı ve herkese açık tanıtım sitesi deposudur. Açık platform tasarımı [eylema-dev/eylema](https://github.com/eylema-dev/eylema) deposundadır. Burada açık kaynak lisansı seçilmemiştir.
+Bu, proje sahibinin yetkilendirdiği ayrı ve herkese açık tanıtım sitesi deposudur. Açık platform tasarımı [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme) deposundadır. Burada açık kaynak lisansı seçilmemiştir.
 
 Güncel main üzerinden tek kapsamlı dal kullanın. İlgili isteği veya sorunu belirtin, sınırlı bir plan kaydedin ve değişiklikleri incelenebilir tutun. Metin kaynakları `content/en.json` ve `content/tr.json` içindedir; ortak HTML/meta verisi `tools/build.py`, sunum `public/assets/site.css` ve `site.js` üzerinden düzenlenir. `.venv/bin/python tools/build.py` ile yeniden üretin.
 

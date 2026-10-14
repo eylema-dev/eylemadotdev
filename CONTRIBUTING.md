@@ -2,7 +2,7 @@
 
 [Türkçe](CONTRIBUTING.tr.md). Follow [AGENTS.md](AGENTS.md) and the [quality gates](docs/en/quality-gates.md).
 
-This is the separate, public marketing-site repository authorized by the maintainer. The public platform design remains in [eylema-dev/eylema](https://github.com/eylema-dev/eylema). No public source license is selected here.
+This is the separate, public marketing-site repository authorized by the maintainer. The public platform design remains in [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme). No public source license is selected here.
 
 Use a scoped branch from current main. Link the issue or explicit maintainer request, record a bounded plan, and keep changes reviewable. Source copy belongs in `content/en.json` and `content/tr.json`; edit `tools/build.py` for shared HTML and metadata, and `public/assets/site.css` or `site.js` for presentation. Regenerate with `.venv/bin/python tools/build.py`.
 

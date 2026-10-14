@@ -40,7 +40,7 @@ def submit():
     preflight(data)  # No POST if ownership or canonical routes fail.
     request = Request(ENDPOINT, data=json.dumps(data).encode("utf-8"), method="POST",
                       headers={"Content-Type": "application/json; charset=utf-8",
-                               "User-Agent": "Eylema-IndexNow/1.0"})
+                               "User-Agent": "Eyleme-IndexNow/1.0"})
     try:
         response = urlopen(request, timeout=30)
     except HTTPError as error:

@@ -84,7 +84,7 @@ class WebsiteTests(unittest.TestCase):
             self.check_modified(text)
 
     def test_structured_claim_drift_fails(self):
-        text = render(self.en).replace('"name":"Eylema"', '"name":"Different project"', 1)
+        text = render(self.en).replace('"name":"Eyleme"', '"name":"Different project"', 1)
         with self.assertRaisesRegex(CheckFailure, "Structured data"):
             self.check_modified(text)
 
@@ -139,8 +139,8 @@ class WebsiteTests(unittest.TestCase):
                              "memory-contracts", "decision-evidence", "project-data"):
                 with self.subTest(lang=data["lang"], component=filename):
                     tail = f'docs/{data["lang"]}/{filename}.md'
-                    self.assertIn(f"https://github.com/eylema-dev/eylema/blob/main/{tail}", hrefs)
-                    self.assertNotIn(f'https://github.com/eylema-dev/eylema-docs-{data["lang"]}/blob/main/{tail}', hrefs)
+                    self.assertIn(f"https://github.com/eyleme-dev/eyleme/blob/main/{tail}", hrefs)
+                    self.assertNotIn(f'https://github.com/eyleme-dev/eylema-docs-{data["lang"]}/blob/main/{tail}', hrefs)
 
     def test_architecture_illustration_requires_visible_notice(self):
         text = render(self.en).replace(self.en["technology_notice"], "")

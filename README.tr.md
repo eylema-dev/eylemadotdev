@@ -1,8 +1,10 @@
-# Eylema web sitesi
+# Eyleme web sitesi
 
-Hedef alan adı `eylema.dev` olan iki dilli tanıtım sitesinin herkese açık kaynak deposu: [eylema-dev/eylemadotdev](https://github.com/eylema-dev/eylemadotdev).
+Güncel ürün adı **Eyleme**. GitHub organizasyonu artık **eyleme-dev**; mevcut `eylema.dev` alan adı ve varlık adresleri korunur. [Ad uyarlama kaydına](records/project-name-alignment.tr.md) bakın.
 
-Açık platform projesi: [eylema-dev/eylema](https://github.com/eylema-dev/eylema). Bu depo uygulanmış yerel görev temelini ve önerilen işbirlikçi döngü platformunu tanıtır; Rust platformunu içermez veya çalıştırmaz.
+Hedef alan adı `eylema.dev` olan iki dilli tanıtım sitesinin herkese açık kaynak deposu: [eyleme-dev/eylemadotdev](https://github.com/eyleme-dev/eylemadotdev).
+
+Açık platform projesi: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme). Bu depo uygulanmış yerel görev temelini ve önerilen işbirlikçi döngü platformunu tanıtır; Rust platformunu içermez veya çalıştırmaz.
 
 [English](README.md)
 

@@ -15,20 +15,20 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "a61dbdef305317b1402eb48d3c10508b68a085b19c4a3d7e188a30e33e6831e2",
-      "tr_sha256": "5ab12f8c6dda1ae01dc1a6e5d0a88bf817ddac00a8e128328c964f32e928a678"
+      "en_sha256": "a8a870e9e843c6950e66c3b73c157bcc7134eb23e9874a35c933f4e0ae5da953",
+      "tr_sha256": "98c3598b46cbd1ea822942c564a8180ba2f0ca1fe63dc466b304334a2735e1b7"
     },
     {
       "en": "CONTRIBUTING.md",
       "tr": "CONTRIBUTING.tr.md",
-      "en_sha256": "cd5264c8e0affbb82a6841b74c5fb67ff0950cd259a0aa33e8c5ba1b6fc7cafa",
-      "tr_sha256": "2f763d65e4b7b08e83b397c499d6950bac1f66ebb466f89c8b1f7fce6f2af523"
+      "en_sha256": "514a36b8b340acad06d1d014dc3e679c6dab1f0d8ce402f4bd10ede78ea95121",
+      "tr_sha256": "df9d59f6d2423f0b91601f742579517f2a49d30e36a06c940d67b162988b4c53"
     },
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "0b827939edf584dcd5ee8a212980f39e76cf3a7422e5b3f0c29b74f5d30ef600",
-      "tr_sha256": "0fc74651ed5f22997be97cc6f49a30d792899def935808bf1886c85deaef9daa"
+      "en_sha256": "222d3b3b54c93c83fae6537708ea314d6e99248f6985c4525f7354c43d4f6e6f",
+      "tr_sha256": "ee32b050772ed6ed63fba106757747b98eee74e0e3c524662e2cee0ab9cc2735"
     },
     {
       "en": "records/plan.md",
@@ -45,8 +45,8 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "49c49edce2a225444d981131b6e3b779a17bd0abc1c03c100c27af522cdfde6f",
-      "tr_sha256": "b86feb1a2c2a587266ce7e5dc7b597d247cdff579ba86f455b4f7ffc9b252717"
+      "en_sha256": "8931d357cd5925b23fa0bc74acc100272a3148b37b963bccddf6179174a86ced",
+      "tr_sha256": "3521f2d6e1f25dd53c1522ae616fd1e0dcd5687a94b9988a2b4dd72b9d94929e"
     },
     {
       "en": "docs/en/quality-gates.md",
@@ -57,8 +57,8 @@
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "fe584b1991117ae6c992ecd7ee25ee4efedba4db8e6245f43501aa62f6bb57d1",
-      "tr_sha256": "91654277b6a7de812cddf9c5710b31aab4819801ba8e387848c313147ac15a25"
+      "en_sha256": "2a1801eb69af117c39fca0b2933a1d92e2d51bef8ca84feeb1342bee1790da6c",
+      "tr_sha256": "963f79dbf097c0a4267c385b0acfbc685c7b4de2b72d22108e5951b2a2c8c1ba"
     },
     {
       "en": "records/verification.md",
@@ -107,6 +107,12 @@
       "tr": "records/architecture-v07-visuals.tr.md",
       "en_sha256": "c89c569b328848f2c003f09511258940f67971d1a3c1a80df47b5c57e4f9f849",
       "tr_sha256": "7b6d96d7da4b96d4e7bd866a42ea1b225f458f0fb799d947200693decd19cf55"
+    },
+    {
+      "en": "records/project-name-alignment.md",
+      "tr": "records/project-name-alignment.tr.md",
+      "en_sha256": "0ef721380323aebc0864b4cd26d5794d612907568b4cc91bf1300c50e046ddb2",
+      "tr_sha256": "0df62d030f656601edfeab5efb99844e63aba8535bdd77583cf355d06ed25511"
     }
   ]
 }
