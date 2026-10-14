@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "a8a870e9e843c6950e66c3b73c157bcc7134eb23e9874a35c933f4e0ae5da953",
-      "tr_sha256": "98c3598b46cbd1ea822942c564a8180ba2f0ca1fe63dc466b304334a2735e1b7"
+      "en_sha256": "0f6c08a66c85e0db339352b78b724bc8368375195cb7e1489725e56215828adf",
+      "tr_sha256": "b564dfb8eda0ea24d19c2f4a79e58996c4ff3f21d1533cd37c545c0f257c2351"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -45,14 +45,14 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "8931d357cd5925b23fa0bc74acc100272a3148b37b963bccddf6179174a86ced",
-      "tr_sha256": "3521f2d6e1f25dd53c1522ae616fd1e0dcd5687a94b9988a2b4dd72b9d94929e"
+      "en_sha256": "2acdb7aa6fd4ee97b291db3cf282efff61ab61462823fc1c25d364563c065d67",
+      "tr_sha256": "82a8a5636aff4e043aab15d0b1848b2adfcf578bdf4e97372106b1468d81697e"
     },
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "434136348e2b2fb609822c8d6a612f82040257ff3e602dd3b8617d0fe590ab35",
-      "tr_sha256": "1106dbcd011641247d35c042084a4367c40a8838c1e7dc531525bb5ee7f93bfe"
+      "en_sha256": "8299e30171a20a2f8a708863150303aa89d6a4c7d7e6dd084b720cb7b7d9f74c",
+      "tr_sha256": "9576180fe43e6b27ebc33f5d6a10f497fcc6aa40c6f0866ef80fd9e5a50526b4"
     },
     {
       "en": "docs/en/tooling.md",
@@ -113,6 +113,12 @@
       "tr": "records/project-name-alignment.tr.md",
       "en_sha256": "0ef721380323aebc0864b4cd26d5794d612907568b4cc91bf1300c50e046ddb2",
       "tr_sha256": "0df62d030f656601edfeab5efb99844e63aba8535bdd77583cf355d06ed25511"
+    },
+    {
+      "en": "records/search-removal.md",
+      "tr": "records/search-removal.tr.md",
+      "en_sha256": "b50f84cf91dac289e42193a6e1a65ec9d3f7ccf0f8a737126d7c0cefb3b27c9a",
+      "tr_sha256": "66837a6d991ce05ff42936a0309c11108a09b7f550bca4ac3959182fcbdfd2e9"
     }
   ]
 }

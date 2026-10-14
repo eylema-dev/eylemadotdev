@@ -6,8 +6,8 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from build import ROOT, render
-from check_repository import CheckFailure, Page, check_content, check_markdown, check_page, translation_hashes
+from build import ROOT, render, outputs
+from check_repository import CheckFailure, Page, check_content, check_markdown, check_page, check_search_files, translation_hashes
 from check_pr import validate_body
 
 
@@ -78,10 +78,38 @@ class WebsiteTests(unittest.TestCase):
         with self.assertRaisesRegex(CheckFailure, "hreflang"):
             self.check_modified(text)
 
-    def test_noindex_on_landing_page_fails(self):
-        text = render(self.en).replace('content="index,follow,max-image-preview:large"', 'content="noindex"')
-        with self.assertRaisesRegex(CheckFailure, "indexable"):
+    def test_restored_indexing_on_landing_page_fails(self):
+        text = render(self.en).replace('content="noindex,follow"', 'content="index,follow"')
+        with self.assertRaisesRegex(CheckFailure, "noindex"):
             self.check_modified(text)
+
+    def test_duplicate_or_bot_specific_directives_fail(self):
+        for extra in ['<meta name="robots" content="noindex,follow">',
+                      '<meta name="googlebot" content="index">',
+                      '<meta name="bingbot" content="index">']:
+            with self.subTest(extra=extra):
+                text = render(self.en).replace('</head>', extra + '</head>')
+                with self.assertRaisesRegex(CheckFailure, "noindex"):
+                    self.check_modified(text)
+
+    def test_crawl_blocks_and_sitemap_promotion_fail(self):
+        generated = outputs()
+        for robots in ['User-agent: *\nDisallow: /\n',
+                       generated['robots.txt'] + 'Sitemap: https://eylema.dev/sitemap.xml\n']:
+            with tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                (root / 'robots.txt').write_text(robots)
+                (root / 'sitemap.xml').write_text(generated['sitemap.xml'])
+                with self.assertRaisesRegex(CheckFailure, "Robots must allow"):
+                    check_search_files(root)
+
+    def test_restored_sitemap_url_fails(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'robots.txt').write_text(outputs()['robots.txt'])
+            (root / 'sitemap.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://eylema.dev/</loc></url></urlset>')
+            with self.assertRaisesRegex(CheckFailure, "empty urlset"):
+                check_search_files(root)
 
     def test_structured_claim_drift_fails(self):
         text = render(self.en).replace('"name":"Eyleme"', '"name":"Different project"', 1)

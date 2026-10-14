@@ -1,0 +1,116 @@
+{
+  "task": "eyleme-website-persistent-search-removal",
+  "task_revision": 1,
+  "date": "2026-10-14",
+  "repository": "eyleme-dev/eylemadotdev",
+  "base": "6cbbd721149ae36fbfe4d663a1bf1debd0d4b4ed",
+  "authority": {
+    "source": "Actual human maintainer request in the trusted chat, relayed by the root context.",
+    "request": "After clarification that the site remains eylema.dev, the user confirmed: Siteyi Google ve Bing arama sonuclarindan da kaldir. Existing direct authority covers the coordinated merges and website deployment.",
+    "scope": "Persistent noindex on the still-accessible website, disabling indexing promotion, plus separately performed Google Search Console and Bing Webmaster reversible URL removal requests. This plan grants no authority itself.",
+    "excluded": "No DNS mutation, domain move, account deletion, property removal, verification-token removal, paid action, access-policy change or source/runtime deletion."
+  },
+  "allowed_paths": [
+    "tools/build.py",
+    "tools/check_repository.py",
+    "tools/check_live.py",
+    "tools/indexnow.py",
+    "tools/tests/",
+    "public/index.html",
+    "public/tr/index.html",
+    "public/404.html",
+    "public/robots.txt",
+    "public/sitemap.xml",
+    "public/staticwebapp.config.json",
+    "README.md",
+    "README.tr.md",
+    "docs/en/discovery.md",
+    "docs/tr/discovery.md",
+    "docs/en/quality-gates.md",
+    "docs/tr/quality-gates.md",
+    "tools/translation-pairs.json",
+    "records/search-removal.md",
+    "records/search-removal.tr.md",
+    "records/search-removal-plan.json"
+  ],
+  "implementation": [
+    "Generate exactly one robots meta tag with noindex,follow on both landing pages. Keep 404 noindex. Preserve canonical/hreflang, language routing, social metadata, accessibility and all current content.",
+    "Set globalHeaders.X-Robots-Tag to noindex,follow in the Azure configuration, covering HTML and non-HTML resources including images and release/verification documents. Retain existing security/revalidation headers and true 404 routing; prohibit per-route overrides that remove or contradict noindex.",
+    "Keep robots.txt as User-agent: * and Allow: /. Do not add Disallow or a robots.txt Noindex rule: crawlers need access to see HTML/HTTP removal directives. Remove Sitemap promotion.",
+    "Keep the existing sitemap URL but generate a valid empty sitemap urlset. This retracts old URL promotion without adding a new broken public route. Do not submit it as a new indexing request.",
+    "Keep webmaster verification and public IndexNow ownership key bytes unchanged. Preserve historical submission receipts. Disable manual tools/indexnow.py submission before any preflight fetch or POST; --submit must fail clearly and nonzero, while any retained preview is explicitly non-submitting.",
+    "Revise repository gates from indexability to the accepted noindex policy. Preserve all existing language, content, generated output, identity, security, release, MIME and negative checks.",
+    "Extend live checks to require noindex headers on release.json, every manifested resource, final canonical/normalized routes and the custom404. Continue verifying exact release commit, full source hashes, MIME, true404 and assets without redirects.",
+    "Update paired EN/TR discovery/quality documentation and append a current scoped removal record. Distinguish deployed persistent directives, temporary owner-panel requests and observed final indexing status. Never rewrite historical receipts into removal success."
+  ],
+  "panel_work_owned_by_root": [
+    "Preserve verified Google Search Console and Bing Webmaster properties, credentials and inspection access.",
+    "Request the existing canonical site's full URL prefix/directory removal using the actual UI choices, documenting scope and request status. Cover both language routes and asset URLs when the panel permits prefix scope.",
+    "Read back requests; record pending/approved/failed states separately from published noindex and actual index reports. Do not claim permanent removal from temporary acceptance or search-query absence.",
+    "No new indexing, sitemap promotion or IndexNow request is included. Root may retract old sitemap promotion in the authorized search-removal scope without removing the properties."
+  ],
+  "acceptance_mapping": {
+    "S1_persistent_page_and_resource_policy": "Builder/checker tests accept EN/TR noindex,follow and reject restored index meta, duplicate/conflicting bot directives, missing/contradictory global headers and route overrides. Host headers apply to assets as well as pages.",
+    "S2_crawler_access": "Generated output and negative tests require the reviewed crawl-permitted robots file without Sitemap promotion; empty sitemap parses and contains zero loc entries. Crawl-blocking mutation fails.",
+    "S3_no_promotion": "Mocked and actual local CLI tests demonstrate IndexNow submission refusal with zero fetch/POST network calls and nonzero CLI exit; verification bytes and historical receipts remain unchanged.",
+    "S4_release_and_browser": "Run exact repository commands plus build/fingerprint checks. Verify local browser EN/TR access and navigation; full live canonical release verification requires normal HTTPS on eylema.dev, matching commit/assets/MIME and noindex headers.",
+    "S5_independent_delivery": "Genuine separate reviewer binds final exact head and acceptance evidence. Required current CI, authorized merge and deployment follow existing workflow. Live release/crawl acceptance remains pending if canonical DNS fails.",
+    "S6_search_engine_outcome": "Root records actual Google/Bing temporary-removal request readback and later authoritative URL/index states. Search engines process asynchronously; directive or request success alone never means final removal."
+  },
+  "exact_local_checks": [
+    "python3 -m venv .venv",
+    ".venv/bin/python -m pip install --require-hashes -r tools/requirements-ci.txt",
+    ".venv/bin/python tools/build.py",
+    ".venv/bin/python -m unittest discover -s tools/tests -v",
+    ".venv/bin/python tools/check_repository.py",
+    ".venv/bin/python tools/check_pr.py --body-file .github/PULL_REQUEST_TEMPLATE.md --allow-template",
+    "git diff --check",
+    "Reviewed English/Turkish fingerprint refresh and filled PR-body validation",
+    ".venv/bin/python tools/check_live.py --url https://eylema.dev --commit <full-deployed-commit> after deployment"
+  ],
+  "budgets": {
+    "active_minutes": 45,
+    "max_repair_cycles_per_gate": 3,
+    "new_spending": false,
+    "bounded_network_requests": "Existing per-fetch25-second and IndexNow30-second bounds are not expanded; disabled submission makes no request. Engine processing is asynchronous and is reported outside implementation time."
+  },
+  "roles": {
+    "architect": {
+      "context": "qualified_rename_architect separate substantive architecture context",
+      "configured_model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "evidence": "Explicit delegated configured profile; hidden serving identity is not exposed.",
+      "serving_identity": "unknown_not_exposed",
+      "profile_id": "sol61-high-contracts-2026-10-14",
+      "profile_valid_through": "2026-11-13",
+      "scope_assessment": "Confirmed current qualification explicitly includes bilingual project documentation and development tests. This work supplies substantive documentation/test and static response-policy architecture. Registry does not explicitly list blanket website qualification; no new domain, numerical, inference or training qualification is invented."
+    },
+    "implementer_verifier": "Assigned brand_website_rename separate context; record actual configuration/tools and outcomes.",
+    "root": "Performs authorized webmaster UI requests and final delivery; configured gpt-6-astra/ultra reported by root, hidden serving identity unknown.",
+    "independent_final_reviewer": "Pending separate owner-approved context on final commit; architect is not the final reviewer."
+  },
+  "sources": [
+    "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+    "https://developers.google.com/search/docs/crawling-indexing/remove-information",
+    "https://support.google.com/webmasters/answer/9689846?hl=en",
+    "https://www.bing.com/webmasters/help/?topicid=264e560a",
+    "https://learn.microsoft.com/en-us/azure/static-web-apps/configuration"
+  ],
+  "risks_and_limits": [
+    "Canonical domain DNS is reported failing; read-only diagnosis is permitted, DNS changes are excluded. Crawler inability to fetch means published noindex cannot yet establish removal, even if the Azure generated hostname works.",
+    "HTML-only noindex leaves directly indexed images/other assets uncovered; require global HTTP noindex and actual live response checks.",
+    "robots crawl blocks prevent engines from observing noindex; prevent contradictory directives with regression checks.",
+    "Temporary Search Console/Bing blocks expire and are separate from persistent directives; retain property verification and inspection to track outcome.",
+    "Global header coverage is a deployment claim only after observed live responses; local Python http.server does not implement Azure header configuration.",
+    "Noindex is search-engine policy, not authentication or secrecy; the user expressly retains the accessible site."
+  ],
+  "rollback": "A future direct maintainer decision can restore indexability through a separately reviewed source/config/documentation change; do not automatically cancel removal requests or resume submissions.",
+  "architect_evidence": {
+    "base_verified": "6cbbd721149ae36fbfe4d663a1bf1debd0d4b4ed",
+    "initial_tree": "clean",
+    "source_edits_by_architect": "none; only this local temporary plan was written",
+    "read_only_review": "passed; current builder, validators, live checker, IndexNow tooling/tests, host configuration, contributor/quality/discovery documents and official search/host guidance inspected",
+    "implementation_and_live_checks": "not_run by architect",
+    "independent_review": "pending"
+  }
+}

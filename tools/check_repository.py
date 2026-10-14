@@ -99,7 +99,11 @@ def check_page(public, relative, data):
     meta = {a.get("name", a.get("property")): a.get("content") for tag, a in page.tags if tag == "meta"}
     require(meta.get("description") == data["description"], "Incorrect description")
     require(meta.get("og:url") == expected, "Incorrect social URL")
-    require(meta.get("robots") == "index,follow,max-image-preview:large", "Page is not indexable")
+    bot_meta = [a for tag, a in page.tags if tag == "meta" and
+                a.get("name", "").lower() in {"robots", "googlebot", "bingbot"}]
+    require(len(bot_meta) == 1 and bot_meta[0].get("name") == "robots" and
+            bot_meta[0].get("content") == "noindex,follow",
+            "Page must have one noindex,follow directive without bot overrides")
     require(not any(tag == "meta" and a.get("http-equiv", "").lower() == "refresh" for tag, a in page.tags), "Language auto-redirect is forbidden")
     plain = " ".join(page.data)
     for question in data["questions"]:
@@ -163,6 +167,20 @@ def check_host_config(config):
     require("navigationFallback" not in config, "SPA fallback would hide missing pages")
     require(config.get("responseOverrides", {}).get("404") == {"rewrite": "/404.html", "statusCode": 404}, "Host must return a real custom 404")
     require(config.get("globalHeaders", {}).get("Cache-Control") == "public, max-age=0, must-revalidate", "Unhashed assets must be revalidated")
+    headers = config.get("globalHeaders", {})
+    robot_headers = [value for name, value in headers.items() if name.lower() == "x-robots-tag"]
+    require(robot_headers == ["noindex,follow"], "Global X-Robots-Tag must be noindex,follow")
+    for route in config.get("routes", []):
+        require(not any(name.lower() == "x-robots-tag" for name in route.get("headers", {})),
+                "Route must not override global X-Robots-Tag")
+
+
+def check_search_files(public):
+    require((public / "robots.txt").read_text() == "User-agent: *\nAllow: /\n",
+            "Robots must allow crawling without sitemap promotion")
+    sitemap = ET.parse(public / "sitemap.xml").getroot()
+    require(sitemap.tag == "{http://www.sitemaps.org/schemas/sitemap/0.9}urlset" and len(sitemap) == 0,
+            "Sitemap must be an empty urlset without promoted URLs")
 
 
 def check(root=ROOT):
@@ -173,9 +191,7 @@ def check(root=ROOT):
         require((root / "public" / name).read_text() == generated, f"Stale generated file: {name}")
     for lang, path in [("en", "index.html"), ("tr", "tr/index.html")]:
         check_page(root / "public", path, content[lang])
-    sitemap = ET.parse(root / "public/sitemap.xml")
-    urls = [e.text for e in sitemap.iter("{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
-    require(urls == [ORIGIN + "/", ORIGIN + "/tr/"], "Sitemap contains unexpected or missing URLs")
+    check_search_files(root / "public")
     require("noindex" in (root / "public/404.html").read_text(), "404 page must be noindex")
     translation_hashes(root)
     paths = subprocess.run(["git", "ls-files", "-co", "--exclude-standard", "-z"], cwd=root, capture_output=True, check=True).stdout.decode().split("\0")
@@ -189,7 +205,7 @@ def check(root=ROOT):
                 check_markdown(root, path, text)
     total = sum(p.stat().st_size for p in (root / "public/assets").glob("*") if p.suffix in {".js", ".css"})
     require(total < 35000, "CSS/JS exceed the 35 KB raw budget")
-    print("PASS: bilingual HTML, canonical/hreflang, JSON-LD, sitemap, assets, translation fingerprints and 35 KB CSS/JS budget")
+    print("PASS: bilingual HTML, canonical/hreflang, JSON-LD, noindex, empty sitemap, assets, translation fingerprints and 35 KB CSS/JS budget")
 
 
 if __name__ == "__main__":

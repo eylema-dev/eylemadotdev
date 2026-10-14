@@ -8,6 +8,8 @@ Açık platform projesi: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eylem
 
 [English](README.md)
 
+Arama ilkesi: bakım sorumlusu Google ve Bing sonuçlarından kaldırma istedi. Site artık sayfa ve kaynak yanıtlarında noindex gerektirir, tarama erişimini korur ve IndexNow gönderimini kapatır. Yayın, geçici kaldırma istekleri ve nihai indeks durumu ayrıdır; [arama görünürlüğüne](docs/tr/discovery.md) bakın.
+
 ## Web sitesi
 
 Varsayılan İngilizce `/`, Türkçe `/tr/` adresindedir. İkisi de karşılıklı hreflang ve kendi canonical adresine sahip tam HTML belgeleridir. Mimari sekmeleri HTML'de zaten bulunan içeriği kademeli olarak geliştirir. Sorular doğal açılır/kapanır kontroller kullanır. Hesap, analitik, çerez, uzak yazı tipi, model API'si veya üçüncü taraf çalışma zamanı paketi yoktur.
