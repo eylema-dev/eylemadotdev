@@ -1,4 +1,4 @@
-name: Deploy Eylema website
+name: Deploy Eyleme website
 on:
   push:
     branches: [main]

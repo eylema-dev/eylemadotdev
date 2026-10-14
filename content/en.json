@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "locale": "en_US",
-  "title": "Eylema — Composable Agentic AI Platform in Rust",
-  "description": "Explore Eylema: a Rust platform in development for local models, tools, reusable skills, RAG and project-scoped memory, with human-controlled learning.",
+  "title": "Eyleme — Composable Agentic AI Platform in Rust",
+  "description": "Explore Eyleme: a Rust platform in development for local models, tools, reusable skills, RAG and project-scoped memory, with human-controlled learning.",
   "skip": "Skip to content",
   "navigation": "Main navigation",
   "language": "Choose language",
@@ -13,7 +13,7 @@
     "to action.",
     "By design."
   ],
-  "hero_art_alt": "Decorative orange Eylema loop sculpture",
+  "hero_art_alt": "Decorative orange Eyleme loop sculpture",
   "intro": "Turn human ideas and expert judgment into agentic systems. Compose local model roles, tools, reusable skills and project knowledge through a shared Rust platform.",
   "explore": "Explore the platform",
   "follow": "Follow on GitHub",
@@ -37,8 +37,8 @@
     "Compose the loop.",
     "Keep the contract."
   ],
-  "architecture_intro": "Eylema owns authority, execution and evidence. Architecture v0.7 connects optional model roles with typed tools, skills, source-grounded retrieval and purpose-scoped memory.",
-  "technology_alt": "EylemA architecture v0.7: human goals and five separate data-use permissions govern jobs, nine optional model roles, tools and skills, Rust authority and observed feedback. Permitted sources supply RAG/recall context with six optional memory kinds and renewed rights, lineage and expiry checks. A separate planned loop moves permitted episodes through curation, native Rust LoRA/QLoRA training, held-out evaluation and human-controlled promotion back to model profiles and skills. Scoped implemented components are labeled separately; integrated retrieval and training still require acceptance.",
+  "architecture_intro": "Eyleme owns authority, execution and evidence. Architecture v0.7 connects optional model roles with typed tools, skills, source-grounded retrieval and purpose-scoped memory.",
+  "technology_alt": "Eyleme architecture v0.7: human goals and five separate data-use permissions govern jobs, nine optional model roles, tools and skills, Rust authority and observed feedback. Permitted sources supply RAG/recall context with six optional memory kinds and renewed rights, lineage and expiry checks. A separate planned loop moves permitted episodes through curation, native Rust LoRA/QLoRA training, held-out evaluation and human-controlled promotion back to model profiles and skills. Scoped implemented components are labeled separately; integrated retrieval and training still require acceptance.",
   "technology_caption": "Architecture v0.7 integration design. Nine optional roles use source-gated knowledge and memory; Rust retains execution authority. Native training and human-controlled promotion form a separate planned loop. Scoped implemented foundations do not establish integrated model, RAG or training acceptance.",
   "technology_open": "Open full-size image (new tab)",
   "steps_label": "Explore the cooperative loop design",
@@ -119,8 +119,8 @@
   "faq_intro": "What the current foundation does, what the architecture proposes and what still needs evidence.",
   "questions": [
     {
-      "question": "What is Eylema?",
-      "answer": "Eylema is a Rust platform in development for composing bounded agentic jobs from model roles, tools, reusable skills and project knowledge. Humans define goals and authority; the platform records actual outcomes. Its implemented local task foundation is distinct from the broader model, RAG, memory and learning design.",
+      "question": "What is Eyleme?",
+      "answer": "Eyleme is a Rust platform in development for composing bounded agentic jobs from model roles, tools, reusable skills and project knowledge. Humans define goals and authority; the platform records actual outcomes. Its implemented local task foundation is distinct from the broader model, RAG, memory and learning design.",
       "source": "architecture",
       "link": "Architecture v0.7"
     },
@@ -180,7 +180,7 @@
     },
     {
       "question": "What is the project license?",
-      "answer": "Eylema first-party core code and documentation use Apache-2.0. Separately identified third-party material, model weights and datasets retain their own terms. This does not grant a blanket license to every asset or model, or change the website repository license.",
+      "answer": "Eyleme first-party core code and documentation use Apache-2.0. Separately identified third-party material, model weights and datasets retain their own terms. This does not grant a blanket license to every asset or model, or change the website repository license.",
       "source": "license",
       "link": "Core Apache-2.0 license"
     }
@@ -221,8 +221,8 @@
   "footer": "Human goals. Owned Rust. Source-linked evidence.",
   "api_link": "API reference",
   "not_found_title": "This page is not here.",
-  "not_found_text": "The address may have changed. Explore the Eylema platform from the homepage.",
-  "home_link": "Back to Eylema",
+  "not_found_text": "The address may have changed. Explore the Eyleme platform from the homepage.",
+  "home_link": "Back to Eyleme",
   "foundation_label": "Current scope · architecture v0.7",
   "foundation_cards": [
     {

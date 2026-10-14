@@ -1,8 +1,8 @@
 {
   "lang": "tr",
   "locale": "tr_TR",
-  "title": "Eylema — Rust ile Modüler Ajan Tabanlı Yapay Zekâ",
-  "description": "Eylema’yı keşfet: yerel modeller, araçlar, yeniden kullanılabilir beceriler, RAG ve proje belleği için geliştirilen, öğrenmeyi insanın yönettiği Rust platformu.",
+  "title": "Eyleme — Rust ile Modüler Ajan Tabanlı Yapay Zekâ",
+  "description": "Eyleme’yi keşfet: yerel modeller, araçlar, yeniden kullanılabilir beceriler, RAG ve proje belleği için geliştirilen, öğrenmeyi insanın yönettiği Rust platformu.",
   "skip": "İçeriğe geç",
   "navigation": "Ana gezinme",
   "language": "Dil seçimi",
@@ -13,7 +13,7 @@
     "eyleme.",
     "Tasarımla."
   ],
-  "hero_art_alt": "Dekoratif turuncu Eylema döngüsü heykeli",
+  "hero_art_alt": "Dekoratif turuncu Eyleme döngüsü heykeli",
   "intro": "İnsan fikirlerini ve uzmanlığını ajan sistemlerine dönüştür. Yerel model rollerini, araçları, yeniden kullanılabilir becerileri ve proje bilgisini ortak Rust platformunda birleştir.",
   "explore": "Platformu keşfet",
   "follow": "GitHub'da takip et",
@@ -37,8 +37,8 @@
     "Döngüyü kur.",
     "Sözleşmeyi koru."
   ],
-  "architecture_intro": "Yetki, yürütme ve kanıt Eylema’ya aittir. Mimari v0.7, isteğe bağlı model rollerini tipli araçlar, beceriler, kaynağa dayalı erişim ve amaçla sınırlı bellekle bağlar.",
-  "technology_alt": "EylemA mimarisi v0.7: insan hedefleri ve beş ayrı veri kullanım izni işleri, dokuz isteğe bağlı model rolünü, araç ve becerileri, Rust yetkisini ve gözlenen geri beslemeyi yönetir. İzinli kaynaklar altı isteğe bağlı bellek türüyle RAG/hatırlama bağlamı sağlar; hak, köken ve süre yeniden denetlenir. Ayrı planlanan döngü, izinli deneyimleri inceleme, yerel Rust LoRA/QLoRA eğitimi, bağımsız değerlendirme ve insan kontrollü terfiyle model profilleri ve becerilere döndürür. Sınırlı uygulanmış bileşenler ayrı etiketlidir; entegre erişim ve eğitim kabul gerektirir.",
+  "architecture_intro": "Yetki, yürütme ve kanıt Eyleme’ye aittir. Mimari v0.7, isteğe bağlı model rollerini tipli araçlar, beceriler, kaynağa dayalı erişim ve amaçla sınırlı bellekle bağlar.",
+  "technology_alt": "Eyleme mimarisi v0.7: insan hedefleri ve beş ayrı veri kullanım izni işleri, dokuz isteğe bağlı model rolünü, araç ve becerileri, Rust yetkisini ve gözlenen geri beslemeyi yönetir. İzinli kaynaklar altı isteğe bağlı bellek türüyle RAG/hatırlama bağlamı sağlar; hak, köken ve süre yeniden denetlenir. Ayrı planlanan döngü, izinli deneyimleri inceleme, yerel Rust LoRA/QLoRA eğitimi, bağımsız değerlendirme ve insan kontrollü terfiyle model profilleri ve becerilere döndürür. Sınırlı uygulanmış bileşenler ayrı etiketlidir; entegre erişim ve eğitim kabul gerektirir.",
   "technology_caption": "Mimari v0.7 entegrasyon tasarımı. Dokuz isteğe bağlı rol, kaynak kapılı bilgi ve belleği kullanır; yürütme yetkisi Rust’tadır. Yerel eğitim ve insan kontrollü terfi ayrı planlanan döngüdür. Sınırlı uygulanmış temeller entegre model, RAG veya eğitim kabulünü kanıtlamaz.",
   "technology_open": "Görseli tam boy aç (yeni sekme)",
   "steps_label": "İşbirlikçi döngü tasarımını keşfet",
@@ -119,8 +119,8 @@
   "faq_intro": "Güncel temelin yaptıkları, mimarinin önerdikleri ve hâlâ kanıt gerektirenler.",
   "questions": [
     {
-      "question": "Eylema nedir?",
-      "answer": "Eylema; model rolleri, araçlar, yeniden kullanılabilir beceriler ve proje bilgisinden sınırlı ajan işleri kurmak için geliştirilen bir Rust platformudur. İnsanlar hedef ve yetkiyi belirler; platform gerçek sonuçları kaydeder. Uygulanmış yerel görev temeli, geniş model, RAG, bellek ve öğrenme tasarımından ayrıdır.",
+      "question": "Eyleme nedir?",
+      "answer": "Eyleme; model rolleri, araçlar, yeniden kullanılabilir beceriler ve proje bilgisinden sınırlı ajan işleri kurmak için geliştirilen bir Rust platformudur. İnsanlar hedef ve yetkiyi belirler; platform gerçek sonuçları kaydeder. Uygulanmış yerel görev temeli, geniş model, RAG, bellek ve öğrenme tasarımından ayrıdır.",
       "source": "architecture",
       "link": "Mimari v0.7"
     },
@@ -180,7 +180,7 @@
     },
     {
       "question": "Projenin lisansı nedir?",
-      "answer": "Eylema’nın birinci taraf çekirdek kodu ve belgeleri Apache-2.0 kullanır. Ayrı tanımlanmış üçüncü taraf materyal, model ağırlıkları ve veri kümeleri kendi koşullarını korur. Bu, her varlık veya model için genel lisans vermez; site deposunun lisansını da değiştirmez.",
+      "answer": "Eyleme’nin birinci taraf çekirdek kodu ve belgeleri Apache-2.0 kullanır. Ayrı tanımlanmış üçüncü taraf materyal, model ağırlıkları ve veri kümeleri kendi koşullarını korur. Bu, her varlık veya model için genel lisans vermez; site deposunun lisansını da değiştirmez.",
       "source": "license",
       "link": "Çekirdeğin Apache-2.0 lisansı"
     }
@@ -221,8 +221,8 @@
   "footer": "İnsan hedefleri. Kendi Rust bileşenlerimiz. Kaynağa bağlı kanıt.",
   "api_link": "API referansı",
   "not_found_title": "Bu sayfa burada değil.",
-  "not_found_text": "Adres değişmiş olabilir. Ana sayfadan Eylema platformunu keşfedin.",
-  "home_link": "Eylema'ya dön",
+  "not_found_text": "Adres değişmiş olabilir. Ana sayfadan Eyleme platformunu keşfedin.",
+  "home_link": "Eyleme'ye dön",
   "foundation_label": "Güncel kapsam · mimari v0.7",
   "foundation_cards": [
     {

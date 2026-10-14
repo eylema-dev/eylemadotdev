@@ -1,8 +1,10 @@
-# Eylema website
+# Eyleme website
 
-Public source repository [eylema-dev/eylemadotdev](https://github.com/eylema-dev/eylemadotdev) for the bilingual promotional website at the intended domain `eylema.dev`.
+The current product name is **Eyleme**. GitHub is now under **eyleme-dev**; the existing `eylema.dev` domain and asset URLs remain unchanged. See the [name-alignment record](records/project-name-alignment.md).
 
-Public platform project: [eylema-dev/eylema](https://github.com/eylema-dev/eylema). This repository introduces the implemented local task foundation and the proposed cooperative-loop platform; it does not contain or run the Rust platform.
+Public source repository [eyleme-dev/eylemadotdev](https://github.com/eyleme-dev/eylemadotdev) for the bilingual promotional website at the intended domain `eylema.dev`.
+
+Public platform project: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme). This repository introduces the implemented local task foundation and the proposed cooperative-loop platform; it does not contain or run the Rust platform.
 
 [Türkçe](README.tr.md)
 

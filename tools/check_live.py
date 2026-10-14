@@ -11,7 +11,7 @@ from release import manifest
 
 
 def fetch(url):
-    request = Request(url, headers={"User-Agent": "Eylema-release-check/1.0", "Cache-Control": "no-cache"})
+    request = Request(url, headers={"User-Agent": "Eyleme-release-check/1.0", "Cache-Control": "no-cache"})
     try:
         response = urlopen(request, timeout=25)
     except HTTPError as error:
