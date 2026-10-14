@@ -38,8 +38,8 @@
     "Keep the contract."
   ],
   "architecture_intro": "Eylema owns authority, execution and evidence. Architecture v0.7 connects optional model roles with typed tools, skills, source-grounded retrieval and purpose-scoped memory.",
-  "technology_alt": "EylemA architecture v0.5: human-governed stable contracts connect perception, planning, decision, optional prediction, XState workflow and Rust execution. Observed results feed back; permitted data follows a separate training, evaluation and safe model-activation loop.",
-  "technology_caption": "Versioned v0.5 detail: the operating loop and external-training reference. Current v0.7 also covers nine roles, RAG, project memory and planned native Rust training. This image does not show those additions or prove runtime acceptance.",
+  "technology_alt": "EylemA architecture v0.7: human goals and five separate data-use permissions govern jobs, nine optional model roles, tools and skills, Rust authority and observed feedback. Permitted sources supply RAG/recall context with six optional memory kinds and renewed rights, lineage and expiry checks. A separate planned loop moves permitted episodes through curation, native Rust LoRA/QLoRA training, held-out evaluation and human-controlled promotion back to model profiles and skills. Scoped implemented components are labeled separately; integrated retrieval and training still require acceptance.",
+  "technology_caption": "Architecture v0.7 integration design. Nine optional roles use source-gated knowledge and memory; Rust retains execution authority. Native training and human-controlled promotion form a separate planned loop. Scoped implemented foundations do not establish integrated model, RAG or training acceptance.",
   "technology_open": "Open full-size image (new tab)",
   "steps_label": "Explore the cooperative loop design",
   "steps": [
@@ -240,5 +240,5 @@
       "link": "Read the current architecture"
     }
   ],
-  "technology_notice": "Cooperative-loop illustration · v0.5 detail"
+  "technology_notice": "Architecture v0.7 · integration design"
 }

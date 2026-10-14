@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "4a6e0b108efb2ce552eb9f637555effbf133fe6e7b09b21acc7c5adb75b6c985",
-      "tr_sha256": "e526506349f4bf5d0a94d9e8bfe70f123db021124cd9fc057dcf7185e7e63087"
+      "en_sha256": "a61dbdef305317b1402eb48d3c10508b68a085b19c4a3d7e188a30e33e6831e2",
+      "tr_sha256": "5ab12f8c6dda1ae01dc1a6e5d0a88bf817ddac00a8e128328c964f32e928a678"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -27,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "2c2e9752f1368fe865890f4757ded4ed34461740efd66fc4c3e8ec428de0800e",
-      "tr_sha256": "d154b1423bb1c08667968700ff13f1dac0d89cae40012c5bbd0867418915e0ef"
+      "en_sha256": "0b827939edf584dcd5ee8a212980f39e76cf3a7422e5b3f0c29b74f5d30ef600",
+      "tr_sha256": "0fc74651ed5f22997be97cc6f49a30d792899def935808bf1886c85deaef9daa"
     },
     {
       "en": "records/plan.md",
@@ -45,8 +45,8 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "051b7f1a797b173a6b3aee85a2a2d1e0ecc0a1c52f310117acb78ed5ae20e0e4",
-      "tr_sha256": "fdcd5e4e06c611c682292c14992c9983d5f7bd4dcfa776c7e9d5c6de1a872a84"
+      "en_sha256": "49c49edce2a225444d981131b6e3b779a17bd0abc1c03c100c27af522cdfde6f",
+      "tr_sha256": "b86feb1a2c2a587266ce7e5dc7b597d247cdff579ba86f455b4f7ffc9b252717"
     },
     {
       "en": "docs/en/quality-gates.md",
@@ -57,8 +57,8 @@
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "6d72f218259e49615b85942cac9d8e44373d35a524995d2a559e19361d3bfa61",
-      "tr_sha256": "e8b5d11adbcfb1962040149969851c636059a745d8cdffc5f560ee5ce20c9ada"
+      "en_sha256": "fe584b1991117ae6c992ecd7ee25ee4efedba4db8e6245f43501aa62f6bb57d1",
+      "tr_sha256": "91654277b6a7de812cddf9c5710b31aab4819801ba8e387848c313147ac15a25"
     },
     {
       "en": "records/verification.md",
@@ -101,6 +101,12 @@
       "tr": "records/platform-v07-alignment.tr.md",
       "en_sha256": "96f5fcac8723c16d37211041b4e4e0bcc42a226960e68382acb1887d5f28f313",
       "tr_sha256": "74b62a4b134b8d700224eb5eda006f71459176607a9256d60f598b224766590c"
+    },
+    {
+      "en": "records/architecture-v07-visuals.md",
+      "tr": "records/architecture-v07-visuals.tr.md",
+      "en_sha256": "c89c569b328848f2c003f09511258940f67971d1a3c1a80df47b5c57e4f9f849",
+      "tr_sha256": "7b6d96d7da4b96d4e7bd866a42ea1b225f458f0fb799d947200693decd19cf55"
     }
   ]
 }
