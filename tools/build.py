@@ -8,12 +8,12 @@ ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://eylema.dev"
 INDEXNOW_KEY = "1e76b9883a4f4a64a2ceffbbc439a640"
 PROJECT = "https://github.com/eylema-dev/eylema"
-UPDATED = "2026-10-13"
+UPDATED = "2026-10-14"
 # Actual page changes, independent of the reviewed design date and build time.
-PAGE_MODIFIED = {"en": "2026-10-13", "tr": "2026-10-13"}
+PAGE_MODIFIED = {"en": "2026-10-14", "tr": "2026-10-14"}
 SOURCES = {
-    "en": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.md", "project_structure": "docs/project-structure.md", "core_browser": "docs/en/local-browser.md", "license": "LICENSE"},
-    "tr": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.tr.md", "project_structure": "docs/project-structure.md", "core_browser": "docs/tr/local-browser.md", "license": "LICENSE"},
+    "en": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.md", "project_structure": "docs/project-structure.md", "core_browser": "docs/en/local-browser.md", "core_authority": "docs/en/real-human.md", "core_contracts": "docs/en/platform-contracts.md", "core_models": "docs/en/model-contract.md", "core_memory": "docs/en/memory-contracts.md", "core_evidence": "docs/en/decision-evidence.md", "core_data": "docs/en/project-data.md", "license": "LICENSE"},
+    "tr": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.tr.md", "project_structure": "docs/project-structure.md", "core_browser": "docs/tr/local-browser.md", "core_authority": "docs/tr/real-human.md", "core_contracts": "docs/tr/platform-contracts.md", "core_models": "docs/tr/model-contract.md", "core_memory": "docs/tr/memory-contracts.md", "core_evidence": "docs/tr/decision-evidence.md", "core_data": "docs/tr/project-data.md", "license": "LICENSE"},
 }
 
 
@@ -27,7 +27,7 @@ def arrow(external=False):
 
 
 def source(lang, name):
-    repository = PROJECT if name in {"project", "core_browser", "license"} else f"https://github.com/eylema-dev/eylema-docs-{lang}"
+    repository = PROJECT if name in {"project", "license"} or name.startswith("core_") else f"https://github.com/eylema-dev/eylema-docs-{lang}"
     return f"{repository}/blob/main/{SOURCES[lang][name]}"
 
 

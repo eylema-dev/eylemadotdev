@@ -1,38 +1,63 @@
 {
-  "reviewedOn": "2026-10-13",
-  "architectureRevision": "0.5.0",
+  "reviewedOn": "2026-10-14",
+  "architectureRevision": "0.7.0",
   "repositories": {
-    "eylema": "0d9a67ec90ead329ecd2ce348be8ea8b4f0b0f52",
-    "eylema-docs-en": "c1fea4d743bd537f501978137029194d4c05de73",
-    "eylema-docs-tr": "45e3c97d2049f66d6faf3905318f117c711fc89a",
-    "devguide": "6552a1c443ccbe33db3e2cabb4ae37a5897009af"
+    "eylema": "a863e8bd68e9be23ab3f326c53a9ae875b9a270b",
+    "eylema-docs-en": "b23e9849d555c4e8dd5209d7be7dcd46e5182d6c",
+    "eylema-docs-tr": "f2e0d93a2ecabfe22c8ff011597f0e17a261d7cb",
+    "devguide": "0fbe7ae415d60158389318996a50913a2f235d22"
   },
   "claims": [
     {
-      "claim": "Product purpose: cooperative loops with stable role contracts and compatible model replacement",
-      "source": "https://github.com/eylema-dev/eylema-docs-en/blob/c1fea4d743bd537f501978137029194d4c05de73/docs/architecture.md",
-      "boundary": "Integrated role/model/XState/dataset capabilities are proposed, not accepted execution."
+      "claim": "Architecture v0.7: Rust harness with nine optional roles, typed tools/skills, RAG and purpose-scoped memory",
+      "source": "https://github.com/eylema-dev/eylema-docs-en/blob/b23e9849d555c4e8dd5209d7be7dcd46e5182d6c/docs/architecture.md",
+      "boundary": "Model inference, integrated RAG/graph/analytics, native training and full jobs require separate acceptance."
     },
     {
-      "claim": "Rust task core, recovery, loopback service, CLI and browser console are implemented",
-      "source": "https://github.com/eylema-dev/eylema/blob/0d9a67ec90ead329ecd2ce348be8ea8b4f0b0f52/README.md",
-      "boundary": "Published core evidence is cited; website tests do not rerun core or establish full-product/model/GPU acceptance."
+      "claim": "Typed owned read/add tools retain source authorization, actual outcomes and partial/unknown recovery boundaries",
+      "source": "https://github.com/eylema-dev/eylema/blob/a863e8bd68e9be23ab3f326c53a9ae875b9a270b/docs/en/typed-tools.md",
+      "boundary": "Native counter proof only; durable typed lineage, general tools/model jobs and restart-capable harness remain separate."
     },
     {
-      "claim": "Console stop uses a non-human CLI session and is truthfully rejected with FORBIDDEN",
-      "source": "https://github.com/eylema-dev/eylema/blob/0d9a67ec90ead329ecd2ce348be8ea8b4f0b0f52/docs/en/local-browser.md",
-      "boundary": "Verified-person enrollment and stop acceptance remain separate gates."
+      "claim": "Closed skill packages reuse actual bounded counter tools and retain private control provenance",
+      "source": "https://github.com/eylema-dev/eylema/blob/a863e8bd68e9be23ab3f326c53a9ae875b9a270b/docs/en/versioned-skills.md",
+      "boundary": "No scripts/plugins/models loaded; generic workflows, durable reattachment and trained-skill packages are not accepted."
     },
     {
-      "claim": "First target: one M4 Pro MacBook Pro, 24 GB, macOS; additional machines are inventory",
-      "source": "https://github.com/eylema-dev/eylema-docs-en/blob/c1fea4d743bd537f501978137029194d4c05de73/docs/project-structure.md",
-      "boundary": "No Linux, remote exposure or second-device acceptance claim."
+      "claim": "Scoped loop/model, project-data, source-context, native counter tool/skill and decision-evidence components are implemented",
+      "source": "https://github.com/eylema-dev/eylema/blob/a863e8bd68e9be23ab3f326c53a9ae875b9a270b/README.md",
+      "boundary": "Named component notes define actual proof; no broad inference, privacy-isolation, hardware or full-harness claim."
     },
     {
-      "claim": "First-party core and docs use Apache-2.0",
-      "source": "https://github.com/eylema-dev/eylema/blob/0d9a67ec90ead329ecd2ce348be8ea8b4f0b0f52/LICENSE",
-      "boundary": "Website license, third-party assets, model weights and datasets are not relicensed."
+      "claim": "G73 actual device-owner approval/stop/reopen acceptance passed 14 October 2026",
+      "source": "https://github.com/eylema-dev/eylema/blob/a863e8bd68e9be23ab3f326c53a9ae875b9a270b/docs/en/real-human.md",
+      "boundary": "Known native counter demonstration only; start --human/browser interaction, remote identity and model jobs remain not_run. Website checks do not rerun physical acceptance."
+    },
+    {
+      "claim": "G87 context resolves explicit source references with current rights, live store, TTL and serialized-byte limits",
+      "source": "https://github.com/eylema-dev/eylema/blob/a863e8bd68e9be23ab3f326c53a9ae875b9a270b/docs/en/memory-contracts.md",
+      "boundary": "Vector/semantic similarity, graph traversal, analytical/SQL engines and tokenizer counting remain unavailable."
+    },
+    {
+      "claim": "G27 validates declared artifact and role metadata without model execution",
+      "source": "https://github.com/eylema-dev/eylema/blob/a863e8bd68e9be23ab3f326c53a9ae875b9a270b/docs/en/model-contract.md",
+      "boundary": "No weights loaded or inference accepted; local assignments report unsupported execution."
+    },
+    {
+      "claim": "Project records have five independent purposes and derivatives retain source restrictions",
+      "source": "https://github.com/eylema-dev/eylema/blob/a863e8bd68e9be23ab3f326c53a9ae875b9a270b/docs/en/project-data.md",
+      "boundary": "Scoped native data gate; not whole-console isolation, physical erasure, guaranteed unlearning or arbitrary content classification."
+    },
+    {
+      "claim": "Native Rust per-model gradients/LoRA/QLoRA and reviewed ecosystem reuse are planned",
+      "source": "https://github.com/eylema-dev/eylema-docs-en/blob/b23e9849d555c4e8dd5209d7be7dcd46e5182d6c/docs/architecture.md",
+      "boundary": "External reference recipes, declared profiles and package admission do not prove training, model activation or data-sharing rights."
+    },
+    {
+      "claim": "First target remains M4 Pro/24 GB/macOS; first-party core/docs use Apache-2.0",
+      "source": "https://github.com/eylema-dev/eylema-docs-en/blob/b23e9849d555c4e8dd5209d7be7dcd46e5182d6c/docs/project-structure.md",
+      "boundary": "No new device support, website license or third-party asset/model/data relicensing."
     }
   ],
-  "architectureIllustration": "Current English/Turkish v0.5 raster illustration generated 13 October 2026 and installed by WEB-010. Integrated roles remain proposed; implemented task foundation is separately labeled."
+  "architectureIllustration": "Retained WEB-010 English/Turkish v0.5 subset with accurate versioned scope notice. Does not depict v0.7 RAG, nine roles, project memory or native Rust training; not execution evidence. All image bytes unchanged."
 }

@@ -2,7 +2,7 @@
   "lang": "en",
   "locale": "en_US",
   "title": "Eylema — Composable Agentic AI Platform in Rust",
-  "description": "Explore Eylema: a Rust foundation and local task console for a platform of cooperative agentic loops, compatible models and human-controlled learning.",
+  "description": "Explore Eylema: a Rust platform in development for local models, tools, reusable skills, RAG and project-scoped memory, with human-controlled learning.",
   "skip": "Skip to content",
   "navigation": "Main navigation",
   "language": "Choose language",
@@ -14,22 +14,22 @@
     "By design."
   ],
   "hero_art_alt": "Decorative orange Eylema loop sculpture",
-  "intro": "A platform in development for cooperative agentic loops. Connect roles, replace compatible models and turn permitted experience into reviewed training data.",
+  "intro": "Turn human ideas and expert judgment into agentic systems. Compose local model roles, tools, reusable skills and project knowledge through a shared Rust platform.",
   "explore": "Explore the platform",
   "follow": "Follow on GitHub",
-  "status": "Rust task core and local browser console implemented. Integrated model, workflow and learning capabilities still need acceptance.",
+  "status": "Local task console and scoped Rust components implemented. Model inference, integrated RAG, native training and full-product acceptance remain separate.",
   "principles": [
     {
-      "title": "Stable contracts",
-      "text": "Define the loop once. Change compatible model assignments through reviewed versions."
+      "title": "Compose, then reuse",
+      "text": "Connect stable roles, tools and skills. Accept compatible profiles for each job."
     },
     {
       "title": "Local first",
-      "text": "An experimental single-user foundation on Apple M4 Pro and macOS."
+      "text": "Project-private by default, with the first experimental target on Apple M4 Pro and macOS."
     },
     {
       "title": "Human authority",
-      "text": "Set goals and budgets. Inspect evidence. Control permissions and acceptance."
+      "text": "Set goals and budgets. Inspect outcomes. Grant execution, learning and sharing separately."
     }
   ],
   "architecture_label": "01 — Architecture",
@@ -37,78 +37,78 @@
     "Compose the loop.",
     "Keep the contract."
   ],
-  "architecture_intro": "Eylema owns the platform contracts and lifecycle. Perception, planning, decision and optional prediction roles cooperate around Rust authority and observed results.",
+  "architecture_intro": "Eylema owns authority, execution and evidence. Architecture v0.7 connects optional model roles with typed tools, skills, source-grounded retrieval and purpose-scoped memory.",
   "technology_alt": "EylemA architecture v0.5: human-governed stable contracts connect perception, planning, decision, optional prediction, XState workflow and Rust execution. Observed results feed back; permitted data follows a separate training, evaluation and safe model-activation loop.",
-  "technology_caption": "Architecture v0.5 proposal. The operating loop produces observed results; a separate permitted-data loop uses external Unsloth training and independent evaluation before safe activation. The implemented Rust task foundation is distinct from integrated model/XState acceptance.",
+  "technology_caption": "Versioned v0.5 detail: the operating loop and external-training reference. Current v0.7 also covers nine roles, RAG, project memory and planned native Rust training. This image does not show those additions or prove runtime acceptance.",
   "technology_open": "Open full-size image (new tab)",
   "steps_label": "Explore the cooperative loop design",
   "steps": [
     {
       "id": "define",
       "name": "Compose",
-      "title": "Define a reusable loop.",
-      "text": "Connect roles through versioned observation and action contracts. Set goals, permissions, termination conditions and finite budgets. Placement and document-evidence applications should share these platform contracts.",
+      "title": "Define a job, then compose its flow.",
+      "text": "Declare goals, authority, budgets, typed tools and reusable skills. Choose only the roles the job needs; nine roles do not mean nine mandatory models. Start with local text and source-grounded reporting; audio, vision and world models are optional.",
       "link": "Read the loop contracts",
       "source": "architecture",
-      "diagram": "Proposed loop definition",
-      "root": "Versioned loop",
+      "diagram": "Composable job design",
+      "root": "Bounded job",
       "nodes": [
         "Roles",
-        "Observations",
-        "Actions",
+        "Tools",
+        "Skills",
         "Budgets"
       ]
     },
     {
       "id": "develop",
       "name": "Assign",
-      "title": "Replace models, safely.",
-      "text": "MiniCPM, Qwen and local policies are candidate participants, not the platform identity. Accept exact artifacts, operators and hardware profiles; compare a replacement on held-out tasks and activate it between steps. In-flight work retains its assignment.",
+      "title": "Accept profiles, not model names.",
+      "text": "Match exact artifacts, operators, rights, schemas and hardware. Reasoning, planning, decision, action policy and retrieval remain distinct roles; speech input and output use separate profiles. Model manifests are implemented, but local inference remains explicitly unsupported until accepted.",
       "link": "Read the assignment lifecycle",
       "source": "architecture",
-      "diagram": "Proposed role assignments",
-      "root": "Accepted profile",
+      "diagram": "Declared model assignments",
+      "root": "Exact profile",
       "nodes": [
-        "Perception",
-        "Planning",
-        "Decision",
-        "Prediction"
+        "Role",
+        "Artifact",
+        "Interface",
+        "Hardware"
       ]
     },
     {
       "id": "operate",
       "name": "Inspect",
-      "title": "Separate proposals from facts.",
-      "text": "The proposed local XState workflow coordinates bounded work; Rust independently checks authority, current state and budgets. Link each proposal to validation and an actual execution receipt. Model agreement is not evidence, and reverting weights does not undo actions.",
+      "title": "Ground context. Inspect actual effects.",
+      "text": "Retrieve only currently permitted project sources. The implemented memory adapter resolves explicit references; vector search, graph traversal and analytical engines remain separate gates. Native decision evidence links submitted alternatives to actual bounded tool outcomes; a prediction or graph link is not a verified fact.",
       "link": "Read the authority contract",
       "source": "api",
-      "diagram": "Proposed feedback loop",
-      "root": "Observed state",
+      "diagram": "Source-grounded operating design",
+      "root": "Permitted evidence",
       "nodes": [
+        "Recall",
         "Propose",
         "Validate",
-        "Execute",
         "Observe"
       ]
     },
     {
       "id": "learn",
       "name": "Improve",
-      "title": "Learn from permitted episodes.",
-      "text": "Record observations, alternatives, outcomes and reviewed corrections under an explicit collection policy. Derive perception labels, language examples, policy trajectories and world transitions. Train separately, evaluate on held-out tasks and accept a new assignment at a safe boundary.",
+      "title": "Improve without widening permissions.",
+      "text": "Execution, collection, training, external disclosure and ecosystem export have separate rights. Derived data keeps source restrictions and lineage. Per-model native Rust gradients and LoRA/QLoRA are planned; external reference recipes do not prove owned-runtime training. Evaluate held-out tasks before controlled promotion.",
       "link": "Read the learning protocol",
       "source": "learning",
-      "diagram": "Proposed improvement loop",
+      "diagram": "Planned improvement lifecycle",
       "root": "Permitted episodes",
       "nodes": [
         "Curate",
         "Train",
         "Evaluate",
-        "Activate"
+        "Promote"
       ]
     }
   ],
-  "concept_note": "Platform design · integrated roles and model acceptance remain pending",
+  "concept_note": "Architecture v0.7 · scoped components exist; integrated model jobs remain unaccepted",
   "human_title": "Human direction, throughout.",
   "human_text": "Define authority. Inspect observed outcomes. Keep stop and revocation on the Rust control path.",
   "faq_label": "02 — Questions & answers",
@@ -120,33 +120,57 @@
   "questions": [
     {
       "question": "What is Eylema?",
-      "answer": "Eylema is a platform in development for defining, running and evolving cooperative agentic loops. Stable role contracts connect local participants, Rust execution, decision evidence and permitted training data. The deterministic task console is its first implemented foundation.",
+      "answer": "Eylema is a Rust platform in development for composing bounded agentic jobs from model roles, tools, reusable skills and project knowledge. Humans define goals and authority; the platform records actual outcomes. Its implemented local task foundation is distinct from the broader model, RAG, memory and learning design.",
       "source": "architecture",
-      "link": "Architecture v0.5"
+      "link": "Architecture v0.7"
     },
     {
       "question": "What works today?",
-      "answer": "The public core includes typed Rust tasks, deterministic execution, durable recovery, a local loopback service, CLI and browser console. The console creates tasks, runs deterministic actions and inspects persisted state. Verified-human stop authorization remains a separate acceptance requirement. This promotional site does not run the console or establish full-product acceptance.",
-      "source": "core_browser",
-      "link": "Implemented console and limits"
+      "answer": "The core includes the task console and scoped native loop/model contracts, project-data gates, explicit-reference memory context, typed counter tools, reusable counter skills and decision evidence. Each component has its own proof and limits. This promotional site does not run them, and those proofs do not establish general inference, graph search or complete harness jobs.",
+      "source": "project",
+      "link": "Implemented components and evidence"
     },
     {
-      "question": "Can I swap models or use XState now?",
-      "answer": "The architecture proposes compatible model replacement and a local XState workflow adapter. These integrations are not yet accepted runtime features. MiniCPM, Qwen and decision policies require exact supported profiles; arbitrary weights are not interchangeable. Rust remains responsible for authority and execution truth.",
-      "source": "architecture",
-      "link": "Roles, model replacement and XState"
+      "question": "Has real human authorization been demonstrated?",
+      "answer": "Yes, in a bounded native macOS counter demonstration: an actual device-owner check, exact approval, effective stop before the remaining action, revocation and state-preserving reopen passed on 14 October 2026. This grants no data-training or sharing rights. The separate start --human/browser flow, remote identity and arbitrary model jobs were not part of that acceptance.",
+      "source": "core_authority",
+      "link": "Native person acceptance and limits"
+    },
+    {
+      "question": "Does every job need nine models?",
+      "answer": "No. The optional roles are perception, reasoning, planning, decision, action policy, world model, specialist, critic and representation/retrieval. One model may fill several compatible roles. Audio, vision and text profiles are distinct, and exact model acceptance is required before execution.",
+      "source": "core_contracts",
+      "link": "Roles and binding contracts"
+    },
+    {
+      "question": "Can I run local models or connect an external one now?",
+      "answer": "Declared model artifact and role contracts are implemented; they do not load weights or run inference. Local assignments still report unsupported execution. The architecture permits explicitly configured external frontier models, but configuration is not authorization to disclose private data or make paid calls. A local-only profile never silently falls back to a hosted model.",
+      "source": "core_models",
+      "link": "Model contract and unsupported execution"
+    },
+    {
+      "question": "How do RAG, memory and the knowledge graph fit?",
+      "answer": "The design grounds answers in permitted project documents and optional working, episodic, semantic, procedural, knowledge-graph and analytical memory. The current Rust adapter builds bounded context from explicit source references, rechecking rights, expiry and lineage. Semantic/vector retrieval, graph traversal, analytical engines and tokenizer counting remain separate acceptance gates.",
+      "source": "core_memory",
+      "link": "Implemented source context and memory limits"
     },
     {
       "question": "How are decisions explained?",
-      "answer": "The proposed evidence record links goals, source observations, alternatives, constraints, model versions, validation and observed outcomes. A readable summary must reference that evidence. Hidden model reasoning is not proof; predictions and suggestions remain distinct from observed facts.",
-      "source": "architecture",
-      "link": "Decision evidence design"
+      "answer": "Native decision evidence joins submitted alternatives, constraints and declared model pins to actual scoped tool receipts and complete, partial or unknown outcomes. Confidence and model declarations remain unverified inputs. The current proof uses deterministic counter tools; model explanations, causal claims and whole-loop performance require separate evidence.",
+      "source": "core_evidence",
+      "link": "Decision evidence and measured scope"
     },
     {
-      "question": "Does running a loop permit training on my data?",
-      "answer": "No. Collection and training need their own purpose, permission, retention and export policy. The proposed dataset builder keeps episode lineage and related samples in the same split, including failures and corrections. Unsloth is an external training tool; no accepted training or model-improvement result is claimed.",
-      "source": "learning",
-      "link": "Data permissions and learning"
+      "question": "Can private project data train or enter the ecosystem?",
+      "answer": "Not automatically. Execute, collect, train, external disclosure and ecosystem export are independent purposes. Derived records inherit current source restrictions; withdrawal blocks future use but does not erase published copies or unlearn weights. Ecosystem packages need explicit selection, provenance, terms, review and compatible import acceptance.",
+      "source": "core_data",
+      "link": "Project-private purpose and lineage gates"
+    },
+    {
+      "question": "How will local learning work?",
+      "answer": "The plan accepts training per exact model: owned Rust gradients, CPU/Metal LoRA and separately supported QLoRA, followed by independent evaluation and controlled promotion. Unsloth-like tooling remains a reviewed reference or recipe aid with separate export/reacceptance gates. No accepted native training or improved-model result is claimed.",
+      "source": "architecture",
+      "link": "Native improvement and acceptance"
     },
     {
       "question": "Which platform comes first?",
@@ -161,60 +185,60 @@
       "link": "Core Apache-2.0 license"
     }
   ],
-  "updated": "Project overview reviewed 13 October 2026.",
+  "updated": "Project overview reviewed 14 October 2026.",
   "language_note": "English is canonical. Turkish is a full companion.",
   "roadmap_label": "03 — The road ahead",
   "roadmap_title": [
     "Built in the open.",
     "Proven step by step."
   ],
-  "roadmap_intro": "The deterministic local foundation is implemented. Cooperative model loops, accepted providers, learning and complete-product acceptance keep their own milestones and evidence.",
+  "roadmap_intro": "Build on the local foundation. Accept each model, knowledge flow and improvement step against its own evidence; component tests do not establish a complete agentic application.",
   "milestones": [
     {
-      "title": "Local task foundation",
-      "text": "Rust contracts, deterministic steps, durable recovery, loopback service, CLI and browser console.",
-      "status": "Implemented foundation"
+      "title": "Owned Rust foundation",
+      "text": "Task console and scoped contracts, tools, skills, data gates, source context and native person proof.",
+      "status": "Scoped components implemented"
     },
     {
-      "title": "Composable agentic loops",
-      "text": "Stable role contracts, compatible model assignments, decision evidence and proposed XState coordination.",
-      "status": "Architecture v0.5"
+      "title": "Accepted model jobs",
+      "text": "Exact domain profiles, owned CPU/Metal inference, typed tools and reusable local text flows.",
+      "status": "Execution acceptance pending"
     },
     {
-      "title": "Models and permitted learning",
-      "text": "Evaluate exact local candidates, curate authorized datasets and compare improvements on held-out tasks.",
-      "status": "Acceptance pending"
+      "title": "Private knowledge and memory",
+      "text": "Source-grounded RAG, episodic and graph recall; analytics and backend profiles follow separately.",
+      "status": "Integrated acceptance pending"
     },
     {
-      "title": "Reviewed development delivery",
-      "text": "Coordinator and controlled native workspace components exist; real provider and GitHub delivery acceptance remains separate.",
-      "status": "In progress"
+      "title": "Learning and reviewed delivery",
+      "text": "Native per-model training, independent evaluation, controlled promotion and real provider/GitHub delivery.",
+      "status": "Separate gates remain"
     }
   ],
   "join_title": "Help shape what comes next.",
   "join_text": "Inspect the foundation. Review a contract. Contribute a bounded change with evidence.",
   "join_link": "Explore on GitHub",
-  "footer": "Stable contracts. Local execution. Reviewed progress.",
+  "footer": "Human goals. Owned Rust. Source-linked evidence.",
   "api_link": "API reference",
   "not_found_title": "This page is not here.",
   "not_found_text": "The address may have changed. Explore the Eylema platform from the homepage.",
   "home_link": "Back to Eylema",
-  "foundation_label": "Current scope",
+  "foundation_label": "Current scope · architecture v0.7",
   "foundation_cards": [
     {
       "label": "Implemented foundation",
-      "title": "A local task console.",
-      "text": "Owned Rust task contracts, deterministic execution, journal recovery, loopback HTTP, CLI and a browser console. Create and run tasks, inspect progress and reopen persisted state. Verified-person enrollment and stop acceptance remain separate gates.",
-      "source": "core_browser",
-      "link": "Read the console evidence"
+      "title": "A growing local Rust core.",
+      "text": "Task console, durable recovery, loop/model contracts, purpose-gated project data and bounded source context. Native tools, skill packages and decision evidence have scoped counter proofs; these are not general model or RAG execution.",
+      "source": "project",
+      "link": "Read the component evidence"
     },
     {
-      "label": "Architecture v0.5 · proposed integration",
-      "title": "A reusable agentic platform.",
-      "text": "Versioned loops, role and model registries, inspectable decisions and permitted datasets. MiniCPM perception, Qwen planning, local decision policies and an optional world model are candidates. XState workflow integration requires its own accepted dependency profile.",
+      "label": "Architecture v0.7 · integration in development",
+      "title": "Compose a system for the job.",
+      "text": "Nine optional model roles, reusable skills, RAG and project memory. Local inference, native Rust training and complete jobs need their own acceptance. External models require explicit configuration and disclosure permission; local-only has no hosted fallback.",
       "source": "architecture",
       "link": "Read the current architecture"
     }
   ],
-  "technology_notice": "Architecture v0.5 · proposed integrated platform"
+  "technology_notice": "Cooperative-loop illustration · v0.5 detail"
 }

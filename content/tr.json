@@ -2,7 +2,7 @@
   "lang": "tr",
   "locale": "tr_TR",
   "title": "Eylema — Rust ile Modüler Ajan Tabanlı Yapay Zekâ",
-  "description": "Eylema: işbirlikçi ajan döngüleri, uyumlu modeller ve insan denetimindeki öğrenme için geliştirilen platformun Rust temeli ve yerel görev konsolu.",
+  "description": "Eylema’yı keşfet: yerel modeller, araçlar, yeniden kullanılabilir beceriler, RAG ve proje belleği için geliştirilen, öğrenmeyi insanın yönettiği Rust platformu.",
   "skip": "İçeriğe geç",
   "navigation": "Ana gezinme",
   "language": "Dil seçimi",
@@ -14,22 +14,22 @@
     "Tasarımla."
   ],
   "hero_art_alt": "Dekoratif turuncu Eylema döngüsü heykeli",
-  "intro": "İşbirlikçi ajan döngüleri için geliştirilen bir platform. Rolleri bağla, uyumlu modelleri değiştir ve izinli deneyimleri incelenmiş eğitim verisine dönüştür.",
+  "intro": "İnsan fikirlerini ve uzmanlığını ajan sistemlerine dönüştür. Yerel model rollerini, araçları, yeniden kullanılabilir becerileri ve proje bilgisini ortak Rust platformunda birleştir.",
   "explore": "Platformu keşfet",
   "follow": "GitHub'da takip et",
-  "status": "Rust görev çekirdeği ve yerel tarayıcı konsolu uygulandı. Entegre model, iş akışı ve öğrenme yetenekleri için kabul hâlâ gerekli.",
+  "status": "Yerel görev konsolu ve kapsamı sınırlı Rust bileşenleri uygulandı. Model çıkarımı, entegre RAG, yerel eğitim ve tam ürün kabulü ayrı kalıyor.",
   "principles": [
     {
-      "title": "Sabit sözleşmeler",
-      "text": "Döngüyü bir kez tanımla. Uyumlu model atamalarını incelenmiş sürümlerle değiştir."
+      "title": "Birleştir, yeniden kullan",
+      "text": "Sabit rolleri, araçları ve becerileri bağla. Her iş için uyumlu profilleri kabul et."
     },
     {
       "title": "Önce yerel",
-      "text": "Apple M4 Pro ve macOS üzerinde deneysel, tek kullanıcılı bir temel."
+      "text": "Varsayılan olarak projeye özel; ilk deneysel hedef Apple M4 Pro ve macOS."
     },
     {
       "title": "Yetki insanda",
-      "text": "Hedefleri ve bütçeleri belirle. Kanıtı incele. Yetkileri ve kabulü yönet."
+      "text": "Hedef ve bütçe belirle. Sonucu incele. Yürütme, öğrenme ve paylaşımı ayrı yetkilendir."
     }
   ],
   "architecture_label": "01 — Mimari",
@@ -37,78 +37,78 @@
     "Döngüyü kur.",
     "Sözleşmeyi koru."
   ],
-  "architecture_intro": "Platform sözleşmeleri ve yaşam döngüsü Eylema’ya aittir. Algı, planlama, karar ve isteğe bağlı öngörü rolleri, Rust yetki sınırı ve gözlenen sonuçlar etrafında işbirliği yapar.",
+  "architecture_intro": "Yetki, yürütme ve kanıt Eylema’ya aittir. Mimari v0.7, isteğe bağlı model rollerini tipli araçlar, beceriler, kaynağa dayalı erişim ve amaçla sınırlı bellekle bağlar.",
   "technology_alt": "EylemA mimarisi v0.5: insanın yönettiği sabit sözleşmeler algı, planlama, karar, isteğe bağlı öngörü, XState iş akışı ve Rust yürütmesini bağlar. Gözlenen sonuçlar geri beslenir; izinli veri ayrı eğitim, değerlendirme ve güvenli model etkinleştirme döngüsünü izler.",
-  "technology_caption": "Mimari v0.5 önerisi. İşletim döngüsü gözlenen sonuçlar üretir; ayrı izinli veri döngüsü güvenli etkinleştirmeden önce harici Unsloth eğitimi ve bağımsız değerlendirme kullanır. Uygulanmış Rust görev temeli, entegre model/XState kabulünden ayrıdır.",
+  "technology_caption": "Sürümlü v0.5 ayrıntısı: işletim döngüsü ve harici eğitim referansı. Güncel v0.7 ayrıca dokuz rol, RAG, proje belleği ve planlanan yerel Rust eğitimini kapsar. Bu görsel o eklemeleri göstermez ve çalışma zamanı kabulünü kanıtlamaz.",
   "technology_open": "Görseli tam boy aç (yeni sekme)",
   "steps_label": "İşbirlikçi döngü tasarımını keşfet",
   "steps": [
     {
       "id": "define",
       "name": "Kur",
-      "title": "Yeniden kullanılabilir döngüyü tanımla.",
-      "text": "Rolleri sürümlü gözlem ve eylem sözleşmeleriyle bağla. Hedefleri, yetkileri, bitirme koşullarını ve sonlu bütçeleri belirle. Yerleştirme ve belge-kanıt uygulamaları aynı platform sözleşmelerini paylaşabilmeli.",
+      "title": "İşi tanımla, akışını birleştir.",
+      "text": "Hedef, yetki, bütçe, tipli araç ve yeniden kullanılabilir becerileri belirle. Yalnız işin gerektirdiği rolleri seç; dokuz rol dokuz zorunlu model değildir. Yerel metin ve kaynağa dayalı raporlamayla başla; ses, görüntü ve dünya modelleri isteğe bağlıdır.",
       "link": "Döngü sözleşmelerini oku",
       "source": "architecture",
-      "diagram": "Önerilen döngü tanımı",
-      "root": "Sürümlü döngü",
+      "diagram": "Birleştirilebilir iş tasarımı",
+      "root": "Sınırlı iş",
       "nodes": [
         "Roller",
-        "Gözlemler",
-        "Eylemler",
+        "Araçlar",
+        "Beceriler",
         "Bütçeler"
       ]
     },
     {
       "id": "develop",
       "name": "Ata",
-      "title": "Modelleri güvenle değiştir.",
-      "text": "MiniCPM, Qwen ve yerel politikalar aday katılımcılardır; platformun kimliği değildir. Kesin dosya, operatör ve donanım profillerini kabul et; bir değişimi bağımsız görevlerde karşılaştır ve adımlar arasında etkinleştir. Devam eden iş kendi atamasını korur.",
+      "title": "Model adını değil, profili kabul et.",
+      "text": "Kesin varlık, operatör, hak, şema ve donanımı eşleştir. Muhakeme, planlama, karar, eylem politikası ve erişim ayrı rollerdir; konuşma girdi ve çıktısı ayrı profiller kullanır. Model manifestleri uygulandı; yerel çıkarım kabul edilene kadar açıkça desteklenmiyor.",
       "link": "Atama yaşam döngüsünü oku",
       "source": "architecture",
-      "diagram": "Önerilen rol atamaları",
-      "root": "Kabul edilmiş profil",
+      "diagram": "Beyan edilmiş model atamaları",
+      "root": "Kesin profil",
       "nodes": [
-        "Algı",
-        "Planlama",
-        "Karar",
-        "Öngörü"
+        "Rol",
+        "Varlık",
+        "Arayüz",
+        "Donanım"
       ]
     },
     {
       "id": "operate",
       "name": "İncele",
-      "title": "Öneriyi gözlenen olgudan ayır.",
-      "text": "Önerilen yerel XState iş akışı sınırlı işleri koordine eder; Rust yetkiyi, güncel durumu ve bütçeleri bağımsız denetler. Her öneriyi doğrulamaya ve gerçek yürütme alındısına bağla. Modellerin anlaşması kanıt değildir; eski ağırlıklara dönmek eylemleri geri almaz.",
+      "title": "Bağlamı kaynağa bağla. Gerçek etkiyi incele.",
+      "text": "Yalnız güncel izni olan proje kaynaklarına eriş. Uygulanmış bellek adaptörü açık kaynak referanslarını çözer; vektör arama, graf gezintisi ve analitik motorlar ayrı eşiklerdir. Native karar kanıtı beyan edilen seçenekleri gerçek sınırlı araç sonuçlarına bağlar; öngörü veya graf bağlantısı doğrulanmış gerçek değildir.",
       "link": "Yetki sözleşmesini oku",
       "source": "api",
-      "diagram": "Önerilen geri bildirim döngüsü",
-      "root": "Gözlenen durum",
+      "diagram": "Kaynağa dayalı işletim tasarımı",
+      "root": "İzinli kanıt",
       "nodes": [
+        "Hatırla",
         "Öner",
         "Doğrula",
-        "Yürüt",
-        "Gözlemle"
+        "Gözle"
       ]
     },
     {
       "id": "learn",
       "name": "İyileştir",
-      "title": "İzinli deneyimlerden öğren.",
-      "text": "Gözlemleri, seçenekleri, sonuçları ve incelenmiş düzeltmeleri açık bir toplama politikasıyla kaydet. Algı etiketleri, dil örnekleri, politika yörüngeleri ve dünya geçişleri üret. Eğitimi ayrı yürüt, bağımsız görevlerde değerlendir ve yeni atamayı güvenli bir sınırda kabul et.",
+      "title": "Yetkiyi genişletmeden iyileştir.",
+      "text": "Yürütme, toplama, eğitim, harici veri aktarımı ve ekosistem dışa aktarımı ayrı haklardır. Türev veriler kaynak kısıtlarını ve kökenini korur. Model başına yerel Rust gradyanları ve LoRA/QLoRA planlanıyor; harici referans tarifleri kendi çalışma zamanımızda eğitimi kanıtlamaz. Kontrollü terfiden önce bağımsız görevlerle değerlendir.",
       "link": "Öğrenme protokolünü oku",
       "source": "learning",
-      "diagram": "Önerilen iyileştirme döngüsü",
+      "diagram": "Planlanan iyileştirme yaşam döngüsü",
       "root": "İzinli deneyimler",
       "nodes": [
-        "Veriyi seç",
+        "İncele",
         "Eğit",
         "Değerlendir",
-        "Etkinleştir"
+        "Terfi et"
       ]
     }
   ],
-  "concept_note": "Platform tasarımı · entegre rollerin ve modellerin kabulü henüz tamamlanmadı",
+  "concept_note": "Mimari v0.7 · kapsamı sınırlı bileşenler var; entegre model işlerinin kabulü tamamlanmadı",
   "human_title": "Her aşamada insan yönlendirmesi.",
   "human_text": "Yetkiyi tanımla. Gözlenen sonuçları incele. Durdurma ve yetki iptalini Rust kontrol yolunda tut.",
   "faq_label": "02 — Sorular ve yanıtlar",
@@ -120,33 +120,57 @@
   "questions": [
     {
       "question": "Eylema nedir?",
-      "answer": "Eylema, işbirlikçi ajan döngülerini tanımlamak, çalıştırmak ve geliştirmek için geliştirilen bir platformdur. Sabit rol sözleşmeleri yerel katılımcıları, Rust yürütmesini, karar kanıtlarını ve izinli eğitim verisini bağlar. Deterministik görev konsolu, uygulanmış ilk temelidir.",
+      "answer": "Eylema; model rolleri, araçlar, yeniden kullanılabilir beceriler ve proje bilgisinden sınırlı ajan işleri kurmak için geliştirilen bir Rust platformudur. İnsanlar hedef ve yetkiyi belirler; platform gerçek sonuçları kaydeder. Uygulanmış yerel görev temeli, geniş model, RAG, bellek ve öğrenme tasarımından ayrıdır.",
       "source": "architecture",
-      "link": "Mimari v0.5"
+      "link": "Mimari v0.7"
     },
     {
       "question": "Bugün ne çalışıyor?",
-      "answer": "Herkese açık çekirdekte tipli Rust görevleri, deterministik yürütme, kalıcı kurtarma, yerel loopback servis, CLI ve tarayıcı konsolu bulunur. Konsol görev oluşturur, deterministik eylemleri yürütür ve kalıcı durumu inceler. Doğrulanmış insanın durdurma yetkisi ayrı bir kabul gereksinimidir. Bu tanıtım sitesi konsolu çalıştırmaz veya tam ürün kabulünü kanıtlamaz.",
-      "source": "core_browser",
-      "link": "Uygulanmış konsol ve sınırları"
+      "answer": "Çekirdek; görev konsolu ile sınırlı native döngü/model sözleşmeleri, proje-veri kapıları, açık referanslı bellek bağlamı, tipli sayaç araçları, yeniden kullanılabilir sayaç becerileri ve karar kanıtını içerir. Her bileşenin kendi kanıtı ve sınırı var. Bu tanıtım sitesi onları çalıştırmaz; bu kanıtlar genel çıkarımı, graf aramasını veya tam platform işlerini göstermez.",
+      "source": "project",
+      "link": "Uygulanmış bileşenler ve kanıtlar"
     },
     {
-      "question": "Şimdi model değiştirebilir veya XState kullanabilir miyim?",
-      "answer": "Mimari, uyumlu model değiştirmeyi ve yerel XState iş akışı adaptörünü önerir. Bu entegrasyonlar henüz kabul edilmiş çalışma zamanı özellikleri değildir. MiniCPM, Qwen ve karar politikaları için kesin destek profilleri gerekir; herhangi bir ağırlık bir diğeriyle değiştirilemez. Yetki ve yürütme gerçeği Rust’a aittir.",
-      "source": "architecture",
-      "link": "Roller, model değiştirme ve XState"
+      "question": "Gerçek insan yetkilendirmesi gösterildi mi?",
+      "answer": "Evet, sınırlı bir native macOS sayaç senaryosunda: gerçek cihaz sahibi doğrulaması, kesin onay, kalan eylemden önce etkili durdurma, yetki iptali ve durumu koruyan yeniden açma 14 Ekim 2026’da geçti. Bu, eğitim veya paylaşım hakkı vermez. Ayrı start --human/tarayıcı akışı, uzaktan kimlik ve genel model işleri bu kabulün parçası değildi.",
+      "source": "core_authority",
+      "link": "Native gerçek kişi kabulü ve sınırları"
+    },
+    {
+      "question": "Her iş dokuz model gerektirir mi?",
+      "answer": "Hayır. İsteğe bağlı roller algı, muhakeme, planlama, karar, eylem politikası, dünya modeli, uzman, eleştirmen ve temsil/erişimdir. Bir model birden fazla uyumlu rolü üstlenebilir. Ses, görüntü ve metin profilleri ayrıdır; yürütmeden önce kesin model kabulü gerekir.",
+      "source": "core_contracts",
+      "link": "Rol ve bağlama sözleşmeleri"
+    },
+    {
+      "question": "Şimdi yerel model çalıştırabilir veya harici model bağlayabilir miyim?",
+      "answer": "Beyan edilmiş model varlık ve rol sözleşmeleri uygulandı; ağırlıkları yüklemez veya çıkarım çalıştırmaz. Yerel atamalar hâlâ desteklenmeyen yürütüm sonucu verir. Mimari, açıkça yapılandırılmış harici ileri modelleri kapsar; yapılandırma özel veri aktarımı veya ücretli çağrı yetkisi değildir. Yalnız yerel profil gizlice hosted modele geçmez.",
+      "source": "core_models",
+      "link": "Model sözleşmesi ve desteklenmeyen yürütüm"
+    },
+    {
+      "question": "RAG, bellek ve bilgi grafiği nasıl birleşiyor?",
+      "answer": "Tasarım; yanıtları izinli proje belgelerine ve isteğe bağlı çalışma, episodik, anlamsal, prosedürel, bilgi grafiği ve analitik belleğe dayandırır. Güncel Rust adaptörü açık kaynak referanslarından sınırlı bağlam kurar; hak, süre ve kökeni yeniden denetler. Anlamsal/vektör erişim, graf gezintisi, analitik motorlar ve tokenizer sayımı ayrı kabul eşikleridir.",
+      "source": "core_memory",
+      "link": "Uygulanmış kaynak bağlamı ve bellek sınırları"
     },
     {
       "question": "Kararlar nasıl açıklanır?",
-      "answer": "Önerilen kanıt kaydı hedefleri, kaynak gözlemleri, seçenekleri, kısıtları, model sürümlerini, doğrulamayı ve gözlenen sonuçları bağlar. Okunabilir bir özet bu kanıta dayanmalıdır. Modelin gizli akıl yürütmesi kanıt değildir; öngörüler ve öneriler gözlenen olgulardan ayrı tutulur.",
-      "source": "architecture",
-      "link": "Karar kanıtı tasarımı"
+      "answer": "Native karar kanıtı; beyan edilmiş seçenek, kısıt ve model kimliklerini gerçek, kapsamı sınırlı araç alındılarına, tam, kısmi veya belirsiz sonuçlara bağlar. Güven ve model beyanları doğrulanmamış girdiler kalır. Güncel kanıt deterministik sayaç araçları kullanır; model açıklamaları, nedensellik ve bütün döngü performansı ayrı kanıt gerektirir.",
+      "source": "core_evidence",
+      "link": "Karar kanıtı ve ölçülen kapsam"
     },
     {
-      "question": "Döngüyü çalıştırmak verilerimle eğitime izin verir mi?",
-      "answer": "Hayır. Toplama ve eğitim için ayrı amaç, izin, saklama ve dışa aktarma politikası gerekir. Önerilen veri kümesi üreticisi deneyim kayıtlarının kökenini korur; başarısızlık ve düzeltmeler dâhil ilişkili örnekleri aynı veri bölmesinde tutar. Unsloth harici eğitim aracıdır; kabul edilmiş eğitim veya model iyileştirme sonucu iddia edilmez.",
-      "source": "learning",
-      "link": "Veri izinleri ve öğrenme"
+      "question": "Özel proje verisi eğitime veya ekosisteme gider mi?",
+      "answer": "Otomatik olarak gitmez. Yürütme, toplama, eğitim, harici veri aktarımı ve ekosistem dışa aktarımı ayrı amaçlardır. Türev kayıtlar güncel kaynak kısıtlarını miras alır; geri çekme gelecekteki kullanımı engeller, yayımlanmış kopyaları silmez veya ağırlıklara unutturmaz. Ekosistem paketleri açık seçim, köken, koşul, inceleme ve uyumlu içe aktarım kabulü ister.",
+      "source": "core_data",
+      "link": "Projeye özel amaç ve köken kapıları"
+    },
+    {
+      "question": "Yerel öğrenme nasıl işleyecek?",
+      "answer": "Plan, eğitimi kesin model başına kabul eder: kendi Rust gradyanlarımız, CPU/Metal LoRA ve ayrı desteklenen QLoRA; ardından bağımsız değerlendirme ve kontrollü terfi. Unsloth benzeri araçlar ayrı dışa aktarım/yeniden kabul eşikleriyle incelenmiş referans veya tarif yardımcısıdır. Kabul edilmiş yerel eğitim ya da iyileşmiş model sonucu iddia edilmez.",
+      "source": "architecture",
+      "link": "Yerel iyileştirme ve kabul"
     },
     {
       "question": "İlk hedef hangi platform?",
@@ -161,60 +185,60 @@
       "link": "Çekirdeğin Apache-2.0 lisansı"
     }
   ],
-  "updated": "Proje tanıtımı 13 Ekim 2026 tarihinde incelendi.",
+  "updated": "Proje tanıtımı 14 Ekim 2026 tarihinde incelendi.",
   "language_note": "İngilizce kanoniktir. Türkçe tam eşlikçisidir.",
   "roadmap_label": "03 — Önümüzdeki yol",
   "roadmap_title": [
     "Açıkça geliştir.",
     "Adım adım doğrula."
   ],
-  "roadmap_intro": "Deterministik yerel temel uygulandı. İşbirlikçi model döngüleri, kabul edilmiş sağlayıcılar, öğrenme ve tam ürün kabulü kendi aşamalarını ve kanıtlarını koruyor.",
+  "roadmap_intro": "Yerel temel üzerinde ilerle. Her model, bilgi akışı ve iyileştirme adımı kendi kanıtıyla kabul edilsin; bileşen testleri tam bir ajan uygulamasını kanıtlamaz.",
   "milestones": [
     {
-      "title": "Yerel görev temeli",
-      "text": "Rust sözleşmeleri, deterministik adımlar, kalıcı kurtarma, loopback servis, CLI ve tarayıcı konsolu.",
-      "status": "Uygulanmış temel"
+      "title": "Kendi Rust temelimiz",
+      "text": "Görev konsolu ve sınırlı sözleşme, araç, beceri, veri kapısı, kaynak bağlamı ve native gerçek kişi kanıtı.",
+      "status": "Sınırlı bileşenler uygulandı"
     },
     {
-      "title": "Modüler ajan döngüleri",
-      "text": "Sabit rol sözleşmeleri, uyumlu model atamaları, karar kanıtı ve önerilen XState koordinasyonu.",
-      "status": "Mimari v0.5"
+      "title": "Kabul edilmiş model işleri",
+      "text": "Kesin alan profilleri, kendi CPU/Metal çıkarımımız, tipli araçlar ve yeniden kullanılabilir yerel metin akışları.",
+      "status": "Yürütüm kabulü bekliyor"
     },
     {
-      "title": "Modeller ve izinli öğrenme",
-      "text": "Kesin yerel adayları değerlendir, yetkili veri kümelerini hazırla ve iyileşmeleri bağımsız görevlerde karşılaştır.",
-      "status": "Kabul bekliyor"
+      "title": "Özel bilgi ve bellek",
+      "text": "Kaynağa dayalı RAG, episodik ve graf erişimi; analitik ve backend profilleri ayrı ilerler.",
+      "status": "Entegre kabul bekliyor"
     },
     {
-      "title": "İncelenmiş geliştirme teslimi",
-      "text": "Koordinatör ve denetimli yerel çalışma alanı bileşenleri var; gerçek sağlayıcı ve GitHub teslim kabulü ayrı kalıyor.",
-      "status": "Devam ediyor"
+      "title": "Öğrenme ve incelenmiş teslim",
+      "text": "Model başına yerel eğitim, bağımsız değerlendirme, kontrollü terfi ve gerçek sağlayıcı/GitHub teslimi.",
+      "status": "Ayrı eşikler sürüyor"
     }
   ],
   "join_title": "Sıradaki adımı birlikte şekillendirelim.",
   "join_text": "Temeli incele. Bir sözleşmeyi gözden geçir. Kanıtıyla sınırlı bir değişiklik öner.",
   "join_link": "GitHub'da keşfet",
-  "footer": "Sabit sözleşmeler. Yerel yürütme. İncelenmiş ilerleme.",
+  "footer": "İnsan hedefleri. Kendi Rust bileşenlerimiz. Kaynağa bağlı kanıt.",
   "api_link": "API referansı",
   "not_found_title": "Bu sayfa burada değil.",
   "not_found_text": "Adres değişmiş olabilir. Ana sayfadan Eylema platformunu keşfedin.",
   "home_link": "Eylema'ya dön",
-  "foundation_label": "Güncel kapsam",
+  "foundation_label": "Güncel kapsam · mimari v0.7",
   "foundation_cards": [
     {
       "label": "Uygulanmış temel",
-      "title": "Yerel bir görev konsolu.",
-      "text": "Birinci taraf Rust görev sözleşmeleri, deterministik yürütme, günlükten kurtarma, loopback HTTP, CLI ve tarayıcı konsolu. Görev oluştur, çalıştır, ilerlemeyi incele ve kalıcı durumu yeniden aç. Gerçek kişi doğrulaması ve durdurma kabulü ayrı eşiklerdir.",
-      "source": "core_browser",
-      "link": "Konsol kanıtını oku"
+      "title": "Gelişen yerel Rust çekirdeği.",
+      "text": "Görev konsolu, kalıcı kurtarma, döngü/model sözleşmeleri, amaçla sınırlı proje verisi ve sınırlı kaynak bağlamı. Native araçlar, beceri paketleri ve karar kanıtı sınırlı sayaç senaryolarında gösterildi; genel model veya RAG yürütmesi değildir.",
+      "source": "project",
+      "link": "Bileşen kanıtlarını oku"
     },
     {
-      "label": "Mimari v0.5 · önerilen entegrasyon",
-      "title": "Yeniden kullanılabilir ajan platformu.",
-      "text": "Sürümlü döngüler, rol ve model kayıtları, incelenebilir kararlar ve izinli veri kümeleri. MiniCPM algısı, Qwen planlaması, yerel karar politikaları ve isteğe bağlı dünya modeli adaydır. XState iş akışı entegrasyonu için ayrı kabul edilmiş bağımlılık profili gerekir.",
+      "label": "Mimari v0.7 · entegrasyon geliştiriliyor",
+      "title": "İşe uygun sistemi birleştir.",
+      "text": "Dokuz isteğe bağlı model rolü, yeniden kullanılabilir beceriler, RAG ve proje belleği. Yerel çıkarım, Rust eğitimi ve tam işler kendi kabulünü gerektirir. Harici modeller açık yapılandırma ve veri aktarım izni ister; yalnız yerel profil gizli hosted geçiş yapmaz.",
       "source": "architecture",
       "link": "Güncel mimariyi oku"
     }
   ],
-  "technology_notice": "Mimari v0.5 · önerilen entegre platform"
+  "technology_notice": "İşbirlikçi döngü görseli · v0.5 ayrıntısı"
 }
