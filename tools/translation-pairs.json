@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "a37b64df2f5abd60eb10e74c0343b6c7aa0e4c63d8e09ce01e65d59f810dcac3",
-      "tr_sha256": "4a64a5283d6156ee747feccb888bae1f54401a7a2281f611228909bed43ecd72"
+      "en_sha256": "4a6e0b108efb2ce552eb9f637555effbf133fe6e7b09b21acc7c5adb75b6c985",
+      "tr_sha256": "e526506349f4bf5d0a94d9e8bfe70f123db021124cd9fc057dcf7185e7e63087"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -27,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "e8d4342247381de25cd386802291e46a5f256eb68ed965c32781e820763cd92c",
-      "tr_sha256": "e9ef996f2118bfd68b8f69f6bad62f2a438f174d77bf9eb28be1cfbb83282311"
+      "en_sha256": "2c2e9752f1368fe865890f4757ded4ed34461740efd66fc4c3e8ec428de0800e",
+      "tr_sha256": "d154b1423bb1c08667968700ff13f1dac0d89cae40012c5bbd0867418915e0ef"
     },
     {
       "en": "records/plan.md",
@@ -45,8 +45,8 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "c7871037ef2d489baa272df8c8308de853b2cbe1748515e63042bd2955586fdc",
-      "tr_sha256": "a62135d38a58058bdab3bd00899e57d753a74d2119f45ecb1a8b7d81a386c19c"
+      "en_sha256": "051b7f1a797b173a6b3aee85a2a2d1e0ecc0a1c52f310117acb78ed5ae20e0e4",
+      "tr_sha256": "fdcd5e4e06c611c682292c14992c9983d5f7bd4dcfa776c7e9d5c6de1a872a84"
     },
     {
       "en": "docs/en/quality-gates.md",
@@ -95,6 +95,12 @@
       "tr": "records/architecture-v05-visuals.tr.md",
       "en_sha256": "61288cfa7c350935d58de0b8a16c27ef0bd47d7f6f2432824081adf0b3e328d7",
       "tr_sha256": "70cbc359189b27de38603db9b428e0978a68ebbbbe34f15fc22291aaad323980"
+    },
+    {
+      "en": "records/platform-v07-alignment.md",
+      "tr": "records/platform-v07-alignment.tr.md",
+      "en_sha256": "96f5fcac8723c16d37211041b4e4e0bcc42a226960e68382acb1887d5f28f313",
+      "tr_sha256": "74b62a4b134b8d700224eb5eda006f71459176607a9256d60f598b224766590c"
     }
   ]
 }

@@ -27,7 +27,7 @@ python3 -m venv .venv
 - [Görev planı](records/plan.tr.md), [tasarım tanımı](records/design.tr.md) ve [doğrulama](records/verification.tr.md).
 - `content/*.json`: incelenen iki dilli metin; `tools/build.py`: belirlenimci HTML, JSON-LD, robots, sitemap ve 404 üretimi; `public/assets/`: özgün CSS/JS ve marka görselleri.
 
-[AGENTS.md](AGENTS.md) içindeki doğrulama komutlarını aynen çalıştırın. Üretilen belgeler sürüm kontrolündedir; CI güncelliğini denetler. Çeviri özetleri inceleme kaydıdır, anlam eşdeğerliğinin kanıtı değildir. Site kontrolleri çekirdek, GPU, model, eğitim veya tam ürün kabulünü kanıtlamaz. [Güncel platform hizalaması](records/platform-alignment.tr.md) [sabitlenmiş kaynak kaydına](records/platform-source-snapshot.json) dayanır; [güncel v0.5 iki dilli görseli](records/architecture-v05-visuals.tr.md) uygulanmış görev temelini önerilen entegrasyondan ayırır. [Yerleşik üretim istemleri](records/architecture-v05-prompts.json) ve varlık özetleri kaydedilmiştir.
+[AGENTS.md](AGENTS.md) içindeki doğrulama komutlarını aynen çalıştırın. Üretilen belgeler sürüm kontrolündedir; CI güncelliğini denetler. Çeviri özetleri inceleme kaydıdır, anlam eşdeğerliğinin kanıtı değildir. Site kontrolleri çekirdek, GPU, model, eğitim veya tam ürün kabulünü kanıtlamaz. [Güncel platform hizalaması](records/platform-v07-alignment.tr.md) [sabitlenmiş kaynak kaydına](records/platform-source-snapshot.json) dayanır; [sürümlü v0.5 iki dilli görseli](records/architecture-v05-visuals.tr.md) sınırlı bir ayrıntıdır; güncel metin mimari v0.7 ve ayrı sınırlı bileşen kabulünü kapsar. [Yerleşik üretim istemleri](records/architecture-v05-prompts.json) ve varlık özetleri kaydedilmiştir.
 
 ## Yayınlama sınırı
 
