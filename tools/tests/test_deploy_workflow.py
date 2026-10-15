@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 class DeploymentVerificationTests(unittest.TestCase):
     def verify_attempts(self, failures):
         workflow = (ROOT / ".github/workflows/deploy-swa-eylema-dev.yml").read_text()
-        step = workflow.split("      - name: Verify live Azure preview host\n", 1)[1]
+        step = workflow.split("      - name: Verify live canonical host\n", 1)[1]
         script = textwrap.dedent(step.split("        run: |\n", 1)[1])
         with tempfile.TemporaryDirectory() as directory:
             folder = Path(directory)
@@ -37,7 +37,7 @@ class DeploymentVerificationTests(unittest.TestCase):
             sleeper.write_text(f"#!{sys.executable}\n")
             sleeper.chmod(0o755)
             env = dict(os.environ, PATH=str(folder) + os.pathsep + os.environ["PATH"],
-                       SITE_URL="https://icy-smoke-080dbad03.4.azurestaticapps.net", GITHUB_SHA="a" * 40,
+                       SITE_URL="https://eyleme.dev", GITHUB_SHA="a" * 40,
                        CHECK_CALLS=str(calls), FAILURES=str(failures))
             result = subprocess.run(["bash", "-e", "-c", script], env=env,
                                     capture_output=True, text=True, timeout=10)
