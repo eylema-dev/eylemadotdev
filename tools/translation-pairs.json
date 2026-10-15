@@ -27,7 +27,7 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "8364b29945aab7ed06c2de7fabb1a81f1c5a9bdedb4dd823217933e67d96c54f",
+      "en_sha256": "49a38e1fb2d0be8f804e33afbd4f6655d9ceaf094fded3f272f80e89663f6ced",
       "tr_sha256": "1b6d12bf69686940469601bd6d38e4bd26243d2dab9729ae28a9721cbb1c3ebe"
     },
     {
@@ -161,6 +161,12 @@
       "tr": "records/ecosystem-positioning.tr.md",
       "en_sha256": "0f3ce93b4d461806c731892f2aec02ccb52c37dfaabee768cd1a9764d6586418",
       "tr_sha256": "2f5aa4ede8560e8f2b215ae2dfa6a2906f54c72101f0c8a109c41f99675989b6"
+    },
+    {
+      "en": "records/english-action-slogan.md",
+      "tr": "records/english-action-slogan.tr.md",
+      "en_sha256": "9bd1b96dae6d63cb22f2c4b35d27d671a1ab0ccabd81241075126414d08f3260",
+      "tr_sha256": "ea2f922cb306e688557453c0bdd0a6e564b9938777f1c0d94dc48d06d48b5875"
     }
   ]
 }
