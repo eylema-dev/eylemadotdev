@@ -24,3 +24,7 @@ IndexNow gönderimi herhangi bir ağ isteğinden önce devre dışı bırakılı
 ## Alan adı hazırlığı — 15 Ekim 2026
 
 Proje sahibi artık eyleme.dev adresini seçti ve eylema.dev adresini kapattı. Yeni alan adı satın alınmadı. [Kimlik geçişi](../../records/website-identity.tr.md) yeni sunucu için canonical, karşılıklı dil ve sosyal metaverileri hazırlar; yayın veya DNS değişikliği yapmaz. Bu, yukarıdaki ertelenmiş alan adı kararının yerini alır. Açık bir indeksleme kararı verilene kadar noindex, boş sitemap ve kapalı gönderimler korunur. Eski alan adının kaldırılma raporları ayrı tarihsel ve izleme kanıtı olarak kalır. Yeni alan adı için yönetim paneli doğrulaması ve canlı sunucu kanıtı henüz yoktur.
+
+## Satın alınmış alan adı açılışı — 15 Ekim 2026
+
+Proje sahibi artık eyleme.dev adresini GoDaddy’den aldı ve mevcut Azure sitesine bağlanmasını açıkça istedi. Bu, satın alınmamış alan adı hazırlık notunun yerini alır. [Alan adı açılış kaydı](../../records/eyleme-domain.tr.md); DNS sahipliği/yönlendirmesi, sertifikalar, yönlendirmeler, yayımlanan sürüm kimliği ve tarayıcı kanıtını ayrı tutar. Mevcut noindex/boş sitemap/kapalı gönderim politikası geçerlidir; yeni alan adını almak veya bağlamak arama gönderimlerini yeniden açma yetkisi değildir. Eski alan adını kaldırma takibi ayrı kalır.

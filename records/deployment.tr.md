@@ -21,3 +21,7 @@ Kök alan adı için [Microsoft dış DNS rehberi](https://learn.microsoft.com/e
 ## Bekleyen kimlik geçişi — 15 Ekim 2026
 
 Güncel depo: [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotdev). Hazırlanan canonical doğrulama sunucusu artık eyleme.dev; henüz satın alınmadı. Proje sahibi önceki eylema.dev adresini kapattı. Yeni canonical sunucu mevcut sıkı yayın eşiklerini sağlayana kadar bu kimlik geçişini merge/dağıtım yapmayın. Dağıtım, alan adı satın alma, DNS, Azure kaynağı veya gizli değişken değişikliği dahil değildir. Yukarıdaki tarihsel yayın kanıtı yalnızca kaydedildiği sunucu/revizyon için geçerlidir. [WEB-017](website-identity.tr.md) kaydına bakın.
+
+## Eyleme alan adı açılışı — 15 Ekim 2026
+
+Son proje sahibi isteği, satın alınan eyleme.dev adresinin mevcut Azure Free sitesine bağlanmasını ve kapsamlı açılış PR/merge/dağıtımını yetkilendirir. Üretim denetleyicisi aynı tam SHA, envanter/özet/MIME/noindex, gerçek404 ve dil normalleştirme eşikleriyle artık https://eyleme.dev adresini hedefler. Kök varsayılanlığını yalnızca kök ve www sertifikaları normal doğrulamayı geçtikten sonra açın. Yeni Azure/www yönlendirmeleri yolu korur; Azure önizleme adresi bundan sonra canonical alana ulaşır. Ücretli hizmet, e-posta/ad sunucusu değişikliği veya arama gönderimi açılışa dahil değildir. Gerçek gözlemler için [WEB-018](eyleme-domain.tr.md) kaydına bakın. Yukarıdaki eski notlar kendi tarihsel sunucu ve yetkilerini açıklar.
