@@ -1,6 +1,6 @@
 # Eyleme web sitesi
 
-Ürün ve site kimliği **Eyleme**. Depo **eyleme-dev/eylemedotdev**, hazırlanan canonical alan adı **eyleme.dev**. Proje sahibi eylema.dev adresini kapattı; eyleme.dev henüz satın alınmadı. Yayın; alan adı kaydı, DNS ve HTTPS bekliyor. [Site kimliği kaydına](records/website-identity.tr.md) bakın.
+Ürün ve site kimliği **Eyleme**. Depo **eyleme-dev/eylemedotdev**, hazırlanan canonical alan adı **eyleme.dev**. Proje sahibi eylema.dev adresini kapattı; eyleme.dev henüz satın alınmadı. Proje sahibi şimdi mevcut Azure adresinde noindex önizlemenin yayınlanmasına yetki verdi; eyleme.dev açılışı alan adı kaydı, DNS ve HTTPS bekliyor. [Site kimliği kaydına](records/website-identity.tr.md) bakın.
 
 Hedef alan adı `eyleme.dev` olan iki dilli tanıtım sitesinin herkese açık kaynak deposu: [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotdev).
 
@@ -35,6 +35,6 @@ python3 -m venv .venv
 
 ## Yayınlama sınırı
 
-eyleme.dev canonical adres yayın denetimlerini sağlayana kadar kimlik geçişini merge etmeyin veya dağıtmayın. Alan adı satın almayı ya da indekslemeyi geri açmayı örtük olarak uygulamayın.
+Güncel yayın hedefi, PR #17 incelemesi sonrasında proje sahibinin doğrudan yetkilendirdiği [Azure önizlemesidir](https://icy-smoke-080dbad03.4.azurestaticapps.net/). Bu sunucuda tam yayın SHA, özet, MIME, noindex, yönlendirme ve gerçek 404 doğrulanır. Metaveri hedeflenen eyleme.dev kimliğini korur; bu önizleme çalışan özel alan adı kanıtı değildir. Alan adı satın almayı ya da indekslemeyi geri açmayı örtük olarak uygulamayın.
 
 Kaynak deposu, proje sahibinin açık isteğiyle herkese açıktır. Yayınlanan HTML, CSS, JavaScript ve görseller herkes tarafından alınabilir. Yetkili üretim hedefi `umayos subscription`, West Europe, `rg-eylema-dev / swa-eylema-dev` altında Azure Static Web Apps Free katmanıdır. Üretim iş akışı yalnızca `public/` çıktısını doğrular ve yükler; canlı dosya özetlerini, MIME türlerini, yönlendirmeyi ve `/release.json` commit değerini kontrol eder. [Yayın sözleşmesini](records/deployment.tr.md) ve hazırlık listesini izleyin. Search Console/Bing doğrulaması, indeksleme ve saha performansı ayrı kanıtlardır. Yerel kontroller tek başına dağıtımı doğrulamaz.

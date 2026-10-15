@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "c0a55e739a0eb07a51e0ae50d7c7a68b78daca019f5afd4ccb75f90e43259f99",
-      "tr_sha256": "aa01d1f621dd6b4cdafc0f65fb85dc5ee25026d8ea4accbe69810376f25fefaa"
+      "en_sha256": "879cfd78e4c40e7e1242d445ab5a4d152ab09b9dedd074c453ccf041c4dfec7b",
+      "tr_sha256": "2b6868e5710e0f4a21c93ed4c245cf37ce58af945b0f595ba0842637543929ba"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -123,8 +123,8 @@
     {
       "en": "records/website-identity.md",
       "tr": "records/website-identity.tr.md",
-      "en_sha256": "159e1ed064b12ca37ea67a32132934b0c3e22b04bf8d18e481c65060d8078d87",
-      "tr_sha256": "4c07933d8e8304645746a90b0270cf2391f42119dc6bc813a1ff93a6ddb645ed"
+      "en_sha256": "729a2af37939ec389b034e645e8095992646e1a8b81db88260aeef62eec7cc4d",
+      "tr_sha256": "5d9e40a8d134bd1fb716aac00963a1c47d03f9189e3afe38995c922c938f9629"
     }
   ]
 }
