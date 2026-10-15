@@ -25,3 +25,7 @@ PR açıklama denetleyicisi ve şablonu, proje sahibinin bekleyen Eylema katkı 
 [v0.7 poster değişimi](../../records/architecture-v07-visuals.tr.md) dört yerleşik Image Gen çağrısı kullanır: İngilizce yeniden tasarım, iki dar ok düzeltmesi ve Türkçe yerelleştirme. İki PNG yine 1672 × 941; kayıpsız sharp 0.35.5 WebP önizlemeleri var. [Tam istem kümesi](../../records/architecture-v07-prompts.json), özet ve bayt boyutları kaydedildi. Mevcut poster adresleri açık taleple değiştirildi; diğer varlıklar korunur. Entegre tasarım, kaynak kapıları ve planlanan yerel eğitim, sınırlı temel kanıtından ayrıdır.
 
 [Ürün adı güncellemesi](../../records/project-name-alignment.tr.md) etkin markayı **Eyleme** olarak değiştirir. Düzenlenebilir vektör paketi sözcük işaretini, sosyal kartı ve logo PNG dosyalarını yeniden üretti; simge değişmedi. Üç yerleşik Image Gen çağrısı saydam başlık logosunda ve İngilizce/Türkçe v0.7 afişlerinde eski son A harfini dar kapsamda e ile değiştirdi. Mevcut varlık yolları ve gerçek eylema.dev alan adı korundu. Yukarıdaki önceki üretim kayıtları tarihsel revizyonlarını açıklar. Güncel özetler varlık köken envanterindedir.
+
+## Güncel Eyleme varlıkları — 15 Ekim 2026
+
+[Site kimliği geçişi](../../records/website-identity.tr.md) güncel dosyaları `eyleme-*` olarak adlandırır ve eyleme.dev adresini hazırlar. Logo zaten Eyleme yazar; İngilizce/Türkçe mimari afişlerinde yalnızca alt bilgi alan adı değişir. Yukarıdaki önceki üretim notları tarihseldir. Köken envanteri güncel dosya adlarını, baytları ve özetleri kaydeder.

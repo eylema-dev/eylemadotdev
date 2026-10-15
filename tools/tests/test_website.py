@@ -69,7 +69,7 @@ class WebsiteTests(unittest.TestCase):
         self.assertEqual(sum(tag == "script" for tag, _ in page.tags), 2)
 
     def test_wrong_turkish_canonical_fails(self):
-        text = render(self.en).replace('rel="canonical" href="https://eylema.dev/"', 'rel="canonical" href="https://eylema.dev/tr/"')
+        text = render(self.en).replace('rel="canonical" href="https://eyleme.dev/"', 'rel="canonical" href="https://eyleme.dev/tr/"')
         with self.assertRaisesRegex(CheckFailure, "canonical"):
             self.check_modified(text)
 
@@ -95,7 +95,7 @@ class WebsiteTests(unittest.TestCase):
     def test_crawl_blocks_and_sitemap_promotion_fail(self):
         generated = outputs()
         for robots in ['User-agent: *\nDisallow: /\n',
-                       generated['robots.txt'] + 'Sitemap: https://eylema.dev/sitemap.xml\n']:
+                       generated['robots.txt'] + 'Sitemap: https://eyleme.dev/sitemap.xml\n']:
             with tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 (root / 'robots.txt').write_text(robots)
@@ -107,7 +107,7 @@ class WebsiteTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / 'robots.txt').write_text(outputs()['robots.txt'])
-            (root / 'sitemap.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://eylema.dev/</loc></url></urlset>')
+            (root / 'sitemap.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://eyleme.dev/</loc></url></urlset>')
             with self.assertRaisesRegex(CheckFailure, "empty urlset"):
                 check_search_files(root)
 
@@ -139,10 +139,10 @@ class WebsiteTests(unittest.TestCase):
         for data in (self.en, self.tr):
             page = Page(render(data))
             images = {attrs["src"]: (attrs, hidden) for attrs, hidden in page.images}
-            hero, hidden = images["/assets/eylema-loop-1024.webp"]
+            hero, hidden = images["/assets/eyleme-loop-1024.webp"]
             self.assertTrue(hidden)
             self.assertEqual(hero["alt"], data["hero_art_alt"])
-            _, hidden = images[f'/assets/eylema-technology-{data["lang"]}.webp']
+            _, hidden = images[f'/assets/eyleme-technology-{data["lang"]}.webp']
             self.assertFalse(hidden)
 
     def test_all_answers_exist_without_javascript(self):

@@ -46,7 +46,7 @@ jobs:
           production_branch: main
       - name: Verify live canonical host
         env:
-          SITE_URL: https://eylema.dev
+          SITE_URL: https://eyleme.dev
         run: |
           for attempt in 1 2 3; do
             if python tools/check_live.py --url "$SITE_URL" --commit "$GITHUB_SHA"; then

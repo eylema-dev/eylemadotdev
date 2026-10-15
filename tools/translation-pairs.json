@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "0f6c08a66c85e0db339352b78b724bc8368375195cb7e1489725e56215828adf",
-      "tr_sha256": "b564dfb8eda0ea24d19c2f4a79e58996c4ff3f21d1533cd37c545c0f257c2351"
+      "en_sha256": "c0a55e739a0eb07a51e0ae50d7c7a68b78daca019f5afd4ccb75f90e43259f99",
+      "tr_sha256": "aa01d1f621dd6b4cdafc0f65fb85dc5ee25026d8ea4accbe69810376f25fefaa"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -45,8 +45,8 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "2acdb7aa6fd4ee97b291db3cf282efff61ab61462823fc1c25d364563c065d67",
-      "tr_sha256": "82a8a5636aff4e043aab15d0b1848b2adfcf578bdf4e97372106b1468d81697e"
+      "en_sha256": "196d05932217eff91b8d07789af9e6596d958dbafa787b1ef28137fbf480ee75",
+      "tr_sha256": "f183c12c39874444e8309046a90245ad4fca64445eec7a5e462ca4535f3d1e0d"
     },
     {
       "en": "docs/en/quality-gates.md",
@@ -57,8 +57,8 @@
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "2a1801eb69af117c39fca0b2933a1d92e2d51bef8ca84feeb1342bee1790da6c",
-      "tr_sha256": "963f79dbf097c0a4267c385b0acfbc685c7b4de2b72d22108e5951b2a2c8c1ba"
+      "en_sha256": "25ea0d6ef3843804e119bd1f90c260a406e37eab368fe1028ab261df9757f70e",
+      "tr_sha256": "12bbb55ca108eabe4071771c445fc39cc0fb33da0c51d3343e8c32b37751852d"
     },
     {
       "en": "records/verification.md",
@@ -69,8 +69,8 @@
     {
       "en": "records/deployment.md",
       "tr": "records/deployment.tr.md",
-      "en_sha256": "6f7b20ad55575884cfd37509c5d8aab5fc035355c2b7ef4eb5af52e226602bdd",
-      "tr_sha256": "3894b1b231d310adbbd2f019d30d1abcaf3a02f38236805b3f3bd7ed4fe3fa91"
+      "en_sha256": "97ff1874337d72c94cb4553144f0a862e0a7e722b8913447e2f7175551cd8865",
+      "tr_sha256": "a7cbd8321475912fc4a2acb7ff000ce37c2dc464417517be14e170e41469f23d"
     },
     {
       "en": "records/technology-visual.md",
@@ -119,6 +119,12 @@
       "tr": "records/search-removal.tr.md",
       "en_sha256": "b50f84cf91dac289e42193a6e1a65ec9d3f7ccf0f8a737126d7c0cefb3b27c9a",
       "tr_sha256": "66837a6d991ce05ff42936a0309c11108a09b7f550bca4ac3959182fcbdfd2e9"
+    },
+    {
+      "en": "records/website-identity.md",
+      "tr": "records/website-identity.tr.md",
+      "en_sha256": "159e1ed064b12ca37ea67a32132934b0c3e22b04bf8d18e481c65060d8078d87",
+      "tr_sha256": "4c07933d8e8304645746a90b0270cf2391f42119dc6bc813a1ff93a6ddb645ed"
     }
   ]
 }

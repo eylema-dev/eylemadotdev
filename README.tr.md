@@ -1,8 +1,8 @@
 # Eyleme web sitesi
 
-Güncel ürün adı **Eyleme**. GitHub organizasyonu artık **eyleme-dev**; mevcut `eylema.dev` alan adı ve varlık adresleri korunur. [Ad uyarlama kaydına](records/project-name-alignment.tr.md) bakın.
+Ürün ve site kimliği **Eyleme**. Depo **eyleme-dev/eylemedotdev**, hazırlanan canonical alan adı **eyleme.dev**. Proje sahibi eylema.dev adresini kapattı; eyleme.dev henüz satın alınmadı. Yayın; alan adı kaydı, DNS ve HTTPS bekliyor. [Site kimliği kaydına](records/website-identity.tr.md) bakın.
 
-Hedef alan adı `eylema.dev` olan iki dilli tanıtım sitesinin herkese açık kaynak deposu: [eyleme-dev/eylemadotdev](https://github.com/eyleme-dev/eylemadotdev).
+Hedef alan adı `eyleme.dev` olan iki dilli tanıtım sitesinin herkese açık kaynak deposu: [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotdev).
 
 Açık platform projesi: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme). Bu depo uygulanmış yerel görev temelini ve önerilen işbirlikçi döngü platformunu tanıtır; Rust platformunu içermez veya çalıştırmaz.
 
@@ -34,5 +34,7 @@ python3 -m venv .venv
 [AGENTS.md](AGENTS.md) içindeki doğrulama komutlarını aynen çalıştırın. Üretilen belgeler sürüm kontrolündedir; CI güncelliğini denetler. Çeviri özetleri inceleme kaydıdır, anlam eşdeğerliğinin kanıtı değildir. Site kontrolleri çekirdek, GPU, model, eğitim veya tam ürün kabulünü kanıtlamaz. [Güncel platform hizalaması](records/platform-v07-alignment.tr.md) [sabitlenmiş kaynak kaydına](records/platform-source-snapshot.json) dayanır; [v0.7 iki dilli görseli](records/architecture-v07-visuals.tr.md) artık aynı platform, proje bilgisi/belleği ve planlanan yerel iyileştirmeyi gösterir; sınırlı bileşen kabulü ayrı kalır. [Yerleşik üretim istemleri](records/architecture-v07-prompts.json) ve varlık özetleri kaydedilmiştir.
 
 ## Yayınlama sınırı
+
+eyleme.dev canonical adres yayın denetimlerini sağlayana kadar kimlik geçişini merge etmeyin veya dağıtmayın. Alan adı satın almayı ya da indekslemeyi geri açmayı örtük olarak uygulamayın.
 
 Kaynak deposu, proje sahibinin açık isteğiyle herkese açıktır. Yayınlanan HTML, CSS, JavaScript ve görseller herkes tarafından alınabilir. Yetkili üretim hedefi `umayos subscription`, West Europe, `rg-eylema-dev / swa-eylema-dev` altında Azure Static Web Apps Free katmanıdır. Üretim iş akışı yalnızca `public/` çıktısını doğrular ve yükler; canlı dosya özetlerini, MIME türlerini, yönlendirmeyi ve `/release.json` commit değerini kontrol eder. [Yayın sözleşmesini](records/deployment.tr.md) ve hazırlık listesini izleyin. Search Console/Bing doğrulaması, indeksleme ve saha performansı ayrı kanıtlardır. Yerel kontroller tek başına dağıtımı doğrulamaz.

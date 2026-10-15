@@ -37,7 +37,7 @@ class DeploymentVerificationTests(unittest.TestCase):
             sleeper.write_text(f"#!{sys.executable}\n")
             sleeper.chmod(0o755)
             env = dict(os.environ, PATH=str(folder) + os.pathsep + os.environ["PATH"],
-                       SITE_URL="https://eylema.dev", GITHUB_SHA="a" * 40,
+                       SITE_URL="https://eyleme.dev", GITHUB_SHA="a" * 40,
                        CHECK_CALLS=str(calls), FAILURES=str(failures))
             result = subprocess.run(["bash", "-e", "-c", script], env=env,
                                     capture_output=True, text=True, timeout=10)

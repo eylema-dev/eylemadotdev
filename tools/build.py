@@ -5,12 +5,12 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGIN = "https://eylema.dev"
+ORIGIN = "https://eyleme.dev"
 INDEXNOW_KEY = "1e76b9883a4f4a64a2ceffbbc439a640"
 PROJECT = "https://github.com/eyleme-dev/eyleme"
 UPDATED = "2026-10-14"
 # Actual page changes, independent of the reviewed design date and build time.
-PAGE_MODIFIED = {"en": "2026-10-14", "tr": "2026-10-14"}
+PAGE_MODIFIED = {"en": "2026-10-15", "tr": "2026-10-15"}
 SOURCES = {
     "en": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.md", "project_structure": "docs/project-structure.md", "core_browser": "docs/en/local-browser.md", "core_authority": "docs/en/real-human.md", "core_contracts": "docs/en/platform-contracts.md", "core_models": "docs/en/model-contract.md", "core_memory": "docs/en/memory-contracts.md", "core_evidence": "docs/en/decision-evidence.md", "core_data": "docs/en/project-data.md", "license": "LICENSE"},
     "tr": {"architecture": "docs/architecture.md", "api": "docs/api-reference.md", "teams": "docs/development-and-operations.md", "learning": "docs/learning-and-training.md", "project": "README.tr.md", "project_structure": "docs/project-structure.md", "core_browser": "docs/tr/local-browser.md", "core_authority": "docs/tr/real-human.md", "core_contracts": "docs/tr/platform-contracts.md", "core_models": "docs/tr/model-contract.md", "core_memory": "docs/tr/memory-contracts.md", "core_evidence": "docs/tr/decision-evidence.md", "core_data": "docs/tr/project-data.md", "license": "LICENSE"},
@@ -56,7 +56,7 @@ def render(data):
     url = ORIGIN + ("/tr/" if lang == "tr" else "/")
     e = lambda key: esc(data[key])
     heading = lambda key: "<br>".join(esc(line) for line in data[key])
-    logo = '<img src="/assets/eylema-wordmark.webp" alt="Eyleme" width="960" height="320" decoding="async">'
+    logo = '<img src="/assets/eyleme-wordmark.webp" alt="Eyleme" width="960" height="320" decoding="async">'
     languages = language_links(data)
     principles = "".join(f'<li><span class="index">{i:02d} /</span><h2>{esc(p["title"])}</h2><p>{esc(p["text"])}</p></li>' for i, p in enumerate(data["principles"], 1))
     foundation = "".join(f'<article><p class="scope-label">{esc(card["label"])}</p><h3>{esc(card["title"])}</h3><p>{esc(card["text"])}</p><a class="text-link" href="{source(lang, card["source"])}">{esc(card["link"])}{arrow(True)}</a></article>' for card in data["foundation_cards"])
@@ -121,7 +121,7 @@ def render(data):
         <div class="hero-actions"><a class="button" href="#architecture">{e('explore')}{arrow()}</a><a class="text-link" href="{PROJECT}">{e('follow')}{arrow(True)}</a></div>
         <p class="project-status">{e('status')}</p>
       </div>
-      <div class="hero-art" aria-hidden="true"><img src="/assets/eylema-loop-1024.webp" srcset="/assets/eylema-loop-640.webp 640w, /assets/eylema-loop-1024.webp 1024w" sizes="(max-width: 720px) 100vw, 52vw" width="1024" height="1024" alt="{e('hero_art_alt')}" fetchpriority="high" decoding="async"></div>
+      <div class="hero-art" aria-hidden="true"><img src="/assets/eyleme-loop-1024.webp" srcset="/assets/eyleme-loop-640.webp 640w, /assets/eyleme-loop-1024.webp 1024w" sizes="(max-width: 720px) 100vw, 52vw" width="1024" height="1024" alt="{e('hero_art_alt')}" fetchpriority="high" decoding="async"></div>
     </section>
     <div class="shell"><ul class="principles">{principles}</ul></div>
     <section class="architecture section shell" id="architecture" aria-labelledby="architecture-title">
@@ -130,10 +130,10 @@ def render(data):
       <div class="foundation-scope" aria-label="{e('foundation_label')}">{foundation}</div>
       <figure class="technology-overview" id="technology">
         <p class="technology-notice">{e('technology_notice')}</p>
-        <a class="technology-image" href="/assets/eylema-technology-{lang}.png" target="_blank" rel="noopener" aria-label="{e('technology_open')}">
-          <img src="/assets/eylema-technology-{lang}.webp" alt="{e('technology_alt')}" width="1672" height="941" loading="lazy" decoding="async">
+        <a class="technology-image" href="/assets/eyleme-technology-{lang}.png" target="_blank" rel="noopener" aria-label="{e('technology_open')}">
+          <img src="/assets/eyleme-technology-{lang}.webp" alt="{e('technology_alt')}" width="1672" height="941" loading="lazy" decoding="async">
         </a>
-        <figcaption><p>{e('technology_caption')}</p><a class="text-link" href="/assets/eylema-technology-{lang}.png" target="_blank" rel="noopener">{e('technology_open')}{arrow(True)}</a></figcaption>
+        <figcaption><p>{e('technology_caption')}</p><a class="text-link" href="/assets/eyleme-technology-{lang}.png" target="_blank" rel="noopener">{e('technology_open')}{arrow(True)}</a></figcaption>
       </figure>
       <nav class="steps" aria-label="{e('steps_label')}">{tabs}</nav>
       {''.join(panels)}
@@ -166,7 +166,7 @@ def outputs(root=ROOT):
     result["robots.txt"] = "User-agent: *\nAllow: /\n"
     result[f"{INDEXNOW_KEY}.txt"] = INDEXNOW_KEY
     result["404.html"] = '''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Eyleme</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/site.css"><link rel="icon" href="/assets/favicon.svg"></head><body><main class="not-found shell"><img src="/assets/eylema.svg" alt="Eyleme" width="190" height="70"><p class="section-label">404</p><h1>This page is not here.</h1><p>The address may have changed.</p><a class="button" href="/">Back to Eyleme</a><p lang="tr">Bu sayfa bulunamadı. <a class="text-link" href="/tr/">Türkçe ana sayfaya dön</a></p></main></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Eyleme</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/site.css"><link rel="icon" href="/assets/favicon.svg"></head><body><main class="not-found shell"><img src="/assets/eyleme.svg" alt="Eyleme" width="190" height="70"><p class="section-label">404</p><h1>This page is not here.</h1><p>The address may have changed.</p><a class="button" href="/">Back to Eyleme</a><p lang="tr">Bu sayfa bulunamadı. <a class="text-link" href="/tr/">Türkçe ana sayfaya dön</a></p></main></body></html>
 '''
     return result
 

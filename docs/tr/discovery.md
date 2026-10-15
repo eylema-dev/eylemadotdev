@@ -2,7 +2,7 @@
 
 [English](../en/discovery.md). İnceleme: 14 Ekim 2026.
 
-Bakım sorumlusu, mevcut `eylema.dev` sitesinin Google ve Bing sonuçlarından kaldırılmasını istedi. Site herkese açık kalır; aramadan çıkarma erişim denetimi değildir. Alan adı geçişi, DNS değişikliği, hesap/mülk silme veya doğrulama anahtarını kaldırma bu değişikliğe dâhil değildir.
+Bakım sorumlusu, mevcut `eylema.dev` sitesinin Google ve Bing sonuçlarından kaldırılmasını istedi. Site herkese açık kalır; aramadan çıkarma erişim denetimi değildir. İlk 14 Ekim kaldırma değişikliği; alan adı geçişi, DNS değişikliği, hesap/mülk silme ve doğrulama anahtarı kaldırmayı kapsamıyordu. Sonraki adres değişikliği için aşağıdaki alan adı hazırlığı kararına bakın.
 
 İngilizce `/` ve Türkçe `/tr/` sayfaları `noindex,follow` bildirir. Azure'ın genel `X-Robots-Tag: noindex,follow` başlığı HTML, görseller ve diğer kaynakları kapsar. Özel 404 sayfası noindex kalır. Mevcut canonical/hreflang, sosyal üst veri, iki dilli içerik ve normal gezinme kullanılabilir.
 
@@ -19,4 +19,8 @@ IndexNow gönderimi herhangi bir ağ isteğinden önce devre dışı bırakılı
 3. Google Search Console ve Bing Webmaster mülkleri ile inceleme erişimini koruyun. Ayrı yetkilendirilmiş sahip paneli kaldırma istekleri geçici işlemlerdir; gerçek kapsam/durumları geri okunmalıdır. [Google kaldırma aracı](https://support.google.com/webmasters/answer/9689846?hl=en), [Bing URL engelleme](https://www.bing.com/webmasters/help/?topicid=264e560a).
 4. Üç ayrı durumu kaydedin: yayımlanmış kalıcı noindex, geçici kaldırma isteğinin durumu ve gözlenen arama motoru indeksleme durumu. Yüklenmiş çıktı veya kabul edilen kaldırma isteği nihai kaldırmayı kanıtlamaz. Arama motorları değişiklikleri eşzamansız işler.
 
-14 Ekim 2026 doğrulamasında canonical alan adının DNS'i NXDOMAIN döndürüyor. Azure yüklemesi başarılı olurken normal canonical doğrulaması başarısız olabilir. Alan adı kararları ertelendi; hatayı görünür tutun, DNS'i ve mevcut yönlendirmeleri değiştirmeyin. Alan adı çözülene kadar tarayıcılar yönergeleri gözleyemez. [Güncel kaldırma kaydına](../../records/search-removal.tr.md) bakın. İndekslemeyi geri açmak veya gönderimleri sürdürmek için ileride doğrudan bakım sorumlusu kararı gerekir.
+14 Ekim 2026 doğrulamasında canonical alan adının DNS'i NXDOMAIN döndürüyor. Azure yüklemesi başarılı olurken normal canonical doğrulaması başarısız olabilir. O tarihsel çalışmada alan adı kararı ertelenmişti. Proje sahibi sonrasında eski alan adını kapattı; yeni kimlik aşağıda açıklandığı gibi henüz yayımlanmadı. Alan adı çözülene kadar tarayıcılar yönergeleri gözleyemez. [Güncel kaldırma kaydına](../../records/search-removal.tr.md) bakın. İndekslemeyi geri açmak veya gönderimleri sürdürmek için ileride doğrudan bakım sorumlusu kararı gerekir.
+
+## Alan adı hazırlığı — 15 Ekim 2026
+
+Proje sahibi artık eyleme.dev adresini seçti ve eylema.dev adresini kapattı. Yeni alan adı satın alınmadı. [Kimlik geçişi](../../records/website-identity.tr.md) yeni sunucu için canonical, karşılıklı dil ve sosyal metaverileri hazırlar; yayın veya DNS değişikliği yapmaz. Bu, yukarıdaki ertelenmiş alan adı kararının yerini alır. Açık bir indeksleme kararı verilene kadar noindex, boş sitemap ve kapalı gönderimler korunur. Eski alan adının kaldırılma raporları ayrı tarihsel ve izleme kanıtı olarak kalır. Yeni alan adı için yönetim paneli doğrulaması ve canlı sunucu kanıtı henüz yoktur.
