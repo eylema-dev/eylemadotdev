@@ -24,3 +24,7 @@ Canonical DNS currently returns NXDOMAIN in the 14 October 2026 verification. Az
 ## Domain preparation — 15 October 2026
 
 The maintainer has now selected eyleme.dev and closed eylema.dev. The new domain is not purchased. The [identity migration](../../records/website-identity.md) prepares canonical, reciprocal-language and social metadata for the new host, without publishing or changing DNS. This supersedes the deferred-domain statement above. Keep noindex, the empty sitemap and disabled submissions until an explicit indexing decision. The old domain removal reports remain separate historical and monitoring evidence. New-domain owner-panel verification and live-host evidence have not been established.
+
+## Registered domain launch — 15 October 2026
+
+The maintainer has now purchased eyleme.dev at GoDaddy and explicitly authorized connecting the existing Azure site. This supersedes the unpurchased-domain preparation note. The [domain launch record](../../records/eyleme-domain.md) separates DNS ownership/routing, certificates, redirects, deployed release identity and browser evidence. The existing noindex/empty-sitemap/disabled-submission policy remains in force; buying or connecting the new host does not authorize renewed search submissions. Old-domain removal monitoring stays separate.

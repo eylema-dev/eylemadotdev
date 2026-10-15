@@ -1,6 +1,6 @@
 # Eyleme website
 
-The product and website identity is **Eyleme**. The repository is **eyleme-dev/eylemedotdev**, and the prepared canonical domain is **eyleme.dev**. The maintainer closed eylema.dev; eyleme.dev has not yet been purchased. The maintainer now authorizes publishing a noindex preview on the existing Azure hostname; the eyleme.dev domain launch remains pending registration, DNS and HTTPS. See the [website identity record](records/website-identity.md).
+The product and website identity is **Eyleme**. The repository is **eyleme-dev/eylemedotdev**, and the prepared canonical domain is **eyleme.dev**. The maintainer closed eylema.dev and has now purchased eyleme.dev at GoDaddy. The [custom-domain launch](records/eyleme-domain.md) connects the existing Azure Free site to the new domain; DNS, Azure validation and normal HTTPS are separate acceptance gates. See the [website identity record](records/website-identity.md).
 
 Public source repository [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotdev) for the bilingual promotional website at the intended domain `eyleme.dev`.
 
@@ -35,6 +35,6 @@ Run the exact verification commands in [AGENTS.md](AGENTS.md). Generated documen
 
 ## Publication boundary
 
-The current release target is [the Azure preview](https://icy-smoke-080dbad03.4.azurestaticapps.net/), as directly authorized by the maintainer after PR #17 review. Verify exact release SHA, hashes, MIME, noindex, routing and real 404 on that host. Metadata retains the intended eyleme.dev identity; this preview does not establish a working custom domain. Do not purchase a domain or restore indexing implicitly.
+The authorized release target is [eyleme.dev](https://eyleme.dev/). The deployment workflow verifies the exact release SHA, hashes, MIME, noindex, routing and real 404 on the canonical host. After both certificates are valid, www and the generated Azure host redirect to the root domain while preserving paths. See [WEB-018](records/eyleme-domain.md) for current acceptance evidence. Do not purchase a domain or restore indexing implicitly.
 
 The source repository is public, as explicitly requested by the maintainer. Published HTML, CSS, JavaScript and images will be publicly retrievable. The authorized production target is Azure Static Web Apps Free in `umayos subscription`, West Europe, `rg-eylema-dev / swa-eylema-dev`. The production workflow validates and uploads only `public/`, then checks live file hashes, MIME types, routing and the commit in `/release.json`. See the [release contract](records/deployment.md) and the launch checklist. Search Console/Bing verification, indexing and field performance are separate evidence. Local checks alone do not establish deployment.

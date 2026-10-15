@@ -21,3 +21,7 @@ Apex-domain setup follows [Microsoft's external apex guide](https://learn.micros
 ## Pending identity migration — 15 October 2026
 
 Current repository: [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotdev). The prepared canonical verification host is now eyleme.dev; it is not purchased. The previous eylema.dev host is closed per the maintainer. Do not merge/deploy this identity migration before the new canonical host can pass the existing strict release gates. No deployment, domain purchase, DNS, Azure resource or secret changes are included. Historical release evidence above applies only to its recorded host/revision. See [WEB-017](website-identity.md).
+
+## Eyleme domain launch — 15 October 2026
+
+The latest maintainer request authorizes connecting the purchased eyleme.dev domain to the existing Free Azure site and completing the scoped launch PR/merge/deployment. The production checker now targets https://eyleme.dev with the same exact-SHA, inventory/hash/MIME/noindex, true404 and locale-normalization gates. Enable the root default only after root and www certificates pass normal validation. New Azure/www redirects preserve paths; the generated preview URL then reaches the canonical domain. No paid service, mail/nameserver change or search submission is part of this launch. See [WEB-018](eyleme-domain.md) for actual observations. Older notes above describe their own historical hosts and authority.

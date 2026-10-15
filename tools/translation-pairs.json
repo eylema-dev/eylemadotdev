@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "879cfd78e4c40e7e1242d445ab5a4d152ab09b9dedd074c453ccf041c4dfec7b",
-      "tr_sha256": "2b6868e5710e0f4a21c93ed4c245cf37ce58af945b0f595ba0842637543929ba"
+      "en_sha256": "6a3957d8e11a19d54c5272fa00a6c1e41026252120a6a7680d9d7589dcb655d5",
+      "tr_sha256": "2e9afcd2ccdc262f021a61f294655d22cf334d5cfbe4719a86f386c0a2eeb18c"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -45,8 +45,8 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "196d05932217eff91b8d07789af9e6596d958dbafa787b1ef28137fbf480ee75",
-      "tr_sha256": "f183c12c39874444e8309046a90245ad4fca64445eec7a5e462ca4535f3d1e0d"
+      "en_sha256": "62a749750071b75865af797e7d61a38aad0df54fd67bdec669a98d30850aba84",
+      "tr_sha256": "be34ec32f84a533b415de4bb6a927bb6e4a173d84783d0e2d152bda4076449e3"
     },
     {
       "en": "docs/en/quality-gates.md",
@@ -69,8 +69,8 @@
     {
       "en": "records/deployment.md",
       "tr": "records/deployment.tr.md",
-      "en_sha256": "97ff1874337d72c94cb4553144f0a862e0a7e722b8913447e2f7175551cd8865",
-      "tr_sha256": "a7cbd8321475912fc4a2acb7ff000ce37c2dc464417517be14e170e41469f23d"
+      "en_sha256": "218b969cfba0cdfcfadc2be7f275ed48e7724b2594dab51493876946460d45bf",
+      "tr_sha256": "9f6511f75d2815d415fb1f40afe4e7cf72af1c61b792e718b6949d114e5da3e8"
     },
     {
       "en": "records/technology-visual.md",
@@ -125,6 +125,12 @@
       "tr": "records/website-identity.tr.md",
       "en_sha256": "729a2af37939ec389b034e645e8095992646e1a8b81db88260aeef62eec7cc4d",
       "tr_sha256": "5d9e40a8d134bd1fb716aac00963a1c47d03f9189e3afe38995c922c938f9629"
+    },
+    {
+      "en": "records/eyleme-domain.md",
+      "tr": "records/eyleme-domain.tr.md",
+      "en_sha256": "df7c58c60fec10cc5c9fa00c52aab96d63dc217ff58194b3e2326f41a44f2ab2",
+      "tr_sha256": "c3c62ef483d84824bfea33fece6bb14362beb63c7682493c2ffb2d00dd6f48d2"
     }
   ]
 }
