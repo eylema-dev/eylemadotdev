@@ -190,7 +190,7 @@ h1 span { color: var(--orange); }
 .delivery-rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 0; list-style: none; margin: 54px 0 0; }
 .delivery-rail li { position: relative; border-top: 1px solid var(--orange); padding: 26px 28px 0 0; }
 .delivery-rail li::before { content: ""; position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--orange); top: -5px; left: 0; }
-.delivery-rail span { color: var(--orange); font: 13px ui-monospace, SFMono-Regular, Consolas, monospace; }
+.delivery-rail span { color: var(--accent-text); font: 13px ui-monospace, SFMono-Regular, Consolas, monospace; }
 .delivery-rail h3 { margin-top: 14px; font-size: 26px; letter-spacing: -.03em; }
 .delivery-rail p { margin-top: 12px; color: var(--muted); font-size: 17px; }
 .team-status { border-left: 2px solid var(--cyan); padding-left: 16px; }
