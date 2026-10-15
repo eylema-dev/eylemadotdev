@@ -339,10 +339,10 @@ h1 span { color: var(--orange); }
   .control-grid { grid-template-columns: 1fr; gap: 28px; margin-top: 32px; }
   .control-grid h3 { margin-top: 16px; font-size: 30px; }
   .control-grid h3 + p { font-size: 17px; margin-top: 12px; }
-  .delivery-rail { grid-template-columns: 1fr 1fr; gap: 32px 20px; margin-top: 36px; }
+  .delivery-rail { grid-template-columns: 1fr; gap: 28px; margin-top: 36px; }
   .delivery-rail li { padding: 20px 0 0; }
   .delivery-rail h3 { font-size: 24px; }
-  .delivery-rail p { font-size: 16px; }
+  .delivery-rail p { font-size: 17px; }
   .product-cards { gap: 0; }
   .product-cards li, .product-cards li + li { padding: 26px 0; border-left: 0; border-bottom: 1px solid var(--rule); }
   .product-cards h3 { font-size: 32px; }
