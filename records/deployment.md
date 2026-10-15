@@ -25,3 +25,7 @@ Current repository: [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eyle
 ## Eyleme domain launch — 15 October 2026
 
 The latest maintainer request authorizes connecting the purchased eyleme.dev domain to the existing Free Azure site and completing the scoped launch PR/merge/deployment. The production checker now targets https://eyleme.dev with the same exact-SHA, inventory/hash/MIME/noindex, true404 and locale-normalization gates. Enable the root default only after root and www certificates pass normal validation. New Azure/www redirects preserve paths; the generated preview URL then reaches the canonical domain. No paid service, mail/nameserver change or search submission is part of this launch. See [WEB-018](eyleme-domain.md) for actual observations. Older notes above describe their own historical hosts and authority.
+
+## Search launch — 15 October 2026
+
+WEB-020 explicitly authorizes indexing of eyleme.dev and the scoped PR/merge/deployment needed to remove inherited exclusions. The canonical release gate now requires indexable landing/resource responses, two sitemap URLs and a genuine noindex 404 document, while preserving exact SHA/inventory/hash/MIME and routing/security checks. Engine property verification, sitemap acceptance, URL requests and actual indexing are separate owner-panel evidence. Old-domain removal monitoring and IndexNow remain unchanged. See [search launch](search-launch.md).

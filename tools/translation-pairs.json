@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "6a3957d8e11a19d54c5272fa00a6c1e41026252120a6a7680d9d7589dcb655d5",
-      "tr_sha256": "2e9afcd2ccdc262f021a61f294655d22cf334d5cfbe4719a86f386c0a2eeb18c"
+      "en_sha256": "ddcb8862936e67d774297a715f84f11ca3f6bc383228c6dda1e03d72b6674bdd",
+      "tr_sha256": "46636b9f57b80195226edeaeab81e28015880dfd698645751ef8eb843d389084"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -45,14 +45,14 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "62a749750071b75865af797e7d61a38aad0df54fd67bdec669a98d30850aba84",
-      "tr_sha256": "be34ec32f84a533b415de4bb6a927bb6e4a173d84783d0e2d152bda4076449e3"
+      "en_sha256": "576c516e5b99d4752e2c8bcedb4ae60bdd0dab06c3156bcfc6a6328df12693f9",
+      "tr_sha256": "4e7fc9e93fd00d037eb7a9c308e833abb36256116b166665a2c39a1c99cdf4f5"
     },
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "8299e30171a20a2f8a708863150303aa89d6a4c7d7e6dd084b720cb7b7d9f74c",
-      "tr_sha256": "9576180fe43e6b27ebc33f5d6a10f497fcc6aa40c6f0866ef80fd9e5a50526b4"
+      "en_sha256": "2954650a7556bebfcea56a962f1bf1d28b480f7f8eff87ed19249b8d7c64f629",
+      "tr_sha256": "bda784a9f520517340e1141f65279e75c62f80ec584116850035ad956460d8b5"
     },
     {
       "en": "docs/en/tooling.md",
@@ -69,8 +69,8 @@
     {
       "en": "records/deployment.md",
       "tr": "records/deployment.tr.md",
-      "en_sha256": "218b969cfba0cdfcfadc2be7f275ed48e7724b2594dab51493876946460d45bf",
-      "tr_sha256": "9f6511f75d2815d415fb1f40afe4e7cf72af1c61b792e718b6949d114e5da3e8"
+      "en_sha256": "ebad4d991499363716eaedb7e407bc19072fc5dbb8e7da512531d36f402845db",
+      "tr_sha256": "028990d9454fc6c69f5b9e10480b6a50315ecf10e1b86b47f6ea984d7cb5217d"
     },
     {
       "en": "records/technology-visual.md",
@@ -137,6 +137,12 @@
       "tr": "records/turkish-action-copy.tr.md",
       "en_sha256": "32b1b9a6eb6e1c4e9fa106834d655e15de00aabd24709e460d0760557eb7f476",
       "tr_sha256": "9d8c7a20f19410e9e7b2eb5d2bda2cbafe5e24dece3d6e7bcfd0ae97e257e5c4"
+    },
+    {
+      "en": "records/search-launch.md",
+      "tr": "records/search-launch.tr.md",
+      "en_sha256": "836b6d287cf9ae6c6f3d89a842458e1221ef7328994cd0465bb85af8cc74a2e7",
+      "tr_sha256": "f4972674ef43f36fad4b356d32007a348fa0248ba30fd16bff99d3fd7f32b9a7"
     }
   ]
 }

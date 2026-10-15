@@ -8,7 +8,7 @@ Public platform project: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eylem
 
 [Türkçe](README.tr.md)
 
-Search policy: the maintainer requested removal from Google and Bing. The site now requires noindex on pages and resource responses, retains crawler access and disables IndexNow submission. Deployment, temporary removal requests and final index status are distinct; see [search visibility](docs/en/discovery.md).
+Search policy: the maintainer explicitly authorized Google/Bing discovery of the new eyleme.dev domain on 15 October 2026. Canonical landing pages are indexable, the sitemap lists English and Turkish, and the genuine 404 remains noindex. Old eylema.dev removal tracking is separate. Engine verification/submission and actual indexing are distinct; see [search visibility](docs/en/discovery.md) and [WEB-020](records/search-launch.md).
 
 ## Website
 
@@ -35,6 +35,6 @@ Run the exact verification commands in [AGENTS.md](AGENTS.md). Generated documen
 
 ## Publication boundary
 
-The authorized release target is [eyleme.dev](https://eyleme.dev/). The deployment workflow verifies the exact release SHA, hashes, MIME, noindex, routing and real 404 on the canonical host. After both certificates are valid, www and the generated Azure host redirect to the root domain while preserving paths. See [WEB-018](records/eyleme-domain.md) for current acceptance evidence. Do not purchase a domain or restore indexing implicitly.
+The authorized release target is [eyleme.dev](https://eyleme.dev/). The deployment workflow verifies the exact release SHA, hashes, MIME, indexable responses, routing and real 404 on the canonical host. After both certificates are valid, www and the generated Azure host redirect to the root domain while preserving paths. See [WEB-018](records/eyleme-domain.md) for current acceptance evidence. Do not purchase a domain or restore indexing implicitly.
 
 The source repository is public, as explicitly requested by the maintainer. Published HTML, CSS, JavaScript and images will be publicly retrievable. The authorized production target is Azure Static Web Apps Free in `umayos subscription`, West Europe, `rg-eylema-dev / swa-eylema-dev`. The production workflow validates and uploads only `public/`, then checks live file hashes, MIME types, routing and the commit in `/release.json`. See the [release contract](records/deployment.md) and the launch checklist. Search Console/Bing verification, indexing and field performance are separate evidence. Local checks alone do not establish deployment.

@@ -27,10 +27,10 @@ def verify_release(data, expected):
         raise ValueError("Live release file inventory differs from source")
 
 
-def require_noindex(headers, route):
+def require_indexable(headers, route):
     values = headers.get_all("X-Robots-Tag", [])
-    if len(values) != 1 or [value.strip().lower() for value in values[0].split(",")] != ["noindex", "follow"]:
-        raise ValueError(f"Missing or conflicting noindex header: {route}")
+    if values and (len(values) != 1 or [value.strip().lower() for value in values[0].split(",")] != ["index", "follow"]):
+        raise ValueError(f"Blocking or conflicting indexing header: {route}")
 
 
 def check(origin, commit):
@@ -40,7 +40,7 @@ def check(origin, commit):
     origin = origin.rstrip("/")
     expected = manifest(ROOT / "public", commit)
     status, headers, body, _ = fetch(origin + "/release.json")
-    require_noindex(headers, "/release.json")
+    require_indexable(headers, "/release.json")
     if status != 200:
         raise ValueError(f"Release endpoint returned {status}")
     verify_release(json.loads(body), expected)
@@ -48,7 +48,8 @@ def check(origin, commit):
     for path, digest in expected["files"].items():
         route = "/" if path == "index.html" else "/tr/" if path == "tr/index.html" else "/" + quote(path)
         status, headers, body, final = fetch(origin + route)
-        require_noindex(headers, route)
+        if path != "404.html":
+            require_indexable(headers, route)
         if status != 200 or hashlib.sha256(body).hexdigest() != digest:
             raise ValueError(f"HTTP/source mismatch: {route}, status={status}")
         allowed = types.get(path.rsplit(".", 1)[-1])
@@ -61,15 +62,14 @@ def check(origin, commit):
         if headers.get("X-Content-Type-Options") != "nosniff":
             raise ValueError(f"Host configuration missing: {route}")
     status, headers, body, _ = fetch(origin + "/not-a-page-" + commit[:12])
-    require_noindex(headers, "custom 404")
     if status != 404 or hashlib.sha256(body).hexdigest() != expected["files"]["404.html"]:
         raise ValueError("Missing route is not the genuine custom HTTP 404")
     for route, target in [("/index.html", "/"), ("/tr/index.html", "/tr/"), ("/tr", "/tr/")]:
         status, headers, _, final = fetch(origin + route)
-        require_noindex(headers, route)
+        require_indexable(headers, route)
         if status != 200 or final != origin + target:
             raise ValueError(f"Canonical route normalization failed: {route}")
-    print(f"PASS: {origin}, release {commit}, {len(expected['files'])} file hashes/MIME/noindex headers, true 404 and locale redirects")
+    print(f"PASS: {origin}, release {commit}, {len(expected['files'])} file hashes/MIME, indexable headers, true 404 and locale redirects")
 
 
 if __name__ == "__main__":
