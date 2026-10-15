@@ -166,23 +166,36 @@ class WebsiteTests(unittest.TestCase):
         with self.assertRaisesRegex(CheckFailure, "Missing local"):
             self.check_modified(render(self.en))
 
-    def test_decorative_hero_cannot_be_exposed(self):
-        text = render(self.en).replace('<div class="hero-art" aria-hidden="true">', '<div class="hero-art">')
-        with self.assertRaisesRegex(CheckFailure, "hidden from assistive"):
+    def test_informative_ecosystem_cannot_be_hidden(self):
+        text = render(self.en).replace('<figure class="hero-art">', '<figure class="hero-art" aria-hidden="true">')
+        with self.assertRaisesRegex(CheckFailure, "exposed to assistive"):
             self.check_modified(text)
 
-    def test_decorative_hero_cannot_have_blank_alternative(self):
-        self.en["hero_art_alt"] = ""
-        with self.assertRaisesRegex(CheckFailure, "localized crawler alternative"):
+    def test_ecosystem_hero_cannot_have_blank_alternative(self):
+        self.en["hero_diagram"]["alt"] = ""
+        with self.assertRaisesRegex(CheckFailure, "localized text alternative"):
             self.check_modified(render(self.en))
 
-    def test_hiding_does_not_leak_into_informative_images(self):
+    def test_ecosystem_hero_rejects_wrong_language_asset(self):
+        text = render(self.en).replace('/assets/eyleme-ecosystem-en.svg', '/assets/eyleme-ecosystem-tr.svg')
+        with self.assertRaisesRegex(CheckFailure, "Informative ecosystem hero"):
+            self.check_modified(text)
+
+    def test_ecosystem_hero_requires_development_caption(self):
+        text = render(self.en).replace(self.en['hero_diagram']['caption'], '')
+        with self.assertRaisesRegex(CheckFailure, "visible development scope"):
+            self.check_modified(text)
+        self.en['hero_diagram']['caption'] = ''
+        with self.assertRaisesRegex(CheckFailure, "visible development scope"):
+            self.check_modified(render(self.en))
+
+    def test_informative_images_have_localized_accessible_names(self):
         for data in (self.en, self.tr):
             page = Page(render(data))
             images = {attrs["src"]: (attrs, hidden) for attrs, hidden in page.images}
-            hero, hidden = images["/assets/eyleme-loop-1024.webp"]
-            self.assertTrue(hidden)
-            self.assertEqual(hero["alt"], data["hero_art_alt"])
+            hero, hidden = images[f"/assets/eyleme-ecosystem-{data['lang']}.svg"]
+            self.assertFalse(hidden)
+            self.assertEqual(hero["alt"], data["hero_diagram"]["alt"])
             _, hidden = images[f'/assets/eyleme-technology-{data["lang"]}.webp']
             self.assertFalse(hidden)
 

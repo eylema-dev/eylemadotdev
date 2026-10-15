@@ -8,6 +8,8 @@ Public open-source project: [eyleme-dev/eyleme](https://github.com/eyleme-dev/ey
 
 This repository introduces the implemented local task foundation and the proposed cooperative-loop platform; it does not contain or run the Rust platform. The commercial products are optional: Eyleme retains local permission checks and works without their subscriptions. The family presentation order is Derleme → Onama → Eyleme; policy enforcement also crosses stages.
 
+The [ecosystem and subscription revision](records/ecosystem-positioning.md) makes the development status explicit: Eyleme aims to grow as an open-source community ecosystem; Derleme covers collecting physical-world field data and recording it in the cloud or on premises; Onama covers cybersecurity, authority, responsibility and regulatory compliance workflows. The [subscription section](https://eyleme.dev/#subscriptions) explains the specialist commercial focus without announcing prices, packages or service availability.
+
 [Türkçe](README.tr.md)
 
 Search policy: the maintainer explicitly authorized Google/Bing discovery of the new eyleme.dev domain on 15 October 2026. Canonical landing pages are indexable, the sitemap lists English and Turkish, and the genuine 404 remains noindex. Old eylema.dev removal tracking is separate. Engine verification/submission and actual indexing are distinct; see [search visibility](docs/en/discovery.md) and [WEB-020](records/search-launch.md).

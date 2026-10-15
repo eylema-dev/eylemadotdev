@@ -29,3 +29,5 @@ PR açıklama denetleyicisi ve şablonu, proje sahibinin bekleyen Eylema katkı 
 ## Güncel Eyleme varlıkları — 15 Ekim 2026
 
 [Site kimliği geçişi](../../records/website-identity.tr.md) güncel dosyaları `eyleme-*` olarak adlandırır ve eyleme.dev adresini hazırlar. Logo zaten Eyleme yazar; İngilizce/Türkçe mimari afişlerinde yalnızca alt bilgi alan adı değişir. Yukarıdaki önceki üretim notları tarihseldir. Köken envanteri güncel dosya adlarını, baytları ve özetleri kaydeder.
+
+[Ekosistem revizyonu](../../records/ecosystem-positioning.tr.md), görünen giriş şeridinin yerine özgün birinci taraf vektör diyagramlarını getirir: `eyleme-ecosystem-en.svg` ve `eyleme-ecosystem-tr.svg`. Standart kütüphaneyi kullanan üretici, iki dosyayı incelenmiş dil içeriğinden üretir. Eyleme, Derleme ve Onama; veri, yetki ve geri bildirim oklarıyla bir üçgen oluşturur. Bilgi taşıyan görsellerin yerelleştirilmiş alternatif metinleri ve görünür geliştirme açıklamaları vardır. Görsel üretim hizmeti, font veya çizim paketi gerekmez; eski şerit dosyaları tarihsel varlık olarak korunur.

@@ -41,6 +41,7 @@ p { line-height: 1.5; }
 .languages a:hover { text-decoration: underline; }
 .hero { display: grid; grid-template-columns: 1.07fr 1fr; gap: 40px; padding-top: 68px; padding-bottom: 42px; align-items: start; }
 .hero-copy { position: relative; z-index: 1; }
+.development-status { margin-bottom: 20px; font-weight: 600; }
 h1 { font-size: clamp(76px, 7.85vw, 120px); font-weight: 750; line-height: .93; letter-spacing: -.058em; }
 h1 span { color: var(--orange); }
 .hero-intro { max-width: 655px; font-size: 23px; line-height: 1.48; margin-top: 36px; letter-spacing: -.02em; }
@@ -49,8 +50,9 @@ h1 span { color: var(--orange); }
 .button:hover { background: #2e4148; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; font-size: 19px; line-height: 1.5; text-decoration-thickness: 1px; }
 .project-status { color: var(--muted); font-size: 16px; margin-top: 20px; line-height: 1.5; }
-.hero-art { width: 100%; min-width: 0; height: 570px; position: relative; }
-.hero-art img { width: 120%; height: auto; max-width: none; margin-left: -9%; margin-top: clamp(-115px, -7.4vw, -55px); mask-image: linear-gradient(to right, transparent, black 9%, black 92%, transparent); }
+.hero-art { width: 100%; min-width: 0; align-self: center; }
+.hero-art img { width: 100%; height: auto; }
+.hero-art figcaption { max-width: 440px; margin: 18px auto 0; text-align: center; color: var(--muted); font-size: 14px; }
 .principles { display: grid; grid-template-columns: repeat(3, 1fr); list-style: none; margin: 0; padding: 34px 0 0; border-top: 1px solid var(--rule); }
 .principles li { padding-right: 35px; }
 .principles li + li { padding-left: 60px; border-left: 1px solid var(--rule); }
@@ -152,7 +154,6 @@ h1 span { color: var(--orange); }
   .hero-actions { gap: 22px; }
   .button, .hero-actions .text-link { font-size: 16px; }
   .button { padding: 18px 22px; }
-  .hero-art img { width: 112%; margin-left: -7%; }
   .principles li + li { padding-left: 28px; }
   .principles h2 { font-size: 24px; }
   .principles p { font-size: 18px; }
@@ -193,8 +194,8 @@ h1 span { color: var(--orange); }
   .hero-actions { gap: 22px; margin-top: 28px; }
   .button { padding: 18px 20px; }
   .project-status { font-size: 14px; max-width: 410px; }
-  .hero-art { max-width: 490px; height: auto; margin: 8px auto 0; }
-  .hero-art img { width: 100%; margin: 0; }
+  .hero-art { max-width: 490px; margin: 28px auto 32px; }
+  .hero-art figcaption { font-size: 13px; }
   .principles { grid-template-columns: 1fr; padding: 0; }
   .principles li, .principles li + li { border-left: 0; padding: 25px 0; }
   .principles li + li { border-top: 1px solid var(--rule); }

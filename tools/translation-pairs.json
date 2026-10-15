@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "5f2c09792fde68b1e73e3a0adf7fb958bb8effd515049e61247c157c9f8bc977",
-      "tr_sha256": "5cfbfcfb92a0041529a0e16eb07edf55cb04c489ac22c245dc3779c2515c364a"
+      "en_sha256": "ac286a2c9d98dbed6e06ce523bf5b79ec28953bdb6bfe3ae7ebff3def7d80c10",
+      "tr_sha256": "652a8c358acc5fffb5abc17c0b5bcb31cd53ff79482d3dbcaa59dab4117ecccb"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -27,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "60a314b453c2095b19abc49f2abcdf195e06946bbe08ae8773e1412aa678a6e0",
-      "tr_sha256": "0c7d34e0bf4be2b231c14a98df08261d276a9dd7dc4bffb59274c35fa3ae7c0f"
+      "en_sha256": "8364b29945aab7ed06c2de7fabb1a81f1c5a9bdedb4dd823217933e67d96c54f",
+      "tr_sha256": "1b6d12bf69686940469601bd6d38e4bd26243d2dab9729ae28a9721cbb1c3ebe"
     },
     {
       "en": "records/plan.md",
@@ -51,14 +51,14 @@
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "b87ae16e40659b8d19b8fa4a31d5216af1e3191b7b337a97c258f6929344447a",
-      "tr_sha256": "beb8b9ccc7c27a99ff48f49587c428c1cd01bb726f977ab127edbd4843a8d4a8"
+      "en_sha256": "bf176c3806915791dd3da5902059cade37f2e7b607fdaf9d757ef9c98cb36d46",
+      "tr_sha256": "8821af7403984415a233b49815c65fdf402625e34ca5430af9763335a2d829c8"
     },
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "25ea0d6ef3843804e119bd1f90c260a406e37eab368fe1028ab261df9757f70e",
-      "tr_sha256": "12bbb55ca108eabe4071771c445fc39cc0fb33da0c51d3343e8c32b37751852d"
+      "en_sha256": "5e9e812fcf13d84b6e33800cd1b5791fea1f13b828526604c5656dd3cf4f5f18",
+      "tr_sha256": "0174bc7478025b4e09a228143d4d851d49af2520897e02ab9ddc6c26c023407b"
     },
     {
       "en": "records/verification.md",
@@ -155,6 +155,12 @@
       "tr": "records/eyleme-indexnow.tr.md",
       "en_sha256": "afd2e69e89c3732f626e2f053d39fd0d0306aafe88aa66fa282cc3b36e518f72",
       "tr_sha256": "8ddfb2b441e9c213205ba8a5589b097851d67c6b1eecfd40cb0ae1b097fbbfa3"
+    },
+    {
+      "en": "records/ecosystem-positioning.md",
+      "tr": "records/ecosystem-positioning.tr.md",
+      "en_sha256": "0f3ce93b4d461806c731892f2aec02ccb52c37dfaabee768cd1a9764d6586418",
+      "tr_sha256": "2f5aa4ede8560e8f2b215ae2dfa6a2906f54c72101f0c8a109c41f99675989b6"
     }
   ]
 }

@@ -7,9 +7,9 @@ The website is separate from the platform documentation repository. Its standard
 | Gate | Evidence and limits |
 |---|---|
 | Generated output | HTML, sitemap, robots and 404 match the builder and bilingual content |
-| Discovery | One H1/main, language, self-canonical, reciprocal hreflang/x-default, descriptions, single index,follow policy, JSON-LD consistency, local assets/anchors, crawl-permitted robots and exact bilingual sitemap, visible current-foundation scope and architecture-illustration scope notice |
+| Discovery | One H1/main, language, self-canonical, reciprocal hreflang/x-default, descriptions, single index,follow policy, JSON-LD consistency, local assets/anchors, crawl-permitted robots and exact bilingual sitemap, visible current-foundation scope, architecture-illustration scope notice and an accessible localized ecosystem hero with a development caption |
 | Translation | Key/array shape and step identifiers agree; reviewed SHA-256 fingerprints are current; semantic review remains separate |
-| Regression tests | Missing translations/assets, identifier drift, wrong canonical/hreflang, renewed noindex or conflicting directives, duplicate IDs, structured claim drift, stale hashes and HTML/script injection are rejected |
+| Regression tests | Missing translations/assets, identifier drift, wrong canonical/hreflang, renewed noindex or conflicting directives, duplicate IDs, structured claim drift, stale hashes, hidden/wrong-language ecosystem images, empty alternatives, missing development captions and HTML/script injection are rejected |
 | Static budget | CSS/JS total under 35 KB raw; this is a size budget, not a Core Web Vitals measurement |
 | PR description | Required sections contain specific values; truth and authority require review |
 | Browser | Real navigation, languages, tabs/keyboard, disclosures, mobile layout, console and visual comparison are checked separately |

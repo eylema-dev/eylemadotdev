@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-labelledby="ecosystem-title ecosystem-desc" xml:lang="tr">
+  <title id="ecosystem-title">Birlikte çalışan Eyleme ekosistemi</title>
+  <desc id="ecosystem-desc">Üçgen Eyleme ekosistemi: üstte açık kaynak ve eylem için Eyleme, sol altta saha verisi ile bulut veya kurum içi kayıt için Derleme, sağ altta güvenlik, yetki, sorumluluk ve mevzuat için Onama. Oklar Derleme’den Onama’ya veriyi, Onama’dan Eyleme’ye yetkiyi, Eyleme’den Derleme’ye geri bildirimi gösterir. Planlanan iş birliği; ürünler geliştirme aşamasında.</desc>
+  <defs>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9161"/><stop offset=".5" stop-color="#ee5638"/><stop offset="1" stop-color="#b63e28"/></linearGradient>
+  </defs>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle" fill="#17252b">
+    <path d="M320 124 114 446H526Z" fill="#ee5638" fill-opacity=".035" stroke="url(#copper)" stroke-width="18" stroke-linejoin="round"/>
+    <path d="M221 279l-16 25 0-14m0 14 13-6M305 446h30l-10-8m10 8-10 8M431 298l-16-25 0 14m0-14 13 6" fill="none" stroke="#f7f6f2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#f7f6f2" stroke="#ee5638" stroke-width="6"><circle cx="320" cy="124" r="20"/><circle cx="114" cy="446" r="20"/><circle cx="526" cy="446" r="20"/></g>
+    <g fill="#ee5638"><circle cx="320" cy="124" r="6"/><circle cx="114" cy="446" r="6"/><circle cx="526" cy="446" r="6"/></g>
+    <g font-size="38" font-weight="700" letter-spacing="-1.4"><text x="320" y="48">Eyleme</text><text x="114" y="512">Derleme</text><text x="526" y="512">Onama</text></g>
+    <g font-size="21" fill="#5d676b"><text x="320" y="80">Açık kaynak · Eylem</text><text x="114" y="545">Saha verisi</text><text x="526" y="545">Güvenlik · Yetki</text></g>
+    <g font-size="17" fill="#5d676b"><text x="114" y="575">Bulut / Kurum içi</text><text x="526" y="575">Sorumluluk · Mevzuat</text></g>
+    <g font-size="20" font-weight="500" fill="#b63e28"><text x="165" y="278" transform="rotate(-57.4 165 278)">Geri bildirim</text><text x="478" y="278" transform="rotate(57.4 478 278)">Yetki</text><text x="320" y="416">Veri</text></g>
+    <text x="320" y="324" font-size="36" font-weight="650" letter-spacing="-1">Birlikte.</text><text x="320" y="357" font-size="21" fill="#5d676b">Tek ekosistem.</text>
+  </g>
+</svg>
