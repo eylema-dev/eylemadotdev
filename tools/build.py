@@ -63,6 +63,7 @@ def render(data):
     principles = "".join(f'<li><span class="index">{i:02d} /</span><h2>{esc(p["title"])}</h2><p>{esc(p["text"])}</p></li>' for i, p in enumerate(data["principles"], 1))
     foundation = "".join(f'<article><p class="scope-label">{esc(card["label"])}</p><h3>{esc(card["title"])}</h3><p>{esc(card["text"])}</p><a class="text-link" href="{source(lang, card["source"])}">{esc(card["link"])}{arrow(True)}</a></article>' for card in data["foundation_cards"])
     products = "".join(f'<li id="product-{p["id"]}"><p class="scope-label">{esc(p["model"])}</p><h3>{esc(p["name"])}</h3><p class="product-purpose">{esc(p["title"])}</p><p>{esc(p["text"])}</p><p class="product-status">{esc(p["status"])}</p></li>' for p in data["products"])
+    subscriptions = "".join(f'<article><p class="scope-label">{esc(card["label"])}</p><h3>{esc(card["title"])}</h3><p>{esc(card["text"])}</p></article>' for card in data["subscription_cards"])
     community = "".join(f'<article><h3>{esc(card["title"])}</h3><p>{esc(card["text"])}</p><a class="text-link" href="{source(lang, card["source"])}">{esc(card["link"])}{arrow(True)}</a></article>' for card in data["community_links"])
     tabs = "".join(f'<a id="step-{s["id"]}" href="#panel-{s["id"]}"><span>{i:02d}</span> {esc(s["name"])}</a>' for i, s in enumerate(data["steps"], 1))
     panels = []
@@ -115,12 +116,12 @@ def render(data):
   <a class="skip-link" href="#main">{e('skip')}</a>
   <header class="site-header"><div class="shell header-inner">
     <a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="Eyleme">{logo}</a>
-    <nav class="main-nav" aria-label="{e('navigation')}"><a href="#products">{e('nav_products')}</a><a href="#community">{e('nav_community')}</a><a href="{PROJECT}">GitHub {arrow(True)}</a></nav>
+    <nav class="main-nav" aria-label="{e('navigation')}"><a href="#products">{e('nav_products')}</a><a href="#subscriptions">{e('nav_subscriptions')}</a><a href="#community">{e('nav_community')}</a></nav>
     {languages}
   </div></header>
   <main id="main" tabindex="-1">
     <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy"><h1 id="hero-title">{esc(data['headline'][0])}<br>{esc(data['headline'][1])}<br><span>{esc(data['headline'][2])}</span></h1>
+      <div class="hero-copy"><p class="scope-label development-status">{e('development_status')}</p><h1 id="hero-title">{esc(data['headline'][0])}<br>{esc(data['headline'][1])}<br><span>{esc(data['headline'][2])}</span></h1>
         <p class="hero-intro">{e('intro')}</p>
         <div class="hero-actions"><a class="button" href="{source(lang, 'project')}">{e('explore')}{arrow(True)}</a><a class="text-link" href="{PROJECT}">{e('follow')}{arrow(True)}</a></div>
         <p class="project-status">{e('status')}</p>
@@ -133,6 +134,12 @@ def render(data):
       <div class="section-heading"><h2 id="products-title">{heading('products_title')}</h2><p>{e('products_intro')}</p></div>
       <ol class="product-cards">{products}</ol>
       <p class="product-note">{e('products_note')}</p>
+    </section>
+    <section class="subscriptions section shell" id="subscriptions" aria-labelledby="subscriptions-title">
+      <p class="section-label">{e('subscriptions_label')}</p>
+      <div class="section-heading"><h2 id="subscriptions-title">{heading('subscriptions_title')}</h2><p>{e('subscriptions_intro')}</p></div>
+      <div class="foundation-scope">{subscriptions}</div>
+      <p class="product-note">{e('subscriptions_note')}</p>
     </section>
     <section class="community section shell" id="community" aria-labelledby="community-title">
       <p class="section-label">{e('community_label')}</p>

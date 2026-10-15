@@ -41,6 +41,7 @@ p { line-height: 1.5; }
 .languages a:hover { text-decoration: underline; }
 .hero { display: grid; grid-template-columns: 1.07fr 1fr; gap: 40px; padding-top: 68px; padding-bottom: 42px; align-items: start; }
 .hero-copy { position: relative; z-index: 1; }
+.development-status { margin-bottom: 20px; font-weight: 600; }
 h1 { font-size: clamp(76px, 7.85vw, 120px); font-weight: 750; line-height: .93; letter-spacing: -.058em; }
 h1 span { color: var(--orange); }
 .hero-intro { max-width: 655px; font-size: 23px; line-height: 1.48; margin-top: 36px; letter-spacing: -.02em; }

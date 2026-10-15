@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "5f2c09792fde68b1e73e3a0adf7fb958bb8effd515049e61247c157c9f8bc977",
-      "tr_sha256": "5cfbfcfb92a0041529a0e16eb07edf55cb04c489ac22c245dc3779c2515c364a"
+      "en_sha256": "ac286a2c9d98dbed6e06ce523bf5b79ec28953bdb6bfe3ae7ebff3def7d80c10",
+      "tr_sha256": "652a8c358acc5fffb5abc17c0b5bcb31cd53ff79482d3dbcaa59dab4117ecccb"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -27,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "60a314b453c2095b19abc49f2abcdf195e06946bbe08ae8773e1412aa678a6e0",
-      "tr_sha256": "0c7d34e0bf4be2b231c14a98df08261d276a9dd7dc4bffb59274c35fa3ae7c0f"
+      "en_sha256": "b7ac0212cbcf29d69351ac06b514b9182f5de528234582ef10490bd447f8a066",
+      "tr_sha256": "5b5c7c332c41d6c5b2a8dfb428b999c5d5918284c8cf07f5c2b4256da4220a8a"
     },
     {
       "en": "records/plan.md",
@@ -155,6 +155,12 @@
       "tr": "records/eyleme-indexnow.tr.md",
       "en_sha256": "afd2e69e89c3732f626e2f053d39fd0d0306aafe88aa66fa282cc3b36e518f72",
       "tr_sha256": "8ddfb2b441e9c213205ba8a5589b097851d67c6b1eecfd40cb0ae1b097fbbfa3"
+    },
+    {
+      "en": "records/ecosystem-positioning.md",
+      "tr": "records/ecosystem-positioning.tr.md",
+      "en_sha256": "4febbf1176bb4e686e8eaadfd39007b8f2f163942db5727cbd032204e108a3f0",
+      "tr_sha256": "d56fff1027c9dfa6386bf9b9991e12a935e7ede08e867199b19bb74eb195e343"
     }
   ]
 }

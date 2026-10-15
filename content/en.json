@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "locale": "en_US",
-  "title": "Eyleme — Open Source, Community and Subscription Products",
-  "description": "Build with Eyleme, the open-source local task tool and community. Explore Eyleme Derleme and Eyleme Onama, private-source subscription products in development.",
+  "title": "Eyleme — Open-source Ecosystem & Specialist Subscriptions",
+  "description": "Eyleme is an open-source ecosystem in development. Explore Derleme for field data and Onama for cybersecurity and governance, with paid specialist subscriptions.",
   "skip": "Skip to content",
   "navigation": "Main navigation",
   "language": "Choose language",
@@ -14,25 +14,25 @@
     "Together."
   ],
   "hero_art_alt": "Decorative orange Eyleme loop sculpture",
-  "intro": "Eyleme is an open-source local task tool, built to grow with its community. Start independently, contribute what you learn, and explore the wider Eyleme product family.",
+  "intro": "Eyleme aims to grow into an open-source AI ecosystem shaped by its community. Its local task tool is the starting point; Derleme brings field data into the picture, and Onama addresses security, authority and responsibility.",
   "explore": "Get started",
   "follow": "View the source",
-  "status": "Apache-2.0 first-party code and docs. Local task foundation implemented; general model inference, integrated RAG and native training still need acceptance.",
+  "status": "In development. The local task foundation exists; the wider ecosystem and commercial services are still being built. First-party core code and docs: Apache-2.0.",
   "principles": [
     {
-      "title": "Open and independent",
-      "text": "Run and develop Eyleme without a Derleme or Onama subscription. Basic authorization stays in the open-source tool."
+      "title": "Open-source ecosystem",
+      "text": "Grow Eyleme through shared code, knowledge, examples and reviewed contributions. The community is part of the product’s future."
     },
     {
-      "title": "Built with the community",
-      "text": "Learn from the docs, report an issue, review a contract or contribute a focused change."
+      "title": "Connected to the physical world",
+      "text": "Derleme is being built to collect field data and record it in the cloud or on premises. Onama addresses how that data and related actions are governed."
     },
     {
-      "title": "One Eyleme family",
-      "text": "Eyleme Derleme and Eyleme Onama use private-source, paid subscription models. Their commercial services are in development."
+      "title": "Specialist subscriptions",
+      "text": "Derleme and Onama are paid products in development, focused on data infrastructure, cybersecurity and governance expertise."
     }
   ],
-  "architecture_label": "03 — Open-source architecture",
+  "architecture_label": "04 — Open-source architecture",
   "architecture_title": [
     "Compose the loop.",
     "Keep the contract."
@@ -111,24 +111,36 @@
   "concept_note": "Architecture v0.7 · scoped components exist; integrated model jobs remain unaccepted",
   "human_title": "Human direction, throughout.",
   "human_text": "Define authority. Inspect observed outcomes. Keep stop and revocation on the Rust control path.",
-  "faq_label": "04 — Questions & answers",
+  "faq_label": "05 — Questions & answers",
   "faq_title": [
     "A platform.",
     "Clear boundaries."
   ],
-  "faq_intro": "What the current foundation does, what the architecture proposes and what still needs evidence.",
+  "faq_intro": "How the ecosystem fits together, what the subscriptions are intended to cover and what is still in development.",
   "questions": [
     {
       "question": "What is Eyleme?",
-      "answer": "Eyleme is the shared brand and an independently usable open-source local task tool. Its first-party code and documentation use Apache-2.0. Eyleme Derleme and Eyleme Onama are private-source, paid subscription products in development. The open-source task foundation is distinct from the broader model, RAG, memory and learning design.",
-      "source": "architecture",
-      "link": "Architecture v0.7"
+      "answer": "Eyleme is the shared brand and an independently usable open-source local task tool, with the ambition to grow into a community ecosystem. Derleme covers physical-world data collection and cloud or on-premises recording; Onama covers cybersecurity, authority, responsibility and regulatory workflows. The family is in development. First-party Eyleme core code and docs use Apache-2.0; Derleme and Onama are private-source products with planned paid subscriptions.",
+      "source": "project",
+      "link": "Read the public project scope"
     },
     {
       "question": "Do I need a subscription to use Eyleme?",
-      "answer": "No. The open-source Eyleme tool is independently usable without Derleme or Onama. Its own permission checks remain part of the core. Derleme and Onama address additional data and governance needs through a private-source subscription model; prices, service availability and customer deployment acceptance are not established by this website.",
+      "answer": "No. The open-source Eyleme tool can be used independently, with its own permission checks. Paid Derleme and Onama subscriptions are intended for specialist field-data and governance needs. Packages, prices, service levels and launch availability have not been published, and this site has no subscription checkout.",
       "source": "project",
       "link": "Read the public project scope"
+    },
+    {
+      "question": "Where will Derleme record field data?",
+      "answer": "The planned deployment options are cloud and on premises, within the customer’s own infrastructure. Derleme is intended to collect physical-world data with its source, timing and quality context. The actual connectors, storage setup and supported environment must be defined and accepted for each deployment. This is a product direction, not a claim that a customer installation is already available.",
+      "source": "project",
+      "link": "Explore the product family"
+    },
+    {
+      "question": "What does Onama cover?",
+      "answer": "Onama focuses on cybersecurity, authorization, responsibility and regulatory compliance workflows: who may access data or act, under which policy, and how decisions and effects can be audited. It is a specialist product in development. Applicable requirements depend on the organization and deployment; the product does not itself provide legal certification or guarantee compliance. Eyleme’s basic local permission checks remain in the open-source core.",
+      "source": "project",
+      "link": "Explore the product family"
     },
     {
       "question": "What works today?",
@@ -191,9 +203,9 @@
       "link": "Core Apache-2.0 license"
     }
   ],
-  "updated": "Product family reviewed 15 October 2026; component evidence reviewed 14 October 2026.",
+  "updated": "Ecosystem and subscription scope reviewed 15 October 2026; component evidence reviewed 14 October 2026.",
   "language_note": "English is canonical. Turkish is a full companion.",
-  "roadmap_label": "05 — Open-source roadmap",
+  "roadmap_label": "06 — Open-source roadmap",
   "roadmap_title": [
     "Built in the open.",
     "Proven step by step."
@@ -222,7 +234,7 @@
     }
   ],
   "join_title": "Help shape what comes next.",
-  "join_text": "Inspect the foundation, share an issue or contribute a bounded change. Grow the open-source Eyleme community with evidence.",
+  "join_text": "Contribute code, improve the docs or share a reproducible example. Help build an open-source Eyleme ecosystem, with clear boundaries for private data and commercial expertise.",
   "join_link": "Join the community",
   "footer": "Open source. Shared progress. Human authority.",
   "api_link": "API reference",
@@ -254,40 +266,40 @@
     "One name.",
     "Three clear roles."
   ],
-  "products_intro": "Derleme → Onama → Eyleme: prepare data, authorize work, execute. This is the family’s workflow; permission checks also apply wherever data and actions cross a boundary.",
+  "products_intro": "Derleme → Onama → Eyleme: collect and record field data, govern access and responsibility, turn permitted inputs into action. These are complementary roles; authority checks apply throughout the workflow.",
   "products": [
     {
       "id": "derleme",
       "name": "Eyleme Derleme",
       "model": "Private source · paid subscription",
-      "title": "Prepare trusted inputs.",
-      "text": "Collect industrial data, preserve its source and quality, and prepare it for permitted use. Connector and deployment acceptance is specific to each environment.",
+      "title": "Bring the field into the record.",
+      "text": "Derleme is being built to collect data from sensors, machines and field operations in the physical world, then record it in the cloud or on premises. Source, time and quality context support permitted downstream use. Each connector and deployment needs its own acceptance.",
       "status": "In development · subscription terms not yet published"
     },
     {
       "id": "onama",
       "name": "Eyleme Onama",
       "model": "Private source · paid subscription",
-      "title": "Govern permitted work.",
-      "text": "Policy and execution assurance for broader governance needs. Bounded local pilot evidence is separate from a production service; core Eyleme permissions remain in the open-source tool.",
+      "title": "Define security and responsibility.",
+      "text": "Onama is being built around cybersecurity, access authority, responsibilities, audit records and regulatory compliance workflows. It aims to make who may do what, under which rules and with whose responsibility explicit.",
       "status": "In development · subscription terms not yet published"
     },
     {
       "id": "eyleme",
       "name": "Eyleme",
       "model": "Open source · Apache-2.0",
-      "title": "Turn intent into action.",
-      "text": "A standalone local task foundation with durable state, explicit authority and inspectable results. Grow it through public code, documentation and community contributions.",
+      "title": "Turn intent into action, together.",
+      "text": "An open-source local task tool and the starting point for a community ecosystem. Public code, documentation, examples and reusable skills support its growth. The local foundation exists; the broader agentic platform is in development.",
       "status": "Public foundation · broader platform in development"
     }
   ],
   "products_note": "Derleme and Onama extend the family without being required to use Eyleme. No paid checkout or production subscription service is available on this site. Pricing and availability will be published when ready.",
-  "community_label": "02 — Start & contribute",
+  "community_label": "03 — Community & ecosystem",
   "community_title": [
-    "Use it.",
-    "Help it grow."
+    "Build together.",
+    "Grow the ecosystem."
   ],
-  "community_intro": "Start with the documented local foundation and its current limits. Share reproducible issues and bounded contributions through the public project.",
+  "community_intro": "The ambition reaches beyond one tool: a community that shares code, documentation, examples and reusable skills. Start with today’s local foundation and help shape what comes next. Private field data is never a default community contribution.",
   "community_links": [
     {
       "id": "start",
@@ -312,5 +324,26 @@
     }
   ],
   "community_issues": "Report an issue or suggest an improvement",
-  "community_discussions": "Join the community discussions"
+  "community_discussions": "Join the community discussions",
+  "development_status": "In development · Built with the community",
+  "nav_subscriptions": "Subscriptions",
+  "subscriptions_label": "02 — Subscription model",
+  "subscriptions_title": [
+    "Open contribution.",
+    "Specialist expertise."
+  ],
+  "subscriptions_intro": "The commercial focus is Derleme and Onama: specialist products for bringing physical-world data into reliable records and defining how it may be accessed and used.",
+  "subscription_cards": [
+    {
+      "label": "Eyleme community",
+      "title": "No subscription required.",
+      "text": "Use the open-source local foundation, inspect its code and contribute to the ecosystem. First-party core code and documentation use Apache-2.0. Derleme and Onama subscriptions are optional."
+    },
+    {
+      "label": "Derleme & Onama",
+      "title": "Paid specialist products.",
+      "text": "Derleme focuses on field integration, data quality and cloud or on-premises recording. Onama focuses on cybersecurity, authorization, responsibility and regulatory compliance workflows. These are the expertise areas behind the planned private-source subscriptions."
+    }
+  ],
+  "subscriptions_note": "The product family is in development. Packages, prices, service levels and availability have not yet been published. This website does not currently offer subscription signup or checkout."
 }

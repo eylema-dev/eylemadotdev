@@ -1,8 +1,8 @@
 {
   "lang": "tr",
   "locale": "tr_TR",
-  "title": "Eyleme — Açık Kaynak, Topluluk ve Abonelik Ürünleri",
-  "description": "Açık kaynak yerel görev aracı Eyleme ve topluluğuyla geliştirin. Geliştirilmekte olan kapalı kaynak abonelik ürünleri Eyleme Derleme ve Eyleme Onama’yı keşfedin.",
+  "title": "Eyleme — Açık Kaynak Ekosistemi ve Uzmanlık Abonelikleri",
+  "description": "Eyleme, geliştirme aşamasındaki açık kaynak ekosistemi. Saha verisi için Derleme’yi, siber güvenlik ve yönetişim için Onama’yı, ücretli uzmanlık abonelikleriyle keşfedin.",
   "skip": "İçeriğe geç",
   "navigation": "Ana gezinme",
   "language": "Dil seçimi",
@@ -14,25 +14,25 @@
     "Birlikte."
   ],
   "hero_art_alt": "Dekoratif turuncu Eyleme döngüsü heykeli",
-  "intro": "Eyleme, topluluğuyla büyümek için geliştirilen açık kaynak bir yerel görev aracıdır. Bağımsız olarak başlayın, öğrendiklerinizi katkıya dönüştürün ve Eyleme ürün ailesini keşfedin.",
+  "intro": "Eyleme, topluluğuyla büyüyen açık kaynak bir yapay zekâ ekosistemi olmayı hedefliyor. Yerel görev aracı bu yolun başlangıcı; Derleme saha verisini, Onama güvenlik, yetki ve sorumluluk çerçevesini kapsıyor.",
   "explore": "Başlayın",
   "follow": "Kaynağı inceleyin",
-  "status": "Birinci taraf kod ve belgeler Apache-2.0 lisanslıdır. Yerel görev temeli uygulanmıştır; genel model çıkarımı, bütünleşik RAG ve yerel eğitim ayrı kabul gerektirir.",
+  "status": "Geliştirme aşamasında. Yerel görev temeli mevcut; geniş ekosistem ve ticari hizmetler geliştiriliyor. Birinci taraf çekirdek kod ve belgeler: Apache-2.0.",
   "principles": [
     {
-      "title": "Açık ve bağımsız",
-      "text": "Eyleme’yi Derleme veya Onama aboneliği olmadan kullanın ve geliştirin. Temel yetkilendirme açık kaynak araçta kalır."
+      "title": "Açık kaynak ekosistemi",
+      "text": "Eyleme’yi paylaşılan kod, bilgi, örnekler ve incelenmiş katkılarla büyütün. Topluluk, ürünün geleceğinin bir parçası."
     },
     {
-      "title": "Toplulukla gelişir",
-      "text": "Belgelerden öğrenin, sorun bildirin, bir sözleşmeyi inceleyin veya odaklı bir değişiklikle katkı verin."
+      "title": "Fiziksel dünyayla bağlantı",
+      "text": "Derleme, sahadan veri toplamak ve bulutta ya da kurum içinde kaydetmek için geliştiriliyor. Onama, bu verinin ve ilgili işlemlerin nasıl yönetileceğini ele alıyor."
     },
     {
-      "title": "Tek Eyleme ailesi",
-      "text": "Eyleme Derleme ve Eyleme Onama, kapalı kaynak ve ücretli abonelik modeliyle sunulacak ürünlerdir. Ticari hizmetleri geliştirme aşamasındadır."
+      "title": "Uzmanlık abonelikleri",
+      "text": "Derleme ve Onama; veri altyapısı, siber güvenlik ve yönetişim uzmanlığına odaklanan, geliştirme aşamasındaki ücretli ürünler."
     }
   ],
-  "architecture_label": "03 — Açık kaynak mimari",
+  "architecture_label": "04 — Açık kaynak mimarisi",
   "architecture_title": [
     "Döngüyü kur.",
     "Sözleşmeyi koru."
@@ -111,24 +111,36 @@
   "concept_note": "Mimari v0.7 · kapsamı sınırlı bileşenler var; entegre model işlerinin kabulü tamamlanmadı",
   "human_title": "Her aşamada insan yönlendirmesi.",
   "human_text": "Yetkiyi tanımla. Gözlenen sonuçları incele. Durdurma ve yetki iptalini Rust kontrol yolunda tut.",
-  "faq_label": "04 — Sorular ve yanıtlar",
+  "faq_label": "05 — Sorular ve yanıtlar",
   "faq_title": [
     "Bir platform.",
     "Açık sınırlarla."
   ],
-  "faq_intro": "Güncel temelin yaptıkları, mimarinin önerdikleri ve hâlâ kanıt gerektirenler.",
+  "faq_intro": "Ekosistemin nasıl tamamlandığı, aboneliklerin neleri kapsamasının hedeflendiği ve geliştirme aşamasında olanlar.",
   "questions": [
     {
       "question": "Eyleme nedir?",
-      "answer": "Eyleme hem ortak marka hem de bağımsız kullanılabilen açık kaynak yerel görev aracıdır. Birinci taraf kod ve belgeleri Apache-2.0 lisanslıdır. Eyleme Derleme ve Eyleme Onama, kapalı kaynak ve ücretli abonelik modeliyle geliştirilen ürünlerdir. Açık kaynak görev temeli, geniş model, RAG, bellek ve öğrenme tasarımından ayrıdır.",
-      "source": "architecture",
-      "link": "Mimari v0.7"
+      "answer": "Eyleme hem ortak marka hem de bir topluluk ekosistemine dönüşmeyi hedefleyen, bağımsız kullanılabilir açık kaynak yerel görev aracıdır. Derleme, fiziksel dünyadan veri toplamayı ve bulut veya kurum içi kaydı; Onama, siber güvenlik, yetki, sorumluluk ve mevzuat süreçlerini kapsar. Ürün ailesi geliştirme aşamasındadır. Birinci taraf Eyleme çekirdek kodu ve belgeleri Apache-2.0 lisanslıdır; Derleme ve Onama, ücretli abonelik planlanan kapalı kaynak ürünlerdir.",
+      "source": "project",
+      "link": "Herkese açık proje kapsamını okuyun"
     },
     {
       "question": "Eyleme’yi kullanmak için abonelik gerekir mi?",
-      "answer": "Hayır. Açık kaynak Eyleme aracı Derleme veya Onama olmadan bağımsız kullanılabilir. Kendi izin kontrolleri çekirdeğin parçası olmaya devam eder. Derleme ve Onama ek veri ve yönetim ihtiyaçlarını kapalı kaynak abonelik modeliyle karşılamayı hedefler; fiyatlar, hizmet erişimi ve müşteri ortamında kurulum kabulü bu siteyle kanıtlanmış değildir.",
+      "answer": "Hayır. Açık kaynak Eyleme aracı kendi izin kontrolleriyle bağımsız kullanılabilir. Ücretli Derleme ve Onama abonelikleri, saha verisi ve yönetişim alanlarındaki uzmanlık ihtiyaçlarına yöneliktir. Paketler, fiyatlar, hizmet seviyeleri ve erişim takvimi henüz yayımlanmadı; sitede abonelik ödeme akışı bulunmuyor.",
       "source": "project",
       "link": "Herkese açık proje kapsamını okuyun"
+    },
+    {
+      "question": "Derleme saha verisini nerede kaydedecek?",
+      "answer": "Planlanan seçenekler bulut ve müşterinin kendi altyapısında kurum içi (on-premise) kurulumdur. Derleme, fiziksel dünya verisini kaynak, zaman ve kalite bilgisiyle toplamayı hedefler. Kullanılacak bağlayıcılar, kayıt altyapısı ve desteklenen ortam her kurulum için tanımlanıp doğrulanmalıdır. Bu, ürün yönünü anlatır; hazır bir müşteri kurulumu sunulduğu anlamına gelmez.",
+      "source": "project",
+      "link": "Ürün ailesini inceleyin"
+    },
+    {
+      "question": "Onama hangi ihtiyaçlara odaklanıyor?",
+      "answer": "Onama; siber güvenlik, yetkilendirme, sorumluluk ve mevzuata uyum süreçlerine odaklanır: veriye kimin erişebileceği, hangi politikayla işlem yapılabileceği, kararların ve etkilerin nasıl denetlenebileceği. Geliştirme aşamasında bir uzmanlık ürünüdür. Geçerli gereklilikler kuruma ve kuruluma bağlıdır; ürün kendi başına hukuki sertifikasyon veya uyum garantisi sağlamaz. Eyleme’nin temel yerel izin kontrolleri açık kaynak çekirdekte kalır.",
+      "source": "project",
+      "link": "Ürün ailesini inceleyin"
     },
     {
       "question": "Bugün ne çalışıyor?",
@@ -191,9 +203,9 @@
       "link": "Çekirdeğin Apache-2.0 lisansı"
     }
   ],
-  "updated": "Ürün ailesi 15 Ekim 2026; bileşen kanıtları 14 Ekim 2026 tarihinde incelendi.",
+  "updated": "Ekosistem ve abonelik kapsamı 15 Ekim 2026; bileşen kanıtları 14 Ekim 2026 tarihinde incelendi.",
   "language_note": "İngilizce kanoniktir. Türkçe tam eşlikçisidir.",
-  "roadmap_label": "05 — Açık kaynak yol haritası",
+  "roadmap_label": "06 — Açık kaynak yol haritası",
   "roadmap_title": [
     "Açıkça geliştir.",
     "Adım adım doğrula."
@@ -222,7 +234,7 @@
     }
   ],
   "join_title": "Sıradaki adımı birlikte şekillendirelim.",
-  "join_text": "Temeli inceleyin, sorun paylaşın veya kapsamı belirli bir değişiklikle katkı verin. Açık kaynak Eyleme topluluğunu kanıtla büyütün.",
+  "join_text": "Kodla katkıda bulunun, belgeleri geliştirin veya tekrarlanabilir bir örnek paylaşın. Özel verinin ve ticari uzmanlığın sınırlarını koruyan açık kaynak Eyleme ekosistemini birlikte kurun.",
   "join_link": "Topluluğa katılın",
   "footer": "Açık kaynak. Birlikte gelişim. İnsan yetkisi.",
   "api_link": "API referansı",
@@ -254,40 +266,40 @@
     "Tek isim.",
     "Üç belirgin rol."
   ],
-  "products_intro": "Derleme → Onama → Eyleme: veriyi hazırla, işi yetkilendir, uygula. Bu, ailenin iş akışıdır; izin kontrolleri veri ve işlemlerin sınır geçtiği diğer aşamalarda da uygulanır.",
+  "products_intro": "Derleme → Onama → Eyleme: saha verisini topla ve kaydet, erişimi ve sorumluluğu yönet, izin verilen girdileri eyleme dönüştür. Bu roller birbirini tamamlar; yetki kontrolleri akışın tamamında geçerlidir.",
   "products": [
     {
       "id": "derleme",
       "name": "Eyleme Derleme",
       "model": "Kapalı kaynak · ücretli abonelik",
-      "title": "Güvenilir girdiler hazırla.",
-      "text": "Endüstriyel veriyi topla, kaynağını ve kalitesini koru, izin verilen kullanıma hazırla. Bağlayıcı ve kurulum kabulü her ortam için ayrı değerlendirilir.",
+      "title": "Sahayı kayıt altına al.",
+      "text": "Derleme; fiziksel dünyadaki sensörlerden, makinelerden ve saha operasyonlarından veri toplamak, bulutta veya kurum içinde (on-premise) kaydetmek için geliştiriliyor. Kaynak, zaman ve kalite bilgisi, verinin izin verilen kullanımını destekler. Her bağlayıcı ve kurulum ayrıca doğrulanır.",
       "status": "Geliştirme aşamasında · abonelik koşulları henüz yayımlanmadı"
     },
     {
       "id": "onama",
       "name": "Eyleme Onama",
       "model": "Kapalı kaynak · ücretli abonelik",
-      "title": "İzin verilen işi yönet.",
-      "text": "Daha kapsamlı yönetim ihtiyaçları için politika ve yürütme güvencesi. Sınırlı yerel pilot kanıtı üretim hizmetinden ayrıdır; Eyleme’nin temel izinleri açık kaynak araçta kalır.",
+      "title": "Güvenliği ve sorumluluğu tanımla.",
+      "text": "Onama; siber güvenlik, erişim yetkileri, sorumluluklar, denetim kayıtları ve mevzuata uyum süreçleri etrafında geliştiriliyor. Kimin, hangi kuralla, kimin sorumluluğunda ne yapabileceğini belirginleştirmeyi hedefliyor.",
       "status": "Geliştirme aşamasında · abonelik koşulları henüz yayımlanmadı"
     },
     {
       "id": "eyleme",
       "name": "Eyleme",
       "model": "Açık kaynak · Apache-2.0",
-      "title": "Fikri eyleme dönüştür.",
-      "text": "Kalıcı durum, açık yetki ve incelenebilir sonuçlar sunan bağımsız yerel görev temeli. Herkese açık kod, belgeler ve topluluk katkılarıyla geliştirin.",
+      "title": "Fikri birlikte eyleme dönüştür.",
+      "text": "Açık kaynak yerel görev aracı ve bir topluluk ekosisteminin başlangıcı. Herkese açık kod, belgeler, örnekler ve yeniden kullanılabilir becerilerle büyür. Yerel temel mevcut; geniş yapay zekâ platformu geliştirme aşamasında.",
       "status": "Herkese açık temel · geniş platform geliştirme aşamasında"
     }
   ],
   "products_note": "Derleme ve Onama, Eyleme’yi kullanmak için zorunlu olmadan aileyi genişletir. Bu sitede ücretli ödeme akışı veya üretimde abonelik hizmeti bulunmuyor. Fiyatlar ve erişim durumu hazır olduğunda yayımlanacak.",
-  "community_label": "02 — Başlayın ve katkı verin",
+  "community_label": "03 — Topluluk ve ekosistem",
   "community_title": [
-    "Kullanın.",
-    "Birlikte geliştirin."
+    "Birlikte geliştirin.",
+    "Ekosistemi büyütün."
   ],
-  "community_intro": "Belgelenmiş yerel temelden ve mevcut sınırlarından başlayın. Tekrarlanabilir sorunları ve kapsamı belirli katkıları herkese açık projede paylaşın.",
+  "community_intro": "Hedef tek bir araçtan daha geniş: kod, belge, örnek ve yeniden kullanılabilir beceriler paylaşan bir topluluk. Bugünkü yerel temelden başlayın ve gelecek adımları şekillendirin. Özel saha verileri kendiliğinden topluluk katkısına dönüşmez.",
   "community_links": [
     {
       "id": "start",
@@ -312,5 +324,26 @@
     }
   ],
   "community_issues": "Sorun bildirin veya iyileştirme önerin",
-  "community_discussions": "Topluluk tartışmalarına katılın"
+  "community_discussions": "Topluluk tartışmalarına katılın",
+  "development_status": "Geliştirme aşamasında · Toplulukla birlikte",
+  "nav_subscriptions": "Abonelik",
+  "subscriptions_label": "02 — Abonelik modeli",
+  "subscriptions_title": [
+    "Açık katkı.",
+    "Uzmanlıkla gelişim."
+  ],
+  "subscriptions_intro": "Ticari odağı Derleme ve Onama oluşturuyor: fiziksel dünya verisini güvenilir kayıtlara dönüştürmek, bu veriye nasıl erişileceğini ve nasıl kullanılacağını belirlemek için uzmanlık ürünleri.",
+  "subscription_cards": [
+    {
+      "label": "Eyleme topluluğu",
+      "title": "Abonelik gerektirmez.",
+      "text": "Açık kaynak yerel temeli kullanın, kodunu inceleyin ve ekosisteme katkıda bulunun. Birinci taraf çekirdek kod ve belgeler Apache-2.0 lisanslıdır. Derleme ve Onama abonelikleri isteğe bağlıdır."
+    },
+    {
+      "label": "Derleme ve Onama",
+      "title": "Ücretli uzmanlık ürünleri.",
+      "text": "Derleme; saha entegrasyonu, veri kalitesi ve bulut veya kurum içi kayda odaklanır. Onama; siber güvenlik, yetkilendirme, sorumluluk ve mevzuata uyum süreçlerine odaklanır. Planlanan kapalı kaynak aboneliklerin uzmanlık alanları bunlardır."
+    }
+  ],
+  "subscriptions_note": "Ürün ailesi geliştirme aşamasında. Paketler, fiyatlar, hizmet seviyeleri ve erişim takvimi henüz yayımlanmadı. Bu sitede şu anda abonelik başlatma veya ödeme imkânı bulunmuyor."
 }

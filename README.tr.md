@@ -10,6 +10,8 @@ Bu depo uygulanmış yerel görev temelini ve önerilen işbirlikçi döngü pla
 
 [English](README.md)
 
+[Ekosistem ve abonelik revizyonu](records/ecosystem-positioning.tr.md) geliştirme durumunu açıkça belirtir: Eyleme, açık kaynak topluluk ekosistemi olarak büyümeyi hedefler; Derleme, fiziksel dünyadaki saha verisinin toplanmasını ve bulutta ya da kurum içinde kaydedilmesini; Onama, siber güvenlik, yetki, sorumluluk ve mevzuata uyum süreçlerini kapsar. [Abonelik bölümü](https://eyleme.dev/tr/#subscriptions), fiyat, paket veya hizmet erişimi ilan etmeden ticari uzmanlık odağını açıklar.
+
 Arama ilkesi: proje sahibi 15 Ekim 2026 tarihinde yeni eyleme.dev alan adının Google/Bing keşfini açıkça yetkilendirdi. Canonical giriş sayfaları indekslenebilir, sitemap İngilizce ve Türkçeyi içerir, gerçek404 noindex kalır. Eski eylema.dev kaldırma takibi ayrıdır. Motor doğrulaması/gönderimi ve gerçek indekslenme farklıdır; [arama görünürlüğüne](docs/tr/discovery.md) ve [WEB-020](records/search-launch.tr.md) kaydına bakın.
 
 Eyleme.dev için IndexNow [sınırlı gönderim aracıyla](records/eyleme-indexnow.tr.md) açıkça etkinleştirildi: varsayılan önizleme ağ erişimi yapmaz; --submit tek toplu gönderimden önce sahipliği/sayfaları doğrular. Protokol alındısı ve gerçek motor indekslemesi ayrıdır.
