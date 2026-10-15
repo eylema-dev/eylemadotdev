@@ -77,6 +77,11 @@ def check_content(en, tr):
         require(110 <= len(data["description"]) <= 170, "Review description length")
         require([product["id"] for product in data["products"]] == ["derleme", "onama", "eyleme"],
                 "Product family must preserve Derleme, Onama, Eyleme order")
+        require([card["name"] for card in data["oversight_cards"]] ==
+                ["Human-in-the-loop", "Human-on-the-loop", "Human-in-command"],
+                "Human oversight must retain the three distinct roles")
+        for key in ("models_note", "oversight_note", "delivery_note"):
+            require(bool(data[key].strip()), "Model, oversight and planned-team scope must be nonempty")
         for step in data["steps"]:
             require(step["source"] in {"architecture", "api", "teams", "learning"}, "Unknown source")
     for left, right in zip(en["steps"], tr["steps"]):
@@ -108,6 +113,22 @@ def check_page(public, relative, data):
             "Page must have one index,follow directive without bot overrides")
     require(not any(tag == "meta" and a.get("http-equiv", "").lower() == "refresh" for tag, a in page.tags), "Language auto-redirect is forbidden")
     plain = " ".join(page.data)
+    for key in ("models_note", "oversight_note", "delivery_note"):
+        require(bool(data[key].strip()) and data[key] in plain,
+                "Model, oversight or planned-team scope missing from initial HTML")
+    for key in ("model_rows", "oversight_cards", "delivery_steps"):
+        for row in data[key]:
+            require(all(value in plain for value in row.values()),
+                    "Model, oversight or field delivery explanation missing from initial HTML")
+    theme_buttons = [a for tag, a in page.tags if tag == "button" and a.get("class") == "theme-toggle"]
+    require(len(theme_buttons) == 1 and theme_buttons[0].get("aria-label") == data["theme_label"]
+            and bool(data["theme_label"].strip()) and theme_buttons[0].get("aria-pressed") == "false"
+            and "hidden" in theme_buttons[0], "Theme toggle needs a localized name, state and no-JS fallback")
+    theme_scripts = [(i, a) for i, (tag, a) in enumerate(page.tags) if tag == "script" and a.get("src") == "/assets/theme.js"]
+    style_index = next(i for i, (tag, a) in enumerate(page.tags) if tag == "link" and a.get("rel") == "stylesheet")
+    require(len(theme_scripts) == 1 and theme_scripts[0][0] < style_index
+            and not any(key in theme_scripts[0][1] for key in ("async", "defer")),
+            "Theme preference must load before styles without deferred execution")
     for question in data["questions"]:
         require(question["answer"] in plain, "FAQ answer missing from initial HTML")
     for step in data["steps"]:

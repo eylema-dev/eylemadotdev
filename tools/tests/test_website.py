@@ -96,7 +96,42 @@ class WebsiteTests(unittest.TestCase):
         page = Page(text)
         self.assertNotIn(malicious, text)
         self.assertEqual(json.loads("".join(page.ld))["@graph"][2]["description"], malicious)
-        self.assertEqual(sum(tag == "script" for tag, _ in page.tags), 2)
+        self.assertEqual(sum(tag == "script" for tag, _ in page.tags), 3)
+
+    def test_human_oversight_roles_cannot_collapse(self):
+        self.en["oversight_cards"][1]["name"] = "Human-in-the-loop"
+        with self.assertRaisesRegex(CheckFailure, "three distinct roles"):
+            check_content(self.en, self.tr)
+
+    def test_planned_capability_and_team_notices_cannot_disappear(self):
+        for key in ("models_note", "oversight_note", "delivery_note"):
+            with self.subTest(key=key), self.assertRaisesRegex(CheckFailure, "scope missing"):
+                self.check_modified(render(self.en).replace(self.en[key], ""))
+
+    def test_empty_scope_notices_are_rejected(self):
+        for key in ("models_note", "oversight_note", "delivery_note"):
+            original = self.en[key]
+            self.en[key] = " "
+            with self.subTest(key=key), self.assertRaisesRegex(CheckFailure, "scope must be nonempty"):
+                check_content(self.en, self.tr)
+            self.en[key] = original
+
+    def test_theme_control_requires_accessible_state_and_no_js_fallback(self):
+        for before, after in [('aria-pressed="false"', ''), ('aria-label="Dark theme"', ''),
+                              (' hidden><svg class="theme-sun"', '><svg class="theme-sun"')]:
+            with self.subTest(before=before), self.assertRaisesRegex(CheckFailure, "Theme toggle needs"):
+                self.check_modified(render(self.en).replace(before, after))
+
+    def test_deferred_or_missing_theme_bootstrap_is_rejected(self):
+        for replacement in ['', '<script src="/assets/theme.js" defer></script>']:
+            text = render(self.en).replace('<script src="/assets/theme.js"></script>', replacement)
+            with self.subTest(replacement=replacement), self.assertRaisesRegex(CheckFailure, "before styles"):
+                self.check_modified(text)
+
+    def test_oversight_explanation_cannot_disappear(self):
+        text = render(self.en).replace(self.en["oversight_cards"][1]["text"], '')
+        with self.assertRaisesRegex(CheckFailure, "explanation missing"):
+            self.check_modified(text)
 
     def test_wrong_turkish_canonical_fails(self):
         text = render(self.en).replace('rel="canonical" href="https://eyleme.dev/"', 'rel="canonical" href="https://eyleme.dev/tr/"')

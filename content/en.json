@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "locale": "en_US",
-  "title": "Eyleme — Open-source Ecosystem & Specialist Subscriptions",
-  "description": "Eyleme is an open-source ecosystem in development. Explore Derleme for field data and Onama for cybersecurity and governance, with paid specialist subscriptions.",
+  "title": "Eyleme — Human-directed Agentic AI Ecosystem",
+  "description": "An open-source agentic AI ecosystem in development: current and local models, reviewed recipes, human control, and planned Derleme and Onama field expertise.",
   "skip": "Skip to content",
   "navigation": "Main navigation",
   "language": "Choose language",
@@ -13,22 +13,22 @@
     "Take",
     "action."
   ],
-  "intro": "Eyleme aims to grow into an open-source AI ecosystem shaped by its community. Its local task tool is the starting point; Derleme brings field data into the picture, and Onama addresses security, authority and responsibility.",
-  "explore": "Get started",
+  "intro": "Human-directed agentic AI. An open ecosystem bringing models, recipes and field expertise together.",
+  "explore": "Explore the ecosystem",
   "follow": "View the source",
-  "status": "In development. The local task foundation exists; the wider ecosystem and commercial services are still being built. First-party core code and docs: Apache-2.0.",
+  "status": "Open-source foundation available. Integrated agents, model execution and specialist services are in development.",
   "principles": [
     {
-      "title": "Open-source ecosystem",
-      "text": "Grow Eyleme through shared code, knowledge, examples and reviewed contributions. The community is part of the product’s future."
+      "title": "Current models",
+      "text": "Task-specific profiles and reviewed recipes, designed to evolve with the model landscape."
     },
     {
-      "title": "Connected to the physical world",
-      "text": "Derleme is being built to collect field data and record it in the cloud or on premises. Onama addresses how that data and related actions are governed."
+      "title": "Local operation",
+      "text": "A local-first direction, with explicit permissions for external services and data."
     },
     {
-      "title": "Specialist subscriptions",
-      "text": "Derleme and Onama are paid products in development, focused on data infrastructure, cybersecurity and governance expertise."
+      "title": "Human command",
+      "text": "People define the goal, authority and acceptance of every workflow."
     }
   ],
   "architecture_label": "04 — Open-source architecture",
@@ -202,7 +202,7 @@
       "link": "Core Apache-2.0 license"
     }
   ],
-  "updated": "Ecosystem and subscription scope reviewed 15 October 2026; component evidence reviewed 14 October 2026.",
+  "updated": "Agentic ecosystem and planned team scope reviewed 15 October 2026; component evidence reviewed 14 October 2026.",
   "language_note": "English is canonical. Turkish is a full companion.",
   "roadmap_label": "06 — Open-source roadmap",
   "roadmap_title": [
@@ -258,21 +258,21 @@
     }
   ],
   "technology_notice": "Open-source Eyleme · architecture v0.7 integration design",
-  "nav_products": "Products",
+  "nav_products": "Ecosystem",
   "nav_community": "Community",
   "products_label": "01 — Product family",
   "products_title": [
-    "One name.",
-    "Three clear roles."
+    "One ecosystem.",
+    "Three areas of expertise."
   ],
-  "products_intro": "Derleme → Onama → Eyleme: collect and record field data, govern access and responsibility, turn permitted inputs into action. These are complementary roles; authority checks apply throughout the workflow.",
+  "products_intro": "Derleme connects the physical world, Onama frames security and responsibility, and Eyleme turns permitted inputs into agentic workflows. People own the authority across the whole process.",
   "products": [
     {
       "id": "derleme",
       "name": "Eyleme Derleme",
       "model": "Private source · paid subscription",
       "title": "Bring the field into the record.",
-      "text": "Derleme is being built to collect data from sensors, machines and field operations in the physical world, then record it in the cloud or on premises. Source, time and quality context support permitted downstream use. Each connector and deployment needs its own acceptance.",
+      "text": "Derleme is being built to collect data from sensors, machines and field operations in the physical world, then record it in the cloud or on premises. Source, time and quality context support permitted downstream use. Each connector and deployment needs its own acceptance. Planned field support includes discovery, integration and commissioning.",
       "status": "In development · subscription terms not yet published"
     },
     {
@@ -280,7 +280,7 @@
       "name": "Eyleme Onama",
       "model": "Private source · paid subscription",
       "title": "Define security and responsibility.",
-      "text": "Onama is being built around cybersecurity, access authority, responsibilities, audit records and regulatory compliance workflows. It aims to make who may do what, under which rules and with whose responsibility explicit.",
+      "text": "Onama is being built around cybersecurity, access authority, responsibilities, audit records and regulatory compliance workflows. It aims to make who may do what, under which rules and with whose responsibility explicit. The forming specialist team plans on-site reviews and operator handover support.",
       "status": "In development · subscription terms not yet published"
     },
     {
@@ -298,7 +298,7 @@
     "Build together.",
     "Grow the ecosystem."
   ],
-  "community_intro": "The ambition reaches beyond one tool: a community that shares code, documentation, examples and reusable skills. Start with today’s local foundation and help shape what comes next. Private field data is never a default community contribution.",
+  "community_intro": "Code, model recipes, documentation and reusable skills can grow together in an open community. Start with the current foundation and help shape the next integrations. Private field data is never a default community contribution.",
   "community_links": [
     {
       "id": "start",
@@ -324,14 +324,14 @@
   ],
   "community_issues": "Report an issue or suggest an improvement",
   "community_discussions": "Join the community discussions",
-  "development_status": "In development · Built with the community",
+  "development_status": "In development",
   "nav_subscriptions": "Subscriptions",
   "subscriptions_label": "02 — Subscription model",
   "subscriptions_title": [
     "Open contribution.",
     "Specialist expertise."
   ],
-  "subscriptions_intro": "The commercial focus is Derleme and Onama: specialist products for bringing physical-world data into reliable records and defining how it may be accessed and used.",
+  "subscriptions_intro": "Open contribution meets specialist delivery. Derleme and Onama are the paid products around which field integration, security and operational expertise are being developed.",
   "subscription_cards": [
     {
       "label": "Eyleme community",
@@ -346,7 +346,7 @@
   ],
   "subscriptions_note": "The product family is in development. Packages, prices, service levels and availability have not yet been published. This website does not currently offer subscription signup or checkout.",
   "hero_diagram": {
-    "alt": "The Eyleme ecosystem as a triangle: Eyleme at the top for open source and action, Derleme at the lower left for field data recorded in the cloud or on premises, and Onama at the lower right for security, authority, responsibility and regulatory workflows. Arrows show data from Derleme to Onama, authority from Onama to Eyleme, and feedback from Eyleme to Derleme. Planned collaboration; products are in development.",
+    "alt": "The Eyleme ecosystem as a triangle: Eyleme at the top for open source and action, Derleme at the lower left for field data recorded in the cloud or on premises, and Onama at the lower right for security, authority, responsibility and regulatory workflows. Arrows show data from Derleme to Onama, authority from Onama to Eyleme, and feedback from Eyleme to Derleme. Planned collaboration; products are in development. Human control is at the center.",
     "title": "The Eyleme ecosystem working together",
     "eyleme_role": "Open source · Action",
     "derleme_role": "Field data",
@@ -356,8 +356,88 @@
     "data": "Data",
     "authority": "Authority",
     "feedback": "Feedback",
-    "center": "Together.",
-    "center_subtitle": "One ecosystem.",
-    "caption": "Data, authority and action, together. Planned collaboration; products are in development."
-  }
+    "center": "Human",
+    "center_subtitle": "control",
+    "caption": "Planned collaboration · Products in development."
+  },
+  "nav_oversight": "Human control",
+  "theme_label": "Dark theme",
+  "theme_light": "Switch to light theme",
+  "theme_dark": "Switch to dark theme",
+  "models_title": [
+    "Models change.",
+    "Your goals and limits stay."
+  ],
+  "models_intro": "A shared foundation for current models, local operation and reviewed recipes. Agents are being designed to plan, execute, inspect and improve work within human-defined boundaries.",
+  "model_rows": [
+    {
+      "title": "Current models",
+      "text": "Select for the task. Pin the exact version, capabilities, license and acceptance evidence before use."
+    },
+    {
+      "title": "Model recipes",
+      "text": "Bring model, prompts, data rights, tools, evaluation and hardware context into a reproducible specification."
+    },
+    {
+      "title": "Local models",
+      "text": "Keep local operation explicit. A local-only profile never silently switches to a hosted model."
+    }
+  ],
+  "models_note": "Model contracts exist. Integrated inference, agent jobs and native training still require separate acceptance; this is the development direction, not an available model catalog.",
+  "loop_label": "Planned agent workflow under human authority",
+  "loop_steps": [
+    "Define",
+    "Plan",
+    "Approve",
+    "Act",
+    "Inspect",
+    "Improve"
+  ],
+  "oversight_title": [
+    "Room for agents.",
+    "Control for people."
+  ],
+  "oversight_intro": "Three complementary ways to keep people in control, selected for the task and its risks.",
+  "oversight_cards": [
+    {
+      "name": "Human-in-the-loop",
+      "title": "Approve the step.",
+      "text": "Review selected actions and outputs at explicit checkpoints. Correct, approve or reject before the authorized next step."
+    },
+    {
+      "name": "Human-on-the-loop",
+      "title": "Supervise the process.",
+      "text": "Observe work inside approved limits. Define intervention and stop conditions, and investigate unexpected outcomes."
+    },
+    {
+      "name": "Human-in-command",
+      "title": "Set the direction.",
+      "text": "Own the goals, roles, permissions and resource limits. Decide what can be deployed and when authority must be withdrawn."
+    }
+  ],
+  "oversight_note": "Design approach · Full integration is in development. Human approval, oversight and command remain distinct responsibilities.",
+  "delivery_title": [
+    "From software to the field.",
+    "Together."
+  ],
+  "delivery_intro": "A specialist team is being formed for Derleme and Onama, with planned hands-on support from discovery and field integration through security and ongoing operation.",
+  "delivery_steps": [
+    {
+      "title": "Discover",
+      "text": "Site visits, data-source mapping and a shared definition of the need."
+    },
+    {
+      "title": "Integrate",
+      "text": "Planned sensor, machine and cloud or on-premises integration support."
+    },
+    {
+      "title": "Govern",
+      "text": "Security reviews, access responsibilities and regulatory workflow design."
+    },
+    {
+      "title": "Sustain",
+      "text": "Planned commissioning, operator handover and ongoing improvement."
+    }
+  ],
+  "delivery_note": "Team forming. Field services are planned; staffing, service levels and availability have not been announced."
 }

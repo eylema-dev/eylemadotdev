@@ -68,15 +68,15 @@
     },
     {
       "path": "public/assets/eyleme-ecosystem-en.svg",
-      "sha256": "c2b51aa67331f898c45def928c48240aa38aac9a518d84cdd2e9a385ad9a7928",
-      "bytes": 2535,
-      "source": "Original first-party SVG; tools/build.py ecosystem_svg with reviewed bilingual content; maintainer triangle request, 2026-10-15; no image generation or third-party artwork"
+      "sha256": "5635924a15b204e6046c3bb21e1ae709d73e5c7417aa6642deff36c3a3273f62",
+      "bytes": 3399,
+      "source": "Original first-party theme-aware SVG; tools/build.py with reviewed bilingual content; human-control and responsive diagram revision, 2026-10-15; concept images are references only"
     },
     {
       "path": "public/assets/eyleme-ecosystem-tr.svg",
-      "sha256": "d61e280cf66048c36b95e444f571e13f7ddff762601dfe547c7d3744b6c20efd",
-      "bytes": 2498,
-      "source": "Original first-party SVG; tools/build.py ecosystem_svg with reviewed bilingual content; maintainer triangle request, 2026-10-15; no image generation or third-party artwork"
+      "sha256": "79e0f91fe09e50a0a7e4ca47543635beed61895998d4f79e2ebbf7a3791fd9c5",
+      "bytes": 3369,
+      "source": "Original first-party theme-aware SVG; tools/build.py with reviewed bilingual content; human-control and responsive diagram revision, 2026-10-15; concept images are references only"
     }
   ]
 }

@@ -1,18 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-labelledby="ecosystem-title ecosystem-desc" xml:lang="en">
-  <title id="ecosystem-title">The Eyleme ecosystem working together</title>
-  <desc id="ecosystem-desc">The Eyleme ecosystem as a triangle: Eyleme at the top for open source and action, Derleme at the lower left for field data recorded in the cloud or on premises, and Onama at the lower right for security, authority, responsibility and regulatory workflows. Arrows show data from Derleme to Onama, authority from Onama to Eyleme, and feedback from Eyleme to Derleme. Planned collaboration; products are in development.</desc>
-  <defs>
-    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9161"/><stop offset=".5" stop-color="#ee5638"/><stop offset="1" stop-color="#b63e28"/></linearGradient>
-  </defs>
-  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle" fill="#17252b">
-    <path d="M320 124 114 446H526Z" fill="#ee5638" fill-opacity=".035" stroke="url(#copper)" stroke-width="18" stroke-linejoin="round"/>
-    <path d="M221 279l-16 25 0-14m0 14 13-6M305 446h30l-10-8m10 8-10 8M431 298l-16-25 0 14m0-14 13 6" fill="none" stroke="#f7f6f2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <g fill="#f7f6f2" stroke="#ee5638" stroke-width="6"><circle cx="320" cy="124" r="20"/><circle cx="114" cy="446" r="20"/><circle cx="526" cy="446" r="20"/></g>
-    <g fill="#ee5638"><circle cx="320" cy="124" r="6"/><circle cx="114" cy="446" r="6"/><circle cx="526" cy="446" r="6"/></g>
-    <g font-size="38" font-weight="700" letter-spacing="-1.4"><text x="320" y="48">Eyleme</text><text x="114" y="512">Derleme</text><text x="526" y="512">Onama</text></g>
-    <g font-size="21" fill="#5d676b"><text x="320" y="80">Open source · Action</text><text x="114" y="545">Field data</text><text x="526" y="545">Security · Authority</text></g>
-    <g font-size="17" fill="#5d676b"><text x="114" y="575">Cloud / On premises</text><text x="526" y="575">Responsibility · Regulations</text></g>
-    <g font-size="20" font-weight="500" fill="#b63e28"><text x="165" y="278" transform="rotate(-57.4 165 278)">Feedback</text><text x="478" y="278" transform="rotate(57.4 478 278)">Authority</text><text x="320" y="416">Data</text></g>
-    <text x="320" y="324" font-size="36" font-weight="650" letter-spacing="-1">Together.</text><text x="320" y="357" font-size="21" fill="#5d676b">One ecosystem.</text>
+  <title id="ecosystem-title">The Eyleme ecosystem working together</title><desc id="ecosystem-desc">The Eyleme ecosystem as a triangle: Eyleme at the top for open source and action, Derleme at the lower left for field data recorded in the cloud or on premises, and Onama at the lower right for security, authority, responsibility and regulatory workflows. Arrows show data from Derleme to Onama, authority from Onama to Eyleme, and feedback from Eyleme to Derleme. Planned collaboration; products are in development. Human control is at the center.</desc>
+  <style>
+    :root { --ink:#10252e; --muted:#526875; --accent:#ce492c; --cyan:#167685; --rule:#cedae1; --paper:#f5f8fa; }
+    @media (prefers-color-scheme:dark) { :root { --ink:#edf3f7; --muted:#a4b5bf; --accent:#ff714e; --cyan:#84d8e2; --rule:#293740; --paper:#0b1116; } }
+    .node { fill:var(--paper); stroke:var(--cyan); stroke-width:1.5; }
+    .guide { fill:none; stroke:var(--rule); stroke-width:1; }
+    .link { fill:none; stroke:var(--accent); stroke-width:2.5; marker-end:url(#tip); }
+    @media (max-width:400px) { .roles, .details { display:none; } .names { font-size:34px; } .edges { font-size:27px; } .center { font-size:32px; } }
+  </style>
+  <defs><marker id="tip" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 9 5 1 9Z" fill="var(--accent)"/></marker></defs>
+  <circle class="guide" cx="320" cy="318" r="248" stroke-dasharray="3 6"/>
+  <path class="guide" d="M320 2v596M4 440h632M226 100h188M16 532h36m-18-18v36m554-18h36m-18-18v36"/>
+  <path class="link" d="M280 165 151 374"/><path class="link" d="M190 440H448"/><path class="link" d="M489 374 360 165"/>
+  <g class="guide" stroke-dasharray="3 5"><path d="M320 180v60m-40 125-100 48m180-48 100 48"/><circle cx="320" cy="315" r="70"/></g>
+  <g class="node"><circle cx="320" cy="100" r="80"/><circle cx="110" cy="440" r="80"/><circle cx="530" cy="440" r="80"/></g>
+  <g fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="320" cy="100" r="70"/><circle cx="110" cy="440" r="70"/><circle cx="530" cy="440" r="70"/></g>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle" fill="var(--ink)">
+    <g class="names" font-size="29" font-weight="700" letter-spacing="-1"><text x="320" y="98" fill="var(--accent)">Eyleme</text><text x="110" y="437">Derleme</text><text x="530" y="437">Onama</text></g>
+    <g class="roles" font-size="17" fill="var(--muted)"><text x="320" y="126">Open source · Action</text><text x="110" y="464">Field data</text><text x="530" y="464">Security · Authority</text></g>
+    <g class="details" font-size="16" fill="var(--muted)"><text x="110" y="550">Cloud / On premises</text><text x="530" y="550">Responsibility · Regulations</text></g>
+    <g class="edges" font-size="19" fill="var(--ink)"><text x="178" y="266" transform="rotate(-58 178 266)">Feedback</text><text x="468" y="266" transform="rotate(58 468 266)">Authority</text><text x="320" y="420">Data</text></g>
+    <text class="center" x="320" y="308" font-size="29" font-weight="650" letter-spacing="-.8">Human</text><text class="center" x="320" y="339" font-size="26" fill="var(--muted)">control</text>
   </g>
 </svg>
