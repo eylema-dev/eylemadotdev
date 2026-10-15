@@ -12,6 +12,8 @@ Bu depo uygulanmış yerel görev temelini ve önerilen işbirlikçi döngü pla
 
 Arama ilkesi: proje sahibi 15 Ekim 2026 tarihinde yeni eyleme.dev alan adının Google/Bing keşfini açıkça yetkilendirdi. Canonical giriş sayfaları indekslenebilir, sitemap İngilizce ve Türkçeyi içerir, gerçek404 noindex kalır. Eski eylema.dev kaldırma takibi ayrıdır. Motor doğrulaması/gönderimi ve gerçek indekslenme farklıdır; [arama görünürlüğüne](docs/tr/discovery.md) ve [WEB-020](records/search-launch.tr.md) kaydına bakın.
 
+Eyleme.dev için IndexNow [sınırlı gönderim aracıyla](records/eyleme-indexnow.tr.md) açıkça etkinleştirildi: varsayılan önizleme ağ erişimi yapmaz; --submit tek toplu gönderimden önce sahipliği/sayfaları doğrular. Protokol alındısı ve gerçek motor indekslemesi ayrıdır.
+
 ## Web sitesi
 
 Varsayılan İngilizce `/`, Türkçe `/tr/` adresindedir. İkisi de karşılıklı hreflang ve kendi canonical adresine sahip tam HTML belgeleridir. Mimari sekmeleri HTML'de zaten bulunan içeriği kademeli olarak geliştirir. Sorular doğal açılır/kapanır kontroller kullanır. Hesap, analitik, çerez, uzak yazı tipi, model API'si veya üçüncü taraf çalışma zamanı paketi yoktur.

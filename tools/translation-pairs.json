@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "f3107fcbb71378f3dd5283ffbbdd2d844d1e331e3cf4e0a90022e978ca127233",
-      "tr_sha256": "73afd8ef81ad26098a3665f9fe8c1189a498a11c9493bff7b0d84420eec2b469"
+      "en_sha256": "5f2c09792fde68b1e73e3a0adf7fb958bb8effd515049e61247c157c9f8bc977",
+      "tr_sha256": "5cfbfcfb92a0041529a0e16eb07edf55cb04c489ac22c245dc3779c2515c364a"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -45,14 +45,14 @@
     {
       "en": "docs/en/discovery.md",
       "tr": "docs/tr/discovery.md",
-      "en_sha256": "576c516e5b99d4752e2c8bcedb4ae60bdd0dab06c3156bcfc6a6328df12693f9",
-      "tr_sha256": "4e7fc9e93fd00d037eb7a9c308e833abb36256116b166665a2c39a1c99cdf4f5"
+      "en_sha256": "164b6724c8fde26ab6d65847252868450b10bda0615f0cd44a35f09a8d354074",
+      "tr_sha256": "33df28337d5329ce76b46081df02720aa6cc0d29fb8f2066ca1a4619fe82fe69"
     },
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "2954650a7556bebfcea56a962f1bf1d28b480f7f8eff87ed19249b8d7c64f629",
-      "tr_sha256": "bda784a9f520517340e1141f65279e75c62f80ec584116850035ad956460d8b5"
+      "en_sha256": "b87ae16e40659b8d19b8fa4a31d5216af1e3191b7b337a97c258f6929344447a",
+      "tr_sha256": "beb8b9ccc7c27a99ff48f49587c428c1cd01bb726f977ab127edbd4843a8d4a8"
     },
     {
       "en": "docs/en/tooling.md",
@@ -149,6 +149,12 @@
       "tr": "records/single-brand-family.tr.md",
       "en_sha256": "0146e0de03545d175f0356c5a0a45c8bcf0e3221aee9271cb47c60c93ab057de",
       "tr_sha256": "36c34f8815c11a17497381fe3f6724da2d326965bc7fa29fc062864a6cb0674a"
+    },
+    {
+      "en": "records/eyleme-indexnow.md",
+      "tr": "records/eyleme-indexnow.tr.md",
+      "en_sha256": "afd2e69e89c3732f626e2f053d39fd0d0306aafe88aa66fa282cc3b36e518f72",
+      "tr_sha256": "8ddfb2b441e9c213205ba8a5589b097851d67c6b1eecfd40cb0ae1b097fbbfa3"
     }
   ]
 }

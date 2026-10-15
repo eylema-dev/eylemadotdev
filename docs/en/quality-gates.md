@@ -20,4 +20,4 @@ Run the commands in [AGENTS.md](../../AGENTS.md) and `python tools/build.py --ch
 
 Hosting, HTTPS/redirects, actual HTTP 404, search-engine indexing, field performance, model/GPU/Rust execution and international reach require separate evidence. Missing hardware evidence must never be inferred from website checks.
 
-IndexNow stays disabled before network access. New-domain indexable deployment, owner-panel submission acceptance and observed indexing status are separate evidence. Old-domain removal evidence remains historical. Canonical DNS failure remains a failed live gate. See [search visibility](discovery.md).
+IndexNow defaults to a zero-network preview; explicit submission must pass host/key/page preflight, send one POST without redirects/retries and retain the actual200/202/error receipt. New-domain indexable deployment, owner-panel submission acceptance and observed indexing status are separate evidence. Old-domain removal evidence remains historical. Canonical DNS failure remains a failed live gate. See [search visibility](discovery.md).
