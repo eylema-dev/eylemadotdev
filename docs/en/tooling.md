@@ -29,3 +29,5 @@ The [product-name update](../../records/project-name-alignment.md) changes activ
 ## Current Eyleme assets — 15 October 2026
 
 The [website identity migration](../../records/website-identity.md) renames current files to `eyleme-*` and prepares eyleme.dev. The logo already reads Eyleme; only the footer domain changes in the English/Turkish architecture posters. Previous production notes above are historical. The provenance inventory records the current file names, bytes and hashes.
+
+The [ecosystem revision](../../records/ecosystem-positioning.md) replaces the visible hero ribbon with original first-party vector diagrams, `eyleme-ecosystem-en.svg` and `eyleme-ecosystem-tr.svg`. The standard-library builder generates both from reviewed language content. Eyleme, Derleme and Onama form a triangle with data, authority and feedback arrows. These informative images have localized alternatives and visible development captions. No image-generation service, font or rendering package is required; the earlier ribbon files remain available as historical assets.

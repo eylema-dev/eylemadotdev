@@ -27,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "b7ac0212cbcf29d69351ac06b514b9182f5de528234582ef10490bd447f8a066",
-      "tr_sha256": "5b5c7c332c41d6c5b2a8dfb428b999c5d5918284c8cf07f5c2b4256da4220a8a"
+      "en_sha256": "8364b29945aab7ed06c2de7fabb1a81f1c5a9bdedb4dd823217933e67d96c54f",
+      "tr_sha256": "1b6d12bf69686940469601bd6d38e4bd26243d2dab9729ae28a9721cbb1c3ebe"
     },
     {
       "en": "records/plan.md",
@@ -51,14 +51,14 @@
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "b87ae16e40659b8d19b8fa4a31d5216af1e3191b7b337a97c258f6929344447a",
-      "tr_sha256": "beb8b9ccc7c27a99ff48f49587c428c1cd01bb726f977ab127edbd4843a8d4a8"
+      "en_sha256": "bf176c3806915791dd3da5902059cade37f2e7b607fdaf9d757ef9c98cb36d46",
+      "tr_sha256": "8821af7403984415a233b49815c65fdf402625e34ca5430af9763335a2d829c8"
     },
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "25ea0d6ef3843804e119bd1f90c260a406e37eab368fe1028ab261df9757f70e",
-      "tr_sha256": "12bbb55ca108eabe4071771c445fc39cc0fb33da0c51d3343e8c32b37751852d"
+      "en_sha256": "5e9e812fcf13d84b6e33800cd1b5791fea1f13b828526604c5656dd3cf4f5f18",
+      "tr_sha256": "0174bc7478025b4e09a228143d4d851d49af2520897e02ab9ddc6c26c023407b"
     },
     {
       "en": "records/verification.md",
@@ -159,8 +159,8 @@
     {
       "en": "records/ecosystem-positioning.md",
       "tr": "records/ecosystem-positioning.tr.md",
-      "en_sha256": "4febbf1176bb4e686e8eaadfd39007b8f2f163942db5727cbd032204e108a3f0",
-      "tr_sha256": "d56fff1027c9dfa6386bf9b9991e12a935e7ede08e867199b19bb74eb195e343"
+      "en_sha256": "0f3ce93b4d461806c731892f2aec02ccb52c37dfaabee768cd1a9764d6586418",
+      "tr_sha256": "2f5aa4ede8560e8f2b215ae2dfa6a2906f54c72101f0c8a109c41f99675989b6"
     }
   ]
 }

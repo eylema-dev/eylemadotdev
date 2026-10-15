@@ -119,9 +119,10 @@ def check_page(public, relative, data):
                 "Product model or availability missing from initial HTML")
     require(data["products_note"] in plain, "Subscription availability notice missing from initial HTML")
     require(data["technology_notice"] in plain and data["technology_caption"] in plain, "Architecture illustration needs visible scope notice")
-    hero_images = [(attrs, hidden) for attrs, hidden in page.images if attrs.get("src") == "/assets/eyleme-loop-1024.webp"]
-    require(len(hero_images) == 1 and hero_images[0][1], "Decorative hero must remain hidden from assistive technology")
-    require(bool(data["hero_art_alt"].strip()) and hero_images[0][0].get("alt") == data["hero_art_alt"], "Decorative hero needs the localized crawler alternative")
+    hero_images = [(attrs, hidden) for attrs, hidden in page.images if attrs.get("src") == f"/assets/eyleme-ecosystem-{data['lang']}.svg"]
+    require(len(hero_images) == 1 and not hero_images[0][1], "Informative ecosystem hero must be exposed to assistive technology")
+    require(bool(data["hero_diagram"]["alt"].strip()) and hero_images[0][0].get("alt") == data["hero_diagram"]["alt"], "Ecosystem hero needs the localized text alternative")
+    require(bool(data["hero_diagram"]["caption"].strip()) and data["hero_diagram"]["caption"] in plain, "Ecosystem hero needs the visible development scope")
     for tag, attrs in page.tags:
         require(not any(key.startswith("on") for key in attrs), "Inline event handler found")
         if tag == "img":

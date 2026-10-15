@@ -65,6 +65,18 @@
       "sha256": "e6ba4e50b7752f8bc414ee019b68aaaad9d917f3cf5a545f747315fe3ffa2384",
       "bytes": 72378,
       "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
+    },
+    {
+      "path": "public/assets/eyleme-ecosystem-en.svg",
+      "sha256": "c2b51aa67331f898c45def928c48240aa38aac9a518d84cdd2e9a385ad9a7928",
+      "bytes": 2535,
+      "source": "Original first-party SVG; tools/build.py ecosystem_svg with reviewed bilingual content; maintainer triangle request, 2026-10-15; no image generation or third-party artwork"
+    },
+    {
+      "path": "public/assets/eyleme-ecosystem-tr.svg",
+      "sha256": "d61e280cf66048c36b95e444f571e13f7ddff762601dfe547c7d3744b6c20efd",
+      "bytes": 2498,
+      "source": "Original first-party SVG; tools/build.py ecosystem_svg with reviewed bilingual content; maintainer triangle request, 2026-10-15; no image generation or third-party artwork"
     }
   ]
 }

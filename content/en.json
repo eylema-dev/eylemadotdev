@@ -13,7 +13,6 @@
     "to action.",
     "Together."
   ],
-  "hero_art_alt": "Decorative orange Eyleme loop sculpture",
   "intro": "Eyleme aims to grow into an open-source AI ecosystem shaped by its community. Its local task tool is the starting point; Derleme brings field data into the picture, and Onama addresses security, authority and responsibility.",
   "explore": "Get started",
   "follow": "View the source",
@@ -345,5 +344,20 @@
       "text": "Derleme focuses on field integration, data quality and cloud or on-premises recording. Onama focuses on cybersecurity, authorization, responsibility and regulatory compliance workflows. These are the expertise areas behind the planned private-source subscriptions."
     }
   ],
-  "subscriptions_note": "The product family is in development. Packages, prices, service levels and availability have not yet been published. This website does not currently offer subscription signup or checkout."
+  "subscriptions_note": "The product family is in development. Packages, prices, service levels and availability have not yet been published. This website does not currently offer subscription signup or checkout.",
+  "hero_diagram": {
+    "alt": "The Eyleme ecosystem as a triangle: Eyleme at the top for open source and action, Derleme at the lower left for field data recorded in the cloud or on premises, and Onama at the lower right for security, authority, responsibility and regulatory workflows. Arrows show data from Derleme to Onama, authority from Onama to Eyleme, and feedback from Eyleme to Derleme. Planned collaboration; products are in development.",
+    "title": "The Eyleme ecosystem working together",
+    "eyleme_role": "Open source · Action",
+    "derleme_role": "Field data",
+    "derleme_deployment": "Cloud / On premises",
+    "onama_role": "Security · Authority",
+    "onama_scope": "Responsibility · Regulations",
+    "data": "Data",
+    "authority": "Authority",
+    "feedback": "Feedback",
+    "center": "Together.",
+    "center_subtitle": "One ecosystem.",
+    "caption": "Data, authority and action, together. Planned collaboration; products are in development."
+  }
 }

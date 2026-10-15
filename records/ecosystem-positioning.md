@@ -1,6 +1,6 @@
 # Ecosystem, field data and specialist subscriptions
 
-[Türkçe](ecosystem-positioning.tr.md). Task WEB-023, revision 0.1.0, 15 October 2026.
+[Türkçe](ecosystem-positioning.tr.md). Task WEB-023, revision 0.2.0, 15 October 2026.
 
 ## Request and plan
 
@@ -25,3 +25,11 @@ Budget: 60 minutes, at most three focused repairs per failed gate; no new depend
 Architect, implementer, verifier and self-reviewer: this Codex GPT-6 session, using Python, Git/GitHub CLI and browser automation. No separate reviewer is claimed. Browser plugin/skill is not available; regular Playwright uses the existing bundled runtime. Independent/maintainer review is pending. Local and PR-CI results are recorded in the PR; website checks do not establish Rust, GPU, model, training, field deployment or commercial service acceptance.
 
 Local verification: passed on macOS arm64 with Python 3.15.0 (the exact `python3` contributor commands), all 54 repository tests, generated-output check, reviewed EN/TR fingerprints, blank-template structure and whitespace check. No dependency was installed: the hash-locked CI inventory is standard-library only. CI separately uses Python 3.14. Browser verification: passed in bundled Playwright 1.62.1 / Chromium at 1280 × 900 and 390 × 844 in both languages, plus 320-pixel overflow checks and JavaScript-disabled subscription/FAQ checks. The tested flow was landing page → subscription navigation → specialist scope and development status, with reciprocal language switching, product and community navigation, FAQ open/close, Assign → ArrowRight → Inspect, loaded images and zero console warnings/errors. Desktop product/subscription sections and mobile/desktop hero screenshots were visually reviewed; artifacts are outside the repository. Runtime, cloud/on-premises installation, legal compliance and paid subscriptions: not_run, outside this website task. PR CI and independent review are separate gates.
+
+## Revision 0.2: triangle hero and Turkish slogan
+
+The maintainer additionally requested an Eyleme–Derleme–Onama triangle in place of the right-hand hero icon, followed by the exact Turkish slogan “Durma Eyleme Geç”. Scope now also includes the two generated `public/assets/eyleme-ecosystem-*.svg` files, the asset-provenance inventory, tooling/quality-gate companions and focused hero-accessibility validator/tests. The Turkish slogan is an expressly requested local adaptation; the English slogan is retained.
+
+The original first-party vector places Eyleme above Derleme and Onama. Labeled arrows represent Derleme → Onama data, Onama → Eyleme authority and Eyleme → Derleme feedback. Captions identify planned collaboration, not accepted integration. The old decorative-image requirement is replaced with an informative-image gate: the localized diagram must be exposed to assistive technology, have its reviewed alternative and a nonempty visible development caption. Negative tests reject hidden figures, wrong-language assets, empty alternatives and absent/empty captions. No existing unrelated gate is weakened. The standard-library builder owns vector geometry and text; no bitmap generator or new dependency is used. Existing ribbon assets remain intact.
+
+Revision 0.2 verification: passed — all 56 regression tests and the local repository/build/template checks. The only repair was a trailing blank line in the Turkish tooling document, caught by the whitespace gate and removed. The full two-language desktop/mobile interaction loop passed again, including the exact Turkish slogan, the diagram’s accessible image name, 320-pixel overflow, JavaScript-disabled use and standalone SVG text bounds. Turkish desktop/mobile hero and triangle screenshots were visually inspected. The new SVGs are approximately 2.5 KB each; no raster asset is loaded by the hero. Final fingerprints, filled PR body and exact-head remote CI are checked after this record update.

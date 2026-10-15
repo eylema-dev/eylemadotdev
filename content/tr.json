@@ -9,11 +9,10 @@
   "nav_architecture": "Mimari",
   "nav_roadmap": "Yol haritası",
   "headline": [
-    "Fikirden",
-    "eyleme.",
-    "Birlikte."
+    "Durma",
+    "Eyleme",
+    "Geç"
   ],
-  "hero_art_alt": "Dekoratif turuncu Eyleme döngüsü heykeli",
   "intro": "Eyleme, topluluğuyla büyüyen açık kaynak bir yapay zekâ ekosistemi olmayı hedefliyor. Yerel görev aracı bu yolun başlangıcı; Derleme saha verisini, Onama güvenlik, yetki ve sorumluluk çerçevesini kapsıyor.",
   "explore": "Başlayın",
   "follow": "Kaynağı inceleyin",
@@ -345,5 +344,20 @@
       "text": "Derleme; saha entegrasyonu, veri kalitesi ve bulut veya kurum içi kayda odaklanır. Onama; siber güvenlik, yetkilendirme, sorumluluk ve mevzuata uyum süreçlerine odaklanır. Planlanan kapalı kaynak aboneliklerin uzmanlık alanları bunlardır."
     }
   ],
-  "subscriptions_note": "Ürün ailesi geliştirme aşamasında. Paketler, fiyatlar, hizmet seviyeleri ve erişim takvimi henüz yayımlanmadı. Bu sitede şu anda abonelik başlatma veya ödeme imkânı bulunmuyor."
+  "subscriptions_note": "Ürün ailesi geliştirme aşamasında. Paketler, fiyatlar, hizmet seviyeleri ve erişim takvimi henüz yayımlanmadı. Bu sitede şu anda abonelik başlatma veya ödeme imkânı bulunmuyor.",
+  "hero_diagram": {
+    "alt": "Üçgen Eyleme ekosistemi: üstte açık kaynak ve eylem için Eyleme, sol altta saha verisi ile bulut veya kurum içi kayıt için Derleme, sağ altta güvenlik, yetki, sorumluluk ve mevzuat için Onama. Oklar Derleme’den Onama’ya veriyi, Onama’dan Eyleme’ye yetkiyi, Eyleme’den Derleme’ye geri bildirimi gösterir. Planlanan iş birliği; ürünler geliştirme aşamasında.",
+    "title": "Birlikte çalışan Eyleme ekosistemi",
+    "eyleme_role": "Açık kaynak · Eylem",
+    "derleme_role": "Saha verisi",
+    "derleme_deployment": "Bulut / Kurum içi",
+    "onama_role": "Güvenlik · Yetki",
+    "onama_scope": "Sorumluluk · Mevzuat",
+    "data": "Veri",
+    "authority": "Yetki",
+    "feedback": "Geri bildirim",
+    "center": "Birlikte.",
+    "center_subtitle": "Tek ekosistem.",
+    "caption": "Veri, yetki ve eylem birlikte. Planlanan iş birliği; ürünler geliştirme aşamasında."
+  }
 }
