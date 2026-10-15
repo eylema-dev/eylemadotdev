@@ -1,8 +1,8 @@
 {
   "lang": "tr",
   "locale": "tr_TR",
-  "title": "Eyleme — Açık Kaynak Ekosistemi ve Uzmanlık Abonelikleri",
-  "description": "Eyleme, geliştirme aşamasındaki açık kaynak ekosistemi. Saha verisi için Derleme’yi, siber güvenlik ve yönetişim için Onama’yı, ücretli uzmanlık abonelikleriyle keşfedin.",
+  "title": "Eyleme — İnsan Kontrolünde Eylemci Yapay Zekâ",
+  "description": "Geliştirilmekte olan açık kaynak eylemci yapay zekâ ekosistemi: güncel ve yerel modeller, model reçeteleri, insan kontrolü ve planlanan saha uzmanlığı.",
   "skip": "İçeriğe geç",
   "navigation": "Ana gezinme",
   "language": "Dil seçimi",
@@ -13,22 +13,22 @@
     "Eyleme",
     "Geç"
   ],
-  "intro": "Eyleme, topluluğuyla büyüyen açık kaynak bir yapay zekâ ekosistemi olmayı hedefliyor. Yerel görev aracı bu yolun başlangıcı; Derleme saha verisini, Onama güvenlik, yetki ve sorumluluk çerçevesini kapsıyor.",
-  "explore": "Başlayın",
+  "intro": "İnsan kontrolünde eylemci yapay zekâ. Modelleri, reçeteleri ve saha uzmanlığını bir araya getiren açık bir ekosistem.",
+  "explore": "Ekosistemi keşfet",
   "follow": "Kaynağı inceleyin",
-  "status": "Geliştirme aşamasında. Yerel görev temeli mevcut; geniş ekosistem ve ticari hizmetler geliştiriliyor. Birinci taraf çekirdek kod ve belgeler: Apache-2.0.",
+  "status": "Açık kaynak temel mevcut. Bütünleşik eylemciler, model çalıştırma ve uzmanlık hizmetleri geliştiriliyor.",
   "principles": [
     {
-      "title": "Açık kaynak ekosistemi",
-      "text": "Eyleme’yi paylaşılan kod, bilgi, örnekler ve incelenmiş katkılarla büyütün. Topluluk, ürünün geleceğinin bir parçası."
+      "title": "Güncel modeller",
+      "text": "Model dünyasıyla gelişmesi hedeflenen, göreve özel profiller ve incelenmiş reçeteler."
     },
     {
-      "title": "Fiziksel dünyayla bağlantı",
-      "text": "Derleme, sahadan veri toplamak ve bulutta ya da kurum içinde kaydetmek için geliştiriliyor. Onama, bu verinin ve ilgili işlemlerin nasıl yönetileceğini ele alıyor."
+      "title": "Yerel çalışma",
+      "text": "Yerel öncelikli yaklaşım; dış servisler ve veri için açık izinler."
     },
     {
-      "title": "Uzmanlık abonelikleri",
-      "text": "Derleme ve Onama; veri altyapısı, siber güvenlik ve yönetişim uzmanlığına odaklanan, geliştirme aşamasındaki ücretli ürünler."
+      "title": "İnsan komutası",
+      "text": "Her iş akışının hedefini, yetkisini ve kabulünü insanlar belirler."
     }
   ],
   "architecture_label": "04 — Açık kaynak mimarisi",
@@ -202,7 +202,7 @@
       "link": "Çekirdeğin Apache-2.0 lisansı"
     }
   ],
-  "updated": "Ekosistem ve abonelik kapsamı 15 Ekim 2026; bileşen kanıtları 14 Ekim 2026 tarihinde incelendi.",
+  "updated": "Eylemci ekosistem ve planlanan ekip kapsamı 15 Ekim 2026; bileşen kanıtları 14 Ekim 2026 tarihinde incelendi.",
   "language_note": "İngilizce kanoniktir. Türkçe tam eşlikçisidir.",
   "roadmap_label": "06 — Açık kaynak yol haritası",
   "roadmap_title": [
@@ -258,21 +258,21 @@
     }
   ],
   "technology_notice": "Açık kaynak Eyleme · mimari v0.7 bütünleştirme tasarımı",
-  "nav_products": "Ürünler",
+  "nav_products": "Ekosistem",
   "nav_community": "Topluluk",
   "products_label": "01 — Ürün ailesi",
   "products_title": [
-    "Tek isim.",
-    "Üç belirgin rol."
+    "Tek ekosistem.",
+    "Üç uzmanlık alanı."
   ],
-  "products_intro": "Derleme → Onama → Eyleme: saha verisini topla ve kaydet, erişimi ve sorumluluğu yönet, izin verilen girdileri eyleme dönüştür. Bu roller birbirini tamamlar; yetki kontrolleri akışın tamamında geçerlidir.",
+  "products_intro": "Derleme fiziksel dünyayı bağlar, Onama güvenlik ve sorumluluğun çerçevesini kurar, Eyleme izinli girdileri eylemci iş akışlarına taşır. Sürecin tamamında yetki insandadır.",
   "products": [
     {
       "id": "derleme",
       "name": "Eyleme Derleme",
       "model": "Kapalı kaynak · ücretli abonelik",
       "title": "Sahayı kayıt altına al.",
-      "text": "Derleme; fiziksel dünyadaki sensörlerden, makinelerden ve saha operasyonlarından veri toplamak, bulutta veya kurum içinde (on-premise) kaydetmek için geliştiriliyor. Kaynak, zaman ve kalite bilgisi, verinin izin verilen kullanımını destekler. Her bağlayıcı ve kurulum ayrıca doğrulanır.",
+      "text": "Derleme; fiziksel dünyadaki sensörlerden, makinelerden ve saha operasyonlarından veri toplamak, bulutta veya kurum içinde (on-premise) kaydetmek için geliştiriliyor. Kaynak, zaman ve kalite bilgisi, verinin izin verilen kullanımını destekler. Her bağlayıcı ve kurulum ayrıca doğrulanır. Planlanan saha desteği keşif, entegrasyon ve devreye almayı kapsar.",
       "status": "Geliştirme aşamasında · abonelik koşulları henüz yayımlanmadı"
     },
     {
@@ -280,7 +280,7 @@
       "name": "Eyleme Onama",
       "model": "Kapalı kaynak · ücretli abonelik",
       "title": "Güvenliği ve sorumluluğu tanımla.",
-      "text": "Onama; siber güvenlik, erişim yetkileri, sorumluluklar, denetim kayıtları ve mevzuata uyum süreçleri etrafında geliştiriliyor. Kimin, hangi kuralla, kimin sorumluluğunda ne yapabileceğini belirginleştirmeyi hedefliyor.",
+      "text": "Onama; siber güvenlik, erişim yetkileri, sorumluluklar, denetim kayıtları ve mevzuata uyum süreçleri etrafında geliştiriliyor. Kimin, hangi kuralla, kimin sorumluluğunda ne yapabileceğini belirginleştirmeyi hedefliyor. Kurulmakta olan uzmanlık ekibi yerinde inceleme ve operatöre aktarım desteği planlıyor.",
       "status": "Geliştirme aşamasında · abonelik koşulları henüz yayımlanmadı"
     },
     {
@@ -298,7 +298,7 @@
     "Birlikte geliştirin.",
     "Ekosistemi büyütün."
   ],
-  "community_intro": "Hedef tek bir araçtan daha geniş: kod, belge, örnek ve yeniden kullanılabilir beceriler paylaşan bir topluluk. Bugünkü yerel temelden başlayın ve gelecek adımları şekillendirin. Özel saha verileri kendiliğinden topluluk katkısına dönüşmez.",
+  "community_intro": "Kod, model reçeteleri, belgeler ve yeniden kullanılabilir beceriler açık bir toplulukta birlikte gelişebilir. Mevcut temelden başlayın, sonraki entegrasyonların şekillenmesine katılın. Özel saha verisi varsayılan topluluk katkısı değildir.",
   "community_links": [
     {
       "id": "start",
@@ -324,14 +324,14 @@
   ],
   "community_issues": "Sorun bildirin veya iyileştirme önerin",
   "community_discussions": "Topluluk tartışmalarına katılın",
-  "development_status": "Geliştirme aşamasında · Toplulukla birlikte",
+  "development_status": "Geliştirme aşamasında",
   "nav_subscriptions": "Abonelik",
   "subscriptions_label": "02 — Abonelik modeli",
   "subscriptions_title": [
     "Açık katkı.",
     "Uzmanlıkla gelişim."
   ],
-  "subscriptions_intro": "Ticari odağı Derleme ve Onama oluşturuyor: fiziksel dünya verisini güvenilir kayıtlara dönüştürmek, bu veriye nasıl erişileceğini ve nasıl kullanılacağını belirlemek için uzmanlık ürünleri.",
+  "subscriptions_intro": "Açık katkı, uzmanlıkla buluşuyor. Derleme ve Onama; saha entegrasyonu, güvenlik ve işletim uzmanlığının geliştirildiği ücretli ürünler.",
   "subscription_cards": [
     {
       "label": "Eyleme topluluğu",
@@ -346,7 +346,7 @@
   ],
   "subscriptions_note": "Ürün ailesi geliştirme aşamasında. Paketler, fiyatlar, hizmet seviyeleri ve erişim takvimi henüz yayımlanmadı. Bu sitede şu anda abonelik başlatma veya ödeme imkânı bulunmuyor.",
   "hero_diagram": {
-    "alt": "Üçgen Eyleme ekosistemi: üstte açık kaynak ve eylem için Eyleme, sol altta saha verisi ile bulut veya kurum içi kayıt için Derleme, sağ altta güvenlik, yetki, sorumluluk ve mevzuat için Onama. Oklar Derleme’den Onama’ya veriyi, Onama’dan Eyleme’ye yetkiyi, Eyleme’den Derleme’ye geri bildirimi gösterir. Planlanan iş birliği; ürünler geliştirme aşamasında.",
+    "alt": "Üçgen Eyleme ekosistemi: üstte açık kaynak ve eylem için Eyleme, sol altta saha verisi ile bulut veya kurum içi kayıt için Derleme, sağ altta güvenlik, yetki, sorumluluk ve mevzuat için Onama. Oklar Derleme’den Onama’ya veriyi, Onama’dan Eyleme’ye yetkiyi, Eyleme’den Derleme’ye geri bildirimi gösterir. Planlanan iş birliği; ürünler geliştirme aşamasında. Merkezde insan kontrolü yer alır.",
     "title": "Birlikte çalışan Eyleme ekosistemi",
     "eyleme_role": "Açık kaynak · Eylem",
     "derleme_role": "Saha verisi",
@@ -356,8 +356,88 @@
     "data": "Veri",
     "authority": "Yetki",
     "feedback": "Geri bildirim",
-    "center": "Birlikte.",
-    "center_subtitle": "Tek ekosistem.",
-    "caption": "Veri, yetki ve eylem birlikte. Planlanan iş birliği; ürünler geliştirme aşamasında."
-  }
+    "center": "İnsan",
+    "center_subtitle": "kontrolü",
+    "caption": "Planlanan iş birliği · Ürünler geliştirme aşamasında."
+  },
+  "nav_oversight": "İnsan kontrolü",
+  "theme_label": "Koyu tema",
+  "theme_light": "Açık temaya geç",
+  "theme_dark": "Koyu temaya geç",
+  "models_title": [
+    "Model değişir.",
+    "Amaç ve sınırlar sizde."
+  ],
+  "models_intro": "Güncel modeller, yerel çalışma ve gözden geçirilmiş reçeteler için ortak bir zemin. Eylemcilerin insanın belirlediği sınırlar içinde işleri planlaması, yürütmesi, incelemesi ve geliştirmesi hedefleniyor.",
+  "model_rows": [
+    {
+      "title": "Güncel modeller",
+      "text": "Göreve göre seçin. Kullanmadan önce tam sürümü, yetenekleri, lisansı ve kabul kanıtını sabitleyin."
+    },
+    {
+      "title": "Model reçeteleri",
+      "text": "Modeli, istemleri, veri haklarını, araçları, değerlendirmeyi ve donanım bağlamını yeniden üretilebilir bir tanımda birleştirin."
+    },
+    {
+      "title": "Yerel modeller",
+      "text": "Yerel çalışma tercihi açık kalsın. Yalnızca yerel çalışan bir profil, sessizce barındırılan modele geçmez."
+    }
+  ],
+  "models_note": "Model sözleşmeleri mevcut. Bütünleşik çıkarım, eylemci işleri ve yerel eğitim ayrı kabul gerektiriyor; bu bölüm kullanılabilir model kataloğunu değil geliştirme yönünü anlatır.",
+  "loop_label": "İnsan yetkisi altında planlanan eylemci iş akışı",
+  "loop_steps": [
+    "Tanımla",
+    "Planla",
+    "Onayla",
+    "Eyle",
+    "İncele",
+    "Geliştir"
+  ],
+  "oversight_title": [
+    "Eylemcilere alan.",
+    "İnsana kontrol."
+  ],
+  "oversight_intro": "İşe ve risklerine göre seçilen, insanı kontrolde tutan üç tamamlayıcı yaklaşım.",
+  "oversight_cards": [
+    {
+      "name": "Human-in-the-loop",
+      "title": "Adımı onayla.",
+      "text": "Seçili eylemleri ve çıktıları açık kontrol noktalarında gözden geçir. Yetkili sonraki adımdan önce düzelt, onayla veya reddet."
+    },
+    {
+      "name": "Human-on-the-loop",
+      "title": "Süreci gözet.",
+      "text": "Onaylanmış sınırlar içindeki çalışmayı izle. Müdahale ve durdurma koşullarını belirle; beklenmedik sonuçları incele."
+    },
+    {
+      "name": "Human-in-command",
+      "title": "Yönü belirle.",
+      "text": "Hedeflere, rollere, izinlere ve kaynak sınırlarına sahip çık. Neyin yayımlanabileceğine ve yetkinin ne zaman geri alınacağına karar ver."
+    }
+  ],
+  "oversight_note": "Tasarım yaklaşımı · Tam entegrasyon geliştirmede. İnsan onayı, gözetimi ve komutası ayrı sorumluluklardır.",
+  "delivery_title": [
+    "Yazılımdan sahaya.",
+    "Birlikte."
+  ],
+  "delivery_intro": "Derleme ve Onama için kurulmakta olan uzmanlık ekibi; keşif ve saha entegrasyonundan güvenlik ve sürekli işletime uzanan fiziksel destek planlıyor.",
+  "delivery_steps": [
+    {
+      "title": "Keşif",
+      "text": "Saha ziyaretleri, veri kaynaklarının haritalanması ve ihtiyacın birlikte tanımlanması."
+    },
+    {
+      "title": "Kurulum",
+      "text": "Planlanan sensör, makine, bulut veya kurum içi entegrasyon desteği."
+    },
+    {
+      "title": "Güvence",
+      "text": "Güvenlik incelemeleri, erişim sorumlulukları ve mevzuat iş akışlarının tasarımı."
+    },
+    {
+      "title": "Süreklilik",
+      "text": "Planlanan devreye alma, operatöre aktarım ve sürekli iyileştirme."
+    }
+  ],
+  "delivery_note": "Ekip kuruluyor. Saha hizmetleri planlanıyor; kadro, hizmet seviyeleri ve kullanılabilirlik henüz açıklanmadı."
 }

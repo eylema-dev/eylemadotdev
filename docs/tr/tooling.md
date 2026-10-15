@@ -4,7 +4,7 @@
 
 | Sınır | Envanter |
 |---|---|
-| Yayınlanan çalışma zamanı | Tarayıcı HTML/CSS ve 1.7 KB birinci taraf JavaScript; paket indirme, uzak font, analitik veya çıkarım motoru yok |
+| Yayınlanan çalışma zamanı | Tarayıcı HTML/CSS ve 3.3 KB birinci taraf JavaScript; paket indirme, uzak font, analitik veya çıkarım motoru yok |
 | Derleme ve CI | Python 3.14 standart kütüphanesi; boş bağımlılık listesi kasıtlı; yalnızca geliştirme |
 | CI eylemleri | checkout v7.0.1: `3d3c42e5aac5ba805825da76410c181273ba90b1`; setup-python v7.0.0: `5fda3b95a4ea91299a34e894583c3862153e4b97`; resmi etiket SHA'ları 11 Ekim 2026'da kontrol edildi; üretim akışı için Azure/static-web-apps-deploy v1 `4d27395796ac319302594769cfe812bd207490b1` resmi deposundan doğrulandı |
 | Yerel görsel üretim | Codex ve yerleşik Image Gen; dört bölüm konsepti ve bir ayrı varlık; site API anahtarı yok |
@@ -31,3 +31,5 @@ PR açıklama denetleyicisi ve şablonu, proje sahibinin bekleyen Eylema katkı 
 [Site kimliği geçişi](../../records/website-identity.tr.md) güncel dosyaları `eyleme-*` olarak adlandırır ve eyleme.dev adresini hazırlar. Logo zaten Eyleme yazar; İngilizce/Türkçe mimari afişlerinde yalnızca alt bilgi alan adı değişir. Yukarıdaki önceki üretim notları tarihseldir. Köken envanteri güncel dosya adlarını, baytları ve özetleri kaydeder.
 
 [Ekosistem revizyonu](../../records/ecosystem-positioning.tr.md), görünen giriş şeridinin yerine özgün birinci taraf vektör diyagramlarını getirir: `eyleme-ecosystem-en.svg` ve `eyleme-ecosystem-tr.svg`. Standart kütüphaneyi kullanan üretici, iki dosyayı incelenmiş dil içeriğinden üretir. Eyleme, Derleme ve Onama; veri, yetki ve geri bildirim oklarıyla bir üçgen oluşturur. Bilgi taşıyan görsellerin yerelleştirilmiş alternatif metinleri ve görünür geliştirme açıklamaları vardır. Görsel üretim hizmeti, font veya çizim paketi gerekmez; eski şerit dosyaları tarihsel varlık olarak korunur.
+
+[İnsan kontrollü tasarım](../../records/agentic-design.tr.md), dört yerleşik Image Gen konseptini yalnızca referans olarak kullandı. Yayımlanan özgün SVG üçgeni artık üst öğenin renk şemasına uyar, insan kontrolünü merkeze yerleştirir ve küçük genişliklerde ikincil etiketleri sadeleştirir. CSS maskesi mevcut kelime logosunun siluetini kullanır. Birinci taraf tema başlangıç betiği yaklaşık 1,6 KB JavaScript ekler; yerel depolamada yalnızca `eyleme-theme` değerini okur/yazar ve depolama engellendiğinde de çalışır. Harici çalıştırma veya yazı tipi bağımlılığı eklenmedi.

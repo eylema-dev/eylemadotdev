@@ -15,8 +15,8 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "ac286a2c9d98dbed6e06ce523bf5b79ec28953bdb6bfe3ae7ebff3def7d80c10",
-      "tr_sha256": "652a8c358acc5fffb5abc17c0b5bcb31cd53ff79482d3dbcaa59dab4117ecccb"
+      "en_sha256": "f0afd9a095827ddf61123c60c608b3d934abd39b4c139033e64a4ceb364bc7f9",
+      "tr_sha256": "7b8a4e5b5fac83157920dc26b0a35fa81bd53b560dd902c9b45f2f07d09a361c"
     },
     {
       "en": "CONTRIBUTING.md",
@@ -27,8 +27,8 @@
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "49a38e1fb2d0be8f804e33afbd4f6655d9ceaf094fded3f272f80e89663f6ced",
-      "tr_sha256": "1b6d12bf69686940469601bd6d38e4bd26243d2dab9729ae28a9721cbb1c3ebe"
+      "en_sha256": "0568edbca27690f4991249c845b3c1921f406e6808f321b1a3938892de5788b9",
+      "tr_sha256": "3aec79bdd678b1def619cbb6b63e39198bff33a66facf2d43d490d4c9d6481f4"
     },
     {
       "en": "records/plan.md",
@@ -51,14 +51,14 @@
     {
       "en": "docs/en/quality-gates.md",
       "tr": "docs/tr/quality-gates.md",
-      "en_sha256": "bf176c3806915791dd3da5902059cade37f2e7b607fdaf9d757ef9c98cb36d46",
-      "tr_sha256": "8821af7403984415a233b49815c65fdf402625e34ca5430af9763335a2d829c8"
+      "en_sha256": "b5d2e518ef36725cb6edc150ae6be25a139c597e63257df79f1357378b05345a",
+      "tr_sha256": "ad797969db5fe96b2c136cac13169ba7b94505a3b53bb46afa8c0c0b999f5a5a"
     },
     {
       "en": "docs/en/tooling.md",
       "tr": "docs/tr/tooling.md",
-      "en_sha256": "5e9e812fcf13d84b6e33800cd1b5791fea1f13b828526604c5656dd3cf4f5f18",
-      "tr_sha256": "0174bc7478025b4e09a228143d4d851d49af2520897e02ab9ddc6c26c023407b"
+      "en_sha256": "58235683b393fd0f785684474f3eadf2cab9b7d259cfe07cf50545c9291233b1",
+      "tr_sha256": "ff0872641f1f9d4ad55d414540232f8602dbe380aad7de738ccb53e8165331d7"
     },
     {
       "en": "records/verification.md",
@@ -173,6 +173,12 @@
       "tr": "records/compact-mobile-hero.tr.md",
       "en_sha256": "cba8cee36fe8d748361c998257b5c432d2b3674cf44e44233f408c5cf60e791b",
       "tr_sha256": "ebff1e57c5fb18d507446f42b266027ae69f867c4a7d43a3def49831f3e1121e"
+    },
+    {
+      "en": "records/agentic-design.md",
+      "tr": "records/agentic-design.tr.md",
+      "en_sha256": "e2fdf9dc7153c44c9c0be6d7fafb7f8635869385aae13a564c563c6b09621aa5",
+      "tr_sha256": "c9aea728e22c3674d248a6f10393b83e377a34e9cbc02af3398210b3dbc219f9"
     }
   ]
 }

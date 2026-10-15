@@ -4,7 +4,7 @@
 
 | Boundary | Inventory |
 |---|---|
-| Published runtime | Browser HTML, CSS, 1.7 KB first-party JavaScript; no package downloads, remote fonts, analytics or inference engine |
+| Published runtime | Browser HTML, CSS, 3.3 KB first-party JavaScript; no package downloads, remote fonts, analytics or inference engine |
 | Build and CI | Python 3.14 standard library; empty dependency lock is intentional; development only |
 | CI actions | checkout v7.0.1 at `3d3c42e5aac5ba805825da76410c181273ba90b1`; setup-python v7.0.0 at `5fda3b95a4ea91299a34e894583c3862153e4b97`; official tag SHAs checked on 11 October 2026; Azure/static-web-apps-deploy v1 at `4d27395796ac319302594769cfe812bd207490b1` verified from its official repository for the production workflow |
 | Local visual authoring | Codex, built-in Image Gen; four section concepts plus one standalone asset; no website API key |
@@ -31,3 +31,5 @@ The [product-name update](../../records/project-name-alignment.md) changes activ
 The [website identity migration](../../records/website-identity.md) renames current files to `eyleme-*` and prepares eyleme.dev. The logo already reads Eyleme; only the footer domain changes in the English/Turkish architecture posters. Previous production notes above are historical. The provenance inventory records the current file names, bytes and hashes.
 
 The [ecosystem revision](../../records/ecosystem-positioning.md) replaces the visible hero ribbon with original first-party vector diagrams, `eyleme-ecosystem-en.svg` and `eyleme-ecosystem-tr.svg`. The standard-library builder generates both from reviewed language content. Eyleme, Derleme and Onama form a triangle with data, authority and feedback arrows. These informative images have localized alternatives and visible development captions. No image-generation service, font or rendering package is required; the earlier ribbon files remain available as historical assets.
+
+The [human-directed design](../../records/agentic-design.md) used four built-in Image Gen concepts as references only. The shipped original SVG triangle now responds to its embedding element’s color scheme, places human control at the center and simplifies secondary labels at small widths. A CSS mask reuses the existing wordmark silhouette. The first-party theme bootstrap adds about 1.6 KB of JavaScript, reads/writes only `eyleme-theme` in local storage and handles denied storage. No external runtime or font dependency was added.
