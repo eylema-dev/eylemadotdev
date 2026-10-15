@@ -56,7 +56,7 @@ def language_links(data):
 def product_art(product_id):
     """Small original line illustrations reinforce the adjacent product copy."""
     paths = {
-        "derleme": '<path d="M24 106h192M40 106V66h40v40m-30-56v16m20-16v16M50 82h20m-20 12h20M160 106V70h40v36m-30-24h20m-20 12h20"/><path class="art-accent" d="M80 83h38V40h40" stroke-dasharray="3 5"/><path d="M158 40h42a16 16 0 0 0 0-32 24 24 0 0 0-45 7 13 13 0 0 0 3 25Z"/><circle cx="60" cy="38" r="5"/><path d="M45 26a21 21 0 0 1 30 0m-38-8a33 33 0 0 1 46 0"/>',
+        "derleme": '<path d="M24 106h192M40 106V66h40v40m-30-56v16m20-16v16M50 82h20m-20 12h20M160 106V70h40v36m-30-24h20m-20 12h20"/><path class="art-accent" d="M80 83h38V40h40" stroke-dasharray="3 5"/><path transform="translate(0 8)" d="M158 40h42a16 16 0 0 0 0-32 24 24 0 0 0-45 7 13 13 0 0 0 3 25Z"/><circle cx="60" cy="38" r="5"/><path d="M45 26a21 21 0 0 1 30 0m-38-8a33 33 0 0 1 46 0"/>',
         "onama": '<path class="art-accent" d="M120 9 162 27v31c0 27-19 46-42 57-23-11-42-30-42-57V27Z"/><circle cx="120" cy="45" r="12"/><path d="M100 80v-6a20 20 0 0 1 40 0v6Z M24 42h30v44H24Zm7 11h16m-16 10h16m-16 10h9M186 54h30v27h-30Zm6 0v-9a9 9 0 0 1 18 0v9M54 64h24m84 0h24"/>',
         "eyleme": '<path d="m120 14 91 31-91 31-91-31Z m-91 52 91 31 91-31m-182 22 91 31 91-31"/><path class="art-accent" d="m29 67 91 31 91-31"/><path stroke-dasharray="3 5" d="M29 45H12v64h52m147-64h17v64h-52"/><circle cx="12" cy="45" r="3"/><circle cx="228" cy="45" r="3"/>',
     }
