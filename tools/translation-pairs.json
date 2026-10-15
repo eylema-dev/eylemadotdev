@@ -167,6 +167,12 @@
       "tr": "records/english-action-slogan.tr.md",
       "en_sha256": "9bd1b96dae6d63cb22f2c4b35d27d671a1ab0ccabd81241075126414d08f3260",
       "tr_sha256": "ea2f922cb306e688557453c0bdd0a6e564b9938777f1c0d94dc48d06d48b5875"
+    },
+    {
+      "en": "records/compact-mobile-hero.md",
+      "tr": "records/compact-mobile-hero.tr.md",
+      "en_sha256": "cba8cee36fe8d748361c998257b5c432d2b3674cf44e44233f408c5cf60e791b",
+      "tr_sha256": "ebff1e57c5fb18d507446f42b266027ae69f867c4a7d43a3def49831f3e1121e"
     }
   ]
 }
