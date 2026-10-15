@@ -15,20 +15,20 @@
     {
       "en": "README.md",
       "tr": "README.tr.md",
-      "en_sha256": "ddcb8862936e67d774297a715f84f11ca3f6bc383228c6dda1e03d72b6674bdd",
-      "tr_sha256": "46636b9f57b80195226edeaeab81e28015880dfd698645751ef8eb843d389084"
+      "en_sha256": "f3107fcbb71378f3dd5283ffbbdd2d844d1e331e3cf4e0a90022e978ca127233",
+      "tr_sha256": "73afd8ef81ad26098a3665f9fe8c1189a498a11c9493bff7b0d84420eec2b469"
     },
     {
       "en": "CONTRIBUTING.md",
       "tr": "CONTRIBUTING.tr.md",
-      "en_sha256": "514a36b8b340acad06d1d014dc3e679c6dab1f0d8ce402f4bd10ede78ea95121",
-      "tr_sha256": "df9d59f6d2423f0b91601f742579517f2a49d30e36a06c940d67b162988b4c53"
+      "en_sha256": "30fc0e6b7610f442c7fab14a1c7039dfe68d0d4c38a12a6202bc7a2fa059a408",
+      "tr_sha256": "2621d6d86df7b772c9713033d40815052132b973f77c88f4b761df8b83d8aaae"
     },
     {
       "en": "content/en.json",
       "tr": "content/tr.json",
-      "en_sha256": "222d3b3b54c93c83fae6537708ea314d6e99248f6985c4525f7354c43d4f6e6f",
-      "tr_sha256": "201aecc2b9b010d7f0b83f2f56f91060a9ac4a2086d67db6cc0ee9eb788b793c"
+      "en_sha256": "60a314b453c2095b19abc49f2abcdf195e06946bbe08ae8773e1412aa678a6e0",
+      "tr_sha256": "0c7d34e0bf4be2b231c14a98df08261d276a9dd7dc4bffb59274c35fa3ae7c0f"
     },
     {
       "en": "records/plan.md",
@@ -143,6 +143,12 @@
       "tr": "records/search-launch.tr.md",
       "en_sha256": "836b6d287cf9ae6c6f3d89a842458e1221ef7328994cd0465bb85af8cc74a2e7",
       "tr_sha256": "f4972674ef43f36fad4b356d32007a348fa0248ba30fd16bff99d3fd7f32b9a7"
+    },
+    {
+      "en": "records/single-brand-family.md",
+      "tr": "records/single-brand-family.tr.md",
+      "en_sha256": "0146e0de03545d175f0356c5a0a45c8bcf0e3221aee9271cb47c60c93ab057de",
+      "tr_sha256": "36c34f8815c11a17497381fe3f6724da2d326965bc7fa29fc062864a6cb0674a"
     }
   ]
 }

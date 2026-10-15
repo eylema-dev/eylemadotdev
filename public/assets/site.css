@@ -68,6 +68,16 @@ h1 span { color: var(--orange); }
 .foundation-scope h3 { font-size: 30px; line-height: 1.15; letter-spacing: -.03em; margin-top: 16px; }
 .foundation-scope h3 + p { font-size: 19px; color: var(--muted); margin-top: 20px; }
 .foundation-scope .text-link { margin-top: 24px; font-size: 17px; }
+.product-cards, .community-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; margin: 48px 0 0; padding: 0; list-style: none; }
+.product-cards li, .community-cards article { min-width: 0; border-top: 1px solid var(--rule); padding-top: 24px; }
+.product-cards h3, .community-cards h3 { margin-top: 16px; font-size: 30px; line-height: 1.15; letter-spacing: -.03em; }
+.product-cards p, .community-cards p { margin-top: 20px; font-size: 18px; color: var(--muted); }
+.product-cards .scope-label { margin-top: 0; font-size: 14px; color: var(--accent-text); }
+.product-cards .product-purpose { color: var(--ink); font-weight: 600; }
+.product-cards .product-status { border-left: 2px solid var(--orange); padding-left: 12px; font-size: 14px; }
+.product-note { margin-top: 32px; padding: 22px; background: var(--surface); font-size: 17px; }
+.community-cards .text-link { margin-top: 24px; font-size: 17px; }
+.community-issues { margin-top: 32px; }
 .technology-overview { margin-top: 48px; scroll-margin-top: 28px; }
 .technology-notice { margin-bottom: 14px; }
 .technology-image { display: block; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; cursor: zoom-in; }
@@ -167,6 +177,9 @@ h1 span { color: var(--orange); }
   .site-footer > nav:not(.languages) { margin-left: auto; }
 }
 @media (max-width: 720px) {
+  .product-cards, .community-cards { grid-template-columns: 1fr; gap: 28px; margin-top: 32px; }
+  .product-cards h3, .community-cards h3 { font-size: 28px; }
+  .product-note { padding: 18px; font-size: 16px; }
   .shell { width: calc(100% - 48px); }
   .header-inner { flex-wrap: wrap; gap: 0; padding-top: 8px; min-height: auto; }
   .brand img { width: 145px; height: auto; }
