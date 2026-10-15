@@ -2,7 +2,7 @@
 
 [English](CONTRIBUTING.md). [AGENTS.md](AGENTS.md) ve [kalite kontrollerini](docs/tr/quality-gates.md) izleyin.
 
-Bu, proje sahibinin yetkilendirdiği ayrı ve herkese açık tanıtım sitesi deposudur. Açık platform tasarımı [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme) deposundadır. Burada açık kaynak lisansı seçilmemiştir.
+Bu, proje sahibinin yetkilendirdiği ayrı ve herkese açık tanıtım sitesi deposudur. Açık platform tasarımı [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme) deposundadır. Bu web sitesi deposu için açık kaynak lisansı seçilmemiştir; açık kaynak Apache-2.0 ifadesi birinci taraf Eyleme çekirdek kod ve belgeleri içindir. Tek Eyleme markasını ve bağımsız topluluk aracını görünür tutun. Derleme ve Onama’yı geliştirme aşamasındaki kapalı kaynak abonelik ürünleri olarak sunun; herkese açık site bağlantıları ziyaretçileri private depolara göndermemelidir. Gerçek kanıt ve yetki olmadan fiyat, ödeme akışı, müşteri yorumu veya üretim hizmeti iddiası eklemeyin.
 
 Güncel main üzerinden tek kapsamlı dal kullanın. İlgili isteği veya sorunu belirtin, sınırlı bir plan kaydedin ve değişiklikleri incelenebilir tutun. Metin kaynakları `content/en.json` ve `content/tr.json` içindedir; ortak HTML/meta verisi `tools/build.py`, sunum `public/assets/site.css` ve `site.js` üzerinden düzenlenir. `.venv/bin/python tools/build.py` ile yeniden üretin.
 

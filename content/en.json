@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "locale": "en_US",
-  "title": "Eyleme — Composable Agentic AI Platform in Rust",
-  "description": "Explore Eyleme: a Rust platform in development for local models, tools, reusable skills, RAG and project-scoped memory, with human-controlled learning.",
+  "title": "Eyleme — Open Source, Community and Subscription Products",
+  "description": "Build with Eyleme, the open-source local task tool and community. Explore Eyleme Derleme and Eyleme Onama, private-source subscription products in development.",
   "skip": "Skip to content",
   "navigation": "Main navigation",
   "language": "Choose language",
@@ -11,33 +11,33 @@
   "headline": [
     "From intent",
     "to action.",
-    "By design."
+    "Together."
   ],
   "hero_art_alt": "Decorative orange Eyleme loop sculpture",
-  "intro": "Turn human ideas and expert judgment into agentic systems. Compose local model roles, tools, reusable skills and project knowledge through a shared Rust platform.",
-  "explore": "Explore the platform",
-  "follow": "Follow on GitHub",
-  "status": "Local task console and scoped Rust components implemented. Model inference, integrated RAG, native training and full-product acceptance remain separate.",
+  "intro": "Eyleme is an open-source local task tool, built to grow with its community. Start independently, contribute what you learn, and explore the wider Eyleme product family.",
+  "explore": "Get started",
+  "follow": "View the source",
+  "status": "Apache-2.0 first-party code and docs. Local task foundation implemented; general model inference, integrated RAG and native training still need acceptance.",
   "principles": [
     {
-      "title": "Compose, then reuse",
-      "text": "Connect stable roles, tools and skills. Accept compatible profiles for each job."
+      "title": "Open and independent",
+      "text": "Run and develop Eyleme without a Derleme or Onama subscription. Basic authorization stays in the open-source tool."
     },
     {
-      "title": "Local first",
-      "text": "Project-private by default, with the first experimental target on Apple M4 Pro and macOS."
+      "title": "Built with the community",
+      "text": "Learn from the docs, report an issue, review a contract or contribute a focused change."
     },
     {
-      "title": "Human authority",
-      "text": "Set goals and budgets. Inspect outcomes. Grant execution, learning and sharing separately."
+      "title": "One Eyleme family",
+      "text": "Eyleme Derleme and Eyleme Onama use private-source, paid subscription models. Their commercial services are in development."
     }
   ],
-  "architecture_label": "01 — Architecture",
+  "architecture_label": "03 — Open-source architecture",
   "architecture_title": [
     "Compose the loop.",
     "Keep the contract."
   ],
-  "architecture_intro": "Eyleme owns authority, execution and evidence. Architecture v0.7 connects optional model roles with typed tools, skills, source-grounded retrieval and purpose-scoped memory.",
+  "architecture_intro": "The open-source Eyleme tool owns its local authority, execution and evidence. Architecture v0.7 connects optional model roles with typed tools, skills, source-grounded retrieval and purpose-scoped memory.",
   "technology_alt": "Eyleme architecture v0.7: human goals and five separate data-use permissions govern jobs, nine optional model roles, tools and skills, Rust authority and observed feedback. Permitted sources supply RAG/recall context with six optional memory kinds and renewed rights, lineage and expiry checks. A separate planned loop moves permitted episodes through curation, native Rust LoRA/QLoRA training, held-out evaluation and human-controlled promotion back to model profiles and skills. Scoped implemented components are labeled separately; integrated retrieval and training still require acceptance.",
   "technology_caption": "Architecture v0.7 integration design. Nine optional roles use source-gated knowledge and memory; Rust retains execution authority. Native training and human-controlled promotion form a separate planned loop. Scoped implemented foundations do not establish integrated model, RAG or training acceptance.",
   "technology_open": "Open full-size image (new tab)",
@@ -111,7 +111,7 @@
   "concept_note": "Architecture v0.7 · scoped components exist; integrated model jobs remain unaccepted",
   "human_title": "Human direction, throughout.",
   "human_text": "Define authority. Inspect observed outcomes. Keep stop and revocation on the Rust control path.",
-  "faq_label": "02 — Questions & answers",
+  "faq_label": "04 — Questions & answers",
   "faq_title": [
     "A platform.",
     "Clear boundaries."
@@ -120,9 +120,15 @@
   "questions": [
     {
       "question": "What is Eyleme?",
-      "answer": "Eyleme is a Rust platform in development for composing bounded agentic jobs from model roles, tools, reusable skills and project knowledge. Humans define goals and authority; the platform records actual outcomes. Its implemented local task foundation is distinct from the broader model, RAG, memory and learning design.",
+      "answer": "Eyleme is the shared brand and an independently usable open-source local task tool. Its first-party code and documentation use Apache-2.0. Eyleme Derleme and Eyleme Onama are private-source, paid subscription products in development. The open-source task foundation is distinct from the broader model, RAG, memory and learning design.",
       "source": "architecture",
       "link": "Architecture v0.7"
+    },
+    {
+      "question": "Do I need a subscription to use Eyleme?",
+      "answer": "No. The open-source Eyleme tool is independently usable without Derleme or Onama. Its own permission checks remain part of the core. Derleme and Onama address additional data and governance needs through a private-source subscription model; prices, service availability and customer deployment acceptance are not established by this website.",
+      "source": "project",
+      "link": "Read the public project scope"
     },
     {
       "question": "What works today?",
@@ -185,9 +191,9 @@
       "link": "Core Apache-2.0 license"
     }
   ],
-  "updated": "Project overview reviewed 14 October 2026.",
+  "updated": "Product family reviewed 15 October 2026; component evidence reviewed 14 October 2026.",
   "language_note": "English is canonical. Turkish is a full companion.",
-  "roadmap_label": "03 — The road ahead",
+  "roadmap_label": "05 — Open-source roadmap",
   "roadmap_title": [
     "Built in the open.",
     "Proven step by step."
@@ -216,9 +222,9 @@
     }
   ],
   "join_title": "Help shape what comes next.",
-  "join_text": "Inspect the foundation. Review a contract. Contribute a bounded change with evidence.",
-  "join_link": "Explore on GitHub",
-  "footer": "Human goals. Owned Rust. Source-linked evidence.",
+  "join_text": "Inspect the foundation, share an issue or contribute a bounded change. Grow the open-source Eyleme community with evidence.",
+  "join_link": "Join the community",
+  "footer": "Open source. Shared progress. Human authority.",
   "api_link": "API reference",
   "not_found_title": "This page is not here.",
   "not_found_text": "The address may have changed. Explore the Eyleme platform from the homepage.",
@@ -240,5 +246,71 @@
       "link": "Read the current architecture"
     }
   ],
-  "technology_notice": "Architecture v0.7 · integration design"
+  "technology_notice": "Open-source Eyleme · architecture v0.7 integration design",
+  "nav_products": "Products",
+  "nav_community": "Community",
+  "products_label": "01 — Product family",
+  "products_title": [
+    "One name.",
+    "Three clear roles."
+  ],
+  "products_intro": "Derleme → Onama → Eyleme: prepare data, authorize work, execute. This is the family’s workflow; permission checks also apply wherever data and actions cross a boundary.",
+  "products": [
+    {
+      "id": "derleme",
+      "name": "Eyleme Derleme",
+      "model": "Private source · paid subscription",
+      "title": "Prepare trusted inputs.",
+      "text": "Collect industrial data, preserve its source and quality, and prepare it for permitted use. Connector and deployment acceptance is specific to each environment.",
+      "status": "In development · subscription terms not yet published"
+    },
+    {
+      "id": "onama",
+      "name": "Eyleme Onama",
+      "model": "Private source · paid subscription",
+      "title": "Govern permitted work.",
+      "text": "Policy and execution assurance for broader governance needs. Bounded local pilot evidence is separate from a production service; core Eyleme permissions remain in the open-source tool.",
+      "status": "In development · subscription terms not yet published"
+    },
+    {
+      "id": "eyleme",
+      "name": "Eyleme",
+      "model": "Open source · Apache-2.0",
+      "title": "Turn intent into action.",
+      "text": "A standalone local task foundation with durable state, explicit authority and inspectable results. Grow it through public code, documentation and community contributions.",
+      "status": "Public foundation · broader platform in development"
+    }
+  ],
+  "products_note": "Derleme and Onama extend the family without being required to use Eyleme. No paid checkout or production subscription service is available on this site. Pricing and availability will be published when ready.",
+  "community_label": "02 — Start & contribute",
+  "community_title": [
+    "Use it.",
+    "Help it grow."
+  ],
+  "community_intro": "Start with the documented local foundation and its current limits. Share reproducible issues and bounded contributions through the public project.",
+  "community_links": [
+    {
+      "id": "start",
+      "title": "Start locally",
+      "text": "Follow setup instructions and inspect the current task-console evidence.",
+      "link": "Read the getting-started guide",
+      "source": "project"
+    },
+    {
+      "id": "docs",
+      "title": "Understand the contracts",
+      "text": "Explore architecture, permissions and the boundaries of planned capabilities.",
+      "link": "Read the documentation",
+      "source": "architecture"
+    },
+    {
+      "id": "contribute",
+      "title": "Contribute with context",
+      "text": "Review the contribution workflow before proposing code or documentation changes.",
+      "link": "Read the contribution guide",
+      "source": "contributing"
+    }
+  ],
+  "community_issues": "Report an issue or suggest an improvement",
+  "community_discussions": "Join the community discussions"
 }

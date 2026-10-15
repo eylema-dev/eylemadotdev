@@ -1,0 +1,27 @@
+# Single Eyleme brand and community product family
+
+[Türkçe](single-brand-family.tr.md). Task WEB-021, revision 0.1.0, 15 October 2026.
+
+## Authority and plan
+
+The maintainer explicitly authorized implementing one Eyleme brand across the repositories and eyleme.dev: Eyleme remains open source and community oriented; Derleme and Onama use private-source, paid subscription models. Base main: 0fa7374a16450afa0015e5c7851816e843f56a6f; branch: codex/eyleme-commercial-family. A dedicated worktree preserves the original checkout. The website implementer owns only website source; the coordinating agent owns repository visibility, review, merge and the already authorized canonical publication.
+
+Scope: bilingual content, shared builder and CSS, generated English/Turkish pages, focused regression gates/tests, README and contribution companions, this task record and translation hashes. Preserve canonical eyleme.dev, indexable landing pages, the real noindex 404, search ownership files, disabled IndexNow, asset bytes, deployment identity and the separate historical eylema.dev removal policy. No accounts, payment integration, prices, sales contact, hosted subscription service or customer evidence is invented.
+
+Plan: place the open-source community tool in the hero, provide real setup/docs/contribution/issues links, and add a public product section ordered Derleme → Onama → Eyleme. State commercial development/availability limits and keep core authorization independent of paid products. Review English/Turkish meaning and existing imagery, regenerate pages, run local gates, inspect desktop/mobile behavior and deliver a draft PR. The existing architecture illustration describes the open-source tool; its scope notice remains explicit rather than implying paid services are already integrated.
+
+## Acceptance and resources
+
+Accept clear shared naming, independent Apache-2.0 core use, private-source subscription descriptions, no public links to private product repos, no checkout, and preserved runtime/pilot boundaries. Verify generated output, translation structure/fingerprints, privacy/link regressions, exact repository checks, real filled PR body and browser interactions. PR CI and canonical production release are separate gates coordinated after review.
+
+Budget: 60 minutes; at most three focused repairs per failed gate; no new production dependencies or image generation. Risk: conflating free core authority with paid Onama or describing pilot scope as a production subscription. The visible copy and regression gates preserve these distinctions. Roll back by reverting this scoped commit; no runtime, account or billing migration is made.
+
+## Roles and verification
+
+Qualified architecture: a separate configured gpt-6.1-sol / high context under owner-approved profile sol61-high-contracts-2026-10-14, valid through 13 November 2026, supplied the cross-repository brand, licensing and acceptance design. Website implementer/verifier/self-reviewer: the delegated Codex website agent, using Git/GitHub CLI, Python standard library and documented CUA in-app browser. The coordinating gpt-6-astra / ultra context is supplemental implementation/verification, not the admitted architect profile. Hidden serving identity is unknown. A different qualified independent review of the final revisions remains pending. Self-review is not independent review.
+
+Local checkpoint: passed — hashed dependency setup, 48 Python tests, including four focused product-family/privacy regressions; deterministic build. English/Turkish meaning reviewed before fingerprint refresh. Existing English and Turkish architecture artwork visually inspected: it names only Eyleme, distinguishes planned training/integrated acceptance and makes no paid-product or price claim. All image bytes remain unchanged. Final repository/fingerprint/PR gates, browser checks and remote CI evidence are recorded below when executed. No Rust, inference, GPU, training or commercial-service execution was tested by this website work.
+
+Browser checkpoint: passed — CUA in-app browser at desktop 1280 × 800 and mobile 390 × 844, both language routes, product/community anchors, product order, setup/contribution destinations, Assign → ArrowRight → Inspect and the new subscription disclosure. No horizontal overflow or captured console warnings/errors. The initial Chrome entry point was unavailable and visible IAB is unsupported in a subagent; background IAB succeeded. A summary element required its text locator rather than a button role; this was a test-selector correction, not a product failure. The English hero was shortened to “Together.” after visual review. Public GitHub issues and Discussions are enabled (read-only API verified); community CTAs use the public Discussions page. Final post-copy browser verification follows below.
+
+Final local checkpoint: passed — generated build/check, repository and reviewed-fingerprint gate, blank template structure, filled PR-body validation, whitespace check and all 48 tests. Final English mobile hero and desktop product section visually passed; Turkish mobile community and disclosure passed. Captured page errors/warnings: none; image load failures: none observed. Viewport override reset. Two browser locator corrections were required (summary role and unsupported heading-level option), with successful supported-locator checks afterward. CI, genuine separate final review, merge and production remain pending at this commit.

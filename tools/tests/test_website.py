@@ -37,6 +37,36 @@ class WebsiteTests(unittest.TestCase):
         with self.assertRaisesRegex(CheckFailure, "content locale"):
             check_content(self.en, self.tr)
 
+    def test_product_order_is_explicit_in_each_language(self):
+        check_content(self.en, self.tr)
+        for data in (self.en, self.tr):
+            data["products"][0], data["products"][1] = data["products"][1], data["products"][0]
+            with self.assertRaisesRegex(CheckFailure, "Product family must preserve"):
+                check_content(self.en, self.tr)
+            data["products"][0], data["products"][1] = data["products"][1], data["products"][0]
+
+    def test_subscription_terms_cannot_disappear_from_static_html(self):
+        text = render(self.en).replace(self.en["products_note"], "")
+        with self.assertRaisesRegex(CheckFailure, "Subscription availability notice"):
+            self.check_modified(text)
+
+    def test_product_availability_cannot_disappear_from_static_html(self):
+        text = render(self.en).replace(self.en["products"][0]["status"], "")
+        with self.assertRaisesRegex(CheckFailure, "Product model or availability"):
+            self.check_modified(text)
+
+    def test_private_product_links_are_rejected(self):
+        for target in ("https://github.com/derleme-dev/derleme", "https://github.com/eyleme-dev/onama"):
+            with self.subTest(target=target), tempfile.TemporaryDirectory() as directory:
+                # Existing local assets remain available so this exercises the new link gate.
+                public = Path(directory)
+                import shutil
+                shutil.copytree(ROOT / "public", public, dirs_exist_ok=True)
+                text = render(self.en).replace('</body>', f'<a href="{target}">Private source</a></body>')
+                (public / "index.html").write_text(text)
+                with self.assertRaisesRegex(CheckFailure, "private product repositories"):
+                    check_page(public, "index.html", self.en)
+
     def test_missing_documentation_target_fails(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

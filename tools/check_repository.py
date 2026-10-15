@@ -75,6 +75,8 @@ def check_content(en, tr):
     for data in (en, tr):
         require(40 <= len(data["title"]) <= 70, "Review title length")
         require(110 <= len(data["description"]) <= 170, "Review description length")
+        require([product["id"] for product in data["products"]] == ["derleme", "onama", "eyleme"],
+                "Product family must preserve Derleme, Onama, Eyleme order")
         for step in data["steps"]:
             require(step["source"] in {"architecture", "api", "teams", "learning"}, "Unknown source")
     for left, right in zip(en["steps"], tr["steps"]):
@@ -112,6 +114,10 @@ def check_page(public, relative, data):
         require(step["text"] in plain, "Architecture text missing from initial HTML")
     for card in data["foundation_cards"]:
         require(all(card[key] in plain for key in ("label", "title", "text")), "Foundation scope missing from initial HTML")
+    for product in data["products"]:
+        require(all(product[key] in plain for key in ("name", "model", "text", "status")),
+                "Product model or availability missing from initial HTML")
+    require(data["products_note"] in plain, "Subscription availability notice missing from initial HTML")
     require(data["technology_notice"] in plain and data["technology_caption"] in plain, "Architecture illustration needs visible scope notice")
     hero_images = [(attrs, hidden) for attrs, hidden in page.images if attrs.get("src") == "/assets/eyleme-loop-1024.webp"]
     require(len(hero_images) == 1 and hero_images[0][1], "Decorative hero must remain hidden from assistive technology")
@@ -126,6 +132,14 @@ def check_page(public, relative, data):
         parsed = urlsplit(reference)
         require(parsed.scheme in {"", "https"}, f"Unsafe reference: {reference}")
         if parsed.scheme:
+            if parsed.hostname == "github.com":
+                parts = parsed.path.lower().strip("/").split("/")
+                require(not parts or parts[0] not in {"derleme-dev", "onama-dev"},
+                        "Public website must not send visitors to private product repositories")
+                require(len(parts) < 2 or (parts[0], parts[1]) not in {
+                    ("eyleme-dev", "derleme"), ("eyleme-dev", "onama"),
+                    ("aserdargun", "derleme"), ("aserdargun", "onama")},
+                    "Public website must not send visitors to private product repositories")
             continue
         target = public / unquote(parsed.path.lstrip("/")) if parsed.path.startswith("/") else path.parent / unquote(parsed.path)
         if not parsed.path:

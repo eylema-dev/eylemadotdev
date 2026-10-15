@@ -1,43 +1,43 @@
 {
   "lang": "tr",
   "locale": "tr_TR",
-  "title": "Eyleme — Rust ile Modüler Ajan Tabanlı Yapay Zekâ",
-  "description": "Eyleme’yi keşfet: yerel modeller, araçlar, yeniden kullanılabilir beceriler, RAG ve proje belleği için geliştirilen, öğrenmeyi insanın yönettiği Rust platformu.",
+  "title": "Eyleme — Açık Kaynak, Topluluk ve Abonelik Ürünleri",
+  "description": "Açık kaynak yerel görev aracı Eyleme ve topluluğuyla geliştirin. Geliştirilmekte olan kapalı kaynak abonelik ürünleri Eyleme Derleme ve Eyleme Onama’yı keşfedin.",
   "skip": "İçeriğe geç",
   "navigation": "Ana gezinme",
   "language": "Dil seçimi",
   "nav_architecture": "Mimari",
   "nav_roadmap": "Yol haritası",
   "headline": [
-    "Niyetten",
-    "eyleme geç.",
-    "Tasarımla."
+    "Fikirden",
+    "eyleme.",
+    "Birlikte."
   ],
   "hero_art_alt": "Dekoratif turuncu Eyleme döngüsü heykeli",
-  "intro": "İnsan fikirlerini ve uzmanlığını ajan sistemlerine dönüştür. Yerel model rollerini, araçları, yeniden kullanılabilir becerileri ve proje bilgisini ortak Rust platformunda birleştir.",
-  "explore": "Platformu keşfet",
-  "follow": "GitHub'da takip et",
-  "status": "Yerel görev konsolu ve kapsamı sınırlı Rust bileşenleri uygulandı. Model çıkarımı, entegre RAG, yerel eğitim ve tam ürün kabulü ayrı kalıyor.",
+  "intro": "Eyleme, topluluğuyla büyümek için geliştirilen açık kaynak bir yerel görev aracıdır. Bağımsız olarak başlayın, öğrendiklerinizi katkıya dönüştürün ve Eyleme ürün ailesini keşfedin.",
+  "explore": "Başlayın",
+  "follow": "Kaynağı inceleyin",
+  "status": "Birinci taraf kod ve belgeler Apache-2.0 lisanslıdır. Yerel görev temeli uygulanmıştır; genel model çıkarımı, bütünleşik RAG ve yerel eğitim ayrı kabul gerektirir.",
   "principles": [
     {
-      "title": "Birleştir, yeniden kullan",
-      "text": "Sabit rolleri, araçları ve becerileri bağla. Her iş için uyumlu profilleri kabul et."
+      "title": "Açık ve bağımsız",
+      "text": "Eyleme’yi Derleme veya Onama aboneliği olmadan kullanın ve geliştirin. Temel yetkilendirme açık kaynak araçta kalır."
     },
     {
-      "title": "Önce yerel",
-      "text": "Varsayılan olarak projeye özel; ilk deneysel hedef Apple M4 Pro ve macOS."
+      "title": "Toplulukla gelişir",
+      "text": "Belgelerden öğrenin, sorun bildirin, bir sözleşmeyi inceleyin veya odaklı bir değişiklikle katkı verin."
     },
     {
-      "title": "Yetki insanda",
-      "text": "Hedef ve bütçe belirle. Sonucu incele. Yürütme, öğrenme ve paylaşımı ayrı yetkilendir."
+      "title": "Tek Eyleme ailesi",
+      "text": "Eyleme Derleme ve Eyleme Onama, kapalı kaynak ve ücretli abonelik modeliyle sunulacak ürünlerdir. Ticari hizmetleri geliştirme aşamasındadır."
     }
   ],
-  "architecture_label": "01 — Mimari",
+  "architecture_label": "03 — Açık kaynak mimari",
   "architecture_title": [
     "Döngüyü kur.",
     "Sözleşmeyi koru."
   ],
-  "architecture_intro": "Yetki, yürütme ve kanıt Eyleme’ye aittir. Mimari v0.7, isteğe bağlı model rollerini tipli araçlar, beceriler, kaynağa dayalı erişim ve amaçla sınırlı bellekle bağlar.",
+  "architecture_intro": "Açık kaynak Eyleme aracı kendi yerel yetkisini, yürütmesini ve kanıtını yönetir. Mimari v0.7, isteğe bağlı model rollerini tipli araçlar, beceriler, kaynağa dayalı getirim ve amaca bağlı bellekle birleştirir.",
   "technology_alt": "Eyleme mimarisi v0.7: insan hedefleri ve beş ayrı veri kullanım izni işleri, dokuz isteğe bağlı model rolünü, araç ve becerileri, Rust yetkisini ve gözlenen geri beslemeyi yönetir. İzinli kaynaklar altı isteğe bağlı bellek türüyle RAG/hatırlama bağlamı sağlar; hak, köken ve süre yeniden denetlenir. Ayrı planlanan döngü, izinli deneyimleri inceleme, yerel Rust LoRA/QLoRA eğitimi, bağımsız değerlendirme ve insan kontrollü terfiyle model profilleri ve becerilere döndürür. Sınırlı uygulanmış bileşenler ayrı etiketlidir; entegre erişim ve eğitim kabul gerektirir.",
   "technology_caption": "Mimari v0.7 entegrasyon tasarımı. Dokuz isteğe bağlı rol, kaynak kapılı bilgi ve belleği kullanır; yürütme yetkisi Rust’tadır. Yerel eğitim ve insan kontrollü terfi ayrı planlanan döngüdür. Sınırlı uygulanmış temeller entegre model, RAG veya eğitim kabulünü kanıtlamaz.",
   "technology_open": "Görseli tam boy aç (yeni sekme)",
@@ -111,7 +111,7 @@
   "concept_note": "Mimari v0.7 · kapsamı sınırlı bileşenler var; entegre model işlerinin kabulü tamamlanmadı",
   "human_title": "Her aşamada insan yönlendirmesi.",
   "human_text": "Yetkiyi tanımla. Gözlenen sonuçları incele. Durdurma ve yetki iptalini Rust kontrol yolunda tut.",
-  "faq_label": "02 — Sorular ve yanıtlar",
+  "faq_label": "04 — Sorular ve yanıtlar",
   "faq_title": [
     "Bir platform.",
     "Açık sınırlarla."
@@ -120,9 +120,15 @@
   "questions": [
     {
       "question": "Eyleme nedir?",
-      "answer": "Eyleme; model rolleri, araçlar, yeniden kullanılabilir beceriler ve proje bilgisinden sınırlı ajan işleri kurmak için geliştirilen bir Rust platformudur. İnsanlar hedef ve yetkiyi belirler; platform gerçek sonuçları kaydeder. Uygulanmış yerel görev temeli, geniş model, RAG, bellek ve öğrenme tasarımından ayrıdır.",
+      "answer": "Eyleme hem ortak marka hem de bağımsız kullanılabilen açık kaynak yerel görev aracıdır. Birinci taraf kod ve belgeleri Apache-2.0 lisanslıdır. Eyleme Derleme ve Eyleme Onama, kapalı kaynak ve ücretli abonelik modeliyle geliştirilen ürünlerdir. Açık kaynak görev temeli, geniş model, RAG, bellek ve öğrenme tasarımından ayrıdır.",
       "source": "architecture",
       "link": "Mimari v0.7"
+    },
+    {
+      "question": "Eyleme’yi kullanmak için abonelik gerekir mi?",
+      "answer": "Hayır. Açık kaynak Eyleme aracı Derleme veya Onama olmadan bağımsız kullanılabilir. Kendi izin kontrolleri çekirdeğin parçası olmaya devam eder. Derleme ve Onama ek veri ve yönetim ihtiyaçlarını kapalı kaynak abonelik modeliyle karşılamayı hedefler; fiyatlar, hizmet erişimi ve müşteri ortamında kurulum kabulü bu siteyle kanıtlanmış değildir.",
+      "source": "project",
+      "link": "Herkese açık proje kapsamını okuyun"
     },
     {
       "question": "Bugün ne çalışıyor?",
@@ -185,9 +191,9 @@
       "link": "Çekirdeğin Apache-2.0 lisansı"
     }
   ],
-  "updated": "Proje tanıtımı 14 Ekim 2026 tarihinde incelendi.",
+  "updated": "Ürün ailesi 15 Ekim 2026; bileşen kanıtları 14 Ekim 2026 tarihinde incelendi.",
   "language_note": "İngilizce kanoniktir. Türkçe tam eşlikçisidir.",
-  "roadmap_label": "03 — Önümüzdeki yol",
+  "roadmap_label": "05 — Açık kaynak yol haritası",
   "roadmap_title": [
     "Açıkça geliştir.",
     "Adım adım doğrula."
@@ -216,9 +222,9 @@
     }
   ],
   "join_title": "Sıradaki adımı birlikte şekillendirelim.",
-  "join_text": "Temeli incele. Bir sözleşmeyi gözden geçir. Kanıtıyla sınırlı bir değişiklik öner.",
-  "join_link": "GitHub'da keşfet",
-  "footer": "İnsan hedefleri. Kendi Rust bileşenlerimiz. Kaynağa bağlı kanıt.",
+  "join_text": "Temeli inceleyin, sorun paylaşın veya kapsamı belirli bir değişiklikle katkı verin. Açık kaynak Eyleme topluluğunu kanıtla büyütün.",
+  "join_link": "Topluluğa katılın",
+  "footer": "Açık kaynak. Birlikte gelişim. İnsan yetkisi.",
   "api_link": "API referansı",
   "not_found_title": "Bu sayfa burada değil.",
   "not_found_text": "Adres değişmiş olabilir. Ana sayfadan Eyleme platformunu keşfedin.",
@@ -240,5 +246,71 @@
       "link": "Güncel mimariyi oku"
     }
   ],
-  "technology_notice": "Mimari v0.7 · entegrasyon tasarımı"
+  "technology_notice": "Açık kaynak Eyleme · mimari v0.7 bütünleştirme tasarımı",
+  "nav_products": "Ürünler",
+  "nav_community": "Topluluk",
+  "products_label": "01 — Ürün ailesi",
+  "products_title": [
+    "Tek isim.",
+    "Üç belirgin rol."
+  ],
+  "products_intro": "Derleme → Onama → Eyleme: veriyi hazırla, işi yetkilendir, uygula. Bu, ailenin iş akışıdır; izin kontrolleri veri ve işlemlerin sınır geçtiği diğer aşamalarda da uygulanır.",
+  "products": [
+    {
+      "id": "derleme",
+      "name": "Eyleme Derleme",
+      "model": "Kapalı kaynak · ücretli abonelik",
+      "title": "Güvenilir girdiler hazırla.",
+      "text": "Endüstriyel veriyi topla, kaynağını ve kalitesini koru, izin verilen kullanıma hazırla. Bağlayıcı ve kurulum kabulü her ortam için ayrı değerlendirilir.",
+      "status": "Geliştirme aşamasında · abonelik koşulları henüz yayımlanmadı"
+    },
+    {
+      "id": "onama",
+      "name": "Eyleme Onama",
+      "model": "Kapalı kaynak · ücretli abonelik",
+      "title": "İzin verilen işi yönet.",
+      "text": "Daha kapsamlı yönetim ihtiyaçları için politika ve yürütme güvencesi. Sınırlı yerel pilot kanıtı üretim hizmetinden ayrıdır; Eyleme’nin temel izinleri açık kaynak araçta kalır.",
+      "status": "Geliştirme aşamasında · abonelik koşulları henüz yayımlanmadı"
+    },
+    {
+      "id": "eyleme",
+      "name": "Eyleme",
+      "model": "Açık kaynak · Apache-2.0",
+      "title": "Fikri eyleme dönüştür.",
+      "text": "Kalıcı durum, açık yetki ve incelenebilir sonuçlar sunan bağımsız yerel görev temeli. Herkese açık kod, belgeler ve topluluk katkılarıyla geliştirin.",
+      "status": "Herkese açık temel · geniş platform geliştirme aşamasında"
+    }
+  ],
+  "products_note": "Derleme ve Onama, Eyleme’yi kullanmak için zorunlu olmadan aileyi genişletir. Bu sitede ücretli ödeme akışı veya üretimde abonelik hizmeti bulunmuyor. Fiyatlar ve erişim durumu hazır olduğunda yayımlanacak.",
+  "community_label": "02 — Başlayın ve katkı verin",
+  "community_title": [
+    "Kullanın.",
+    "Birlikte geliştirin."
+  ],
+  "community_intro": "Belgelenmiş yerel temelden ve mevcut sınırlarından başlayın. Tekrarlanabilir sorunları ve kapsamı belirli katkıları herkese açık projede paylaşın.",
+  "community_links": [
+    {
+      "id": "start",
+      "title": "Yerelde başlayın",
+      "text": "Kurulum adımlarını izleyin ve mevcut görev konsolunun kanıtlarını inceleyin.",
+      "link": "Başlangıç rehberini okuyun",
+      "source": "project"
+    },
+    {
+      "id": "docs",
+      "title": "Sözleşmeleri anlayın",
+      "text": "Mimariyi, izinleri ve planlanan yeteneklerin sınırlarını keşfedin.",
+      "link": "Belgeleri okuyun",
+      "source": "architecture"
+    },
+    {
+      "id": "contribute",
+      "title": "Bağlamıyla katkı verin",
+      "text": "Kod veya belge değişikliği önermeden önce katkı akışını inceleyin.",
+      "link": "Katkı rehberini okuyun",
+      "source": "contributing"
+    }
+  ],
+  "community_issues": "Sorun bildirin veya iyileştirme önerin",
+  "community_discussions": "Topluluk tartışmalarına katılın"
 }

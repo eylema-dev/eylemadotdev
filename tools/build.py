@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://eyleme.dev"
 INDEXNOW_KEY = "1e76b9883a4f4a64a2ceffbbc439a640"
 PROJECT = "https://github.com/eyleme-dev/eyleme"
-UPDATED = "2026-10-14"
+UPDATED = "2026-10-15"
 # Actual page changes, independent of the reviewed design date and build time.
 PAGE_MODIFIED = {"en": "2026-10-15", "tr": "2026-10-15"}
 SOURCES = {
@@ -27,6 +27,8 @@ def arrow(external=False):
 
 
 def source(lang, name):
+    if name == "contributing":
+        return f"{PROJECT}/blob/main/CONTRIBUTING{'.tr' if lang == 'tr' else ''}.md"
     repository = PROJECT if name in {"project", "license"} or name.startswith("core_") else f"https://github.com/eyleme-dev/eyleme-docs-{lang}"
     return f"{repository}/blob/main/{SOURCES[lang][name]}"
 
@@ -60,6 +62,8 @@ def render(data):
     languages = language_links(data)
     principles = "".join(f'<li><span class="index">{i:02d} /</span><h2>{esc(p["title"])}</h2><p>{esc(p["text"])}</p></li>' for i, p in enumerate(data["principles"], 1))
     foundation = "".join(f'<article><p class="scope-label">{esc(card["label"])}</p><h3>{esc(card["title"])}</h3><p>{esc(card["text"])}</p><a class="text-link" href="{source(lang, card["source"])}">{esc(card["link"])}{arrow(True)}</a></article>' for card in data["foundation_cards"])
+    products = "".join(f'<li id="product-{p["id"]}"><p class="scope-label">{esc(p["model"])}</p><h3>{esc(p["name"])}</h3><p class="product-purpose">{esc(p["title"])}</p><p>{esc(p["text"])}</p><p class="product-status">{esc(p["status"])}</p></li>' for p in data["products"])
+    community = "".join(f'<article><h3>{esc(card["title"])}</h3><p>{esc(card["text"])}</p><a class="text-link" href="{source(lang, card["source"])}">{esc(card["link"])}{arrow(True)}</a></article>' for card in data["community_links"])
     tabs = "".join(f'<a id="step-{s["id"]}" href="#panel-{s["id"]}"><span>{i:02d}</span> {esc(s["name"])}</a>' for i, s in enumerate(data["steps"], 1))
     panels = []
     for step in data["steps"]:
@@ -111,19 +115,32 @@ def render(data):
   <a class="skip-link" href="#main">{e('skip')}</a>
   <header class="site-header"><div class="shell header-inner">
     <a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="Eyleme">{logo}</a>
-    <nav class="main-nav" aria-label="{e('navigation')}"><a href="#architecture">{e('nav_architecture')}</a><a href="#roadmap">{e('nav_roadmap')}</a><a href="{PROJECT}">GitHub {arrow(True)}</a></nav>
+    <nav class="main-nav" aria-label="{e('navigation')}"><a href="#products">{e('nav_products')}</a><a href="#community">{e('nav_community')}</a><a href="{PROJECT}">GitHub {arrow(True)}</a></nav>
     {languages}
   </div></header>
   <main id="main" tabindex="-1">
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy"><h1 id="hero-title">{esc(data['headline'][0])}<br>{esc(data['headline'][1])}<br><span>{esc(data['headline'][2])}</span></h1>
         <p class="hero-intro">{e('intro')}</p>
-        <div class="hero-actions"><a class="button" href="#architecture">{e('explore')}{arrow()}</a><a class="text-link" href="{PROJECT}">{e('follow')}{arrow(True)}</a></div>
+        <div class="hero-actions"><a class="button" href="{source(lang, 'project')}">{e('explore')}{arrow(True)}</a><a class="text-link" href="{PROJECT}">{e('follow')}{arrow(True)}</a></div>
         <p class="project-status">{e('status')}</p>
       </div>
       <div class="hero-art" aria-hidden="true"><img src="/assets/eyleme-loop-1024.webp" srcset="/assets/eyleme-loop-640.webp 640w, /assets/eyleme-loop-1024.webp 1024w" sizes="(max-width: 720px) 100vw, 52vw" width="1024" height="1024" alt="{e('hero_art_alt')}" fetchpriority="high" decoding="async"></div>
     </section>
     <div class="shell"><ul class="principles">{principles}</ul></div>
+    <section class="products section shell" id="products" aria-labelledby="products-title">
+      <p class="section-label">{e('products_label')}</p>
+      <div class="section-heading"><h2 id="products-title">{heading('products_title')}</h2><p>{e('products_intro')}</p></div>
+      <ol class="product-cards">{products}</ol>
+      <p class="product-note">{e('products_note')}</p>
+    </section>
+    <section class="community section shell" id="community" aria-labelledby="community-title">
+      <p class="section-label">{e('community_label')}</p>
+      <div class="section-heading"><h2 id="community-title">{heading('community_title')}</h2><p>{e('community_intro')}</p></div>
+      <div class="community-cards">{community}</div>
+      <p class="community-issues"><a class="text-link" href="{PROJECT}/discussions">{e('community_discussions')}{arrow(True)}</a></p>
+      <p class="community-issues"><a class="text-link" href="{PROJECT}/issues">{e('community_issues')}{arrow(True)}</a></p>
+    </section>
     <section class="architecture section shell" id="architecture" aria-labelledby="architecture-title">
       <p class="section-label">{e('architecture_label')}</p>
       <div class="section-heading"><h2 id="architecture-title">{heading('architecture_title')}</h2><p>{e('architecture_intro')}</p></div>
@@ -147,7 +164,7 @@ def render(data):
       <p class="section-label">{e('roadmap_label')}</p><div class="section-heading"><h2 id="roadmap-title">{heading('roadmap_title')}</h2><p>{e('roadmap_intro')}</p></div>
       <ol class="milestones">{milestones}</ol>
     </section>
-    <section class="invitation" aria-labelledby="join-title"><div class="shell invitation-inner"><div><h2 id="join-title">{e('join_title')}</h2><p>{e('join_text')}</p></div><a class="button button-light" href="{PROJECT}">{e('join_link')}{arrow(True)}</a></div></section>
+    <section class="invitation" aria-labelledby="join-title"><div class="shell invitation-inner"><div><h2 id="join-title">{e('join_title')}</h2><p>{e('join_text')}</p></div><a class="button button-light" href="{PROJECT}/discussions">{e('join_link')}{arrow(True)}</a></div></section>
   </main>
   <footer class="site-footer shell"><a class="brand" href="{'/tr/' if lang == 'tr' else '/'}" aria-label="Eyleme">{logo}</a><p>{e('footer')}</p><nav aria-label="{e('nav_architecture')}"><a href="{source(lang, 'architecture')}">{e('nav_architecture')}</a><a href="{source(lang, 'api')}">{e('api_link')}</a></nav>{languages}</footer>
 </body>

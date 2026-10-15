@@ -4,7 +4,9 @@ The product and website identity is **Eyleme**. The repository is **eyleme-dev/e
 
 Public source repository [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotdev) for the bilingual promotional website at the intended domain `eyleme.dev`.
 
-Public platform project: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme). This repository introduces the implemented local task foundation and the proposed cooperative-loop platform; it does not contain or run the Rust platform.
+Public open-source project: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme). **Eyleme** is both the shared brand and an independently usable community tool. First-party core code and documentation use Apache-2.0; third-party/model/data terms and website assets retain their own boundaries. **Eyleme Derleme** and **Eyleme Onama** are private-source, paid subscription products in development. Their public descriptions appear at [eyleme.dev/#products](https://eyleme.dev/#products), without private source links, invented prices or an active checkout. See the [single-brand product record](records/single-brand-family.md).
+
+This repository introduces the implemented local task foundation and the proposed cooperative-loop platform; it does not contain or run the Rust platform. The commercial products are optional: Eyleme retains local permission checks and works without their subscriptions. The family presentation order is Derleme → Onama → Eyleme; policy enforcement also crosses stages.
 
 [Türkçe](README.tr.md)
 

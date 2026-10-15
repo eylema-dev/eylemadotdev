@@ -4,7 +4,9 @@
 
 Hedef alan adı `eyleme.dev` olan iki dilli tanıtım sitesinin herkese açık kaynak deposu: [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotdev).
 
-Açık platform projesi: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme). Bu depo uygulanmış yerel görev temelini ve önerilen işbirlikçi döngü platformunu tanıtır; Rust platformunu içermez veya çalıştırmaz.
+Herkese açık açık kaynak proje: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eyleme). **Eyleme**, hem ortak marka hem de bağımsız kullanılabilen topluluk aracıdır. Birinci taraf çekirdek kod ve belgeler Apache-2.0 lisanslıdır; üçüncü taraf/model/veri koşulları ve site varlıkları kendi sınırlarını korur. **Eyleme Derleme** ve **Eyleme Onama**, kapalı kaynak ve ücretli abonelik modeliyle geliştirilen ürünlerdir. Herkese açık tanımları [eyleme.dev/tr/#products](https://eyleme.dev/tr/#products) adresinde yer alır; private kaynak bağlantısı, uydurma fiyat veya etkin ödeme akışı içermez. [Tek marka ürün kaydına](records/single-brand-family.tr.md) bakın.
+
+Bu depo uygulanmış yerel görev temelini ve önerilen işbirlikçi döngü platformunu tanıtır; Rust platformunu içermez veya çalıştırmaz. Ticari ürünler isteğe bağlıdır: Eyleme yerel izin kontrollerini korur ve bu abonelikler olmadan çalışır. Ailenin sunum sırası Derleme → Onama → Eyleme’dir; politika denetimi aşamalar arasında da uygulanır.
 
 [English](README.md)
 
