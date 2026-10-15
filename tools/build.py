@@ -145,12 +145,13 @@ def render(data):
   </div></header>
   <main id="main" tabindex="-1">
     <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy"><p class="scope-label development-status">{e('development_status')}</p><h1 id="hero-title">{esc(data['headline'][0])}<br>{esc(data['headline'][1])}<br><span>{esc(data['headline'][2])}</span></h1>
+      <div class="hero-heading"><p class="scope-label development-status">{e('development_status')}</p><h1 id="hero-title">{esc(data['headline'][0])}<br>{esc(data['headline'][1])}<br><span>{esc(data['headline'][2])}</span></h1></div>
+      <figure class="hero-art"><img src="/assets/eyleme-ecosystem-{lang}.svg" width="640" height="600" alt="{esc(data['hero_diagram']['alt'])}" fetchpriority="high" decoding="async"><figcaption>{esc(data['hero_diagram']['caption'])}</figcaption></figure>
+      <div class="hero-copy">
         <p class="hero-intro">{e('intro')}</p>
         <div class="hero-actions"><a class="button" href="{source(lang, 'project')}">{e('explore')}{arrow(True)}</a><a class="text-link" href="{PROJECT}">{e('follow')}{arrow(True)}</a></div>
         <p class="project-status">{e('status')}</p>
       </div>
-      <figure class="hero-art"><img src="/assets/eyleme-ecosystem-{lang}.svg" width="640" height="600" alt="{esc(data['hero_diagram']['alt'])}" fetchpriority="high" decoding="async"><figcaption>{esc(data['hero_diagram']['caption'])}</figcaption></figure>
     </section>
     <div class="shell"><ul class="principles">{principles}</ul></div>
     <section class="products section shell" id="products" aria-labelledby="products-title">
