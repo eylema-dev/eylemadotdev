@@ -44,9 +44,9 @@ jobs:
           skip_app_build: true
           skip_api_build: true
           production_branch: main
-      - name: Verify live canonical host
+      - name: Verify live Azure preview host
         env:
-          SITE_URL: https://eylema.dev
+          SITE_URL: https://icy-smoke-080dbad03.4.azurestaticapps.net
         run: |
           for attempt in 1 2 3; do
             if python tools/check_live.py --url "$SITE_URL" --commit "$GITHUB_SHA"; then

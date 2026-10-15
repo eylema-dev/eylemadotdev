@@ -93,7 +93,7 @@ class ReleaseTests(unittest.TestCase):
                 require_noindex(headers, "/sample")
 
     def test_live_policy_covers_release_assets_pages_normalized_routes_and_404(self):
-        origin, commit = "https://eylema.dev", "a" * 40
+        origin, commit = "https://eyleme.dev", "a" * 40
         expected = manifest(ROOT / "public", commit)
         types = {"html": "text/html", "css": "text/css", "js": "application/javascript",
                  "png": "image/png", "webp": "image/webp", "svg": "image/svg+xml",
@@ -114,7 +114,7 @@ class ReleaseTests(unittest.TestCase):
                 path, status = "404.html", 404
             headers["Content-Type"] = types[path.rsplit(".", 1)[-1]]
             return status, headers, (ROOT / "public" / path).read_bytes(), final
-        missing_routes = ["/release.json", "/", "/tr/", "/assets/eylema-wordmark.webp",
+        missing_routes = ["/release.json", "/", "/tr/", "/assets/eyleme-wordmark.webp",
                           "/not-a-page-" + commit[:12], "/index.html", "/tr/index.html", "/tr"]
         for missing in missing_routes:
             with self.subTest(missing=missing), patch("check_live.fetch", side_effect=lambda url: response(url, missing)):

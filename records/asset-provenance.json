@@ -7,28 +7,28 @@
       "source": "Maintainer Eylema brand pack, 2026-10-11"
     },
     {
-      "path": "public/assets/eylema-loop-1024.webp",
+      "path": "public/assets/eyleme-loop-1024.webp",
       "sha256": "d974e49963e3e9e27f70732a8b1b4ece21aefd8cdf186cf1023e8b538a753422",
       "bytes": 47100,
       "source": "Built-in Image Gen; sharp WebP encoding"
     },
     {
-      "path": "public/assets/eylema-loop-640.webp",
+      "path": "public/assets/eyleme-loop-640.webp",
       "sha256": "e01c21b2080e1e7f84146cd18af80bc281fa350f12fd4da9ce328d4ac0ad536b",
       "bytes": 20088,
       "source": "Built-in Image Gen; sharp WebP encoding"
     },
     {
-      "path": "public/assets/eylema.svg",
+      "path": "public/assets/eyleme.svg",
       "sha256": "0d6afbcdf6f35b22b613e2e0639e0742491f46fb3297193e0a2cb2de57ee1207",
       "bytes": 587,
       "source": "Eyleme product rename, 2026-10-14: canonical SVG source regeneration"
     },
     {
       "path": "public/assets/favicon.svg",
-      "sha256": "239ebfc0a82d6cb170efb79ce310f919f4337d8fff45dfb2028fc7f187daea2e",
+      "sha256": "075cac11a9a94b2d5541b0f392fffb2f91e5b89ed0c5b4d627efc06943a68ac4",
       "bytes": 273,
-      "source": "Maintainer Eylema brand pack, 2026-10-11"
+      "source": "Maintainer E-mark, 2026-10-11; accessible SVG title aligned to Eyleme, 2026-10-15"
     },
     {
       "path": "public/assets/social.png",
@@ -37,31 +37,31 @@
       "source": "Eyleme product rename, 2026-10-14: canonical SVG source regeneration"
     },
     {
-      "path": "public/assets/eylema-technology-en.png",
-      "sha256": "e007c85d0c0e216f800cde278c49cd568e8bcb444586cd6e423b46a47aee60a8",
-      "bytes": 1857523,
-      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
+      "path": "public/assets/eyleme-technology-en.png",
+      "sha256": "cbd5faf8017833b5159720e883741ef7fe804355a3795ef60981b30940143d34",
+      "bytes": 1842677,
+      "source": "Eyleme domain preparation, 2026-10-15: built-in Image Gen footer-domain edit; lossless sharp 0.35.5 WebP where applicable; see website-identity-prompts.json"
     },
     {
-      "path": "public/assets/eylema-technology-en.webp",
-      "sha256": "1ce5029db09a5f2413edc700d23c67e41398c733d9b6c47745d1ec039ac91c73",
-      "bytes": 1297034,
-      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
+      "path": "public/assets/eyleme-technology-en.webp",
+      "sha256": "b99506d9e49a61339d1dfc93adf1bb4c714f0da830691535f95e9252c37dc281",
+      "bytes": 1304370,
+      "source": "Eyleme domain preparation, 2026-10-15: built-in Image Gen footer-domain edit; lossless sharp 0.35.5 WebP where applicable; see website-identity-prompts.json"
     },
     {
-      "path": "public/assets/eylema-technology-tr.png",
-      "sha256": "9703439d5dfe62db1affe05f6b71b58b63f574c540ad3574f0f3f6e77d85767e",
-      "bytes": 1829274,
-      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
+      "path": "public/assets/eyleme-technology-tr.png",
+      "sha256": "d1979be94c1ff3839f4766869a1d7cd833f8fe83b7a93d9b91b15026bfc09a12",
+      "bytes": 1810022,
+      "source": "Eyleme domain preparation, 2026-10-15: built-in Image Gen footer-domain edit; lossless sharp 0.35.5 WebP where applicable; see website-identity-prompts.json"
     },
     {
-      "path": "public/assets/eylema-technology-tr.webp",
-      "sha256": "d3b3240008da90f6381c91c5e1bdf52c7227bc3128c481a3eb127e38d560c793",
-      "bytes": 1293202,
-      "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"
+      "path": "public/assets/eyleme-technology-tr.webp",
+      "sha256": "279ad9628dcc587fbd876696ff0492a8bda15e4ad5b0e649b2e88185491d1bb5",
+      "bytes": 1295050,
+      "source": "Eyleme domain preparation, 2026-10-15: built-in Image Gen footer-domain edit; lossless sharp 0.35.5 WebP where applicable; see website-identity-prompts.json"
     },
     {
-      "path": "public/assets/eylema-wordmark.webp",
+      "path": "public/assets/eyleme-wordmark.webp",
       "sha256": "e6ba4e50b7752f8bc414ee019b68aaaad9d917f3cf5a545f747315fe3ffa2384",
       "bytes": 72378,
       "source": "Eyleme product rename, 2026-10-14: narrow built-in Image Gen text edit; lossless sharp 0.35.5 WebP encoding where applicable; see project-name-alignment prompts"

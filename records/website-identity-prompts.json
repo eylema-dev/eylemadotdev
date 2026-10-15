@@ -1,0 +1,17 @@
+{
+  "task": "WEB-017",
+  "date": "2026-10-15",
+  "tool": "built-in Image Gen",
+  "calls": [
+    {
+      "asset": "public/assets/eyleme-technology-en.png",
+      "prompt": "Use case: text-localization. Asset type: English Eyleme architecture v0.7 promotional poster. Edit target: the supplied existing English poster. Change only the bottom-right domain text from 'eylema.dev' to exactly 'eyleme.dev'. Keep the Eyleme logo, every other word, all diagrams, arrow directions, permission labels, planned/acceptance caveats, colors, dimensions and layout unchanged. Preserve the existing sharp typography and white background. Do not introduce new claims or remove any caveat. The domain must read e y l e m e dot d e v. Output the complete poster.",
+      "transparent_background": false
+    },
+    {
+      "asset": "public/assets/eyleme-technology-tr.png",
+      "transparent_background": false
+    }
+  ],
+  "encoding": "Original 1672 x 941 PNG retained; bundled sharp 0.35.5 lossless WebP; no new production dependency."
+}

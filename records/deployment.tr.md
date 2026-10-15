@@ -17,3 +17,7 @@ Riskler: çift dağıtım akışı, yanlış abonelik, eski sürüm, yanlış SP
 Bütçe: uygulama/doğrulama 90 dakika; başarısız kontrol başına en çok üç odaklı düzeltme; anlamlı güncellemelerle sınırlı DNS yoklaması. Mimar, uygulayıcı, doğrulayıcı ve öz incelemeci aynı Codex GPT-6 ailesi oturumudur; bağımsız inceleme uydurulmaz. Yayın/birleştirme proje sahibince açıkça yetkilidir. Araçlar: Git/GitHub CLI, Azure CLI, Python standart kütüphanesi, CUA tarayıcı/yerel Chrome ve resmi Microsoft/Azure belgeleri.
 
 Kök alan adı için [Microsoft dış DNS rehberi](https://learn.microsoft.com/en-us/azure/static-web-apps/apex-domain-external) izlenir. Varsa ALIAS/ANAME/flattening tercih edilir; GoDaddy yalnızca A kaydı sunarsa tam uygulamanın stableInboundIP değeri kullanılır ve bölgesel yönlendirme sınırı kaydedilir. Kök alana standart CNAME konmaz. Sunucu ayarları [Azure yapılandırmasını](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration) izler.
+
+## Bekleyen kimlik geçişi — 15 Ekim 2026
+
+Güncel depo: [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotdev). Hazırlanan canonical doğrulama sunucusu artık eyleme.dev; henüz satın alınmadı. Proje sahibi önceki eylema.dev adresini kapattı. Yeni canonical sunucu mevcut sıkı yayın eşiklerini sağlayana kadar bu kimlik geçişini merge/dağıtım yapmayın. Dağıtım, alan adı satın alma, DNS, Azure kaynağı veya gizli değişken değişikliği dahil değildir. Yukarıdaki tarihsel yayın kanıtı yalnızca kaydedildiği sunucu/revizyon için geçerlidir. [WEB-017](website-identity.tr.md) kaydına bakın.
