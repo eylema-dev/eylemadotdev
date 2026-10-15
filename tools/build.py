@@ -79,7 +79,7 @@ def render(data):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{e('title')}</title>
   <meta name="description" content="{e('description')}">
-  <meta name="robots" content="noindex,follow">
+  <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#F7F6F2">
   <meta name="color-scheme" content="light">
   <link rel="canonical" href="{url}">
@@ -160,10 +160,12 @@ def outputs(root=ROOT):
     for lang, path in [("en", "index.html"), ("tr", "tr/index.html")]:
         data = json.loads((root / "content" / f"{lang}.json").read_text())
         result[path] = render(data)
-    # Retain the public endpoint without promoting URLs selected for removal.
-    result["sitemap.xml"] = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>\n'
-    # Crawlers must be able to fetch the noindex HTML and HTTP directives.
-    result["robots.txt"] = "User-agent: *\nAllow: /\n"
+    result["sitemap.xml"] = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + ''.join(f'  <url><loc>{ORIGIN}{route}</loc><lastmod>{PAGE_MODIFIED[lang]}</lastmod></url>\n'
+                  for lang, route in (("en", "/"), ("tr", "/tr/")))
+        + '</urlset>\n')
+    result["robots.txt"] = f"User-agent: *\nAllow: /\nSitemap: {ORIGIN}/sitemap.xml\n"
     result[f"{INDEXNOW_KEY}.txt"] = INDEXNOW_KEY
     result["404.html"] = '''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Eyleme</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/site.css"><link rel="icon" href="/assets/favicon.svg"></head><body><main class="not-found shell"><img src="/assets/eyleme.svg" alt="Eyleme" width="190" height="70"><p class="section-label">404</p><h1>This page is not here.</h1><p>The address may have changed.</p><a class="button" href="/">Back to Eyleme</a><p lang="tr">Bu sayfa bulunamadı. <a class="text-link" href="/tr/">Türkçe ana sayfaya dön</a></p></main></body></html>

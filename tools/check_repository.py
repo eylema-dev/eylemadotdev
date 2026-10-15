@@ -9,7 +9,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
-from build import ORIGIN, ROOT, outputs, schema
+from build import ORIGIN, ROOT, PAGE_MODIFIED, outputs, schema
 
 
 class CheckFailure(ValueError):
@@ -102,8 +102,8 @@ def check_page(public, relative, data):
     bot_meta = [a for tag, a in page.tags if tag == "meta" and
                 a.get("name", "").lower() in {"robots", "googlebot", "bingbot"}]
     require(len(bot_meta) == 1 and bot_meta[0].get("name") == "robots" and
-            bot_meta[0].get("content") == "noindex,follow",
-            "Page must have one noindex,follow directive without bot overrides")
+            bot_meta[0].get("content") == "index,follow",
+            "Page must have one index,follow directive without bot overrides")
     require(not any(tag == "meta" and a.get("http-equiv", "").lower() == "refresh" for tag, a in page.tags), "Language auto-redirect is forbidden")
     plain = " ".join(page.data)
     for question in data["questions"]:
@@ -169,18 +169,21 @@ def check_host_config(config):
     require(config.get("globalHeaders", {}).get("Cache-Control") == "public, max-age=0, must-revalidate", "Unhashed assets must be revalidated")
     headers = config.get("globalHeaders", {})
     robot_headers = [value for name, value in headers.items() if name.lower() == "x-robots-tag"]
-    require(robot_headers == ["noindex,follow"], "Global X-Robots-Tag must be noindex,follow")
+    require(not robot_headers, "Global X-Robots-Tag must be absent for public indexing")
     for route in config.get("routes", []):
         require(not any(name.lower() == "x-robots-tag" for name in route.get("headers", {})),
-                "Route must not override global X-Robots-Tag")
+                "Route must not override public indexing")
 
 
 def check_search_files(public):
-    require((public / "robots.txt").read_text() == "User-agent: *\nAllow: /\n",
-            "Robots must allow crawling without sitemap promotion")
+    require((public / "robots.txt").read_text() == f"User-agent: *\nAllow: /\nSitemap: {ORIGIN}/sitemap.xml\n",
+            "Robots must allow crawling and advertise the canonical sitemap")
     sitemap = ET.parse(public / "sitemap.xml").getroot()
-    require(sitemap.tag == "{http://www.sitemaps.org/schemas/sitemap/0.9}urlset" and len(sitemap) == 0,
-            "Sitemap must be an empty urlset without promoted URLs")
+    ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+    expected = [(ORIGIN + "/", PAGE_MODIFIED["en"]), (ORIGIN + "/tr/", PAGE_MODIFIED["tr"])]
+    actual = [(node.findtext(ns + "loc"), node.findtext(ns + "lastmod")) for node in sitemap]
+    require(sitemap.tag == ns + "urlset" and all(node.tag == ns + "url" for node in sitemap)
+            and actual == expected, "Sitemap must contain exactly both canonical URLs and actual modification dates")
 
 
 def check(root=ROOT):
@@ -205,7 +208,7 @@ def check(root=ROOT):
                 check_markdown(root, path, text)
     total = sum(p.stat().st_size for p in (root / "public/assets").glob("*") if p.suffix in {".js", ".css"})
     require(total < 35000, "CSS/JS exceed the 35 KB raw budget")
-    print("PASS: bilingual HTML, canonical/hreflang, JSON-LD, noindex, empty sitemap, assets, translation fingerprints and 35 KB CSS/JS budget")
+    print("PASS: bilingual HTML, canonical/hreflang, JSON-LD, indexable pages, two-URL sitemap, assets, translation fingerprints and 35 KB CSS/JS budget")
 
 
 if __name__ == "__main__":

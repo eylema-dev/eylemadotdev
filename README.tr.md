@@ -8,7 +8,7 @@ Açık platform projesi: [eyleme-dev/eyleme](https://github.com/eyleme-dev/eylem
 
 [English](README.md)
 
-Arama ilkesi: bakım sorumlusu Google ve Bing sonuçlarından kaldırma istedi. Site artık sayfa ve kaynak yanıtlarında noindex gerektirir, tarama erişimini korur ve IndexNow gönderimini kapatır. Yayın, geçici kaldırma istekleri ve nihai indeks durumu ayrıdır; [arama görünürlüğüne](docs/tr/discovery.md) bakın.
+Arama ilkesi: proje sahibi 15 Ekim 2026 tarihinde yeni eyleme.dev alan adının Google/Bing keşfini açıkça yetkilendirdi. Canonical giriş sayfaları indekslenebilir, sitemap İngilizce ve Türkçeyi içerir, gerçek404 noindex kalır. Eski eylema.dev kaldırma takibi ayrıdır. Motor doğrulaması/gönderimi ve gerçek indekslenme farklıdır; [arama görünürlüğüne](docs/tr/discovery.md) ve [WEB-020](records/search-launch.tr.md) kaydına bakın.
 
 ## Web sitesi
 
@@ -35,6 +35,6 @@ python3 -m venv .venv
 
 ## Yayınlama sınırı
 
-Yetkili yayın hedefi [eyleme.dev](https://eyleme.dev/) adresidir. Dağıtım iş akışı canonical sunucuda tam yayın SHA, özet, MIME, noindex, yönlendirme ve gerçek 404 değerlerini doğrular. İki sertifika geçerli olduktan sonra www ve Azure adresi yolu koruyarak kök alan adına yönlenir. Güncel kabul kanıtı için [WEB-018](records/eyleme-domain.tr.md) kaydına bakın. Alan adı satın almayı ya da indekslemeyi geri açmayı örtük olarak uygulamayın.
+Yetkili yayın hedefi [eyleme.dev](https://eyleme.dev/) adresidir. Dağıtım iş akışı canonical sunucuda tam yayın SHA, özet, MIME, indekslenebilir yanıtlar, yönlendirme ve gerçek 404 değerlerini doğrular. İki sertifika geçerli olduktan sonra www ve Azure adresi yolu koruyarak kök alan adına yönlenir. Güncel kabul kanıtı için [WEB-018](records/eyleme-domain.tr.md) kaydına bakın. Alan adı satın almayı ya da indekslemeyi geri açmayı örtük olarak uygulamayın.
 
 Kaynak deposu, proje sahibinin açık isteğiyle herkese açıktır. Yayınlanan HTML, CSS, JavaScript ve görseller herkes tarafından alınabilir. Yetkili üretim hedefi `umayos subscription`, West Europe, `rg-eylema-dev / swa-eylema-dev` altında Azure Static Web Apps Free katmanıdır. Üretim iş akışı yalnızca `public/` çıktısını doğrular ve yükler; canlı dosya özetlerini, MIME türlerini, yönlendirmeyi ve `/release.json` commit değerini kontrol eder. [Yayın sözleşmesini](records/deployment.tr.md) ve hazırlık listesini izleyin. Search Console/Bing doğrulaması, indeksleme ve saha performansı ayrı kanıtlardır. Yerel kontroller tek başına dağıtımı doğrulamaz.

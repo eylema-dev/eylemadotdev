@@ -1,30 +1,19 @@
-# Search visibility and removal
+# Search discovery
 
-[Türkçe](../tr/discovery.md). Reviewed 14 October 2026.
+[Türkçe](../tr/discovery.md). Reviewed 15 October 2026.
 
-The maintainer requested removal of the existing `eylema.dev` site from Google and Bing results. The website remains a public site; search exclusion is not access control. The original 14 October removal change excluded domain migration, DNS changes, account/property deletion and verification-token removal. See the domain preparation decision below for the later host change.
+The maintainer explicitly requested adding https://eyleme.dev/ to Google Search Console and Bing Webmaster Tools, submitting its sitemap and requesting indexing of English and Turkish. This supersedes the inherited new-domain exclusion policy; it does not cancel or change old eylema.dev removal reports or monitors. See [WEB-020](../../records/search-launch.md) and the historical [removal record](../../records/search-removal.md).
 
-Both English `/` and Turkish `/tr/` pages declare `noindex,follow`. Azure's global `X-Robots-Tag: noindex,follow` header covers HTML, images and other resources. The custom 404 remains noindex. Existing canonical/hreflang, social metadata, bilingual content and normal navigation remain available.
+## Crawlable canonical pages
 
-`robots.txt` explicitly allows crawling so search engines can fetch the removal directives. It does not advertise a sitemap. The existing `/sitemap.xml` remains valid XML with an empty URL set, avoiding further URL promotion. Blocking crawlers would prevent them from observing noindex. [Google noindex guidance](https://developers.google.com/search/docs/crawling-indexing/block-indexing), [Azure response headers](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration).
+English https://eyleme.dev/ and Turkish https://eyleme.dev/tr/ declare index,follow, self-canonical URLs and reciprocal en/tr/x-default links. Azure has no global X-Robots-Tag exclusion and no route-specific bot override. The genuine HTTP404 document retains noindex. robots.txt allows crawling and advertises https://eyleme.dev/sitemap.xml. The XML sitemap contains exactly the two canonical pages and their actual modification dates; builds do not invent fresh dates. www and the generated Azure host redirect to the canonical root while preserving paths. [Google sitemap guidance](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap), [Google noindex guidance](https://developers.google.com/search/docs/crawling-indexing/block-indexing).
 
-## Submission and ownership
+## Ownership and submission
 
-IndexNow submission is disabled before any network request. `tools/indexnow.py` prints only an explicitly non-submitting preview; `--submit` exits nonzero with the search-removal policy reason. Public ownership-key bytes and previous submission receipts are preserved as historical evidence. Do not submit URLs or sitemaps to promote indexing while this policy applies.
+Use the signed-in owner sessions to add the new property, verify only the engine-issued public proof and submit the sitemap. Google Domain verification may require a new GoDaddy TXT record; preserve existing Azure, mail and DNS records. Bing can use its offered verification methods without granting new broad account permissions. Submit each canonical URL once per engine; repeated submissions do not guarantee faster processing. IndexNow stays disabled; this launch uses the explicitly requested owner-panel submissions. Historical ownership bytes/receipts remain unchanged. [Bing verification](https://www2.bing.com/webmasters/help/add-and-verify-site-12184f8b), [Bing sitemaps](https://www2.bing.com/webmasters/help/sitemaps-3b5cf6ed), [Bing URL submission](https://www.bing.com/webmasters/help/URL-Submission-62f2860b).
 
-## Acceptance and tracking
+## Evidence boundary
 
-1. Verify generated noindex meta, global headers, crawl-permitted robots, empty sitemap and refusal to submit. Negative tests reject indexable/duplicate/bot-specific directives, header overrides, crawl blocks and renewed URL promotion.
-2. Deploy only `public/` using the existing authorized Azure resource. Verify normal HTTPS, exact release commit, full resource hashes/MIME, global noindex headers, routing and true 404. Local `http.server` does not implement Azure headers; a source check is not header-deployment evidence.
-3. Preserve Google Search Console and Bing Webmaster properties and inspection access. The separate authorized owner-panel removal requests are temporary actions whose actual scope/status must be read back. [Google removal tool](https://support.google.com/webmasters/answer/9689846?hl=en), [Bing URL blocking](https://www.bing.com/webmasters/help/?topicid=264e560a).
-4. Record three distinct states: deployed persistent noindex, temporary removal-request status and observed search-engine indexing status. Neither an uploaded artifact nor an accepted removal request proves final removal. Search engines process these changes asynchronously.
+Source/live gates reject noindex landing pages, blocking or conflicting response headers, crawler blocks, missing/duplicate/foreign sitemap URLs and stale dates. Exact release identity, file inventory/hashes/MIME, security headers, real404 and locale routing remain mandatory.
 
-Canonical DNS currently returns NXDOMAIN in the 14 October 2026 verification. Azure upload can succeed while normal canonical verification fails. That historical run deferred the domain decision. The maintainer subsequently closed the old domain; the new identity remains unpublished as explained below. Crawlers cannot observe the directives until the host resolves. See the [current removal record](../../records/search-removal.md). A future direct maintainer decision is required to restore indexing or resume submissions.
-
-## Domain preparation — 15 October 2026
-
-The maintainer has now selected eyleme.dev and closed eylema.dev. The new domain is not purchased. The [identity migration](../../records/website-identity.md) prepares canonical, reciprocal-language and social metadata for the new host, without publishing or changing DNS. This supersedes the deferred-domain statement above. Keep noindex, the empty sitemap and disabled submissions until an explicit indexing decision. The old domain removal reports remain separate historical and monitoring evidence. New-domain owner-panel verification and live-host evidence have not been established.
-
-## Registered domain launch — 15 October 2026
-
-The maintainer has now purchased eyleme.dev at GoDaddy and explicitly authorized connecting the existing Azure site. This supersedes the unpurchased-domain preparation note. The [domain launch record](../../records/eyleme-domain.md) separates DNS ownership/routing, certificates, redirects, deployed release identity and browser evidence. The existing noindex/empty-sitemap/disabled-submission policy remains in force; buying or connecting the new host does not authorize renewed search submissions. Old-domain removal monitoring stays separate.
+Read back property ownership, sitemap processing and URL request acceptance from the actual panels. Only Google Index / Bing Index URL Inspection explicitly showing indexed proves indexing; a live test, sitemap discovery or accepted request does not. Engines choose whether and when to index. Record current states honestly; user-required login/CAPTCHA or inaccessible panels are access blockers, not evidence of non-indexing. Automated follow-up needs an explicitly requested monitor; do not silently change old-domain monitors.

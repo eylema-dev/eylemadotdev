@@ -25,3 +25,7 @@ Güncel depo: [eyleme-dev/eylemedotdev](https://github.com/eyleme-dev/eylemedotd
 ## Eyleme alan adı açılışı — 15 Ekim 2026
 
 Son proje sahibi isteği, satın alınan eyleme.dev adresinin mevcut Azure Free sitesine bağlanmasını ve kapsamlı açılış PR/merge/dağıtımını yetkilendirir. Üretim denetleyicisi aynı tam SHA, envanter/özet/MIME/noindex, gerçek404 ve dil normalleştirme eşikleriyle artık https://eyleme.dev adresini hedefler. Kök varsayılanlığını yalnızca kök ve www sertifikaları normal doğrulamayı geçtikten sonra açın. Yeni Azure/www yönlendirmeleri yolu korur; Azure önizleme adresi bundan sonra canonical alana ulaşır. Ücretli hizmet, e-posta/ad sunucusu değişikliği veya arama gönderimi açılışa dahil değildir. Gerçek gözlemler için [WEB-018](eyleme-domain.tr.md) kaydına bakın. Yukarıdaki eski notlar kendi tarihsel sunucu ve yetkilerini açıklar.
+
+## Arama açılışı — 15 Ekim 2026
+
+WEB-020 eyleme.dev indekslemesini ve devralınan dışlamaları kaldıracak kapsamlı PR/merge/dağıtımı açıkça yetkilendirir. Canonical yayın eşiği artık indekslenebilir giriş/kaynak yanıtları, iki sitemap adresi ve gerçek noindex404 belgesi gerektirir; tam SHA/envanter/özet/MIME ve yönlendirme/güvenlik kontrolleri korunur. Motor mülk doğrulaması, sitemap kabulü, URL istekleri ve gerçek indekslenme ayrı sahip panosu kanıtlarıdır. Eski alanın kaldırma takibi ve IndexNow değişmez. [Arama açılışına](search-launch.tr.md) bakın.

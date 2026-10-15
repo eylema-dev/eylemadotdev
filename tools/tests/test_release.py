@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from build import ROOT
-from check_live import verify_release, check, require_noindex
+from check_live import verify_release, check, require_indexable
 from check_repository import CheckFailure, check_host_config
 from release import file_hashes, manifest
 
@@ -65,34 +65,34 @@ class ReleaseTests(unittest.TestCase):
         with self.assertRaisesRegex(CheckFailure, "asset URLs"):
             check_host_config(config)
 
-    def test_global_noindex_is_required_and_cannot_be_overridden(self):
+    def test_global_and_route_indexing_overrides_are_rejected(self):
         original = json.loads((ROOT / "public/staticwebapp.config.json").read_text())
-        for value in [None, "index,follow", "", "noindex"]:
+        for value in ["noindex,follow", "index,follow", "", "noindex"]:
             config = copy.deepcopy(original)
-            if value is None:
-                del config["globalHeaders"]["X-Robots-Tag"]
-            else:
-                config["globalHeaders"]["X-Robots-Tag"] = value
+            config["globalHeaders"]["X-Robots-Tag"] = value
             with self.subTest(value=value), self.assertRaisesRegex(CheckFailure, "Global X-Robots"):
                 check_host_config(config)
         config = copy.deepcopy(original)
-        config["routes"].append({"route": "/assets/*", "headers": {"x-robots-tag": ""}})
+        config["routes"].append({"route": "/assets/*", "headers": {"x-robots-tag": "noindex"}})
         with self.assertRaisesRegex(CheckFailure, "Route must not override"):
             check_host_config(config)
-        config = copy.deepcopy(original)
-        config["globalHeaders"]["x-robots-tag"] = "index"
-        with self.assertRaisesRegex(CheckFailure, "Global X-Robots"):
-            check_host_config(config)
 
-    def test_live_noindex_rejects_missing_conflicting_or_duplicate_headers(self):
-        for values in [[], ["index,follow"], ["noindex"], ["noindex,follow", "googlebot: index"]]:
+    def test_live_indexing_rejects_blocking_conflicting_or_duplicate_headers(self):
+        for values in [["noindex,follow"], ["nofollow"], ["none"], ["googlebot: noindex"], ["index,follow", "noindex"]]:
             headers = Message()
             for value in values:
                 headers["X-Robots-Tag"] = value
-            with self.subTest(values=values), self.assertRaisesRegex(ValueError, "noindex header"):
-                require_noindex(headers, "/sample")
+            with self.subTest(values=values), self.assertRaisesRegex(ValueError, "indexing header"):
+                require_indexable(headers, "/sample")
 
-    def test_live_policy_covers_release_assets_pages_normalized_routes_and_404(self):
+    def test_live_indexing_accepts_default_and_explicit_index_follow(self):
+        for values in [[], ["index,follow"]]:
+            headers = Message()
+            for value in values:
+                headers["X-Robots-Tag"] = value
+            require_indexable(headers, "/sample")
+
+    def test_live_policy_covers_resources_normalized_routes_and_true_404(self):
         origin, commit = "https://eyleme.dev", "a" * 40
         expected = manifest(ROOT / "public", commit)
         types = {"html": "text/html", "css": "text/css", "js": "application/javascript",
@@ -102,7 +102,7 @@ class ReleaseTests(unittest.TestCase):
             route = url.removeprefix(origin)
             headers = Message()
             headers["X-Content-Type-Options"] = "nosniff"
-            if route != missing:
+            if route == missing:
                 headers["X-Robots-Tag"] = "noindex,follow"
             if route == "/release.json":
                 return 200, headers, json.dumps(expected).encode(), url
@@ -115,13 +115,25 @@ class ReleaseTests(unittest.TestCase):
             headers["Content-Type"] = types[path.rsplit(".", 1)[-1]]
             return status, headers, (ROOT / "public" / path).read_bytes(), final
         missing_routes = ["/release.json", "/", "/tr/", "/assets/eyleme-wordmark.webp",
-                          "/not-a-page-" + commit[:12], "/index.html", "/tr/index.html", "/tr"]
+                          "/index.html", "/tr/index.html", "/tr"]
         for missing in missing_routes:
             with self.subTest(missing=missing), patch("check_live.fetch", side_effect=lambda url: response(url, missing)):
-                with self.assertRaisesRegex(ValueError, "noindex header"):
+                with self.assertRaisesRegex(ValueError, "indexing header"):
                     check(origin, commit)
         with patch("check_live.fetch", side_effect=lambda url: response(url, None)), patch("sys.stdout", new=io.StringIO()):
             check(origin, commit)
+        for wrong_status in (True, False):
+            def broken_404(url):
+                status, headers, body, final = response(url, None)
+                if "/not-a-page-" in url:
+                    if wrong_status:
+                        status = 200
+                    else:
+                        body = b"wrong error page"
+                return status, headers, body, final
+            with self.subTest(wrong_status=wrong_status), patch("check_live.fetch", side_effect=broken_404):
+                with self.assertRaisesRegex(ValueError, "genuine custom HTTP 404"):
+                    check(origin, commit)
 
 
 if __name__ == "__main__":
