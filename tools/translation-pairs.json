@@ -28,7 +28,7 @@
       "en": "content/en.json",
       "tr": "content/tr.json",
       "en_sha256": "222d3b3b54c93c83fae6537708ea314d6e99248f6985c4525f7354c43d4f6e6f",
-      "tr_sha256": "ee32b050772ed6ed63fba106757747b98eee74e0e3c524662e2cee0ab9cc2735"
+      "tr_sha256": "201aecc2b9b010d7f0b83f2f56f91060a9ac4a2086d67db6cc0ee9eb788b793c"
     },
     {
       "en": "records/plan.md",
@@ -131,6 +131,12 @@
       "tr": "records/eyleme-domain.tr.md",
       "en_sha256": "df7c58c60fec10cc5c9fa00c52aab96d63dc217ff58194b3e2326f41a44f2ab2",
       "tr_sha256": "c3c62ef483d84824bfea33fece6bb14362beb63c7682493c2ffb2d00dd6f48d2"
+    },
+    {
+      "en": "records/turkish-action-copy.md",
+      "tr": "records/turkish-action-copy.tr.md",
+      "en_sha256": "32b1b9a6eb6e1c4e9fa106834d655e15de00aabd24709e460d0760557eb7f476",
+      "tr_sha256": "9d8c7a20f19410e9e7b2eb5d2bda2cbafe5e24dece3d6e7bcfd0ae97e257e5c4"
     }
   ]
 }
