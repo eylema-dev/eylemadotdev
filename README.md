@@ -12,6 +12,8 @@ This repository introduces the implemented local task foundation and the propose
 
 Search policy: the maintainer explicitly authorized Google/Bing discovery of the new eyleme.dev domain on 15 October 2026. Canonical landing pages are indexable, the sitemap lists English and Turkish, and the genuine 404 remains noindex. Old eylema.dev removal tracking is separate. Engine verification/submission and actual indexing are distinct; see [search visibility](docs/en/discovery.md) and [WEB-020](records/search-launch.md).
 
+IndexNow for eyleme.dev is explicitly enabled through the [bounded submission helper](records/eyleme-indexnow.md): default preview has no network access; --submit verifies ownership/pages before one batch. Protocol receipts and real engine indexing remain separate.
+
 ## Website
 
 English is the default at `/`; Turkish is at `/tr/`. Both are complete HTML documents, with reciprocal hreflang and self-canonical URLs. The architecture tabs progressively enhance content that is already in the HTML. FAQ answers use native disclosure controls. No accounts, analytics, cookies, hosted fonts, model API or third-party runtime package.

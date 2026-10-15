@@ -20,4 +20,4 @@ Web sitesi, platform belgeleri deposundan ayrıdır. Standart kütüphane doğru
 
 Barındırma, HTTPS/yönlendirmeler, gerçek HTTP 404, indeksleme, saha performansı, model/GPU/Rust yürütmesi ve uluslararası erişim ayrı kanıt gerektirir. Eksik donanım kanıtı site kontrollerinden çıkarılamaz.
 
-IndexNow ağ erişiminden önce kapalı kalır. Yeni alanın indekslenebilir yayını, sahip panosu gönderim kabulü ve gözlenen indeksleme durumu ayrı kanıtlardır. Eski alanın kaldırma kanıtı tarihseldir. Canonical DNS hatası başarısız canlı kapı olarak kalır. [Arama görünürlüğüne](discovery.md) bakın.
+IndexNow varsayılan olarak ağsız önizler; açık gönderim sunucu/anahtar/sayfa ön kontrolünü geçer, yönlendirme/tekrar olmadan tek POST yollar ve gerçek200/202/hata alındısını korur. Yeni alanın indekslenebilir yayını, sahip panosu gönderim kabulü ve gözlenen indeksleme durumu ayrı kanıtlardır. Eski alanın kaldırma kanıtı tarihseldir. Canonical DNS hatası başarısız canlı kapı olarak kalır. [Arama görünürlüğüne](discovery.md) bakın.
