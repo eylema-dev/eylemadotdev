@@ -168,7 +168,7 @@ class WebsiteTests(unittest.TestCase):
                 with self.subTest(lang=data["lang"], component=filename):
                     tail = f'docs/{data["lang"]}/{filename}.md'
                     self.assertIn(f"https://github.com/eyleme-dev/eyleme/blob/main/{tail}", hrefs)
-                    self.assertNotIn(f'https://github.com/eyleme-dev/eylema-docs-{data["lang"]}/blob/main/{tail}', hrefs)
+                    self.assertNotIn(f'https://github.com/eyleme-dev/eyleme-docs-{data["lang"]}/blob/main/{tail}', hrefs)
 
     def test_architecture_illustration_requires_visible_notice(self):
         text = render(self.en).replace(self.en["technology_notice"], "")

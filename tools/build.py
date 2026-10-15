@@ -27,7 +27,7 @@ def arrow(external=False):
 
 
 def source(lang, name):
-    repository = PROJECT if name in {"project", "license"} or name.startswith("core_") else f"https://github.com/eyleme-dev/eylema-docs-{lang}"
+    repository = PROJECT if name in {"project", "license"} or name.startswith("core_") else f"https://github.com/eyleme-dev/eyleme-docs-{lang}"
     return f"{repository}/blob/main/{SOURCES[lang][name]}"
 
 
